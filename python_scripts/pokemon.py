@@ -52,7 +52,7 @@ class pokemon:
         return self.region
 
     def regional_variant(self):
-        return self.regional_number == "ALO" or self.regional_number == "GAL"
+        return len(self.national_number) > 3
 
     def dual_type(self):
         return not self.type2 == None
