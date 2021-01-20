@@ -8,6 +8,8 @@ class pokemon:
         self.region = region
 
     def get_from_string(self, pokestring):
+        if len(pokestring) == 0:
+            return False
         temp_array = pokestring.split("\t")
         self.regional_number = temp_array[0]
         self.national_number = temp_array[1]
@@ -17,25 +19,32 @@ class pokemon:
             self.type2 = temp_array[4]
         else:
             self.type2 = None
+        return True
 
     def set_region(self):
-        if self.national_number <= 0:
-            self.region = "Unknown"
-        elif self.national_number <= 151:
-            self.region = "Kanto"
-        elif self.national_number <= 251:
-            self.region = "Johto"
-        elif self.national_number <= 386:
-            self.region = "Hoenn"
-        elif self.national_number <= 493:
-            self.region = "Sinnoh"
-        elif self.national_number <= 649:
-            self.region = "Unova"
-        elif self.national_number <= 721:
-            self.region = "Kalos"
-        elif self.national_number <= 809:
+        if self.regional_number == "ALO":
             self.region = "Alola"
-        elif self.national_number <= 898:
+            return "Alola"
+        if self.regional_number == "GAL":
+            self.region = "Galar"
+            return "Galar"
+        if int(self.national_number) <= 0:
+            self.region = "Unknown"
+        elif int(self.national_number) <= 151:
+            self.region = "Kanto"
+        elif int(self.national_number) <= 251:
+            self.region = "Johto"
+        elif int(self.national_number) <= 386:
+            self.region = "Hoenn"
+        elif int(self.national_number) <= 493:
+            self.region = "Sinnoh"
+        elif int(self.national_number) <= 649:
+            self.region = "Unova"
+        elif int(self.national_number) <= 721:
+            self.region = "Kalos"
+        elif int(self.national_number) <= 809:
+            self.region = "Alola"
+        elif int(self.national_number) <= 898:
             self.region = "Galar"
         else:
             self.region = "Unknown"
@@ -45,7 +54,7 @@ class pokemon:
         return not self.type2 == None
 
     def to_string(self):
-        string = self.regional_number +"\t" + self.national_number + "\t" + self.name + "\t" + self.type1
+        string = self.regional_number +"\t" + self.national_number + "\t" + self.name + "\t" + self.region + "\t" + self.type1
         if not self.type2 == None:
             string = string + "\t" + self.type2
         return string
