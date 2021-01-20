@@ -1,19 +1,11 @@
 class pokemon:
-    def __init__(self):
-        self.regional_number = None
-        self.national_number = None
-        self.name = None
-        self.region = None
-        self.type1 = None
-        self.type2 = None
-
-    def __init__(self, regional, national, name, region, type1, type2 = None):
+    def __init__(self, regional = None, national = None, name = None, type1 = None, type2 = None, region = None):
         self.regional_number = regional
         self.national_number = national
         self.name = name
-        self.region = region
         self.type1 = type1
         self.type2 = type2
+        self.region = region
 
     def get_from_string(self, pokestring):
         temp_array = pokestring.split("\t")
@@ -51,3 +43,9 @@ class pokemon:
 
     def dual_type(self):
         return not self.type2 == None
+
+    def to_string(self):
+        string = self.regional_number+"\t" + self.national_number + "\t" + self.name + "\t" + self.type1
+        if not self.type2 == None:
+            string = string + "\t" + self.type2
+        return string
