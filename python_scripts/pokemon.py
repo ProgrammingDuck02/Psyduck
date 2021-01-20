@@ -45,7 +45,7 @@ class pokemon:
         return not self.type2 == None
 
     def to_string(self):
-        string = self.regional_number+"\t" + self.national_number + "\t" + self.name + "\t" + self.type1
+        string = self.regional_number +"\t" + self.national_number + "\t" + self.name + "\t" + self.type1
         if not self.type2 == None:
             string = string + "\t" + self.type2
         return string
