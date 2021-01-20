@@ -109,9 +109,15 @@ def update(table, fields, values, conditions):
 
 #sys.stdout = open("psyduck.log","a")
 #sys.stderr = open("psyduck.error.log","a")
-pokemon_file = "Additional_files/pokemon_list.txt"
-pokemon_list = get_pokemon_from_file(pokemon_file)
-
-for poke in pokemon_list:
-    insert("pokemon",("national_number", "regional_number", "name", "type1", "type2", "region"),
-    (poke.national_number, poke.regional_number, poke.name, poke.type1, poke.type2, poke.region))
+emote_file = open("../python scripts/emotes.txt")
+lines = emote_file.read().split("\n")
+emote_file.close()
+for line in lines:
+    arr = line.split(" ")
+    update("pokemon", ("emote",), (arr[1],), "national_number = \""+arr[0]+"\"")
+emote_file = open("../python scripts/shiny_emotes.txt")
+lines = emote_file.read().split("\n")
+emote_file.close()
+for line in lines:
+    arr = line.split(" ")
+    update("pokemon", ("shiny_emote",), (arr[1],), "national_number = \""+arr[0]+"\"")
