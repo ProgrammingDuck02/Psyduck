@@ -109,13 +109,13 @@ def update(table, fields, values, conditions):
 
 #sys.stdout = open("psyduck.log","a")
 #sys.stderr = open("psyduck.error.log","a")
-emote_file = open("../python scripts/emotes.txt")
+emote_file = open("Additional_files/emotes.txt")
 lines = emote_file.read().split("\n")
 emote_file.close()
 for line in lines:
     arr = line.split(" ")
     update("pokemon", ("emote",), (arr[1],), "national_number = \""+arr[0]+"\"")
-emote_file = open("../python scripts/shiny_emotes.txt")
+emote_file = open("Additional_files/shiny_emotes.txt")
 lines = emote_file.read().split("\n")
 emote_file.close()
 for line in lines:
