@@ -14,9 +14,10 @@ class pokemon:
         self.regional_number = temp_array[0]
         self.national_number = temp_array[1]
         self.name = temp_array[2]
-        self.type1 = temp_array[3]
-        if len(temp_array) > 4:
-            self.type2 = temp_array[4]
+        self.region = temp_array[3]
+        self.type1 = temp_array[4]
+        if len(temp_array) > 5:
+            self.type2 = temp_array[5]
         else:
             self.type2 = None
         return True
@@ -50,11 +51,18 @@ class pokemon:
             self.region = "Unknown"
         return self.region
 
+    def regional_variant(self):
+        return self.regional_number == "ALO" or self.regional_number == "GAL"
+
     def dual_type(self):
         return not self.type2 == None
 
     def to_string(self):
-        string = self.regional_number +"\t" + self.national_number + "\t" + self.name + "\t" + self.region + "\t" + self.type1
-        if not self.type2 == None:
+        string = self.regional_number
+        string = string + "\t" + self.national_number
+        string = string + "\t" + self.name
+        string = string + "\t" + self.region
+        string = string + "\t" + self.type1
+        if self.dual_type():
             string = string + "\t" + self.type2
         return string

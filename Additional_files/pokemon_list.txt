@@ -17,20 +17,20 @@
 017	017	Pidgeotto	Kanto	Normal	Flying
 018	018	Pidgeot	Kanto	Normal	Flying
 019	019	Rattata	Kanto	Normal
-ALO	019	Rattata	Alola	Dark	Normal
+ALO	019A	Rattata	Alola	Dark	Normal
 020	020	Raticate	Kanto	Normal
-ALO	020	Raticate	Alola	Dark	Normal
+ALO	020A	Raticate	Alola	Dark	Normal
 021	021	Spearow	Kanto	Normal	Flying
 022	022	Fearow	Kanto	Normal	Flying
 023	023	Ekans	Kanto	Poison
 024	024	Arbok	Kanto	Poison
 025	025	Pikachu	Kanto	Electric
-026	026	Raichu	Kanto	Electric
-ALO	026	Raichu	Alola	Electric	Psychic
+026	026	Raichu	Kanto	Electric	Psychic
+ALO	026A	Raichu	Alola	Electric	Psychic
 027	027	Sandshrew	Kanto	Ground
-ALO	027	Sandshrew	Alola	Ice	Steel
+ALO	027A	Sandshrew	Alola	Ice	Steel
 028	028	Sandslash	Kanto	Ground
-ALO	028	Sandslash	Alola	Ice	Steel
+ALO	028A	Sandslash	Alola	Ice	Steel
 029	029	Nidoran♀	Kanto	Poison
 030	030	Nidorina	Kanto	Poison
 031	031	Nidoqueen	Kanto	Poison	Ground
@@ -40,9 +40,9 @@ ALO	028	Sandslash	Alola	Ice	Steel
 035	035	Clefairy	Kanto	Fairy
 036	036	Clefable	Kanto	Fairy
 037	037	Vulpix	Kanto	Fire
-ALO	037	Vulpix	Alola	Ice
+ALO	037A	Vulpix	Alola	Ice
 038	038	Ninetales	Kanto	Fire
-ALO	038	Ninetales	Alola	Ice	Fairy
+ALO	038A	Ninetales	Alola	Ice	Fairy
 039	039	Jigglypuff	Kanto	Normal	Fairy
 040	040	Wigglytuff	Kanto	Normal	Fairy
 041	041	Zubat	Kanto	Poison	Flying
@@ -54,15 +54,15 @@ ALO	038	Ninetales	Alola	Ice	Fairy
 047	047	Parasect	Kanto	Bug	Grass
 048	048	Venonat	Kanto	Bug	Poison
 049	049	Venomoth	Kanto	Bug	Poison
-050	050	Diglett	Kanto	Ground
-ALO	050	Diglett	Alola	Ground	Steel
-051	051	Dugtrio	Kanto	Ground
-ALO	051	Dugtrio	Alola	Ground	Steel
+050	050	Diglett	Kanto	Ground	Steel
+ALO	050A	Diglett	Alola	Ground	Steel
+051	051	Dugtrio	Kanto	Ground	Steel
+ALO	051A	Dugtrio	Alola	Ground	Steel
 052	052	Meowth	Kanto	Normal
-ALO	052	Meowth	Alola	Dark
-GAL	052	Meowth	Galar	Steel
+ALO	052A	Meowth	Alola	Dark
+GAL	052G	Meowth	Galar	Steel
 053	053	Persian	Kanto	Normal
-ALO	053	Persian	Alola	Dark
+ALO	053A	Persian	Alola	Dark
 054	054	Psyduck	Kanto	Water
 055	055	Golduck	Kanto	Water
 056	056	Mankey	Kanto	Fighting
@@ -83,32 +83,32 @@ ALO	053	Persian	Alola	Dark
 071	071	Victreebel	Kanto	Grass	Poison
 072	072	Tentacool	Kanto	Water	Poison
 073	073	Tentacruel	Kanto	Water	Poison
-074	074	Geodude	Kanto	Rock	Ground
-ALO	074	Geodude	Alola	Rock	Electric
-075	075	Graveler	Kanto	Rock	Ground
-ALO	075	Graveler	Alola	Rock	Electric
-076	076	Golem	Kanto	Rock	Ground
-ALO	076	Golem	Alola	Rock	Electric
+074	074	Geodude	Kanto	Rock	Electric
+ALO	074A	Geodude	Alola	Rock	Electric
+075	075	Graveler	Kanto	Rock	Electric
+ALO	075A	Graveler	Alola	Rock	Electric
+076	076	Golem	Kanto	Rock	Electric
+ALO	076A	Golem	Alola	Rock	Electric
 077	077	Ponyta	Kanto	Fire
-GAL	077	Ponyta	Galar	Psychic
+GAL	077G	Ponyta	Galar	Psychic
 078	078	Rapidash	Kanto	Fire
-GAL	078	Rapidash	Galar	Psychic	Fairy
+GAL	078G	Rapidash	Galar	Psychic	Fairy
 079	079	Slowpoke	Kanto	Water	Psychic
-GAL	079	Slowpoke	Galar	Psychic
+GAL	079G	Slowpoke	Galar	Psychic
 080	080	Slowbro	Kanto	Water	Psychic
-GAL	080	Slowbro	Galar	Poison	Psychic
+GAL	080G	Slowbro	Galar	Poison	Psychic
 081	081	Magnemite	Kanto	Electric	Steel
 082	082	Magneton	Kanto	Electric	Steel
 083	083	Farfetch'd	Kanto	Normal	Flying
-GAL	083	Farfetch'd	Galar	Fighting
+GAL	083G	Farfetch'd	Galar	Fighting
 084	084	Doduo	Kanto	Normal	Flying
 085	085	Dodrio	Kanto	Normal	Flying
 086	086	Seel	Kanto	Water
 087	087	Dewgong	Kanto	Water	Ice
-088	088	Grimer	Kanto	Poison
-ALO	088	Grimer	Alola	Poison	Dark
-089	089	Muk	Kanto	Poison
-ALO	089	Muk	Alola	Poison	Dark
+088	088	Grimer	Kanto	Poison	Dark
+ALO	088A	Grimer	Alola	Poison	Dark
+089	089	Muk	Kanto	Poison	Dark
+ALO	089A	Muk	Alola	Poison	Dark
 090	090	Shellder	Kanto	Water
 091	091	Cloyster	Kanto	Water	Ice
 092	092	Gastly	Kanto	Ghost	Poison
@@ -122,17 +122,17 @@ ALO	089	Muk	Alola	Poison	Dark
 100	100	Voltorb	Kanto	Electric
 101	101	Electrode	Kanto	Electric
 102	102	Exeggcute	Kanto	Grass	Psychic
-103	103	Exeggutor	Kanto	Grass	Psychic
-ALO	103	Exeggutor	Alola	Grass	Dragon
+103	103	Exeggutor	Kanto	Grass	Dragon
+ALO	103A	Exeggutor	Alola	Grass	Dragon
 104	104	Cubone	Kanto	Ground
 105	105	Marowak	Kanto	Ground
-ALO	105	Marowak	Alola	Fire	Ghost
+ALO	105A	Marowak	Alola	Fire	Ghost
 106	106	Hitmonlee	Kanto	Fighting
 107	107	Hitmonchan	Kanto	Fighting
 108	108	Lickitung	Kanto	Normal
 109	109	Koffing	Kanto	Poison
-110	110	Weezing	Kanto	Poison
-GAL	110	Weezing	Galar	Poison	Fairy
+110	110	Weezing	Kanto	Poison	Fairy
+GAL	110G	Weezing	Galar	Poison	Fairy
 111	111	Rhyhorn	Kanto	Ground	Rock
 112	112	Rhydon	Kanto	Ground	Rock
 113	113	Chansey	Kanto	Normal
@@ -145,7 +145,7 @@ GAL	110	Weezing	Galar	Poison	Fairy
 120	120	Staryu	Kanto	Water
 121	121	Starmie	Kanto	Water	Psychic
 122	122	Mr. Mime	Kanto	Psychic	Fairy
-GAL	122	Mr. Mime	Galar	Ice	Psychic
+GAL	122G	Mr. Mime	Galar	Ice	Psychic
 123	123	Scyther	Kanto	Bug	Flying
 124	124	Jynx	Kanto	Ice	Psychic
 125	125	Electabuzz	Kanto	Electric
@@ -168,11 +168,11 @@ GAL	122	Mr. Mime	Galar	Ice	Psychic
 142	142	Aerodactyl	Kanto	Rock	Flying
 143	143	Snorlax	Kanto	Normal
 144	144	Articuno	Kanto	Ice	Flying
-GAL	144	Articuno	Galar	Psychic	Flying
+GAL	144G	Articuno	Galar	Psychic	Flying
 145	145	Zapdos	Kanto	Electric	Flying
-GAL	145	Zapdos	Galar	Fighting	Flying
+GAL	145G	Zapdos	Galar	Fighting	Flying
 146	146	Moltres	Kanto	Fire	Flying
-GAL	146	Moltres	Galar	Dark	Flying
+GAL	146G	Moltres	Galar	Dark	Flying
 147	147	Dratini	Kanto	Dragon
 148	148	Dragonair	Kanto	Dragon
 149	149	Dragonite	Kanto	Dragon	Flying
@@ -226,7 +226,7 @@ GAL	146	Moltres	Galar	Dark	Flying
 189	197	Umbreon	Johto	Dark
 213	198	Murkrow	Johto	Dark	Flying
 082	199	Slowking	Johto	Water	Psychic
-GAL	199	Slowking	Galar	Poison	Psychic
+GAL	199G	Slowking	Galar	Poison	Psychic
 219	200	Misdreavus	Johto	Ghost
 061	201	Unown	Johto	Psychic
 108	202	Wobbuffet	Johto	Psychic
@@ -250,7 +250,7 @@ GAL	199	Slowking	Galar	Poison	Psychic
 195	220	Swinub	Johto	Ice	Ground
 196	221	Piloswine	Johto	Ice	Ground
 173	222	Corsola	Johto	Water	Rock
-GAL	222	Corsola	Galar	Ghost
+GAL	222G	Corsola	Galar	Ghost
 174	223	Remoraid	Johto	Water
 175	224	Octillery	Johto	Water
 194	225	Delibird	Johto	Ice	Flying
@@ -292,9 +292,9 @@ GAL	222	Corsola	Galar	Ghost
 010	261	Poochyena	Hoenn	Dark
 011	262	Mightyena	Hoenn	Dark
 012	263	Zigzagoon	Hoenn	Normal
-GAL	263	Zigzagoon	Galar	Dark	Normal
+GAL	263G	Zigzagoon	Galar	Dark	Normal
 013	264	Linoone	Hoenn	Normal
-GAL	264	Linoone	Galar	Dark	Normal
+GAL	264G	Linoone	Galar	Dark	Normal
 014	265	Wurmple	Hoenn	Bug
 015	266	Silcoon	Hoenn	Bug
 016	267	Beautifly	Hoenn	Bug	Flying
@@ -382,9 +382,6 @@ GAL	264	Linoone	Galar	Dark	Normal
 140	349	Feebas	Hoenn	Water
 141	350	Milotic	Hoenn	Water
 142	351	Castform	Hoenn	Normal
-142	351	Castform	Hoenn	Fire
-142	351	Castform	Hoenn	Water
-142	351	Castform	Hoenn	Ice
 145	352	Kecleon	Hoenn	Normal
 146	353	Shuppet	Hoenn	Ghost
 147	354	Banette	Hoenn	Ghost
@@ -420,9 +417,6 @@ GAL	264	Linoone	Galar	Dark	Normal
 200	384	Rayquaza	Hoenn	Dragon	Flying
 201	385	Jirachi	Hoenn	Steel	Psychic
 202	386	Deoxys	Hoenn	Psychic
-202	386	Deoxys	Hoenn	Psychic
-202	386	Deoxys	Hoenn	Psychic
-202	386	Deoxys	Hoenn	Psychic
 001	387	Turtwig	Sinnoh	Grass
 002	388	Grotle	Sinnoh	Grass
 003	389	Torterra	Sinnoh	Grass	Ground
@@ -449,10 +443,6 @@ GAL	264	Linoone	Galar	Dark	Normal
 038	410	Shieldon	Sinnoh	Rock	Steel
 039	411	Bastiodon	Sinnoh	Rock	Steel
 045	412	Burmy	Sinnoh	Bug
-045	412	Burmy	Sinnoh	Bug
-045	412	Burmy	Sinnoh	Bug
-046	413	Wormadam	Sinnoh	Bug	Grass
-046	413	Wormadam	Sinnoh	Bug	Ground
 046	413	Wormadam	Sinnoh	Bug	Steel
 047	414	Mothim	Sinnoh	Bug	Flying
 053	415	Combee	Sinnoh	Bug	Flying
@@ -463,8 +453,6 @@ GAL	264	Linoone	Galar	Dark	Normal
 058	420	Cherubi	Sinnoh	Grass
 059	421	Cherrim	Sinnoh	Grass
 060	422	Shellos	Sinnoh	Water
-060	422	Shellos	Sinnoh	Water
-061	423	Gastrodon	Sinnoh	Water	Ground
 061	423	Gastrodon	Sinnoh	Water	Ground
 064	424	Ambipom	Sinnoh	Normal
 065	425	Drifloon	Sinnoh	Ghost	Flying
@@ -521,11 +509,6 @@ GAL	264	Linoone	Galar	Dark	Normal
 156	476	Probopass	Sinnoh	Rock	Steel
 191	477	Dusknoir	Sinnoh	Ghost
 208	478	Froslass	Sinnoh	Ice	Ghost
-152	479	Rotom	Sinnoh	Electric	Ghost
-152	479	Rotom	Sinnoh	Electric	Fire
-152	479	Rotom	Sinnoh	Electric	Water
-152	479	Rotom	Sinnoh	Electric	Ice
-152	479	Rotom	Sinnoh	Electric	Flying
 152	479	Rotom	Sinnoh	Electric	Grass
 146	480	Uxie	Sinnoh	Psychic
 147	481	Mesprit	Sinnoh	Psychic
@@ -535,12 +518,10 @@ GAL	264	Linoone	Galar	Dark	Normal
 ---	485	Heatran	Sinnoh	Fire	Steel
 ---	486	Regigigas	Sinnoh	Normal
 210	487	Giratina	Sinnoh	Ghost	Dragon
-210	487	Giratina	Sinnoh	Ghost	Dragon
 ---	488	Cresselia	Sinnoh	Psychic
 ---	489	Phione	Sinnoh	Water
 151	490	Manaphy	Sinnoh	Water
 ---	491	Darkrai	Sinnoh	Dark
----	492	Shaymin	Sinnoh	Grass
 ---	492	Shaymin	Sinnoh	Grass	Flying
 ---	493	Arceus	Sinnoh	Normal
 000	494	Victini	Unova	Psychic	Fire
@@ -571,7 +552,6 @@ GAL	264	Linoone	Galar	Dark	Normal
 025	519	Pidove	Unova	Normal	Flying
 026	520	Tranquill	Unova	Normal	Flying
 027	521	Unfezant	Unova	Normal	Flying
-027	521	Unfezant	Unova	Normal	Flying
 028	522	Blitzle	Unova	Electric
 029	523	Zebstrika	Unova	Electric
 030	524	Roggenrola	Unova	Rock
@@ -601,16 +581,13 @@ GAL	264	Linoone	Galar	Dark	Normal
 054	548	Petilil	Unova	Grass
 055	549	Lilligant	Unova	Grass
 056	550	Basculin	Unova	Water
-056	550	Basculin	Unova	Water
 057	551	Sandile	Unova	Ground	Dark
 058	552	Krokorok	Unova	Ground	Dark
 059	553	Krookodile	Unova	Ground	Dark
 060	554	Darumaka	Unova	Fire
-GAL	554	Darumaka	Galar	Ice
-061	555	Darmanitan	Unova	Fire
+GAL	554G	Darumaka	Galar	Ice
 061	555	Darmanitan	Unova	Fire	Psychic
-GAL	555	Darmanitan	Galar	Ice
-GAL	555	Darmanitan	Galar	Ice	Fire
+GAL	555G	Darmanitan	Galar	Ice	Fire
 062	556	Maractus	Unova	Grass
 063	557	Dwebble	Unova	Bug	Rock
 064	558	Crustle	Unova	Bug	Rock
@@ -618,7 +595,7 @@ GAL	555	Darmanitan	Galar	Ice	Fire
 066	560	Scrafty	Unova	Dark	Fighting
 067	561	Sigilyph	Unova	Psychic	Flying
 068	562	Yamask	Unova	Ghost
-GAL	562	Yamask	Galar	Ground	Ghost
+GAL	562G	Yamask	Galar	Ground	Ghost
 069	563	Cofagrigus	Unova	Ghost
 070	564	Tirtouga	Unova	Water	Rock
 071	565	Carracosta	Unova	Water	Rock
@@ -649,8 +626,6 @@ GAL	562	Yamask	Galar	Ground	Ghost
 096	590	Foongus	Unova	Grass	Poison
 097	591	Amoonguss	Unova	Grass	Poison
 098	592	Frillish	Unova	Water	Ghost
-098	592	Frillish	Unova	Water	Ghost
-099	593	Jellicent	Unova	Water	Ghost
 099	593	Jellicent	Unova	Water	Ghost
 100	594	Alomomola	Unova	Water
 101	595	Joltik	Unova	Bug	Electric
@@ -676,8 +651,8 @@ GAL	562	Yamask	Galar	Ground	Ghost
 121	615	Cryogonal	Unova	Ice
 122	616	Shelmet	Unova	Bug
 123	617	Accelgor	Unova	Bug
-124	618	Stunfisk	Unova	Ground	Electric
-GAL	618	Stunfisk	Galar	Ground	Steel
+124	618	Stunfisk	Unova	Ground	Steel
+GAL	618G	Stunfisk	Galar	Ground	Steel
 125	619	Mienfoo	Unova	Fighting
 126	620	Mienshao	Unova	Fighting
 127	621	Druddigon	Unova	Dragon
@@ -707,7 +682,6 @@ GAL	618	Stunfisk	Galar	Ground	Steel
 151	645	Landorus	Unova	Ground	Flying
 152	646	Kyurem	Unova	Dragon	Ice
 153	647	Keldeo	Unova	Water	Fighting
-154	648	Meloetta	Unova	Normal	Psychic
 154	648	Meloetta	Unova	Normal	Fighting
 155	649	Genesect	Unova	Bug	Steel
 001	650	Chespin	Kalos	Grass
@@ -780,7 +754,6 @@ GAL	618	Stunfisk	Galar	Ground	Steel
 149	717	Yveltal	Kalos	Dark	Flying
 150	718	Zygarde	Kalos	Dragon	Ground
 151	719	Diancie	Kalos	Rock	Fairy
-152	720	Hoopa	Kalos	Psychic	Ghost
 152	720	Hoopa	Kalos	Psychic	Dark
 153	721	Volcanion	Kalos	Fire	Water
 001	722	Rowlet	Alola	Grass	Flying
@@ -802,10 +775,7 @@ GAL	618	Stunfisk	Galar	Ground	Steel
 029	738	Vikavolt	Alola	Bug	Electric
 059	739	Crabrawler	Alola	Fighting
 060	740	Crabominable	Alola	Fighting	Ice
-082	741	Oricorio	Alola	Fire	Flying
 082	741	Oricorio	Alola	Electric	Flying
-082	741	Oricorio	Alola	Psychic	Flying
-082	741	Oricorio	Alola	Ghost	Flying
 083	742	Cutiefly	Alola	Bug	Fairy
 084	743	Ribombee	Alola	Bug	Fairy
 103	744	Rockruff	Alola	Rock
@@ -952,19 +922,14 @@ GAL	618	Stunfisk	Galar	Ground	Steel
 395	885	Dreepy	Galar	Dragon	Ghost
 396	886	Drakloak	Galar	Dragon	Ghost
 397	887	Dragapult	Galar	Dragon	Ghost
-398	888	Zacian	Galar	Fairy
 398	888	Zacian	Galar	Fairy	Steel
-399	889	Zamazenta	Galar	Fighting
 399	889	Zamazenta	Galar	Fighting	Steel
 400	890	Eternatus	Galar	Poison	Dragon
 ---	891	Kubfu	Galar	Fighting
----	892	Urshifu	Galar	Fighting	Dark
 ---	892	Urshifu	Galar	Fighting	Water
 ---	893	Zarude	Galar	Dark	Grass
 ---	894	Regieleki	Galar	Electric
 ---	895	Regidrago	Galar	Dragon
 ---	896	Glastrier	Galar	Ice
 ---	897	Spectrier	Galar	Ghost
----	898	Calyrex	Galar	Psychic	Grass
----	898	Calyrex	Galar	Psychic	Ice
 ---	898	Calyrex	Galar	Psychic	Ghost
