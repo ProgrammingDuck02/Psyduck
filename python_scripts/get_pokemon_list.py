@@ -26,7 +26,7 @@ def get_pokemon_from_file(filename):
         pokemon_list.append(new_poke)
     return pokemon_list
 
-pokemon_file = "../Additional_files/pokemon_list_original.txt"
+pokemon_file = "../Additional_files/pokemon_list.txt"
 new_file = "../Additional_files/pokemon_list.txt"
 
 pokemon_list = get_pokemon_from_file(pokemon_file)
