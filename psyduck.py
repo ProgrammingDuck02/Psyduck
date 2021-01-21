@@ -128,7 +128,7 @@ async def on_message(message):
     global prefix
     if message.author == client.user:
         return
-    if not message.startswith(prefix):
+    if not message.content.startswith(prefix):
         return
     mes = message.content[len(prefix):]
     if mes.lower() == "party":
