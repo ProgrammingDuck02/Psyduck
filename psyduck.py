@@ -178,19 +178,19 @@ async def on_message(message):
                 emote[each[2]] = poke[0]
             else:
                 emote[each[2]] = poke[1]
-        text = "┌──────┐\n"
+        text = "┌─────────┐\n"
         for i in range(30):
             if i % 5 == 0:
-                text += "|"
+                text += "│"
             if has_key(emote, i):
                 text += emote[i]
             else:
                 text += "  "
             if (i + 1) % 5 == 0:
-                text += "|\n"
+                text += "│\n"
             else:
                 text += " "
-        text += "|___________|\n"
+        text += "└─────────┘"
         embed.add_field(name = selected_box, value = text)
         await message.channel.send(embed = embed)
         return
