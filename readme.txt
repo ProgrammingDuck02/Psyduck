@@ -1,0 +1,5 @@
+to do:
+-help:
+	?party - wyświetla party
+	?box - wyświetla aktualny box
+	?switch [poke1] [poke2] - zamienia miejscami dwa pokemony
