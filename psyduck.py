@@ -185,7 +185,7 @@ async def on_message(message):
             if has_key(emote, i):
                 text += emote[i]
             else:
-                text += "‏‏‎ ‎‏‏‎ ‏‏‎ ‎‎"
+                text += "‏‏‎ ‎‏‏‎ ‏‏‎ ‎‏‏‎ ‎‎"
             if (i + 1) % 5 == 0:
                 text += "│\n"
             else:
