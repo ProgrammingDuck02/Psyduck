@@ -10,6 +10,12 @@ cursor = None
 DB = None
 prefix = "?"
 
+def has_key(dict, key):
+    for k in dict.keys():
+        if k == key:
+            return True
+    return False
+
 def number_to_nat_number(number):
     string = str(number)
     while(len(string)<3):
@@ -159,6 +165,36 @@ async def on_message(message):
         embed.add_field(name = message.author.name + "'s party", value = party)
         await message.channel.send(embed = embed)
         return
+    if mes.lower() == "box":
+        embed = discord.Embed(color = discord.Color.gold())
+        selected_box = "BOX1"
+        temp_list = select("owned_pokemon", ("pokemon","shiny","position"), "trainer_id = \"" + str(message.author.id) + "\" AND location = \""+selected_box+"\"")
+        if not temp_list:
+            temp_list = []
+        emote = {}
+        for each in temp_list:
+            poke = select_one("pokemon", ("emote","shiny_emote"), "national_number = \""+each[0]+"\"")
+            if each[1] == 0:
+                emote[each[2]] = poke[0]
+            else:
+                emote[each[2]] = poke[1]
+        text = ".___________\n"
+        for i in range(30):
+            if i % 5 == 0:
+                text += "|"
+            if has_key(emote, i):
+                text += emote[i]
+            else:
+                text += "  "
+            if (i + 1) % 5 == 0:
+                text += "|\n"
+            else:
+                text += " "
+        text += "|___________|\n"
+        embed.add_field(name = selected_box, value = text)
+        await message.channel.send(embed = embed)
+        return
+
     if mes.lower() == "off":
         await message.channel.send("Logging out...")
         await client.logout()
