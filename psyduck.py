@@ -121,4 +121,7 @@ def get_pokemon_by_nat(nat_number):
 #sys.stderr = open("psyduck.error.log","a")
 
 temp = select_one("pokemon", ("type2",), "national_number = \"004\"")
-print(temp[0])
+if temp[0]==None:
+    print("Yes")
+else:
+    print("No")
