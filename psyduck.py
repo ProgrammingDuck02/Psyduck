@@ -186,7 +186,7 @@ async def on_message(message):
                 emote[each[3]-1] = poke[2]
             levels[each[3]-1] = str(each[4])
         text = ""
-        for i in range(30):
+        for i in range(10):
             text += str(i+1) + ". "
             if has_key(names, i):
                 text += emote[i] + names[i] + " lvl." + levels[i]
