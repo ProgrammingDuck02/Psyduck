@@ -134,7 +134,29 @@ async def on_message(message):
     if mes.lower() == "party":
         embed = discord.Embed(color = discord.Color.green())
         embed.set_author(name = message.author.name, icon_url = message.author.avatar_url)
-        embed.add_field(name = message.author.name + "'s party", value = "first_Pokemon_name first_Pokemon_emoji\nsecond_Pokemon_name second_Pokemon_emoji")
+        temp_list = select("owned_pokemon", ("name", "pokemon", "shiny", "position", "level"), "trainer_id = \"" + str(message.author.id) + "\" AND location = \"party\"")
+        if not temp_list:
+            await message.channel.send("Oops, looks like you don't have any pokemon on your team :cry:")
+            return
+        pokemon_names = {}
+        pokemon_levels = {}
+        pokemon_emotes = {}
+        for poke in temp_list:
+            spieces = select_one("pokemon", ("name", "emote", "shiny_emote"), "national_number = \"" + poke[1] + "\"")
+            if poke[0] == None:
+                pokemon_names[poke[3]-1] = spieces[0]
+            else:
+                pokemon_names[poke[3]-1] = poke[0]
+            pokemon_levels[poke[3]-1] = str(poke[4])
+            if poke[2] == 0:
+                pokemon_emotes[poke[3]-1] = spieces[1]
+            else:
+                pokemon_emotes[poke[3]-1] = spieces[2]
+        party_size = len(temp_list)
+        party = pokemon_names[0] + pokemon_emotes[0] + " lvl." + pokemon_levels[0]
+        for i in range(1, party_size):
+            party += "\n" + pokemon_names[i] + pokemon_emotes[i] + " lvl." + pokemon_levels[i]
+        embed.add_field(name = message.author.name + "'s party", value = party)
         await message.channel.send(embed = embed)
         return
     if mes.lower() == "off":
