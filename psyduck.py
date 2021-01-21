@@ -191,8 +191,9 @@ async def on_message(message):
             else:
                 text += " "
         text += "|___________|\n"
-        embed.add_field(name = selected_box, value = text)
-        await message.channel.send(embed = embed)
+        print(text)
+        #embed.add_field(name = selected_box, value = text)
+        #await message.channel.send(embed = embed)
         return
 
     if mes.lower() == "off":
