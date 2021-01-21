@@ -10,6 +10,14 @@ cursor = None
 DB = None
 prefix = "?"
 
+def is_number(string):
+    for letter in string:
+        if ord(letter) < ord("0"):
+            return False
+        if ord(letter) > ord("9"):
+            return False
+    return True
+
 def has_key(dict, key):
     for k in dict.keys():
         if k == key:
@@ -165,6 +173,7 @@ async def on_message(message):
         embed.add_field(name = message.author.name + "'s party", value = party)
         await message.channel.send(embed = embed)
         return
+
     if mes.lower() == "box":
         embed = discord.Embed(color = discord.Color.gold())
         selected_box = "BOX1"
@@ -196,6 +205,92 @@ async def on_message(message):
         embed.add_field(name = selected_box, value = text)
         await message.channel.send(embed = embed)
         return
+
+    if mes.lower().startswith("switch "):
+        params = mes.split(" ")
+        params.remove(params[0])
+        if len(params) < 2:
+            await message.channel.send("Wrong number of parameters!\nCorrect use "+prefix+"switch [pokemon1] [pokemon2]\nCheck "+prefix+"help for more infor")
+            return
+        location1 = ""
+        pokemon1 = 0
+        location2 = ""
+        pokemon2 = 0
+        if params[0].lower().startswith("box"):
+            tmp = params[0].split(":")
+            if len(tmp) < 2:
+                await message.channel.send("Wrong use of BOX option in the first parameter\nCorrect use BOX[box number]:[pokemon number in box]")
+                return
+            box_number_str = tmp[0][3:]
+            if not is_number(box_number_str):
+                await message.channel.send(tmp[0]+" is not a valid box name")
+                return
+            box_number = int(box_number_str)
+            if box_number < 1 or box_number > 50:
+                await message.channel.send(tmp[0]+" is not a valid box name")
+                return
+            location1 = tmp[0].upper()
+            if not is_number(tmp[1]):
+                await message.channel.send(tmp[1]+" is not a valid party number")
+                return
+            pokemon1 = int(tmp[1])
+            if pokemon1 < 1 or pokemon1 > 10:
+                await message.channel.send(tmp[1]+" is not a valid party number")
+                return
+        else:
+            location1 = "party"
+            if not is_number(params[0]):
+                await message.channel.send(params[0]+" is not a valid party number")
+                return
+            pokemon1 = int(params[0])
+            if pokemon1 < 1 or pokemon1 > 10:
+                await message.channel.send(params[0]+" is not a valid party number")
+                return
+        if params[1].lower().startswith("box"):
+            tmp = params[1].split(":")
+            if len(tmp) < 2:
+                await message.channel.send("Wrong use of BOX option in the first parameter\nCorrect use BOX[box number]:[pokemon number in box]")
+                return
+            box_number_str = tmp[0][3:]
+            if not is_number(box_number_str):
+                await message.channel.send(tmp[0]+" is not a valid box name")
+                return
+            box_number = int(box_number_str)
+            if box_number < 1 or box_number > 50:
+                await message.channel.send(tmp[0]+" is not a valid box name")
+                return
+            location2 = tmp[0].upper()
+            if not is_number(tmp[1]):
+                await message.channel.send(tmp[1]+" is not a valid party number")
+                return
+            pokemon2 = int(tmp[1])
+            if pokemon2 < 1 or pokemon2 > 10:
+                await message.channel.send(tmp[1]+" is not a valid party number")
+                return
+        else:
+            location2 = "party"
+            if not is_number(params[1]):
+                await message.channel.send(params[1]+" is not a valid party number")
+                return
+            pokemon2 = int(params[1])
+            if pokemon2 < 1 or pokemon2 > 10:
+                await message.channel.send(params[1]+" is not a valid party number")
+                return
+        id1 = select_one("owned_pokemon", ("id",), "trainer_id = \""+str(message.author.id)+"\" AND location = \""+location1+"\" AND position = \""+str(pokemon1)+"\"")
+        id2 = select_one("owned_pokemon", ("id",), "trainer_id = \""+str(message.author.id)+"\" AND location = \""+location2+"\" AND position = \""+str(pokemon2)+"\"")
+        if not id1:
+            await message.channel.send("Oops, looks like you don't have any pokemon on position "+str(pokemon1)+" in your "+location1+"\nTry using "+prefix+"deposit or "+prefix+"withdraw")
+            return
+        if not id2:
+            await message.channel.send("Oops, looks like you don't have any pokemon on position "+str(pokemon2)+" in your "+location2+"\nTry using "+prefix+"deposit or "+prefix+"withdraw")
+            return
+        id1 = str(id1[0])
+        id2 = str(id2[0])
+        update("owned_pokemon", ("location", "position"), (location2, str(pokemon2)), "id = "+id1)
+        update("owned_pokemon", ("location", "position"), (location1, str(pokemon1)), "id = "+id2)
+        await message.channel.send("Pokemon switched places!")
+        return
+
 
     if mes.lower() == "off":
         await message.channel.send("Logging out...")
