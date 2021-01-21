@@ -173,15 +173,4 @@ async def on_ready():
 secretfile = open("TOKEN","r")
 TOKEN = secretfile.read()
 secretfile.close()
-#client.run(TOKEN)
-
-emote_file = "Additional_files/emotes.txt"
-file = open(emote_file)
-text = file.read()
-file.close()
-emotes = text.split("\n")
-for emote in emotes:
-    temp_arr = emote.split(" ")
-    id = temp_arr[0]
-    emo = temp_arr[1]
-    update("pokemon", ("emote",), (emo,), "national_number = \""+id+"\"")
+client.run(TOKEN)
