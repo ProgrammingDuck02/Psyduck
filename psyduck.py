@@ -168,29 +168,31 @@ async def on_message(message):
     if mes.lower() == "box":
         embed = discord.Embed(color = discord.Color.gold())
         selected_box = "BOX1"
-        temp_list = select("owned_pokemon", ("pokemon","shiny","position"), "trainer_id = \"" + str(message.author.id) + "\" AND location = \""+selected_box+"\"")
+        temp_list = select("owned_pokemon", ("name", "pokemon", "shiny", "position", "level"), "trainer_id = \"" + str(message.author.id) + "\" AND location = \""+selected_box+"\"")
         if not temp_list:
             temp_list = []
         emote = {}
+        names = {}
+        levels = {}
         for each in temp_list:
-            poke = select_one("pokemon", ("emote","shiny_emote"), "national_number = \""+each[0]+"\"")
-            if each[1] == 0:
-                emote[each[2]-1] = poke[0]
+            poke = select_one("pokemon", ("name", "emote","shiny_emote"), "national_number = \""+each[1]+"\"")
+            if each[0] == None:
+                names[each[3]-1] = poke[0]
             else:
-                emote[each[2]-1] = poke[1]
-        text = "┌────────────┐\n"
+                names[each[3]-1] = each[0]
+            if each[2] == 0:
+                emote[each[3]-1] = poke[1]
+            else:
+                emote[each[3]-1] = poke[2]
+            levels[each[3]-1] = str(each[4])
+        text = ""
         for i in range(30):
-            if i % 6 == 0:
-                text += "│"
-            if has_key(emote, i):
-                text += emote[i]
+            text += str(i+1) + ". "
+            if has_key(names, i):
+                text += emote[i] + names[i] + " lvl." + levels[i]
             else:
-                text += "‏‏‎　  "
-            if (i + 1) % 6 == 0:
-                text += "│\n"
-            else:
-                text += "‏‏‎ "
-        text += "└────────────┘"
+                text += "-------"
+            text += "\n" 
         embed.add_field(name = selected_box, value = text)
         await message.channel.send(embed = embed)
         return
