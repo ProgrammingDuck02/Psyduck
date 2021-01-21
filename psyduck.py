@@ -206,11 +206,11 @@ async def on_message(message):
         await message.channel.send(embed = embed)
         return
 
-    if mes.lower().startswith("switch "):
+    if mes.lower().startswith("switch"):
         params = mes.split(" ")
         params.remove(params[0])
         if len(params) < 2:
-            await message.channel.send("Wrong number of parameters!\nCorrect use "+prefix+"switch [pokemon1] [pokemon2]\nCheck "+prefix+"help for more infor")
+            await message.channel.send("Wrong number of parameters!\nCorrect use: "+prefix+"switch [pokemon1] [pokemon2]\nCheck "+prefix+"help for more informations")
             return
         location1 = ""
         pokemon1 = 0
@@ -231,11 +231,11 @@ async def on_message(message):
                 return
             location1 = tmp[0].upper()
             if not is_number(tmp[1]):
-                await message.channel.send(tmp[1]+" is not a valid party number")
+                await message.channel.send(tmp[1]+" is not a valid box number")
                 return
             pokemon1 = int(tmp[1])
             if pokemon1 < 1 or pokemon1 > 10:
-                await message.channel.send(tmp[1]+" is not a valid party number")
+                await message.channel.send(tmp[1]+" is not a valid box number")
                 return
         else:
             location1 = "party"
@@ -261,11 +261,11 @@ async def on_message(message):
                 return
             location2 = tmp[0].upper()
             if not is_number(tmp[1]):
-                await message.channel.send(tmp[1]+" is not a valid party number")
+                await message.channel.send(tmp[1]+" is not a valid box number")
                 return
             pokemon2 = int(tmp[1])
             if pokemon2 < 1 or pokemon2 > 10:
-                await message.channel.send(tmp[1]+" is not a valid party number")
+                await message.channel.send(tmp[1]+" is not a valid box number")
                 return
         else:
             location2 = "party"
