@@ -5,8 +5,10 @@ from datetime import datetime
 sys.path.append("python_scripts")
 from pokemon import pokemon
 
+client = discord.Client()
 cursor = None
 DB = None
+prefix = "?"
 
 def number_to_nat_number(number):
     string = str(number)
@@ -121,26 +123,33 @@ def get_pokemon_by_nat(nat_number):
     poke = pokemon(poke_data[1], poke_data[0], poke_data[2], poke_data[3], poke_data[4], poke_data[5], poke_data[6], poke_data[7])
     return poke
 
-#sys.stdout = open("psyduck.log","a")
-#sys.stderr = open("psyduck.error.log","a")
+@client.event
+async def on_message(message):
+    global prefix
+    if message.author == client.user:
+        return
+    if not message.startswith(prefix):
+        return
+    mes = message.content[len(prefix):]
+    if mes.lower() == "party":
+        embed = discord.Embed(title = message.author.name + "'s party", color = discord.Color.green())
+        embed.set_author = message.author
+        embed.set_thumbnail(url = message.author.avatar_url)
+        embed.add_field("First_pokemon_name", "Pokemon_emoji")
+        await message.channel.send(embed = embed)
+        return
+    if mes.lower() == "off":
+        await message.channel.send("Logging out...")
+        await client.logout()
+        return
 
-start = 1
-end = 898
 
-out_file = "Additional_files/pokemon_list.txt"
-file = open(out_file, "w")
-for i in range(start, end+1):
-    number = number_to_nat_number(i)
-    poke = get_pokemon_by_nat(number)
-    if poke:
-        file.write(poke.to_string()+"\n")
-    number = number + "A"
-    poke = get_pokemon_by_nat(number)
-    if poke:
-        file.write(poke.to_string()+"\n")
-    number = number[:3]
-    number = number + "G"
-    poke = get_pokemon_by_nat(number)
-    if poke:
-        file.write(poke.to_string()+"\n")
-file.close()
+@client.event
+async def on_ready():
+    print("Logged in as "+client.user.name)
+    print("id: "+str(client.user.id))
+
+secretfile = open("TOKEN","r")
+TOKEN = secretfile.read()
+secretfile.close()
+client.run(TOKEN)
