@@ -175,18 +175,18 @@ async def on_message(message):
         for each in temp_list:
             poke = select_one("pokemon", ("emote","shiny_emote"), "national_number = \""+each[0]+"\"")
             if each[1] == 0:
-                emote[each[2]] = poke[0]
+                emote[each[2]-1] = poke[0]
             else:
-                emote[each[2]] = poke[1]
+                emote[each[2]-1] = poke[1]
         text = "┌─────────┐\n"
         for i in range(30):
-            if i % 5 == 0:
+            if i % 6 == 0:
                 text += "│"
             if has_key(emote, i):
                 text += emote[i]
             else:
                 text += "‏‏‎ ‎‏‏‎ ‏‏‎ ‎‏‏‎ ‎‎"
-            if (i + 1) % 5 == 0:
+            if (i + 1) % 6 == 0:
                 text += "│\n"
             else:
                 text += "‏‏‎ ‎‏‏‎ ‎"
