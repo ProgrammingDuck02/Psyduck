@@ -26,6 +26,10 @@ class pokemon:
             self.type2 = None
             self.emote = temp_array[5]
             self.shiny_emote = temp_array[6]
+        if self.emote == "<None>":
+            self.emote = None
+        if self.shiny_emote == "<None>":
+            self.shiny_emote = None
         return True
 
     def set_region(self):
@@ -71,6 +75,12 @@ class pokemon:
         string = string + "\t" + self.type1
         if self.dual_type():
             string = string + "\t" + self.type2
-        string = string + "\t" + self.emote
-        string = string + "\t" + self.shiny_emote
+        if self.emote == None:
+            string = string + "\t<None>"
+        else:
+            string = string + "\t" + self.emote
+        if self.shiny_emote == None:
+            string = string + "\t<None>"
+        else:
+            string = string + "\t" + self.shiny_emote
         return string

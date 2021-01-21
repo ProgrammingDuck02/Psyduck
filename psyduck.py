@@ -8,6 +8,12 @@ from pokemon import pokemon
 cursor = None
 DB = None
 
+def number_to_nat_number(number):
+    string = str(number)
+    while(len(string)<3):
+        string = "0"+string
+    return string
+
 def get_pokemon_from_file(filename):
     pokemon_list = []
     file = open(filename,"r")
@@ -118,8 +124,21 @@ def get_pokemon_by_nat(nat_number):
 #sys.stdout = open("psyduck.log","a")
 #sys.stderr = open("psyduck.error.log","a")
 
-poke = pokemon()
-if poke:
-    print("Yes")
-else:
-    print("No")
+start = 1
+end = 898
+
+out_file = "Additional_files/pokemon_list.txt"
+file = open(out_file, "w")
+for i in range(start, end+1):
+    number = number_to_nat_number(i)
+    poke = get_pokemon_by_nat(number)
+    if poke:
+        file.write(poke.to_string()+"\n")
+    number = number + "A"
+    poke = get_pokemon_by_nat(number)
+    if poke:
+        file.write(poke.to_string()+"\n")
+    number[4] = "G"
+    poke = get_pokemon_by_nat(number)
+    if poke:
+        file.write(poke.to_string()+"\n")
