@@ -1,935 +1,935 @@
-001	001	Bulbasaur	Kanto	Grass	Poison
-002	002	Ivysaur	Kanto	Grass	Poison
-003	003	Venusaur	Kanto	Grass	Poison
-004	004	Charmander	Kanto	Fire
-005	005	Charmeleon	Kanto	Fire
-006	006	Charizard	Kanto	Fire	Flying
-007	007	Squirtle	Kanto	Water
-008	008	Wartortle	Kanto	Water
-009	009	Blastoise	Kanto	Water
-010	010	Caterpie	Kanto	Bug
-011	011	Metapod	Kanto	Bug
-012	012	Butterfree	Kanto	Bug	Flying
-013	013	Weedle	Kanto	Bug	Poison
-014	014	Kakuna	Kanto	Bug	Poison
-015	015	Beedrill	Kanto	Bug	Poison
-016	016	Pidgey	Kanto	Normal	Flying
-017	017	Pidgeotto	Kanto	Normal	Flying
-018	018	Pidgeot	Kanto	Normal	Flying
-019	019	Rattata	Kanto	Normal
-ALO	019A	Rattata	Alola	Dark	Normal
-020	020	Raticate	Kanto	Normal
-ALO	020A	Raticate	Alola	Dark	Normal
-021	021	Spearow	Kanto	Normal	Flying
-022	022	Fearow	Kanto	Normal	Flying
-023	023	Ekans	Kanto	Poison
-024	024	Arbok	Kanto	Poison
-025	025	Pikachu	Kanto	Electric
-026	026	Raichu	Kanto	Electric	Psychic
-ALO	026A	Raichu	Alola	Electric	Psychic
-027	027	Sandshrew	Kanto	Ground
-ALO	027A	Sandshrew	Alola	Ice	Steel
-028	028	Sandslash	Kanto	Ground
-ALO	028A	Sandslash	Alola	Ice	Steel
-029	029	Nidoran♀	Kanto	Poison
-030	030	Nidorina	Kanto	Poison
-031	031	Nidoqueen	Kanto	Poison	Ground
-032	032	Nidoran♂	Kanto	Poison
-033	033	Nidorino	Kanto	Poison
-034	034	Nidoking	Kanto	Poison	Ground
-035	035	Clefairy	Kanto	Fairy
-036	036	Clefable	Kanto	Fairy
-037	037	Vulpix	Kanto	Fire
-ALO	037A	Vulpix	Alola	Ice
-038	038	Ninetales	Kanto	Fire
-ALO	038A	Ninetales	Alola	Ice	Fairy
-039	039	Jigglypuff	Kanto	Normal	Fairy
-040	040	Wigglytuff	Kanto	Normal	Fairy
-041	041	Zubat	Kanto	Poison	Flying
-042	042	Golbat	Kanto	Poison	Flying
-043	043	Oddish	Kanto	Grass	Poison
-044	044	Gloom	Kanto	Grass	Poison
-045	045	Vileplume	Kanto	Grass	Poison
-046	046	Paras	Kanto	Bug	Grass
-047	047	Parasect	Kanto	Bug	Grass
-048	048	Venonat	Kanto	Bug	Poison
-049	049	Venomoth	Kanto	Bug	Poison
-050	050	Diglett	Kanto	Ground	Steel
-ALO	050A	Diglett	Alola	Ground	Steel
-051	051	Dugtrio	Kanto	Ground	Steel
-ALO	051A	Dugtrio	Alola	Ground	Steel
-052	052	Meowth	Kanto	Normal
-ALO	052A	Meowth	Alola	Dark
-GAL	052G	Meowth	Galar	Steel
-053	053	Persian	Kanto	Normal
-ALO	053A	Persian	Alola	Dark
-054	054	Psyduck	Kanto	Water
-055	055	Golduck	Kanto	Water
-056	056	Mankey	Kanto	Fighting
-057	057	Primeape	Kanto	Fighting
-058	058	Growlithe	Kanto	Fire
-059	059	Arcanine	Kanto	Fire
-060	060	Poliwag	Kanto	Water
-061	061	Poliwhirl	Kanto	Water
-062	062	Poliwrath	Kanto	Water	Fighting
-063	063	Abra	Kanto	Psychic
-064	064	Kadabra	Kanto	Psychic
-065	065	Alakazam	Kanto	Psychic
-066	066	Machop	Kanto	Fighting
-067	067	Machoke	Kanto	Fighting
-068	068	Machamp	Kanto	Fighting
-069	069	Bellsprout	Kanto	Grass	Poison
-070	070	Weepinbell	Kanto	Grass	Poison
-071	071	Victreebel	Kanto	Grass	Poison
-072	072	Tentacool	Kanto	Water	Poison
-073	073	Tentacruel	Kanto	Water	Poison
-074	074	Geodude	Kanto	Rock	Electric
-ALO	074A	Geodude	Alola	Rock	Electric
-075	075	Graveler	Kanto	Rock	Electric
-ALO	075A	Graveler	Alola	Rock	Electric
-076	076	Golem	Kanto	Rock	Electric
-ALO	076A	Golem	Alola	Rock	Electric
-077	077	Ponyta	Kanto	Fire
-GAL	077G	Ponyta	Galar	Psychic
-078	078	Rapidash	Kanto	Fire
-GAL	078G	Rapidash	Galar	Psychic	Fairy
-079	079	Slowpoke	Kanto	Water	Psychic
-GAL	079G	Slowpoke	Galar	Psychic
-080	080	Slowbro	Kanto	Water	Psychic
-GAL	080G	Slowbro	Galar	Poison	Psychic
-081	081	Magnemite	Kanto	Electric	Steel
-082	082	Magneton	Kanto	Electric	Steel
-083	083	Farfetch'd	Kanto	Normal	Flying
-GAL	083G	Farfetch'd	Galar	Fighting
-084	084	Doduo	Kanto	Normal	Flying
-085	085	Dodrio	Kanto	Normal	Flying
-086	086	Seel	Kanto	Water
-087	087	Dewgong	Kanto	Water	Ice
-088	088	Grimer	Kanto	Poison	Dark
-ALO	088A	Grimer	Alola	Poison	Dark
-089	089	Muk	Kanto	Poison	Dark
-ALO	089A	Muk	Alola	Poison	Dark
-090	090	Shellder	Kanto	Water
-091	091	Cloyster	Kanto	Water	Ice
-092	092	Gastly	Kanto	Ghost	Poison
-093	093	Haunter	Kanto	Ghost	Poison
-094	094	Gengar	Kanto	Ghost	Poison
-095	095	Onix	Kanto	Rock	Ground
-096	096	Drowzee	Kanto	Psychic
-097	097	Hypno	Kanto	Psychic
-098	098	Krabby	Kanto	Water
-099	099	Kingler	Kanto	Water
-100	100	Voltorb	Kanto	Electric
-101	101	Electrode	Kanto	Electric
-102	102	Exeggcute	Kanto	Grass	Psychic
-103	103	Exeggutor	Kanto	Grass	Dragon
-ALO	103A	Exeggutor	Alola	Grass	Dragon
-104	104	Cubone	Kanto	Ground
-105	105	Marowak	Kanto	Ground
-ALO	105A	Marowak	Alola	Fire	Ghost
-106	106	Hitmonlee	Kanto	Fighting
-107	107	Hitmonchan	Kanto	Fighting
-108	108	Lickitung	Kanto	Normal
-109	109	Koffing	Kanto	Poison
-110	110	Weezing	Kanto	Poison	Fairy
-GAL	110G	Weezing	Galar	Poison	Fairy
-111	111	Rhyhorn	Kanto	Ground	Rock
-112	112	Rhydon	Kanto	Ground	Rock
-113	113	Chansey	Kanto	Normal
-114	114	Tangela	Kanto	Grass
-115	115	Kangaskhan	Kanto	Normal
-116	116	Horsea	Kanto	Water
-117	117	Seadra	Kanto	Water
-118	118	Goldeen	Kanto	Water
-119	119	Seaking	Kanto	Water
-120	120	Staryu	Kanto	Water
-121	121	Starmie	Kanto	Water	Psychic
-122	122	Mr. Mime	Kanto	Psychic	Fairy
-GAL	122G	Mr. Mime	Galar	Ice	Psychic
-123	123	Scyther	Kanto	Bug	Flying
-124	124	Jynx	Kanto	Ice	Psychic
-125	125	Electabuzz	Kanto	Electric
-126	126	Magmar	Kanto	Fire
-127	127	Pinsir	Kanto	Bug
-128	128	Tauros	Kanto	Normal
-129	129	Magikarp	Kanto	Water
-130	130	Gyarados	Kanto	Water	Flying
-131	131	Lapras	Kanto	Water	Ice
-132	132	Ditto	Kanto	Normal
-133	133	Eevee	Kanto	Normal
-134	134	Vaporeon	Kanto	Water
-135	135	Jolteon	Kanto	Electric
-136	136	Flareon	Kanto	Fire
-137	137	Porygon	Kanto	Normal
-138	138	Omanyte	Kanto	Rock	Water
-139	139	Omastar	Kanto	Rock	Water
-140	140	Kabuto	Kanto	Rock	Water
-141	141	Kabutops	Kanto	Rock	Water
-142	142	Aerodactyl	Kanto	Rock	Flying
-143	143	Snorlax	Kanto	Normal
-144	144	Articuno	Kanto	Ice	Flying
-GAL	144G	Articuno	Galar	Psychic	Flying
-145	145	Zapdos	Kanto	Electric	Flying
-GAL	145G	Zapdos	Galar	Fighting	Flying
-146	146	Moltres	Kanto	Fire	Flying
-GAL	146G	Moltres	Galar	Dark	Flying
-147	147	Dratini	Kanto	Dragon
-148	148	Dragonair	Kanto	Dragon
-149	149	Dragonite	Kanto	Dragon	Flying
-150	150	Mewtwo	Kanto	Psychic
-151	151	Mew	Kanto	Psychic
-001	152	Chikorita	Johto	Grass
-002	153	Bayleef	Johto	Grass
-003	154	Meganium	Johto	Grass
-004	155	Cyndaquil	Johto	Fire
-005	156	Quilava	Johto	Fire
-006	157	Typhlosion	Johto	Fire
-007	158	Totodile	Johto	Water
-008	159	Croconaw	Johto	Water
-009	160	Feraligatr	Johto	Water
-019	161	Sentret	Johto	Normal
-020	162	Furret	Johto	Normal
-015	163	Hoothoot	Johto	Normal	Flying
-016	164	Noctowl	Johto	Normal	Flying
-030	165	Ledyba	Johto	Bug	Flying
-031	166	Ledian	Johto	Bug	Flying
-032	167	Spinarak	Johto	Bug	Poison
-033	168	Ariados	Johto	Bug	Poison
-039	169	Crobat	Johto	Poison	Flying
-176	170	Chinchou	Johto	Water	Electric
-177	171	Lanturn	Johto	Water	Electric
-021	172	Pichu	Johto	Electric
-040	173	Cleffa	Johto	Fairy
-044	174	Igglybuff	Johto	Normal	Fairy
-046	175	Togepi	Johto	Fairy
-047	176	Togetic	Johto	Fairy	Flying
-161	177	Natu	Johto	Psychic	Flying
-162	178	Xatu	Johto	Psychic	Flying
-053	179	Mareep	Johto	Electric
-054	180	Flaaffy	Johto	Electric
-055	181	Ampharos	Johto	Electric
-086	182	Bellossom	Johto	Grass
-132	183	Marill	Johto	Water	Fairy
-133	184	Azumarill	Johto	Water	Fairy
-107	185	Sudowoodo	Johto	Rock
-075	186	Politoed	Johto	Water
-067	187	Hoppip	Johto	Grass	Flying
-068	188	Skiploom	Johto	Grass	Flying
-069	189	Jumpluff	Johto	Grass	Flying
-123	190	Aipom	Johto	Normal
-103	191	Sunkern	Johto	Grass
-104	192	Sunflora	Johto	Grass
-101	193	Yanma	Johto	Bug	Flying
-056	194	Wooper	Johto	Water	Ground
-057	195	Quagsire	Johto	Water	Ground
-188	196	Espeon	Johto	Psychic
-189	197	Umbreon	Johto	Dark
-213	198	Murkrow	Johto	Dark	Flying
-082	199	Slowking	Johto	Water	Psychic
-GAL	199G	Slowking	Galar	Poison	Psychic
-219	200	Misdreavus	Johto	Ghost
-061	201	Unown	Johto	Psychic
-108	202	Wobbuffet	Johto	Psychic
-149	203	Girafarig	Johto	Normal	Psychic
-093	204	Pineco	Johto	Bug
-094	205	Forretress	Johto	Bug	Steel
-052	206	Dunsparce	Johto	Normal
-193	207	Gligar	Johto	Ground	Flying
-063	208	Steelix	Johto	Steel	Ground
-125	209	Snubbull	Johto	Fairy
-126	210	Granbull	Johto	Fairy
-163	211	Qwilfish	Johto	Water	Poison
-112	212	Scizor	Johto	Bug	Steel
-168	213	Shuckle	Johto	Bug	Rock
-114	214	Heracross	Johto	Bug	Fighting
-218	215	Sneasel	Johto	Dark	Ice
-198	216	Teddiursa	Johto	Normal
-199	217	Ursaring	Johto	Normal
-216	218	Slugma	Johto	Fire
-217	219	Magcargo	Johto	Fire	Rock
-195	220	Swinub	Johto	Ice	Ground
-196	221	Piloswine	Johto	Ice	Ground
-173	222	Corsola	Johto	Water	Rock
-GAL	222G	Corsola	Galar	Ghost
-174	223	Remoraid	Johto	Water
-175	224	Octillery	Johto	Water
-194	225	Delibird	Johto	Ice	Flying
-202	226	Mantine	Johto	Water	Flying
-203	227	Skarmory	Johto	Steel	Flying
-214	228	Houndour	Johto	Dark	Fire
-215	229	Houndoom	Johto	Dark	Fire
-192	230	Kingdra	Johto	Water	Dragon
-200	231	Phanpy	Johto	Ground
-201	232	Donphan	Johto	Ground
-221	233	Porygon2	Johto	Normal
-131	234	Stantler	Johto	Normal
-159	235	Smeargle	Johto	Normal
-145	236	Tyrogue	Johto	Fighting
-148	237	Hitmontop	Johto	Fighting
-154	238	Smoochum	Johto	Ice	Psychic
-156	239	Elekid	Johto	Electric
-152	240	Magby	Johto	Fire
-151	241	Miltank	Johto	Normal
-223	242	Blissey	Johto	Normal
-243	243	Raikou	Johto	Electric
-244	244	Entei	Johto	Fire
-245	245	Suicune	Johto	Water
-249	246	Larvitar	Johto	Rock	Ground
-250	247	Pupitar	Johto	Rock	Ground
-251	248	Tyranitar	Johto	Rock	Dark
-252	249	Lugia	Johto	Psychic	Flying
-253	250	Ho-Oh	Johto	Fire	Flying
-256	251	Celebi	Johto	Psychic	Grass
-001	252	Treecko	Hoenn	Grass
-002	253	Grovyle	Hoenn	Grass
-003	254	Sceptile	Hoenn	Grass
-004	255	Torchic	Hoenn	Fire
-005	256	Combusken	Hoenn	Fire	Fighting
-006	257	Blaziken	Hoenn	Fire	Fighting
-007	258	Mudkip	Hoenn	Water
-008	259	Marshtomp	Hoenn	Water	Ground
-009	260	Swampert	Hoenn	Water	Ground
-010	261	Poochyena	Hoenn	Dark
-011	262	Mightyena	Hoenn	Dark
-012	263	Zigzagoon	Hoenn	Normal
-GAL	263G	Zigzagoon	Galar	Dark	Normal
-013	264	Linoone	Hoenn	Normal
-GAL	264G	Linoone	Galar	Dark	Normal
-014	265	Wurmple	Hoenn	Bug
-015	266	Silcoon	Hoenn	Bug
-016	267	Beautifly	Hoenn	Bug	Flying
-017	268	Cascoon	Hoenn	Bug
-018	269	Dustox	Hoenn	Bug	Poison
-019	270	Lotad	Hoenn	Water	Grass
-020	271	Lombre	Hoenn	Water	Grass
-021	272	Ludicolo	Hoenn	Water	Grass
-022	273	Seedot	Hoenn	Grass
-023	274	Nuzleaf	Hoenn	Grass	Dark
-024	275	Shiftry	Hoenn	Grass	Dark
-025	276	Taillow	Hoenn	Normal	Flying
-026	277	Swellow	Hoenn	Normal	Flying
-027	278	Wingull	Hoenn	Water	Flying
-028	279	Pelipper	Hoenn	Water	Flying
-029	280	Ralts	Hoenn	Psychic	Fairy
-030	281	Kirlia	Hoenn	Psychic	Fairy
-031	282	Gardevoir	Hoenn	Psychic	Fairy
-032	283	Surskit	Hoenn	Bug	Water
-033	284	Masquerain	Hoenn	Bug	Flying
-034	285	Shroomish	Hoenn	Grass
-035	286	Breloom	Hoenn	Grass	Fighting
-036	287	Slakoth	Hoenn	Normal
-037	288	Vigoroth	Hoenn	Normal
-038	289	Slaking	Hoenn	Normal
-042	290	Nincada	Hoenn	Bug	Ground
-043	291	Ninjask	Hoenn	Bug	Flying
-044	292	Shedinja	Hoenn	Bug	Ghost
-045	293	Whismur	Hoenn	Normal
-046	294	Loudred	Hoenn	Normal
-047	295	Exploud	Hoenn	Normal
-048	296	Makuhita	Hoenn	Fighting
-049	297	Hariyama	Hoenn	Fighting
-054	298	Azurill	Hoenn	Normal	Fairy
-060	299	Nosepass	Hoenn	Rock
-061	300	Skitty	Hoenn	Normal
-062	301	Delcatty	Hoenn	Normal
-068	302	Sableye	Hoenn	Dark	Ghost
-069	303	Mawile	Hoenn	Steel	Fairy
-070	304	Aron	Hoenn	Steel	Rock
-071	305	Lairon	Hoenn	Steel	Rock
-072	306	Aggron	Hoenn	Steel	Rock
-076	307	Meditite	Hoenn	Fighting	Psychic
-077	308	Medicham	Hoenn	Fighting	Psychic
-078	309	Electrike	Hoenn	Electric
-079	310	Manectric	Hoenn	Electric
-080	311	Plusle	Hoenn	Electric
-081	312	Minun	Hoenn	Electric
-086	313	Volbeat	Hoenn	Bug
-087	314	Illumise	Hoenn	Bug
-094	315	Roselia	Hoenn	Grass	Poison
-095	316	Gulpin	Hoenn	Poison
-096	317	Swalot	Hoenn	Poison
-097	318	Carvanha	Hoenn	Water	Dark
-098	319	Sharpedo	Hoenn	Water	Dark
-099	320	Wailmer	Hoenn	Water
-100	321	Wailord	Hoenn	Water
-101	322	Numel	Hoenn	Fire	Ground
-102	323	Camerupt	Hoenn	Fire	Ground
-105	324	Torkoal	Hoenn	Fire
-110	325	Spoink	Hoenn	Psychic
-111	326	Grumpig	Hoenn	Psychic
-114	327	Spinda	Hoenn	Normal
-116	328	Trapinch	Hoenn	Ground
-117	329	Vibrava	Hoenn	Ground	Dragon
-118	330	Flygon	Hoenn	Ground	Dragon
-119	331	Cacnea	Hoenn	Grass
-120	332	Cacturne	Hoenn	Grass	Dark
-121	333	Swablu	Hoenn	Normal	Flying
-122	334	Altaria	Hoenn	Dragon	Flying
-123	335	Zangoose	Hoenn	Normal
-124	336	Seviper	Hoenn	Poison
-125	337	Lunatone	Hoenn	Rock	Psychic
-126	338	Solrock	Hoenn	Rock	Psychic
-127	339	Barboach	Hoenn	Water	Ground
-128	340	Whiscash	Hoenn	Water	Ground
-129	341	Corphish	Hoenn	Water
-130	342	Crawdaunt	Hoenn	Water	Dark
-131	343	Baltoy	Hoenn	Ground	Psychic
-132	344	Claydol	Hoenn	Ground	Psychic
-133	345	Lileep	Hoenn	Rock	Grass
-134	346	Cradily	Hoenn	Rock	Grass
-135	347	Anorith	Hoenn	Rock	Bug
-136	348	Armaldo	Hoenn	Rock	Bug
-140	349	Feebas	Hoenn	Water
-141	350	Milotic	Hoenn	Water
-142	351	Castform	Hoenn	Normal
-145	352	Kecleon	Hoenn	Normal
-146	353	Shuppet	Hoenn	Ghost
-147	354	Banette	Hoenn	Ghost
-148	355	Duskull	Hoenn	Ghost
-149	356	Dusclops	Hoenn	Ghost
-150	357	Tropius	Hoenn	Grass	Flying
-151	358	Chimecho	Hoenn	Psychic
-152	359	Absol	Hoenn	Dark
-160	360	Wynaut	Hoenn	Psychic
-171	361	Snorunt	Hoenn	Ice
-172	362	Glalie	Hoenn	Ice
-173	363	Spheal	Hoenn	Ice	Water
-174	364	Sealeo	Hoenn	Ice	Water
-175	365	Walrein	Hoenn	Ice	Water
-176	366	Clamperl	Hoenn	Water
-177	367	Huntail	Hoenn	Water
-178	368	Gorebyss	Hoenn	Water
-179	369	Relicanth	Hoenn	Water	Rock
-183	370	Luvdisc	Hoenn	Water
-187	371	Bagon	Hoenn	Dragon
-188	372	Shelgon	Hoenn	Dragon
-189	373	Salamence	Hoenn	Dragon	Flying
-190	374	Beldum	Hoenn	Steel	Psychic
-191	375	Metang	Hoenn	Steel	Psychic
-192	376	Metagross	Hoenn	Steel	Psychic
-193	377	Regirock	Hoenn	Rock
-194	378	Regice	Hoenn	Ice
-195	379	Registeel	Hoenn	Steel
-196	380	Latias	Hoenn	Dragon	Psychic
-197	381	Latios	Hoenn	Dragon	Psychic
-198	382	Kyogre	Hoenn	Water
-199	383	Groudon	Hoenn	Ground
-200	384	Rayquaza	Hoenn	Dragon	Flying
-201	385	Jirachi	Hoenn	Steel	Psychic
-202	386	Deoxys	Hoenn	Psychic
-001	387	Turtwig	Sinnoh	Grass
-002	388	Grotle	Sinnoh	Grass
-003	389	Torterra	Sinnoh	Grass	Ground
-004	390	Chimchar	Sinnoh	Fire
-005	391	Monferno	Sinnoh	Fire	Fighting
-006	392	Infernape	Sinnoh	Fire	Fighting
-007	393	Piplup	Sinnoh	Water
-008	394	Prinplup	Sinnoh	Water
-009	395	Empoleon	Sinnoh	Water	Steel
-010	396	Starly	Sinnoh	Normal	Flying
-011	397	Staravia	Sinnoh	Normal	Flying
-012	398	Staraptor	Sinnoh	Normal	Flying
-013	399	Bidoof	Sinnoh	Normal
-014	400	Bibarel	Sinnoh	Normal	Water
-015	401	Kricketot	Sinnoh	Bug
-016	402	Kricketune	Sinnoh	Bug
-017	403	Shinx	Sinnoh	Electric
-018	404	Luxio	Sinnoh	Electric
-019	405	Luxray	Sinnoh	Electric
-025	406	Budew	Sinnoh	Grass	Poison
-027	407	Roserade	Sinnoh	Grass	Poison
-036	408	Cranidos	Sinnoh	Rock
-037	409	Rampardos	Sinnoh	Rock
-038	410	Shieldon	Sinnoh	Rock	Steel
-039	411	Bastiodon	Sinnoh	Rock	Steel
-045	412	Burmy	Sinnoh	Bug
-046	413	Wormadam	Sinnoh	Bug	Steel
-047	414	Mothim	Sinnoh	Bug	Flying
-053	415	Combee	Sinnoh	Bug	Flying
-054	416	Vespiquen	Sinnoh	Bug	Flying
-055	417	Pachirisu	Sinnoh	Electric
-056	418	Buizel	Sinnoh	Water
-057	419	Floatzel	Sinnoh	Water
-058	420	Cherubi	Sinnoh	Grass
-059	421	Cherrim	Sinnoh	Grass
-060	422	Shellos	Sinnoh	Water
-061	423	Gastrodon	Sinnoh	Water	Ground
-064	424	Ambipom	Sinnoh	Normal
-065	425	Drifloon	Sinnoh	Ghost	Flying
-066	426	Drifblim	Sinnoh	Ghost	Flying
-067	427	Buneary	Sinnoh	Normal
-068	428	Lopunny	Sinnoh	Normal
-073	429	Mismagius	Sinnoh	Ghost
-075	430	Honchkrow	Sinnoh	Dark	Flying
-076	431	Glameow	Sinnoh	Normal
-077	432	Purugly	Sinnoh	Normal
-082	433	Chingling	Sinnoh	Psychic
-084	434	Stunky	Sinnoh	Poison	Dark
-085	435	Skuntank	Sinnoh	Poison	Dark
-088	436	Bronzor	Sinnoh	Steel	Psychic
-089	437	Bronzong	Sinnoh	Steel	Psychic
-092	438	Bonsly	Sinnoh	Rock
-094	439	Mime Jr.	Sinnoh	Psychic	Fairy
-096	440	Happiny	Sinnoh	Normal
-102	441	Chatot	Sinnoh	Normal	Flying
-108	442	Spiritomb	Sinnoh	Ghost	Dark
-109	443	Gible	Sinnoh	Dragon	Ground
-110	444	Gabite	Sinnoh	Dragon	Ground
-111	445	Garchomp	Sinnoh	Dragon	Ground
-112	446	Munchlax	Sinnoh	Normal
-115	447	Riolu	Sinnoh	Fighting
-116	448	Lucario	Sinnoh	Fighting	Steel
-122	449	Hippopotas	Sinnoh	Ground
-123	450	Hippowdon	Sinnoh	Ground
-127	451	Skorupi	Sinnoh	Poison	Bug
-128	452	Drapion	Sinnoh	Poison	Dark
-129	453	Croagunk	Sinnoh	Poison	Fighting
-130	454	Toxicroak	Sinnoh	Poison	Fighting
-131	455	Carnivine	Sinnoh	Grass
-134	456	Finneon	Sinnoh	Water
-135	457	Lumineon	Sinnoh	Water
-140	458	Mantyke	Sinnoh	Water	Flying
-142	459	Snover	Sinnoh	Grass	Ice
-143	460	Abomasnow	Sinnoh	Grass	Ice
-145	461	Weavile	Sinnoh	Dark	Ice
-180	462	Magnezone	Sinnoh	Electric	Steel
-162	463	Lickilicky	Sinnoh	Normal
-188	464	Rhyperior	Sinnoh	Ground	Rock
-182	465	Tangrowth	Sinnoh	Grass
-199	466	Electivire	Sinnoh	Electric
-202	467	Magmortar	Sinnoh	Fire
-175	468	Togekiss	Sinnoh	Fairy	Flying
-184	469	Yanmega	Sinnoh	Bug	Flying
-169	470	Leafeon	Sinnoh	Grass
-170	471	Glaceon	Sinnoh	Ice
-154	472	Gliscor	Sinnoh	Ground	Flying
-205	473	Mamoswine	Sinnoh	Ice	Ground
-194	474	Porygon-Z	Sinnoh	Normal
-160	475	Gallade	Sinnoh	Psychic	Fighting
-156	476	Probopass	Sinnoh	Rock	Steel
-191	477	Dusknoir	Sinnoh	Ghost
-208	478	Froslass	Sinnoh	Ice	Ghost
-152	479	Rotom	Sinnoh	Electric	Grass
-146	480	Uxie	Sinnoh	Psychic
-147	481	Mesprit	Sinnoh	Psychic
-148	482	Azelf	Sinnoh	Psychic
-149	483	Dialga	Sinnoh	Steel	Dragon
-150	484	Palkia	Sinnoh	Water	Dragon
----	485	Heatran	Sinnoh	Fire	Steel
----	486	Regigigas	Sinnoh	Normal
-210	487	Giratina	Sinnoh	Ghost	Dragon
----	488	Cresselia	Sinnoh	Psychic
----	489	Phione	Sinnoh	Water
-151	490	Manaphy	Sinnoh	Water
----	491	Darkrai	Sinnoh	Dark
----	492	Shaymin	Sinnoh	Grass	Flying
----	493	Arceus	Sinnoh	Normal
-000	494	Victini	Unova	Psychic	Fire
-001	495	Snivy	Unova	Grass
-002	496	Servine	Unova	Grass
-003	497	Serperior	Unova	Grass
-004	498	Tepig	Unova	Fire
-005	499	Pignite	Unova	Fire	Fighting
-006	500	Emboar	Unova	Fire	Fighting
-007	501	Oshawott	Unova	Water
-008	502	Dewott	Unova	Water
-009	503	Samurott	Unova	Water
-010	504	Patrat	Unova	Normal
-011	505	Watchog	Unova	Normal
-012	506	Lillipup	Unova	Normal
-013	507	Herdier	Unova	Normal
-014	508	Stoutland	Unova	Normal
-015	509	Purrloin	Unova	Dark
-016	510	Liepard	Unova	Dark
-017	511	Pansage	Unova	Grass
-018	512	Simisage	Unova	Grass
-019	513	Pansear	Unova	Fire
-020	514	Simisear	Unova	Fire
-021	515	Panpour	Unova	Water
-022	516	Simipour	Unova	Water
-023	517	Munna	Unova	Psychic
-024	518	Musharna	Unova	Psychic
-025	519	Pidove	Unova	Normal	Flying
-026	520	Tranquill	Unova	Normal	Flying
-027	521	Unfezant	Unova	Normal	Flying
-028	522	Blitzle	Unova	Electric
-029	523	Zebstrika	Unova	Electric
-030	524	Roggenrola	Unova	Rock
-031	525	Boldore	Unova	Rock
-032	526	Gigalith	Unova	Rock
-033	527	Woobat	Unova	Psychic	Flying
-034	528	Swoobat	Unova	Psychic	Flying
-035	529	Drilbur	Unova	Ground
-036	530	Excadrill	Unova	Ground	Steel
-037	531	Audino	Unova	Normal
-038	532	Timburr	Unova	Fighting
-039	533	Gurdurr	Unova	Fighting
-040	534	Conkeldurr	Unova	Fighting
-041	535	Tympole	Unova	Water
-042	536	Palpitoad	Unova	Water	Ground
-043	537	Seismitoad	Unova	Water	Ground
-044	538	Throh	Unova	Fighting
-045	539	Sawk	Unova	Fighting
-046	540	Sewaddle	Unova	Bug	Grass
-047	541	Swadloon	Unova	Bug	Grass
-048	542	Leavanny	Unova	Bug	Grass
-049	543	Venipede	Unova	Bug	Poison
-050	544	Whirlipede	Unova	Bug	Poison
-051	545	Scolipede	Unova	Bug	Poison
-052	546	Cottonee	Unova	Grass	Fairy
-053	547	Whimsicott	Unova	Grass	Fairy
-054	548	Petilil	Unova	Grass
-055	549	Lilligant	Unova	Grass
-056	550	Basculin	Unova	Water
-057	551	Sandile	Unova	Ground	Dark
-058	552	Krokorok	Unova	Ground	Dark
-059	553	Krookodile	Unova	Ground	Dark
-060	554	Darumaka	Unova	Fire
-GAL	554G	Darumaka	Galar	Ice
-061	555	Darmanitan	Unova	Fire	Psychic
-GAL	555G	Darmanitan	Galar	Ice	Fire
-062	556	Maractus	Unova	Grass
-063	557	Dwebble	Unova	Bug	Rock
-064	558	Crustle	Unova	Bug	Rock
-065	559	Scraggy	Unova	Dark	Fighting
-066	560	Scrafty	Unova	Dark	Fighting
-067	561	Sigilyph	Unova	Psychic	Flying
-068	562	Yamask	Unova	Ghost
-GAL	562G	Yamask	Galar	Ground	Ghost
-069	563	Cofagrigus	Unova	Ghost
-070	564	Tirtouga	Unova	Water	Rock
-071	565	Carracosta	Unova	Water	Rock
-072	566	Archen	Unova	Rock	Flying
-073	567	Archeops	Unova	Rock	Flying
-074	568	Trubbish	Unova	Poison
-075	569	Garbodor	Unova	Poison
-076	570	Zorua	Unova	Dark
-077	571	Zoroark	Unova	Dark
-078	572	Minccino	Unova	Normal
-079	573	Cinccino	Unova	Normal
-080	574	Gothita	Unova	Psychic
-081	575	Gothorita	Unova	Psychic
-082	576	Gothitelle	Unova	Psychic
-083	577	Solosis	Unova	Psychic
-084	578	Duosion	Unova	Psychic
-085	579	Reuniclus	Unova	Psychic
-086	580	Ducklett	Unova	Water	Flying
-087	581	Swanna	Unova	Water	Flying
-088	582	Vanillite	Unova	Ice
-089	583	Vanillish	Unova	Ice
-090	584	Vanilluxe	Unova	Ice
-091	585	Deerling	Unova	Normal	Grass
-092	586	Sawsbuck	Unova	Normal	Grass
-093	587	Emolga	Unova	Electric	Flying
-094	588	Karrablast	Unova	Bug
-095	589	Escavalier	Unova	Bug	Steel
-096	590	Foongus	Unova	Grass	Poison
-097	591	Amoonguss	Unova	Grass	Poison
-098	592	Frillish	Unova	Water	Ghost
-099	593	Jellicent	Unova	Water	Ghost
-100	594	Alomomola	Unova	Water
-101	595	Joltik	Unova	Bug	Electric
-102	596	Galvantula	Unova	Bug	Electric
-103	597	Ferroseed	Unova	Grass	Steel
-104	598	Ferrothorn	Unova	Grass	Steel
-105	599	Klink	Unova	Steel
-106	600	Klang	Unova	Steel
-107	601	Klinklang	Unova	Steel
-108	602	Tynamo	Unova	Electric
-109	603	Eelektrik	Unova	Electric
-110	604	Eelektross	Unova	Electric
-111	605	Elgyem	Unova	Psychic
-112	606	Beheeyem	Unova	Psychic
-113	607	Litwick	Unova	Ghost	Fire
-114	608	Lampent	Unova	Ghost	Fire
-115	609	Chandelure	Unova	Ghost	Fire
-116	610	Axew	Unova	Dragon
-117	611	Fraxure	Unova	Dragon
-118	612	Haxorus	Unova	Dragon
-119	613	Cubchoo	Unova	Ice
-120	614	Beartic	Unova	Ice
-121	615	Cryogonal	Unova	Ice
-122	616	Shelmet	Unova	Bug
-123	617	Accelgor	Unova	Bug
-124	618	Stunfisk	Unova	Ground	Steel
-GAL	618G	Stunfisk	Galar	Ground	Steel
-125	619	Mienfoo	Unova	Fighting
-126	620	Mienshao	Unova	Fighting
-127	621	Druddigon	Unova	Dragon
-128	622	Golett	Unova	Ground	Ghost
-129	623	Golurk	Unova	Ground	Ghost
-130	624	Pawniard	Unova	Dark	Steel
-131	625	Bisharp	Unova	Dark	Steel
-132	626	Bouffalant	Unova	Normal
-133	627	Rufflet	Unova	Normal	Flying
-134	628	Braviary	Unova	Normal	Flying
-135	629	Vullaby	Unova	Dark	Flying
-136	630	Mandibuzz	Unova	Dark	Flying
-137	631	Heatmor	Unova	Fire
-138	632	Durant	Unova	Bug	Steel
-139	633	Deino	Unova	Dark	Dragon
-140	634	Zweilous	Unova	Dark	Dragon
-141	635	Hydreigon	Unova	Dark	Dragon
-142	636	Larvesta	Unova	Bug	Fire
-143	637	Volcarona	Unova	Bug	Fire
-144	638	Cobalion	Unova	Steel	Fighting
-145	639	Terrakion	Unova	Rock	Fighting
-146	640	Virizion	Unova	Grass	Fighting
-147	641	Tornadus	Unova	Flying
-148	642	Thundurus	Unova	Electric	Flying
-149	643	Reshiram	Unova	Dragon	Fire
-150	644	Zekrom	Unova	Dragon	Electric
-151	645	Landorus	Unova	Ground	Flying
-152	646	Kyurem	Unova	Dragon	Ice
-153	647	Keldeo	Unova	Water	Fighting
-154	648	Meloetta	Unova	Normal	Fighting
-155	649	Genesect	Unova	Bug	Steel
-001	650	Chespin	Kalos	Grass
-002	651	Quilladin	Kalos	Grass
-003	652	Chesnaught	Kalos	Grass	Fighting
-004	653	Fennekin	Kalos	Fire
-005	654	Braixen	Kalos	Fire
-006	655	Delphox	Kalos	Fire	Psychic
-007	656	Froakie	Kalos	Water
-008	657	Frogadier	Kalos	Water
-009	658	Greninja	Kalos	Water	Dark
-010	659	Bunnelby	Kalos	Normal
-011	660	Diggersby	Kalos	Normal	Ground
-014	661	Fletchling	Kalos	Normal	Flying
-015	662	Fletchinder	Kalos	Fire	Flying
-016	663	Talonflame	Kalos	Fire	Flying
-020	664	Scatterbug	Kalos	Bug
-021	665	Spewpa	Kalos	Bug
-022	666	Vivillon	Kalos	Bug	Flying
-057	667	Litleo	Kalos	Fire	Normal
-058	668	Pyroar	Kalos	Fire	Normal
-068	669	Flabébé	Kalos	Fairy
-069	670	Floette	Kalos	Fairy
-070	671	Florges	Kalos	Fairy
-089	672	Skiddo	Kalos	Grass
-090	673	Gogoat	Kalos	Grass
-091	674	Pancham	Kalos	Fighting
-092	675	Pangoro	Kalos	Fighting	Dark
-093	676	Furfrou	Kalos	Normal
-114	677	Espurr	Kalos	Psychic
-115	678	Meowstic	Kalos	Psychic
-117	679	Honedge	Kalos	Steel	Ghost
-118	680	Doublade	Kalos	Steel	Ghost
-119	681	Aegislash	Kalos	Steel	Ghost
-129	682	Spritzee	Kalos	Fairy
-130	683	Aromatisse	Kalos	Fairy
-131	684	Swirlix	Kalos	Fairy
-132	685	Slurpuff	Kalos	Fairy
-010	686	Inkay	Kalos	Dark	Psychic
-011	687	Malamar	Kalos	Dark	Psychic
-021	688	Binacle	Kalos	Rock	Water
-022	689	Barbaracle	Kalos	Rock	Water
-030	690	Skrelp	Kalos	Poison	Water
-031	691	Dragalge	Kalos	Poison	Dragon
-032	692	Clauncher	Kalos	Water
-033	693	Clawitzer	Kalos	Water
-046	694	Helioptile	Kalos	Electric	Normal
-047	695	Heliolisk	Kalos	Electric	Normal
-064	696	Tyrunt	Kalos	Rock	Dragon
-065	697	Tyrantrum	Kalos	Rock	Dragon
-066	698	Amaura	Kalos	Rock	Ice
-067	699	Aurorus	Kalos	Rock	Ice
-085	700	Sylveon	Kalos	Fairy
-089	701	Hawlucha	Kalos	Fighting	Flying
-110	702	Dedenne	Kalos	Electric	Fairy
-124	703	Carbink	Kalos	Rock	Fairy
-019	704	Goomy	Kalos	Dragon
-020	705	Sliggoo	Kalos	Dragon
-021	706	Goodra	Kalos	Dragon
-050	707	Klefki	Kalos	Steel	Fairy
-061	708	Phantump	Kalos	Ghost	Grass
-062	709	Trevenant	Kalos	Ghost	Grass
-063	710	Pumpkaboo	Kalos	Ghost	Grass
-064	711	Gourgeist	Kalos	Ghost	Grass
-079	712	Bergmite	Kalos	Ice
-080	713	Avalugg	Kalos	Ice
-113	714	Noibat	Kalos	Flying	Dragon
-114	715	Noivern	Kalos	Flying	Dragon
-148	716	Xerneas	Kalos	Fairy
-149	717	Yveltal	Kalos	Dark	Flying
-150	718	Zygarde	Kalos	Dragon	Ground
-151	719	Diancie	Kalos	Rock	Fairy
-152	720	Hoopa	Kalos	Psychic	Dark
-153	721	Volcanion	Kalos	Fire	Water
-001	722	Rowlet	Alola	Grass	Flying
-002	723	Dartrix	Alola	Grass	Flying
-003	724	Decidueye	Alola	Grass	Ghost
-004	725	Litten	Alola	Fire
-005	726	Torracat	Alola	Fire
-006	727	Incineroar	Alola	Fire	Dark
-007	728	Popplio	Alola	Water
-008	729	Brionne	Alola	Water
-009	730	Primarina	Alola	Water	Fairy
-010	731	Pikipek	Alola	Normal	Flying
-011	732	Trumbeak	Alola	Normal	Flying
-012	733	Toucannon	Alola	Normal	Flying
-013	734	Yungoos	Alola	Normal
-014	735	Gumshoos	Alola	Normal
-027	736	Grubbin	Alola	Bug
-028	737	Charjabug	Alola	Bug	Electric
-029	738	Vikavolt	Alola	Bug	Electric
-059	739	Crabrawler	Alola	Fighting
-060	740	Crabominable	Alola	Fighting	Ice
-082	741	Oricorio	Alola	Electric	Flying
-083	742	Cutiefly	Alola	Bug	Fairy
-084	743	Ribombee	Alola	Bug	Fairy
-103	744	Rockruff	Alola	Rock
-104	745	Lycanroc	Alola	Rock
-110	746	Wishiwashi	Alola	Water
-113	747	Mareanie	Alola	Poison	Water
-114	748	Toxapex	Alola	Poison	Water
-132	749	Mudbray	Alola	Ground
-133	750	Mudsdale	Alola	Ground
-141	751	Dewpider	Alola	Water	Bug
-142	752	Araquanid	Alola	Water	Bug
-143	753	Fomantis	Alola	Grass
-144	754	Lurantis	Alola	Grass
-145	755	Morelull	Alola	Grass	Fairy
-146	756	Shiinotic	Alola	Grass	Fairy
-161	757	Salandit	Alola	Poison	Fire
-162	758	Salazzle	Alola	Poison	Fire
-169	759	Stufful	Alola	Normal	Fighting
-170	760	Bewear	Alola	Normal	Fighting
-171	761	Bounsweet	Alola	Grass
-172	762	Steenee	Alola	Grass
-173	763	Tsareena	Alola	Grass
-174	764	Comfey	Alola	Fairy
-176	765	Oranguru	Alola	Normal	Psychic
-177	766	Passimian	Alola	Fighting
-182	767	Wimpod	Alola	Bug	Water
-183	768	Golisopod	Alola	Bug	Water
-186	769	Sandygast	Alola	Ghost	Ground
-187	770	Palossand	Alola	Ghost	Ground
-200	771	Pyukumuku	Alola	Water
-203	772	Type: Null	Alola	Normal
-204	773	Silvally	Alola	Normal
-213	774	Minior	Alola	Rock	Flying
-222	775	Komala	Alola	Normal
-224	776	Turtonator	Alola	Fire	Dragon
-225	777	Togedemaru	Alola	Electric	Steel
-242	778	Mimikyu	Alola	Ghost	Fairy
-243	779	Bruxish	Alola	Water	Psychic
-244	780	Drampa	Alola	Normal	Dragon
-263	781	Dhelmise	Alola	Ghost	Grass
-271	782	Jangmo-o	Alola	Dragon
-272	783	Hakamo-o	Alola	Dragon	Fighting
-273	784	Kommo-o	Alola	Dragon	Fighting
-285	785	Tapu Koko	Alola	Electric	Fairy
-286	786	Tapu Lele	Alola	Psychic	Fairy
-287	787	Tapu Bulu	Alola	Grass	Fairy
-288	788	Tapu Fini	Alola	Water	Fairy
-289	789	Cosmog	Alola	Psychic
-290	790	Cosmoem	Alola	Psychic
-291	791	Solgaleo	Alola	Psychic	Steel
-292	792	Lunala	Alola	Psychic	Ghost
-293	793	Nihilego	Alola	Rock	Poison
-294	794	Buzzwole	Alola	Bug	Fighting
-295	795	Pheromosa	Alola	Bug	Fighting
-296	796	Xurkitree	Alola	Electric
-297	797	Celesteela	Alola	Steel	Flying
-298	798	Kartana	Alola	Grass	Steel
-299	799	Guzzlord	Alola	Dark	Dragon
-300	800	Necrozma	Alola	Psychic
-301	801	Magearna	Alola	Steel	Fairy
-302	802	Marshadow	Alola	Fighting	Ghost
-261	803	Poipole	Alola	Poison
-262	804	Naganadel	Alola	Poison	Dragon
-392	805	Stakataka	Alola	Rock	Steel
-393	806	Blacephalon	Alola	Fire	Ghost
-403	807	Zeraora	Alola	Electric
----	808	Meltan	Alola	Steel
----	809	Melmetal	Alola	Steel
-001	810	Grookey	Galar	Grass
-002	811	Thwackey	Galar	Grass
-003	812	Rillaboom	Galar	Grass
-004	813	Scorbunny	Galar	Fire
-005	814	Raboot	Galar	Fire
-006	815	Cinderace	Galar	Fire
-007	816	Sobble	Galar	Water
-008	817	Drizzile	Galar	Water
-009	818	Inteleon	Galar	Water
-024	819	Skwovet	Galar	Normal
-025	820	Greedent	Galar	Normal
-021	821	Rookidee	Galar	Flying
-022	822	Corvisquire	Galar	Flying
-023	823	Corviknight	Galar	Flying	Steel
-010	824	Blipbug	Galar	Bug
-011	825	Dottler	Galar	Bug	Psychic
-012	826	Orbeetle	Galar	Bug	Psychic
-029	827	Nickit	Galar	Dark
-030	828	Thievul	Galar	Dark
-126	829	Gossifleur	Galar	Grass
-127	830	Eldegoss	Galar	Grass
-034	831	Wooloo	Galar	Normal
-035	832	Dubwool	Galar	Normal
-042	833	Chewtle	Galar	Water
-043	834	Drednaw	Galar	Water	Rock
-046	835	Yamper	Galar	Electric
-047	836	Boltund	Galar	Electric
-161	837	Rolycoly	Galar	Rock
-162	838	Carkol	Galar	Rock	Fire
-163	839	Coalossal	Galar	Rock	Fire
-205	840	Applin	Galar	Grass	Dragon
-206	841	Flapple	Galar	Grass	Dragon
-207	842	Appletun	Galar	Grass	Dragon
-312	843	Silicobra	Galar	Ground
-313	844	Sandaconda	Galar	Ground
-309	845	Cramorant	Galar	Flying	Water
-180	846	Arrokuda	Galar	Water
-181	847	Barraskewda	Galar	Water
-310	848	Toxel	Galar	Electric	Poison
-311	849	Toxtricity	Galar	Electric	Poison
-159	850	Sizzlipede	Galar	Fire	Bug
-160	851	Centiskorch	Galar	Fire	Bug
-351	852	Clobbopus	Galar	Fighting
-352	853	Grapploct	Galar	Fighting
-335	854	Sinistea	Galar	Ghost
-336	855	Polteageist	Galar	Ghost
-241	856	Hatenna	Galar	Psychic
-242	857	Hattrem	Galar	Psychic
-243	858	Hatterene	Galar	Psychic	Fairy
-238	859	Impidimp	Galar	Dark	Fairy
-239	860	Morgrem	Galar	Dark	Fairy
-240	861	Grimmsnarl	Galar	Dark	Fairy
-033	862	Obstagoon	Galar	Dark	Normal
-183	863	Perrserker	Galar	Steel
-237	864	Cursola	Galar	Ghost
-219	865	Sirfetch'd	Galar	Fighting
-366	866	Mr. Rime	Galar	Ice	Psychic
-328	867	Runerigus	Galar	Ground	Ghost
-185	868	Milcery	Galar	Fairy
-186	869	Alcremie	Galar	Fairy
-345	870	Falinks	Galar	Fighting
-353	871	Pincurchin	Galar	Electric
-349	872	Snom	Galar	Ice	Bug
-350	873	Frosmoth	Galar	Ice	Bug
-369	874	Stonjourner	Galar	Rock
-370	875	Eiscue	Galar	Ice
-337	876	Indeedee	Galar	Psychic	Normal
-344	877	Morpeko	Galar	Electric	Dark
-302	878	Cufant	Galar	Steel
-303	879	Copperajah	Galar	Steel
-374	880	Dracozolt	Galar	Electric	Dragon
-375	881	Arctozolt	Galar	Electric	Ice
-376	882	Dracovish	Galar	Water	Dragon
-377	883	Arctovish	Galar	Water	Ice
-371	884	Duraludon	Galar	Steel	Dragon
-395	885	Dreepy	Galar	Dragon	Ghost
-396	886	Drakloak	Galar	Dragon	Ghost
-397	887	Dragapult	Galar	Dragon	Ghost
-398	888	Zacian	Galar	Fairy	Steel
-399	889	Zamazenta	Galar	Fighting	Steel
-400	890	Eternatus	Galar	Poison	Dragon
----	891	Kubfu	Galar	Fighting
----	892	Urshifu	Galar	Fighting	Water
----	893	Zarude	Galar	Dark	Grass
----	894	Regieleki	Galar	Electric
----	895	Regidrago	Galar	Dragon
----	896	Glastrier	Galar	Ice
----	897	Spectrier	Galar	Ghost
----	898	Calyrex	Galar	Psychic	Ghost
+001	001	Bulbasaur	Kanto	Grass	Poison	<:001:801542453278146581>	<:001:801542453278146581>
+002	002	Ivysaur	Kanto	Grass	Poison	<:002:801542455216046091>	<:002:801542455216046091>
+003	003	Venusaur	Kanto	Grass	Poison	<:003:801542457828573225>	<:003:801542457828573225>
+004	004	Charmander	Kanto	Fire	<:004:801542460190883850>	<:004:801542460190883850>
+005	005	Charmeleon	Kanto	Fire	<:005:801542461788782613>	<:005:801542461788782613>
+006	006	Charizard	Kanto	Fire	Flying	<:006:801542464183074886>	<:006:801542464183074886>
+007	007	Squirtle	Kanto	Water	<:007:801542466632810527>	<:007:801542466632810527>
+008	008	Wartortle	Kanto	Water	<:008:801542469643665408>	<:008:801542469643665408>
+009	009	Blastoise	Kanto	Water	<:009:801542471590346793>	<:009:801542471590346793>
+010	010	Caterpie	Kanto	Bug	<:010:801542473775448074>	<:010:801542473775448074>
+011	011	Metapod	Kanto	Bug	<:011:801542475641520188>	<:011:801542475641520188>
+012	012	Butterfree	Kanto	Bug	Flying	<:012:801542477088817163>	<:012:801542477088817163>
+013	013	Weedle	Kanto	Bug	Poison	<:013:801542478826045456>	<:013:801542478826045456>
+014	014	Kakuna	Kanto	Bug	Poison	<:014:801542481547100160>	<:014:801542481547100160>
+015	015	Beedrill	Kanto	Bug	Poison	<:015:801542483225739285>	<:015:801542483225739285>
+016	016	Pidgey	Kanto	Normal	Flying	<:016:801542486375923792>	<:016:801542486375923792>
+017	017	Pidgeotto	Kanto	Normal	Flying	<:017:801542488497192970>	<:017:801542488497192970>
+018	018	Pidgeot	Kanto	Normal	Flying	<:018:801542491085078529>	<:018:801542491085078529>
+019	019	Rattata	Kanto	Normal	<:019:801542493878747156>	<:019:801542493878747156>
+ALO	019A	Rattata	Alola	Dark	Normal	<:019A:801542495606800395>	<:019A:801542495606800395>
+020	020	Raticate	Kanto	Normal	<:020:801542497926250496>	<:020:801542497926250496>
+ALO	020A	Raticate	Alola	Dark	Normal	<:020A:801542499553378344>	<:020A:801542499553378344>
+021	021	Spearow	Kanto	Normal	Flying	<:021:801542501659050044>	<:021:801542501659050044>
+022	022	Fearow	Kanto	Normal	Flying	<:022:801542503328907355>	<:022:801542503328907355>
+023	023	Ekans	Kanto	Poison	<:023:801542509603061823>	<:023:801542509603061823>
+024	024	Arbok	Kanto	Poison	<:024:801542511901802567>	<:024:801542511901802567>
+025	025	Pikachu	Kanto	Electric	<:025:801542514103550062>	<:025:801542514103550062>
+026	026	Raichu	Kanto	Electric	<:026:801542516494434305>	<:026:801542516494434305>
+ALO	026A	Raichu	Alola	Electric	Psychic	<:026A:801542518311223406>	<:026A:801542518311223406>
+027	027	Sandshrew	Kanto	Ground	<:027:801542521343442944>	<:027:801542521343442944>
+ALO	027A	Sandshrew	Alola	Ice	Steel	<:027A:801542523675213835>	<:027A:801542523675213835>
+028	028	Sandslash	Kanto	Ground	<:028:801542525914710058>	<:028:801542525914710058>
+ALO	028A	Sandslash	Alola	Ice	Steel	<:028A:801542528343605260>	<:028A:801542528343605260>
+029	029	Nidoran♀	Kanto	Poison	<:029:801542530889940992>	<:029:801542530889940992>
+030	030	Nidorina	Kanto	Poison	<:030:801542535776305162>	<:030:801542535776305162>
+031	031	Nidoqueen	Kanto	Poison	Ground	<:031:801542542407368724>	<:031:801542542407368724>
+032	032	Nidoran♂	Kanto	Poison	<:032:801542546756075550>	<:032:801542546756075550>
+033	033	Nidorino	Kanto	Poison	<:033:801542551139516446>	<:033:801542551139516446>
+034	034	Nidoking	Kanto	Poison	Ground	<:034:801542553538658304>	<:034:801542553538658304>
+035	035	Clefairy	Kanto	Fairy	<:035:801542556189851668>	<:035:801542556189851668>
+036	036	Clefable	Kanto	Fairy	<:036:801542558047272991>	<:036:801542558047272991>
+037	037	Vulpix	Kanto	Fire	<:037:801542561462354011>	<:037:801542561462354011>
+ALO	037A	Vulpix	Alola	Ice	<:037A:801542563315580967>	<:037A:801542563315580967>
+038	038	Ninetales	Kanto	Fire	<:038:801542565375639572>	<:038:801542565375639572>
+ALO	038A	Ninetales	Alola	Ice	Fairy	<:038A:801542567946092575>	<:038A:801542567946092575>
+039	039	Jigglypuff	Kanto	Normal	Fairy	<:039:801542570403692574>	<:039:801542570403692574>
+040	040	Wigglytuff	Kanto	Normal	Fairy	<:040:801542572346048594>	<:040:801542572346048594>
+041	041	Zubat	Kanto	Poison	Flying	<:041:801542575043117086>	<:041:801542575043117086>
+042	042	Golbat	Kanto	Poison	Flying	<:042:801542577206853643>	<:042:801542577206853643>
+043	043	Oddish	Kanto	Grass	Poison	<:043:801542580633993236>	<:043:801542580633993236>
+044	044	Gloom	Kanto	Grass	Poison	<:044:801542584010539013>	<:044:801542584010539013>
+045	045	Vileplume	Kanto	Grass	Poison	<:045:801542586534723614>	<:045:801542586534723614>
+046	046	Paras	Kanto	Bug	Grass	<:046:801542588628598785>	<:046:801542588628598785>
+047	047	Parasect	Kanto	Bug	Grass	<:047:801542591094718494>	<:047:801542591094718494>
+048	048	Venonat	Kanto	Bug	Poison	<:048:801542593174831206>	<:048:801542593174831206>
+049	049	Venomoth	Kanto	Bug	Poison	<:049:801542595636625468>	<:049:801542595636625468>
+050	050	Diglett	Kanto	Ground	<:050:801542597168463874>	<:050:801542597168463874>
+ALO	050A	Diglett	Alola	Ground	Steel	<:050A:801542599202439198>	<:050A:801542599202439198>
+051	051	Dugtrio	Kanto	Ground	<:051:801542600598618183>	<:051:801542600598618183>
+ALO	051A	Dugtrio	Alola	Ground	Steel	<:051A:801542603102486569>	<:051A:801542603102486569>
+052	052	Meowth	Kanto	Normal	<:052:801542605095174234>	<:052:801542605095174234>
+ALO	052A	Meowth	Alola	Dark	<:052A:801542606684946503>	<:052A:801542606684946503>
+GAL	052G	Meowth	Galar	Steel	<:052G:801542609196810310>	<:052G:801542609196810310>
+053	053	Persian	Kanto	Normal	<:053:801542611436699689>	<:053:801542611436699689>
+ALO	053A	Persian	Alola	Dark	<:053A:801542614905913434>	<:053A:801542614905913434>
+054	054	Psyduck	Kanto	Water	<:054:801542617250791524>	<:054:801542617250791524>
+055	055	Golduck	Kanto	Water	<:055:801542619842740244>	<:055:801542619842740244>
+056	056	Mankey	Kanto	Fighting	<:056:801542621809737768>	<:056:801542621809737768>
+057	057	Primeape	Kanto	Fighting	<:057:801542624036126768>	<:057:801542624036126768>
+058	058	Growlithe	Kanto	Fire	<:058:801542626850504715>	<:058:801542626850504715>
+059	059	Arcanine	Kanto	Fire	<:059:801542630022316042>	<:059:801542630022316042>
+060	060	Poliwag	Kanto	Water	<:060:801542631967817810>	<:060:801542631967817810>
+061	061	Poliwhirl	Kanto	Water	<:061:801542635571249182>	<:061:801542635571249182>
+062	062	Poliwrath	Kanto	Water	Fighting	<:062:801542637408092182>	<:062:801542637408092182>
+063	063	Abra	Kanto	Psychic	<:063:801542639786655775>	<:063:801542639786655775>
+064	064	Kadabra	Kanto	Psychic	<:064:801542641505402880>	<:064:801542641505402880>
+065	065	Alakazam	Kanto	Psychic	<:065:801542643598622782>	<:065:801542643598622782>
+066	066	Machop	Kanto	Fighting	<:066:801542647054336041>	<:066:801542647054336041>
+067	067	Machoke	Kanto	Fighting	<:067:801542649180848179>	<:067:801542649180848179>
+068	068	Machamp	Kanto	Fighting	<:068:801542651262271509>	<:068:801542651262271509>
+069	069	Bellsprout	Kanto	Grass	Poison	<:069:801542653773611009>	<:069:801542653773611009>
+070	070	Weepinbell	Kanto	Grass	Poison	<:070:801542656207355956>	<:070:801542656207355956>
+071	071	Victreebel	Kanto	Grass	Poison	<:071:801542658517893181>	<:071:801542658517893181>
+072	072	Tentacool	Kanto	Water	Poison	<:072:801542660900651068>	<:072:801542660900651068>
+073	073	Tentacruel	Kanto	Water	Poison	<:073:801542663051935777>	<:073:801542663051935777>
+074	074	Geodude	Kanto	Rock	Ground	<:074:801542665044361266>	<:074:801542665044361266>
+ALO	074A	Geodude	Alola	Rock	Electric	<:074A:801542667090788352>	<:074A:801542667090788352>
+075	075	Graveler	Kanto	Rock	Ground	<:075:801542669095534663>	<:075:801542669095534663>
+ALO	075A	Graveler	Alola	Rock	Electric	<:075A:801542671285485570>	<:075A:801542671285485570>
+076	076	Golem	Kanto	Rock	Ground	<:076:801542673973903431>	<:076:801542673973903431>
+ALO	076A	Golem	Alola	Rock	Electric	<:076A:801542676667170826>	<:076A:801542676667170826>
+077	077	Ponyta	Kanto	Fire	<:077:801542678352756737>	<:077:801542678352756737>
+GAL	077G	Ponyta	Galar	Psychic	<:077G:801542680622399499>	<:077G:801542680622399499>
+078	078	Rapidash	Kanto	Fire	<:078:801542683566932008>	<:078:801542683566932008>
+GAL	078G	Rapidash	Galar	Psychic	Fairy	<:078G:801542685633806418>	<:078G:801542685633806418>
+079	079	Slowpoke	Kanto	Water	Psychic	<:079:801542688591577098>	<:079:801542688591577098>
+GAL	079G	Slowpoke	Galar	Psychic	<:079G:801542690567225384>	<:079G:801542690567225384>
+080	080	Slowbro	Kanto	Water	Psychic	<:080:801542692721917952>	<:080:801542692721917952>
+GAL	080G	Slowbro	Galar	Poison	Psychic	<:080G:801542695998849054>	<:080G:801542695998849054>
+081	081	Magnemite	Kanto	Electric	Steel	<:081:801542699903615107>	<:081:801542699903615107>
+082	082	Magneton	Kanto	Electric	Steel	<:082:801542702063157259>	<:082:801542702063157259>
+083	083	Farfetch'd	Kanto	Normal	Flying	<:083:801542704491790346>	<:083:801542704491790346>
+GAL	083G	Farfetch'd	Galar	Fighting	<:083G:801542706110660719>	<:083G:801542706110660719>
+084	084	Doduo	Kanto	Normal	Flying	<:084:801542708224720937>	<:084:801542708224720937>
+085	085	Dodrio	Kanto	Normal	Flying	<:085:801542710636052490>	<:085:801542710636052490>
+086	086	Seel	Kanto	Water	<:086:801542713346490388>	<:086:801542713346490388>
+087	087	Dewgong	Kanto	Water	Ice	<:087:801542715287928842>	<:087:801542715287928842>
+088	088	Grimer	Kanto	Poison	<:088:801542717171564554>	<:088:801542717171564554>
+ALO	088A	Grimer	Alola	Poison	Dark	<:088A:801542719595216926>	<:088A:801542719595216926>
+089	089	Muk	Kanto	Poison	<:089:801542721159430184>	<:089:801542721159430184>
+ALO	089A	Muk	Alola	Poison	Dark	<:089A:801542723130884137>	<:089A:801542723130884137>
+090	090	Shellder	Kanto	Water	<:090:801542726055100486>	<:090:801542726055100486>
+091	091	Cloyster	Kanto	Water	Ice	<:091:801542728042152037>	<:091:801542728042152037>
+092	092	Gastly	Kanto	Ghost	Poison	<:092:801542730328571934>	<:092:801542730328571934>
+093	093	Haunter	Kanto	Ghost	Poison	<:093:801542732685770812>	<:093:801542732685770812>
+094	094	Gengar	Kanto	Ghost	Poison	<:094:801542735022129182>	<:094:801542735022129182>
+095	095	Onix	Kanto	Rock	Ground	<:095:801542737744232488>	<:095:801542737744232488>
+096	096	Drowzee	Kanto	Psychic	<:096:801542740847362058>	<:096:801542740847362058>
+097	097	Hypno	Kanto	Psychic	<:097:801542743188307979>	<:097:801542743188307979>
+098	098	Krabby	Kanto	Water	<:098:801542745717604372>	<:098:801542745717604372>
+099	099	Kingler	Kanto	Water	<:099:801542757398609922>	<:099:801542757398609922>
+100	100	Voltorb	Kanto	Electric	<:100:801542759822786641>	<:100:801542759822786641>
+101	101	Electrode	Kanto	Electric	<:101:801542765108396092>	<:101:801542765108396092>
+102	102	Exeggcute	Kanto	Grass	Psychic	<:102:801542766647050253>	<:102:801542766647050253>
+103	103	Exeggutor	Kanto	Grass	Psychic	<:103:801542768765042748>	<:103:801542768765042748>
+ALO	103A	Exeggutor	Alola	Grass	Dragon	<:103A:801542774671147089>	<:103A:801542774671147089>
+104	104	Cubone	Kanto	Ground	<:104:801542781871849485>	<:104:801542781871849485>
+105	105	Marowak	Kanto	Ground	<:105:801542784380174337>	<:105:801542784380174337>
+ALO	105A	Marowak	Alola	Fire	Ghost	<:105A:801542786833711144>	<:105A:801542786833711144>
+106	106	Hitmonlee	Kanto	Fighting	<:106:801542790915293255>	<:106:801542790915293255>
+107	107	Hitmonchan	Kanto	Fighting	<:107:801542795798118410>	<:107:801542795798118410>
+108	108	Lickitung	Kanto	Normal	<:108:801542799275196466>	<:108:801542799275196466>
+109	109	Koffing	Kanto	Poison	<:109:801542801669488730>	<:109:801542801669488730>
+110	110	Weezing	Kanto	Poison	<:110:801542804458831903>	<:110:801542804458831903>
+GAL	110G	Weezing	Galar	Poison	Fairy	<:110G:801542807063756870>	<:110G:801542807063756870>
+111	111	Rhyhorn	Kanto	Ground	Rock	<:111:801542809940394045>	<:111:801542809940394045>
+112	112	Rhydon	Kanto	Ground	Rock	<:112:801542811634892852>	<:112:801542811634892852>
+113	113	Chansey	Kanto	Normal	<:113:801542814365515776>	<:113:801542814365515776>
+114	114	Tangela	Kanto	Grass	<:114:801542816018726943>	<:114:801542816018726943>
+115	115	Kangaskhan	Kanto	Normal	<:115:801542818367012974>	<:115:801542818367012974>
+116	116	Horsea	Kanto	Water	<:116:801542820561027092>	<:116:801542820561027092>
+117	117	Seadra	Kanto	Water	<:117:801542822490406972>	<:117:801542822490406972>
+118	118	Goldeen	Kanto	Water	<:118:801542824116879402>	<:118:801542824116879402>
+119	119	Seaking	Kanto	Water	<:119:801542827108466739>	<:119:801542827108466739>
+120	120	Staryu	Kanto	Water	<:120:801542830153269269>	<:120:801542830153269269>
+121	121	Starmie	Kanto	Water	Psychic	<:121:801542833055203368>	<:121:801542833055203368>
+122	122	Mr. Mime	Kanto	Psychic	Fairy	<:122:801542834854297671>	<:122:801542834854297671>
+GAL	122G	Mr. Mime	Galar	Ice	Psychic	<:122G:801542838457991228>	<:122G:801542838457991228>
+123	123	Scyther	Kanto	Bug	Flying	<:123:801542840735891498>	<:123:801542840735891498>
+124	124	Jynx	Kanto	Ice	Psychic	<:124:801542843171995648>	<:124:801542843171995648>
+125	125	Electabuzz	Kanto	Electric	<:125:801542846821171300>	<:125:801542846821171300>
+126	126	Magmar	Kanto	Fire	<:126:801542848818053190>	<:126:801542848818053190>
+127	127	Pinsir	Kanto	Bug	<:127:801542850785443850>	<:127:801542850785443850>
+128	128	Tauros	Kanto	Normal	<:128:801542852814962699>	<:128:801542852814962699>
+129	129	Magikarp	Kanto	Water	<:129:801542855273218057>	<:129:801542855273218057>
+130	130	Gyarados	Kanto	Water	Flying	<:130:801542857617178655>	<:130:801542857617178655>
+131	131	Lapras	Kanto	Water	Ice	<:131:801542859672911982>	<:131:801542859672911982>
+132	132	Ditto	Kanto	Normal	<:132:801542861564542987>	<:132:801542861564542987>
+133	133	Eevee	Kanto	Normal	<:133:801542863682142268>	<:133:801542863682142268>
+134	134	Vaporeon	Kanto	Water	<:134:801542866136465478>	<:134:801542866136465478>
+135	135	Jolteon	Kanto	Electric	<:135:801542868324974623>	<:135:801542868324974623>
+136	136	Flareon	Kanto	Fire	<:136:801542870565257257>	<:136:801542870565257257>
+137	137	Porygon	Kanto	Normal	<:137:801542872599494678>	<:137:801542872599494678>
+138	138	Omanyte	Kanto	Rock	Water	<:138:801542875233124373>	<:138:801542875233124373>
+139	139	Omastar	Kanto	Rock	Water	<:139:801542877691641916>	<:139:801542877691641916>
+140	140	Kabuto	Kanto	Rock	Water	<:140:801542879704383498>	<:140:801542879704383498>
+141	141	Kabutops	Kanto	Rock	Water	<:141:801542882774614076>	<:141:801542882774614076>
+142	142	Aerodactyl	Kanto	Rock	Flying	<:142:801542885124210698>	<:142:801542885124210698>
+143	143	Snorlax	Kanto	Normal	<:143:801542887472234496>	<:143:801542887472234496>
+144	144	Articuno	Kanto	Ice	Flying	<:144:801542889259532329>	<:144:801542889259532329>
+GAL	144G	Articuno	Galar	Psychic	Flying	<:144G:801542891444109332>	<:144G:801542891444109332>
+145	145	Zapdos	Kanto	Electric	Flying	<:145:801542893965803530>	<:145:801542893965803530>
+GAL	145G	Zapdos	Galar	Fighting	Flying	<:145G:801542895806185523>	<:145G:801542895806185523>
+146	146	Moltres	Kanto	Fire	Flying	<:146:801542898138873876>	<:146:801542898138873876>
+GAL	146G	Moltres	Galar	Dark	Flying	<:146G:801542900609187842>	<:146G:801542900609187842>
+147	147	Dratini	Kanto	Dragon	<:147:801542903225778197>	<:147:801542903225778197>
+148	148	Dragonair	Kanto	Dragon	<:148:801542905629245460>	<:148:801542905629245460>
+149	149	Dragonite	Kanto	Dragon	Flying	<:149:801542907592179742>	<:149:801542907592179742>
+150	150	Mewtwo	Kanto	Psychic	<:150:801542909739532368>	<:150:801542909739532368>
+151	151	Mew	Kanto	Psychic	<:151:801542911086559244>	<:151:801542911086559244>
+001	152	Chikorita	Johto	Grass	<None>	<None>
+002	153	Bayleef	Johto	Grass	<None>	<None>
+003	154	Meganium	Johto	Grass	<None>	<None>
+004	155	Cyndaquil	Johto	Fire	<None>	<None>
+005	156	Quilava	Johto	Fire	<None>	<None>
+006	157	Typhlosion	Johto	Fire	<None>	<None>
+007	158	Totodile	Johto	Water	<None>	<None>
+008	159	Croconaw	Johto	Water	<None>	<None>
+009	160	Feraligatr	Johto	Water	<None>	<None>
+019	161	Sentret	Johto	Normal	<None>	<None>
+020	162	Furret	Johto	Normal	<None>	<None>
+015	163	Hoothoot	Johto	Normal	Flying	<None>	<None>
+016	164	Noctowl	Johto	Normal	Flying	<None>	<None>
+030	165	Ledyba	Johto	Bug	Flying	<None>	<None>
+031	166	Ledian	Johto	Bug	Flying	<None>	<None>
+032	167	Spinarak	Johto	Bug	Poison	<None>	<None>
+033	168	Ariados	Johto	Bug	Poison	<None>	<None>
+039	169	Crobat	Johto	Poison	Flying	<None>	<None>
+176	170	Chinchou	Johto	Water	Electric	<None>	<None>
+177	171	Lanturn	Johto	Water	Electric	<None>	<None>
+021	172	Pichu	Johto	Electric	<None>	<None>
+040	173	Cleffa	Johto	Fairy	<None>	<None>
+044	174	Igglybuff	Johto	Normal	Fairy	<None>	<None>
+046	175	Togepi	Johto	Fairy	<None>	<None>
+047	176	Togetic	Johto	Fairy	Flying	<None>	<None>
+161	177	Natu	Johto	Psychic	Flying	<None>	<None>
+162	178	Xatu	Johto	Psychic	Flying	<None>	<None>
+053	179	Mareep	Johto	Electric	<None>	<None>
+054	180	Flaaffy	Johto	Electric	<None>	<None>
+055	181	Ampharos	Johto	Electric	<None>	<None>
+086	182	Bellossom	Johto	Grass	<None>	<None>
+132	183	Marill	Johto	Water	Fairy	<None>	<None>
+133	184	Azumarill	Johto	Water	Fairy	<None>	<None>
+107	185	Sudowoodo	Johto	Rock	<None>	<None>
+075	186	Politoed	Johto	Water	<None>	<None>
+067	187	Hoppip	Johto	Grass	Flying	<None>	<None>
+068	188	Skiploom	Johto	Grass	Flying	<None>	<None>
+069	189	Jumpluff	Johto	Grass	Flying	<None>	<None>
+123	190	Aipom	Johto	Normal	<None>	<None>
+103	191	Sunkern	Johto	Grass	<None>	<None>
+104	192	Sunflora	Johto	Grass	<None>	<None>
+101	193	Yanma	Johto	Bug	Flying	<None>	<None>
+056	194	Wooper	Johto	Water	Ground	<None>	<None>
+057	195	Quagsire	Johto	Water	Ground	<None>	<None>
+188	196	Espeon	Johto	Psychic	<None>	<None>
+189	197	Umbreon	Johto	Dark	<None>	<None>
+213	198	Murkrow	Johto	Dark	Flying	<None>	<None>
+082	199	Slowking	Johto	Water	Psychic	<None>	<None>
+GAL	199G	Slowking	Galar	Poison	Psychic	<None>	<None>
+219	200	Misdreavus	Johto	Ghost	<None>	<None>
+061	201	Unown	Johto	Psychic	<None>	<None>
+108	202	Wobbuffet	Johto	Psychic	<None>	<None>
+149	203	Girafarig	Johto	Normal	Psychic	<None>	<None>
+093	204	Pineco	Johto	Bug	<None>	<None>
+094	205	Forretress	Johto	Bug	Steel	<None>	<None>
+052	206	Dunsparce	Johto	Normal	<None>	<None>
+193	207	Gligar	Johto	Ground	Flying	<None>	<None>
+063	208	Steelix	Johto	Steel	Ground	<None>	<None>
+125	209	Snubbull	Johto	Fairy	<None>	<None>
+126	210	Granbull	Johto	Fairy	<None>	<None>
+163	211	Qwilfish	Johto	Water	Poison	<None>	<None>
+112	212	Scizor	Johto	Bug	Steel	<None>	<None>
+168	213	Shuckle	Johto	Bug	Rock	<None>	<None>
+114	214	Heracross	Johto	Bug	Fighting	<None>	<None>
+218	215	Sneasel	Johto	Dark	Ice	<None>	<None>
+198	216	Teddiursa	Johto	Normal	<None>	<None>
+199	217	Ursaring	Johto	Normal	<None>	<None>
+216	218	Slugma	Johto	Fire	<None>	<None>
+217	219	Magcargo	Johto	Fire	Rock	<None>	<None>
+195	220	Swinub	Johto	Ice	Ground	<None>	<None>
+196	221	Piloswine	Johto	Ice	Ground	<None>	<None>
+173	222	Corsola	Johto	Water	Rock	<None>	<None>
+GAL	222G	Corsola	Galar	Ghost	<None>	<None>
+174	223	Remoraid	Johto	Water	<None>	<None>
+175	224	Octillery	Johto	Water	<None>	<None>
+194	225	Delibird	Johto	Ice	Flying	<None>	<None>
+202	226	Mantine	Johto	Water	Flying	<None>	<None>
+203	227	Skarmory	Johto	Steel	Flying	<None>	<None>
+214	228	Houndour	Johto	Dark	Fire	<None>	<None>
+215	229	Houndoom	Johto	Dark	Fire	<None>	<None>
+192	230	Kingdra	Johto	Water	Dragon	<None>	<None>
+200	231	Phanpy	Johto	Ground	<None>	<None>
+201	232	Donphan	Johto	Ground	<None>	<None>
+221	233	Porygon2	Johto	Normal	<None>	<None>
+131	234	Stantler	Johto	Normal	<None>	<None>
+159	235	Smeargle	Johto	Normal	<None>	<None>
+145	236	Tyrogue	Johto	Fighting	<None>	<None>
+148	237	Hitmontop	Johto	Fighting	<None>	<None>
+154	238	Smoochum	Johto	Ice	Psychic	<None>	<None>
+156	239	Elekid	Johto	Electric	<None>	<None>
+152	240	Magby	Johto	Fire	<None>	<None>
+151	241	Miltank	Johto	Normal	<None>	<None>
+223	242	Blissey	Johto	Normal	<None>	<None>
+243	243	Raikou	Johto	Electric	<None>	<None>
+244	244	Entei	Johto	Fire	<None>	<None>
+245	245	Suicune	Johto	Water	<None>	<None>
+249	246	Larvitar	Johto	Rock	Ground	<None>	<None>
+250	247	Pupitar	Johto	Rock	Ground	<None>	<None>
+251	248	Tyranitar	Johto	Rock	Dark	<None>	<None>
+252	249	Lugia	Johto	Psychic	Flying	<None>	<None>
+253	250	Ho-Oh	Johto	Fire	Flying	<None>	<None>
+256	251	Celebi	Johto	Psychic	Grass	<None>	<None>
+001	252	Treecko	Hoenn	Grass	<None>	<None>
+002	253	Grovyle	Hoenn	Grass	<None>	<None>
+003	254	Sceptile	Hoenn	Grass	<None>	<None>
+004	255	Torchic	Hoenn	Fire	<None>	<None>
+005	256	Combusken	Hoenn	Fire	Fighting	<None>	<None>
+006	257	Blaziken	Hoenn	Fire	Fighting	<None>	<None>
+007	258	Mudkip	Hoenn	Water	<None>	<None>
+008	259	Marshtomp	Hoenn	Water	Ground	<None>	<None>
+009	260	Swampert	Hoenn	Water	Ground	<None>	<None>
+010	261	Poochyena	Hoenn	Dark	<None>	<None>
+011	262	Mightyena	Hoenn	Dark	<None>	<None>
+012	263	Zigzagoon	Hoenn	Normal	<None>	<None>
+GAL	263G	Zigzagoon	Galar	Dark	Normal	<None>	<None>
+013	264	Linoone	Hoenn	Normal	<None>	<None>
+GAL	264G	Linoone	Galar	Dark	Normal	<None>	<None>
+014	265	Wurmple	Hoenn	Bug	<None>	<None>
+015	266	Silcoon	Hoenn	Bug	<None>	<None>
+016	267	Beautifly	Hoenn	Bug	Flying	<None>	<None>
+017	268	Cascoon	Hoenn	Bug	<None>	<None>
+018	269	Dustox	Hoenn	Bug	Poison	<None>	<None>
+019	270	Lotad	Hoenn	Water	Grass	<None>	<None>
+020	271	Lombre	Hoenn	Water	Grass	<None>	<None>
+021	272	Ludicolo	Hoenn	Water	Grass	<None>	<None>
+022	273	Seedot	Hoenn	Grass	<None>	<None>
+023	274	Nuzleaf	Hoenn	Grass	Dark	<None>	<None>
+024	275	Shiftry	Hoenn	Grass	Dark	<None>	<None>
+025	276	Taillow	Hoenn	Normal	Flying	<None>	<None>
+026	277	Swellow	Hoenn	Normal	Flying	<None>	<None>
+027	278	Wingull	Hoenn	Water	Flying	<None>	<None>
+028	279	Pelipper	Hoenn	Water	Flying	<None>	<None>
+029	280	Ralts	Hoenn	Psychic	Fairy	<None>	<None>
+030	281	Kirlia	Hoenn	Psychic	Fairy	<None>	<None>
+031	282	Gardevoir	Hoenn	Psychic	Fairy	<None>	<None>
+032	283	Surskit	Hoenn	Bug	Water	<None>	<None>
+033	284	Masquerain	Hoenn	Bug	Flying	<None>	<None>
+034	285	Shroomish	Hoenn	Grass	<None>	<None>
+035	286	Breloom	Hoenn	Grass	Fighting	<None>	<None>
+036	287	Slakoth	Hoenn	Normal	<None>	<None>
+037	288	Vigoroth	Hoenn	Normal	<None>	<None>
+038	289	Slaking	Hoenn	Normal	<None>	<None>
+042	290	Nincada	Hoenn	Bug	Ground	<None>	<None>
+043	291	Ninjask	Hoenn	Bug	Flying	<None>	<None>
+044	292	Shedinja	Hoenn	Bug	Ghost	<None>	<None>
+045	293	Whismur	Hoenn	Normal	<None>	<None>
+046	294	Loudred	Hoenn	Normal	<None>	<None>
+047	295	Exploud	Hoenn	Normal	<None>	<None>
+048	296	Makuhita	Hoenn	Fighting	<None>	<None>
+049	297	Hariyama	Hoenn	Fighting	<None>	<None>
+054	298	Azurill	Hoenn	Normal	Fairy	<None>	<None>
+060	299	Nosepass	Hoenn	Rock	<None>	<None>
+061	300	Skitty	Hoenn	Normal	<None>	<None>
+062	301	Delcatty	Hoenn	Normal	<None>	<None>
+068	302	Sableye	Hoenn	Dark	Ghost	<None>	<None>
+069	303	Mawile	Hoenn	Steel	Fairy	<None>	<None>
+070	304	Aron	Hoenn	Steel	Rock	<None>	<None>
+071	305	Lairon	Hoenn	Steel	Rock	<None>	<None>
+072	306	Aggron	Hoenn	Steel	Rock	<None>	<None>
+076	307	Meditite	Hoenn	Fighting	Psychic	<None>	<None>
+077	308	Medicham	Hoenn	Fighting	Psychic	<None>	<None>
+078	309	Electrike	Hoenn	Electric	<None>	<None>
+079	310	Manectric	Hoenn	Electric	<None>	<None>
+080	311	Plusle	Hoenn	Electric	<None>	<None>
+081	312	Minun	Hoenn	Electric	<None>	<None>
+086	313	Volbeat	Hoenn	Bug	<None>	<None>
+087	314	Illumise	Hoenn	Bug	<None>	<None>
+094	315	Roselia	Hoenn	Grass	Poison	<None>	<None>
+095	316	Gulpin	Hoenn	Poison	<None>	<None>
+096	317	Swalot	Hoenn	Poison	<None>	<None>
+097	318	Carvanha	Hoenn	Water	Dark	<None>	<None>
+098	319	Sharpedo	Hoenn	Water	Dark	<None>	<None>
+099	320	Wailmer	Hoenn	Water	<None>	<None>
+100	321	Wailord	Hoenn	Water	<None>	<None>
+101	322	Numel	Hoenn	Fire	Ground	<None>	<None>
+102	323	Camerupt	Hoenn	Fire	Ground	<None>	<None>
+105	324	Torkoal	Hoenn	Fire	<None>	<None>
+110	325	Spoink	Hoenn	Psychic	<None>	<None>
+111	326	Grumpig	Hoenn	Psychic	<None>	<None>
+114	327	Spinda	Hoenn	Normal	<None>	<None>
+116	328	Trapinch	Hoenn	Ground	<None>	<None>
+117	329	Vibrava	Hoenn	Ground	Dragon	<None>	<None>
+118	330	Flygon	Hoenn	Ground	Dragon	<None>	<None>
+119	331	Cacnea	Hoenn	Grass	<None>	<None>
+120	332	Cacturne	Hoenn	Grass	Dark	<None>	<None>
+121	333	Swablu	Hoenn	Normal	Flying	<None>	<None>
+122	334	Altaria	Hoenn	Dragon	Flying	<None>	<None>
+123	335	Zangoose	Hoenn	Normal	<None>	<None>
+124	336	Seviper	Hoenn	Poison	<None>	<None>
+125	337	Lunatone	Hoenn	Rock	Psychic	<None>	<None>
+126	338	Solrock	Hoenn	Rock	Psychic	<None>	<None>
+127	339	Barboach	Hoenn	Water	Ground	<None>	<None>
+128	340	Whiscash	Hoenn	Water	Ground	<None>	<None>
+129	341	Corphish	Hoenn	Water	<None>	<None>
+130	342	Crawdaunt	Hoenn	Water	Dark	<None>	<None>
+131	343	Baltoy	Hoenn	Ground	Psychic	<None>	<None>
+132	344	Claydol	Hoenn	Ground	Psychic	<None>	<None>
+133	345	Lileep	Hoenn	Rock	Grass	<None>	<None>
+134	346	Cradily	Hoenn	Rock	Grass	<None>	<None>
+135	347	Anorith	Hoenn	Rock	Bug	<None>	<None>
+136	348	Armaldo	Hoenn	Rock	Bug	<None>	<None>
+140	349	Feebas	Hoenn	Water	<None>	<None>
+141	350	Milotic	Hoenn	Water	<None>	<None>
+142	351	Castform	Hoenn	Normal	<None>	<None>
+145	352	Kecleon	Hoenn	Normal	<None>	<None>
+146	353	Shuppet	Hoenn	Ghost	<None>	<None>
+147	354	Banette	Hoenn	Ghost	<None>	<None>
+148	355	Duskull	Hoenn	Ghost	<None>	<None>
+149	356	Dusclops	Hoenn	Ghost	<None>	<None>
+150	357	Tropius	Hoenn	Grass	Flying	<None>	<None>
+151	358	Chimecho	Hoenn	Psychic	<None>	<None>
+152	359	Absol	Hoenn	Dark	<None>	<None>
+160	360	Wynaut	Hoenn	Psychic	<None>	<None>
+171	361	Snorunt	Hoenn	Ice	<None>	<None>
+172	362	Glalie	Hoenn	Ice	<None>	<None>
+173	363	Spheal	Hoenn	Ice	Water	<None>	<None>
+174	364	Sealeo	Hoenn	Ice	Water	<None>	<None>
+175	365	Walrein	Hoenn	Ice	Water	<None>	<None>
+176	366	Clamperl	Hoenn	Water	<None>	<None>
+177	367	Huntail	Hoenn	Water	<None>	<None>
+178	368	Gorebyss	Hoenn	Water	<None>	<None>
+179	369	Relicanth	Hoenn	Water	Rock	<None>	<None>
+183	370	Luvdisc	Hoenn	Water	<None>	<None>
+187	371	Bagon	Hoenn	Dragon	<None>	<None>
+188	372	Shelgon	Hoenn	Dragon	<None>	<None>
+189	373	Salamence	Hoenn	Dragon	Flying	<None>	<None>
+190	374	Beldum	Hoenn	Steel	Psychic	<None>	<None>
+191	375	Metang	Hoenn	Steel	Psychic	<None>	<None>
+192	376	Metagross	Hoenn	Steel	Psychic	<None>	<None>
+193	377	Regirock	Hoenn	Rock	<None>	<None>
+194	378	Regice	Hoenn	Ice	<None>	<None>
+195	379	Registeel	Hoenn	Steel	<None>	<None>
+196	380	Latias	Hoenn	Dragon	Psychic	<None>	<None>
+197	381	Latios	Hoenn	Dragon	Psychic	<None>	<None>
+198	382	Kyogre	Hoenn	Water	<None>	<None>
+199	383	Groudon	Hoenn	Ground	<None>	<None>
+200	384	Rayquaza	Hoenn	Dragon	Flying	<None>	<None>
+201	385	Jirachi	Hoenn	Steel	Psychic	<None>	<None>
+202	386	Deoxys	Hoenn	Psychic	<None>	<None>
+001	387	Turtwig	Sinnoh	Grass	<None>	<None>
+002	388	Grotle	Sinnoh	Grass	<None>	<None>
+003	389	Torterra	Sinnoh	Grass	Ground	<None>	<None>
+004	390	Chimchar	Sinnoh	Fire	<None>	<None>
+005	391	Monferno	Sinnoh	Fire	Fighting	<None>	<None>
+006	392	Infernape	Sinnoh	Fire	Fighting	<None>	<None>
+007	393	Piplup	Sinnoh	Water	<None>	<None>
+008	394	Prinplup	Sinnoh	Water	<None>	<None>
+009	395	Empoleon	Sinnoh	Water	Steel	<None>	<None>
+010	396	Starly	Sinnoh	Normal	Flying	<None>	<None>
+011	397	Staravia	Sinnoh	Normal	Flying	<None>	<None>
+012	398	Staraptor	Sinnoh	Normal	Flying	<None>	<None>
+013	399	Bidoof	Sinnoh	Normal	<None>	<None>
+014	400	Bibarel	Sinnoh	Normal	Water	<None>	<None>
+015	401	Kricketot	Sinnoh	Bug	<None>	<None>
+016	402	Kricketune	Sinnoh	Bug	<None>	<None>
+017	403	Shinx	Sinnoh	Electric	<None>	<None>
+018	404	Luxio	Sinnoh	Electric	<None>	<None>
+019	405	Luxray	Sinnoh	Electric	<None>	<None>
+025	406	Budew	Sinnoh	Grass	Poison	<None>	<None>
+027	407	Roserade	Sinnoh	Grass	Poison	<None>	<None>
+036	408	Cranidos	Sinnoh	Rock	<None>	<None>
+037	409	Rampardos	Sinnoh	Rock	<None>	<None>
+038	410	Shieldon	Sinnoh	Rock	Steel	<None>	<None>
+039	411	Bastiodon	Sinnoh	Rock	Steel	<None>	<None>
+045	412	Burmy	Sinnoh	Bug	<None>	<None>
+046	413	Wormadam	Sinnoh	Bug	Steel	<None>	<None>
+047	414	Mothim	Sinnoh	Bug	Flying	<None>	<None>
+053	415	Combee	Sinnoh	Bug	Flying	<None>	<None>
+054	416	Vespiquen	Sinnoh	Bug	Flying	<None>	<None>
+055	417	Pachirisu	Sinnoh	Electric	<None>	<None>
+056	418	Buizel	Sinnoh	Water	<None>	<None>
+057	419	Floatzel	Sinnoh	Water	<None>	<None>
+058	420	Cherubi	Sinnoh	Grass	<None>	<None>
+059	421	Cherrim	Sinnoh	Grass	<None>	<None>
+060	422	Shellos	Sinnoh	Water	<None>	<None>
+061	423	Gastrodon	Sinnoh	Water	Ground	<None>	<None>
+064	424	Ambipom	Sinnoh	Normal	<None>	<None>
+065	425	Drifloon	Sinnoh	Ghost	Flying	<None>	<None>
+066	426	Drifblim	Sinnoh	Ghost	Flying	<None>	<None>
+067	427	Buneary	Sinnoh	Normal	<None>	<None>
+068	428	Lopunny	Sinnoh	Normal	<None>	<None>
+073	429	Mismagius	Sinnoh	Ghost	<None>	<None>
+075	430	Honchkrow	Sinnoh	Dark	Flying	<None>	<None>
+076	431	Glameow	Sinnoh	Normal	<None>	<None>
+077	432	Purugly	Sinnoh	Normal	<None>	<None>
+082	433	Chingling	Sinnoh	Psychic	<None>	<None>
+084	434	Stunky	Sinnoh	Poison	Dark	<None>	<None>
+085	435	Skuntank	Sinnoh	Poison	Dark	<None>	<None>
+088	436	Bronzor	Sinnoh	Steel	Psychic	<None>	<None>
+089	437	Bronzong	Sinnoh	Steel	Psychic	<None>	<None>
+092	438	Bonsly	Sinnoh	Rock	<None>	<None>
+094	439	Mime Jr.	Sinnoh	Psychic	Fairy	<None>	<None>
+096	440	Happiny	Sinnoh	Normal	<None>	<None>
+102	441	Chatot	Sinnoh	Normal	Flying	<None>	<None>
+108	442	Spiritomb	Sinnoh	Ghost	Dark	<None>	<None>
+109	443	Gible	Sinnoh	Dragon	Ground	<None>	<None>
+110	444	Gabite	Sinnoh	Dragon	Ground	<None>	<None>
+111	445	Garchomp	Sinnoh	Dragon	Ground	<None>	<None>
+112	446	Munchlax	Sinnoh	Normal	<None>	<None>
+115	447	Riolu	Sinnoh	Fighting	<None>	<None>
+116	448	Lucario	Sinnoh	Fighting	Steel	<None>	<None>
+122	449	Hippopotas	Sinnoh	Ground	<None>	<None>
+123	450	Hippowdon	Sinnoh	Ground	<None>	<None>
+127	451	Skorupi	Sinnoh	Poison	Bug	<None>	<None>
+128	452	Drapion	Sinnoh	Poison	Dark	<None>	<None>
+129	453	Croagunk	Sinnoh	Poison	Fighting	<None>	<None>
+130	454	Toxicroak	Sinnoh	Poison	Fighting	<None>	<None>
+131	455	Carnivine	Sinnoh	Grass	<None>	<None>
+134	456	Finneon	Sinnoh	Water	<None>	<None>
+135	457	Lumineon	Sinnoh	Water	<None>	<None>
+140	458	Mantyke	Sinnoh	Water	Flying	<None>	<None>
+142	459	Snover	Sinnoh	Grass	Ice	<None>	<None>
+143	460	Abomasnow	Sinnoh	Grass	Ice	<None>	<None>
+145	461	Weavile	Sinnoh	Dark	Ice	<None>	<None>
+180	462	Magnezone	Sinnoh	Electric	Steel	<None>	<None>
+162	463	Lickilicky	Sinnoh	Normal	<None>	<None>
+188	464	Rhyperior	Sinnoh	Ground	Rock	<None>	<None>
+182	465	Tangrowth	Sinnoh	Grass	<None>	<None>
+199	466	Electivire	Sinnoh	Electric	<None>	<None>
+202	467	Magmortar	Sinnoh	Fire	<None>	<None>
+175	468	Togekiss	Sinnoh	Fairy	Flying	<None>	<None>
+184	469	Yanmega	Sinnoh	Bug	Flying	<None>	<None>
+169	470	Leafeon	Sinnoh	Grass	<None>	<None>
+170	471	Glaceon	Sinnoh	Ice	<None>	<None>
+154	472	Gliscor	Sinnoh	Ground	Flying	<None>	<None>
+205	473	Mamoswine	Sinnoh	Ice	Ground	<None>	<None>
+194	474	Porygon-Z	Sinnoh	Normal	<None>	<None>
+160	475	Gallade	Sinnoh	Psychic	Fighting	<None>	<None>
+156	476	Probopass	Sinnoh	Rock	Steel	<None>	<None>
+191	477	Dusknoir	Sinnoh	Ghost	<None>	<None>
+208	478	Froslass	Sinnoh	Ice	Ghost	<None>	<None>
+152	479	Rotom	Sinnoh	Electric	Grass	<None>	<None>
+146	480	Uxie	Sinnoh	Psychic	<None>	<None>
+147	481	Mesprit	Sinnoh	Psychic	<None>	<None>
+148	482	Azelf	Sinnoh	Psychic	<None>	<None>
+149	483	Dialga	Sinnoh	Steel	Dragon	<None>	<None>
+150	484	Palkia	Sinnoh	Water	Dragon	<None>	<None>
+---	485	Heatran	Sinnoh	Fire	Steel	<None>	<None>
+---	486	Regigigas	Sinnoh	Normal	<None>	<None>
+210	487	Giratina	Sinnoh	Ghost	Dragon	<None>	<None>
+---	488	Cresselia	Sinnoh	Psychic	<None>	<None>
+---	489	Phione	Sinnoh	Water	<None>	<None>
+151	490	Manaphy	Sinnoh	Water	<None>	<None>
+---	491	Darkrai	Sinnoh	Dark	<None>	<None>
+---	492	Shaymin	Sinnoh	Grass	Flying	<None>	<None>
+---	493	Arceus	Sinnoh	Normal	<None>	<None>
+000	494	Victini	Unova	Psychic	Fire	<None>	<None>
+001	495	Snivy	Unova	Grass	<None>	<None>
+002	496	Servine	Unova	Grass	<None>	<None>
+003	497	Serperior	Unova	Grass	<None>	<None>
+004	498	Tepig	Unova	Fire	<None>	<None>
+005	499	Pignite	Unova	Fire	Fighting	<None>	<None>
+006	500	Emboar	Unova	Fire	Fighting	<None>	<None>
+007	501	Oshawott	Unova	Water	<None>	<None>
+008	502	Dewott	Unova	Water	<None>	<None>
+009	503	Samurott	Unova	Water	<None>	<None>
+010	504	Patrat	Unova	Normal	<None>	<None>
+011	505	Watchog	Unova	Normal	<None>	<None>
+012	506	Lillipup	Unova	Normal	<None>	<None>
+013	507	Herdier	Unova	Normal	<None>	<None>
+014	508	Stoutland	Unova	Normal	<None>	<None>
+015	509	Purrloin	Unova	Dark	<None>	<None>
+016	510	Liepard	Unova	Dark	<None>	<None>
+017	511	Pansage	Unova	Grass	<None>	<None>
+018	512	Simisage	Unova	Grass	<None>	<None>
+019	513	Pansear	Unova	Fire	<None>	<None>
+020	514	Simisear	Unova	Fire	<None>	<None>
+021	515	Panpour	Unova	Water	<None>	<None>
+022	516	Simipour	Unova	Water	<None>	<None>
+023	517	Munna	Unova	Psychic	<None>	<None>
+024	518	Musharna	Unova	Psychic	<None>	<None>
+025	519	Pidove	Unova	Normal	Flying	<None>	<None>
+026	520	Tranquill	Unova	Normal	Flying	<None>	<None>
+027	521	Unfezant	Unova	Normal	Flying	<None>	<None>
+028	522	Blitzle	Unova	Electric	<None>	<None>
+029	523	Zebstrika	Unova	Electric	<None>	<None>
+030	524	Roggenrola	Unova	Rock	<None>	<None>
+031	525	Boldore	Unova	Rock	<None>	<None>
+032	526	Gigalith	Unova	Rock	<None>	<None>
+033	527	Woobat	Unova	Psychic	Flying	<None>	<None>
+034	528	Swoobat	Unova	Psychic	Flying	<None>	<None>
+035	529	Drilbur	Unova	Ground	<None>	<None>
+036	530	Excadrill	Unova	Ground	Steel	<None>	<None>
+037	531	Audino	Unova	Normal	<None>	<None>
+038	532	Timburr	Unova	Fighting	<None>	<None>
+039	533	Gurdurr	Unova	Fighting	<None>	<None>
+040	534	Conkeldurr	Unova	Fighting	<None>	<None>
+041	535	Tympole	Unova	Water	<None>	<None>
+042	536	Palpitoad	Unova	Water	Ground	<None>	<None>
+043	537	Seismitoad	Unova	Water	Ground	<None>	<None>
+044	538	Throh	Unova	Fighting	<None>	<None>
+045	539	Sawk	Unova	Fighting	<None>	<None>
+046	540	Sewaddle	Unova	Bug	Grass	<None>	<None>
+047	541	Swadloon	Unova	Bug	Grass	<None>	<None>
+048	542	Leavanny	Unova	Bug	Grass	<None>	<None>
+049	543	Venipede	Unova	Bug	Poison	<None>	<None>
+050	544	Whirlipede	Unova	Bug	Poison	<None>	<None>
+051	545	Scolipede	Unova	Bug	Poison	<None>	<None>
+052	546	Cottonee	Unova	Grass	Fairy	<None>	<None>
+053	547	Whimsicott	Unova	Grass	Fairy	<None>	<None>
+054	548	Petilil	Unova	Grass	<None>	<None>
+055	549	Lilligant	Unova	Grass	<None>	<None>
+056	550	Basculin	Unova	Water	<None>	<None>
+057	551	Sandile	Unova	Ground	Dark	<None>	<None>
+058	552	Krokorok	Unova	Ground	Dark	<None>	<None>
+059	553	Krookodile	Unova	Ground	Dark	<None>	<None>
+060	554	Darumaka	Unova	Fire	<None>	<None>
+GAL	554G	Darumaka	Galar	Ice	<None>	<None>
+061	555	Darmanitan	Unova	Fire	<None>	<None>
+GAL	555G	Darmanitan	Galar	Ice	Fire	<None>	<None>
+062	556	Maractus	Unova	Grass	<None>	<None>
+063	557	Dwebble	Unova	Bug	Rock	<None>	<None>
+064	558	Crustle	Unova	Bug	Rock	<None>	<None>
+065	559	Scraggy	Unova	Dark	Fighting	<None>	<None>
+066	560	Scrafty	Unova	Dark	Fighting	<None>	<None>
+067	561	Sigilyph	Unova	Psychic	Flying	<None>	<None>
+068	562	Yamask	Unova	Ghost	<None>	<None>
+GAL	562G	Yamask	Galar	Ground	Ghost	<None>	<None>
+069	563	Cofagrigus	Unova	Ghost	<None>	<None>
+070	564	Tirtouga	Unova	Water	Rock	<None>	<None>
+071	565	Carracosta	Unova	Water	Rock	<None>	<None>
+072	566	Archen	Unova	Rock	Flying	<None>	<None>
+073	567	Archeops	Unova	Rock	Flying	<None>	<None>
+074	568	Trubbish	Unova	Poison	<None>	<None>
+075	569	Garbodor	Unova	Poison	<None>	<None>
+076	570	Zorua	Unova	Dark	<None>	<None>
+077	571	Zoroark	Unova	Dark	<None>	<None>
+078	572	Minccino	Unova	Normal	<None>	<None>
+079	573	Cinccino	Unova	Normal	<None>	<None>
+080	574	Gothita	Unova	Psychic	<None>	<None>
+081	575	Gothorita	Unova	Psychic	<None>	<None>
+082	576	Gothitelle	Unova	Psychic	<None>	<None>
+083	577	Solosis	Unova	Psychic	<None>	<None>
+084	578	Duosion	Unova	Psychic	<None>	<None>
+085	579	Reuniclus	Unova	Psychic	<None>	<None>
+086	580	Ducklett	Unova	Water	Flying	<None>	<None>
+087	581	Swanna	Unova	Water	Flying	<None>	<None>
+088	582	Vanillite	Unova	Ice	<None>	<None>
+089	583	Vanillish	Unova	Ice	<None>	<None>
+090	584	Vanilluxe	Unova	Ice	<None>	<None>
+091	585	Deerling	Unova	Normal	Grass	<None>	<None>
+092	586	Sawsbuck	Unova	Normal	Grass	<None>	<None>
+093	587	Emolga	Unova	Electric	Flying	<None>	<None>
+094	588	Karrablast	Unova	Bug	<None>	<None>
+095	589	Escavalier	Unova	Bug	Steel	<None>	<None>
+096	590	Foongus	Unova	Grass	Poison	<None>	<None>
+097	591	Amoonguss	Unova	Grass	Poison	<None>	<None>
+098	592	Frillish	Unova	Water	Ghost	<None>	<None>
+099	593	Jellicent	Unova	Water	Ghost	<None>	<None>
+100	594	Alomomola	Unova	Water	<None>	<None>
+101	595	Joltik	Unova	Bug	Electric	<None>	<None>
+102	596	Galvantula	Unova	Bug	Electric	<None>	<None>
+103	597	Ferroseed	Unova	Grass	Steel	<None>	<None>
+104	598	Ferrothorn	Unova	Grass	Steel	<None>	<None>
+105	599	Klink	Unova	Steel	<None>	<None>
+106	600	Klang	Unova	Steel	<None>	<None>
+107	601	Klinklang	Unova	Steel	<None>	<None>
+108	602	Tynamo	Unova	Electric	<None>	<None>
+109	603	Eelektrik	Unova	Electric	<None>	<None>
+110	604	Eelektross	Unova	Electric	<None>	<None>
+111	605	Elgyem	Unova	Psychic	<None>	<None>
+112	606	Beheeyem	Unova	Psychic	<None>	<None>
+113	607	Litwick	Unova	Ghost	Fire	<None>	<None>
+114	608	Lampent	Unova	Ghost	Fire	<None>	<None>
+115	609	Chandelure	Unova	Ghost	Fire	<None>	<None>
+116	610	Axew	Unova	Dragon	<None>	<None>
+117	611	Fraxure	Unova	Dragon	<None>	<None>
+118	612	Haxorus	Unova	Dragon	<None>	<None>
+119	613	Cubchoo	Unova	Ice	<None>	<None>
+120	614	Beartic	Unova	Ice	<None>	<None>
+121	615	Cryogonal	Unova	Ice	<None>	<None>
+122	616	Shelmet	Unova	Bug	<None>	<None>
+123	617	Accelgor	Unova	Bug	<None>	<None>
+124	618	Stunfisk	Unova	Ground	Electric	<None>	<None>
+GAL	618G	Stunfisk	Galar	Ground	Steel	<None>	<None>
+125	619	Mienfoo	Unova	Fighting	<None>	<None>
+126	620	Mienshao	Unova	Fighting	<None>	<None>
+127	621	Druddigon	Unova	Dragon	<None>	<None>
+128	622	Golett	Unova	Ground	Ghost	<None>	<None>
+129	623	Golurk	Unova	Ground	Ghost	<None>	<None>
+130	624	Pawniard	Unova	Dark	Steel	<None>	<None>
+131	625	Bisharp	Unova	Dark	Steel	<None>	<None>
+132	626	Bouffalant	Unova	Normal	<None>	<None>
+133	627	Rufflet	Unova	Normal	Flying	<None>	<None>
+134	628	Braviary	Unova	Normal	Flying	<None>	<None>
+135	629	Vullaby	Unova	Dark	Flying	<None>	<None>
+136	630	Mandibuzz	Unova	Dark	Flying	<None>	<None>
+137	631	Heatmor	Unova	Fire	<None>	<None>
+138	632	Durant	Unova	Bug	Steel	<None>	<None>
+139	633	Deino	Unova	Dark	Dragon	<None>	<None>
+140	634	Zweilous	Unova	Dark	Dragon	<None>	<None>
+141	635	Hydreigon	Unova	Dark	Dragon	<None>	<None>
+142	636	Larvesta	Unova	Bug	Fire	<None>	<None>
+143	637	Volcarona	Unova	Bug	Fire	<None>	<None>
+144	638	Cobalion	Unova	Steel	Fighting	<None>	<None>
+145	639	Terrakion	Unova	Rock	Fighting	<None>	<None>
+146	640	Virizion	Unova	Grass	Fighting	<None>	<None>
+147	641	Tornadus	Unova	Flying	<None>	<None>
+148	642	Thundurus	Unova	Electric	Flying	<None>	<None>
+149	643	Reshiram	Unova	Dragon	Fire	<None>	<None>
+150	644	Zekrom	Unova	Dragon	Electric	<None>	<None>
+151	645	Landorus	Unova	Ground	Flying	<None>	<None>
+152	646	Kyurem	Unova	Dragon	Ice	<None>	<None>
+153	647	Keldeo	Unova	Water	Fighting	<None>	<None>
+154	648	Meloetta	Unova	Normal	Fighting	<None>	<None>
+155	649	Genesect	Unova	Bug	Steel	<None>	<None>
+001	650	Chespin	Kalos	Grass	<None>	<None>
+002	651	Quilladin	Kalos	Grass	<None>	<None>
+003	652	Chesnaught	Kalos	Grass	Fighting	<None>	<None>
+004	653	Fennekin	Kalos	Fire	<None>	<None>
+005	654	Braixen	Kalos	Fire	<None>	<None>
+006	655	Delphox	Kalos	Fire	Psychic	<None>	<None>
+007	656	Froakie	Kalos	Water	<None>	<None>
+008	657	Frogadier	Kalos	Water	<None>	<None>
+009	658	Greninja	Kalos	Water	Dark	<None>	<None>
+010	659	Bunnelby	Kalos	Normal	<None>	<None>
+011	660	Diggersby	Kalos	Normal	Ground	<None>	<None>
+014	661	Fletchling	Kalos	Normal	Flying	<None>	<None>
+015	662	Fletchinder	Kalos	Fire	Flying	<None>	<None>
+016	663	Talonflame	Kalos	Fire	Flying	<None>	<None>
+020	664	Scatterbug	Kalos	Bug	<None>	<None>
+021	665	Spewpa	Kalos	Bug	<None>	<None>
+022	666	Vivillon	Kalos	Bug	Flying	<None>	<None>
+057	667	Litleo	Kalos	Fire	Normal	<None>	<None>
+058	668	Pyroar	Kalos	Fire	Normal	<None>	<None>
+068	669	Flabébé	Kalos	Fairy	<None>	<None>
+069	670	Floette	Kalos	Fairy	<None>	<None>
+070	671	Florges	Kalos	Fairy	<None>	<None>
+089	672	Skiddo	Kalos	Grass	<None>	<None>
+090	673	Gogoat	Kalos	Grass	<None>	<None>
+091	674	Pancham	Kalos	Fighting	<None>	<None>
+092	675	Pangoro	Kalos	Fighting	Dark	<None>	<None>
+093	676	Furfrou	Kalos	Normal	<None>	<None>
+114	677	Espurr	Kalos	Psychic	<None>	<None>
+115	678	Meowstic	Kalos	Psychic	<None>	<None>
+117	679	Honedge	Kalos	Steel	Ghost	<None>	<None>
+118	680	Doublade	Kalos	Steel	Ghost	<None>	<None>
+119	681	Aegislash	Kalos	Steel	Ghost	<None>	<None>
+129	682	Spritzee	Kalos	Fairy	<None>	<None>
+130	683	Aromatisse	Kalos	Fairy	<None>	<None>
+131	684	Swirlix	Kalos	Fairy	<None>	<None>
+132	685	Slurpuff	Kalos	Fairy	<None>	<None>
+010	686	Inkay	Kalos	Dark	Psychic	<None>	<None>
+011	687	Malamar	Kalos	Dark	Psychic	<None>	<None>
+021	688	Binacle	Kalos	Rock	Water	<None>	<None>
+022	689	Barbaracle	Kalos	Rock	Water	<None>	<None>
+030	690	Skrelp	Kalos	Poison	Water	<None>	<None>
+031	691	Dragalge	Kalos	Poison	Dragon	<None>	<None>
+032	692	Clauncher	Kalos	Water	<None>	<None>
+033	693	Clawitzer	Kalos	Water	<None>	<None>
+046	694	Helioptile	Kalos	Electric	Normal	<None>	<None>
+047	695	Heliolisk	Kalos	Electric	Normal	<None>	<None>
+064	696	Tyrunt	Kalos	Rock	Dragon	<None>	<None>
+065	697	Tyrantrum	Kalos	Rock	Dragon	<None>	<None>
+066	698	Amaura	Kalos	Rock	Ice	<None>	<None>
+067	699	Aurorus	Kalos	Rock	Ice	<None>	<None>
+085	700	Sylveon	Kalos	Fairy	<None>	<None>
+089	701	Hawlucha	Kalos	Fighting	Flying	<None>	<None>
+110	702	Dedenne	Kalos	Electric	Fairy	<None>	<None>
+124	703	Carbink	Kalos	Rock	Fairy	<None>	<None>
+019	704	Goomy	Kalos	Dragon	<None>	<None>
+020	705	Sliggoo	Kalos	Dragon	<None>	<None>
+021	706	Goodra	Kalos	Dragon	<None>	<None>
+050	707	Klefki	Kalos	Steel	Fairy	<None>	<None>
+061	708	Phantump	Kalos	Ghost	Grass	<None>	<None>
+062	709	Trevenant	Kalos	Ghost	Grass	<None>	<None>
+063	710	Pumpkaboo	Kalos	Ghost	Grass	<None>	<None>
+064	711	Gourgeist	Kalos	Ghost	Grass	<None>	<None>
+079	712	Bergmite	Kalos	Ice	<None>	<None>
+080	713	Avalugg	Kalos	Ice	<None>	<None>
+113	714	Noibat	Kalos	Flying	Dragon	<None>	<None>
+114	715	Noivern	Kalos	Flying	Dragon	<None>	<None>
+148	716	Xerneas	Kalos	Fairy	<None>	<None>
+149	717	Yveltal	Kalos	Dark	Flying	<None>	<None>
+150	718	Zygarde	Kalos	Dragon	Ground	<None>	<None>
+151	719	Diancie	Kalos	Rock	Fairy	<None>	<None>
+152	720	Hoopa	Kalos	Psychic	Dark	<None>	<None>
+153	721	Volcanion	Kalos	Fire	Water	<None>	<None>
+001	722	Rowlet	Alola	Grass	Flying	<None>	<None>
+002	723	Dartrix	Alola	Grass	Flying	<None>	<None>
+003	724	Decidueye	Alola	Grass	Ghost	<None>	<None>
+004	725	Litten	Alola	Fire	<None>	<None>
+005	726	Torracat	Alola	Fire	<None>	<None>
+006	727	Incineroar	Alola	Fire	Dark	<None>	<None>
+007	728	Popplio	Alola	Water	<None>	<None>
+008	729	Brionne	Alola	Water	<None>	<None>
+009	730	Primarina	Alola	Water	Fairy	<None>	<None>
+010	731	Pikipek	Alola	Normal	Flying	<None>	<None>
+011	732	Trumbeak	Alola	Normal	Flying	<None>	<None>
+012	733	Toucannon	Alola	Normal	Flying	<None>	<None>
+013	734	Yungoos	Alola	Normal	<None>	<None>
+014	735	Gumshoos	Alola	Normal	<None>	<None>
+027	736	Grubbin	Alola	Bug	<None>	<None>
+028	737	Charjabug	Alola	Bug	Electric	<None>	<None>
+029	738	Vikavolt	Alola	Bug	Electric	<None>	<None>
+059	739	Crabrawler	Alola	Fighting	<None>	<None>
+060	740	Crabominable	Alola	Fighting	Ice	<None>	<None>
+082	741	Oricorio	Alola	Electric	Flying	<None>	<None>
+083	742	Cutiefly	Alola	Bug	Fairy	<None>	<None>
+084	743	Ribombee	Alola	Bug	Fairy	<None>	<None>
+103	744	Rockruff	Alola	Rock	<None>	<None>
+104	745	Lycanroc	Alola	Rock	<None>	<None>
+110	746	Wishiwashi	Alola	Water	<None>	<None>
+113	747	Mareanie	Alola	Poison	Water	<None>	<None>
+114	748	Toxapex	Alola	Poison	Water	<None>	<None>
+132	749	Mudbray	Alola	Ground	<None>	<None>
+133	750	Mudsdale	Alola	Ground	<None>	<None>
+141	751	Dewpider	Alola	Water	Bug	<None>	<None>
+142	752	Araquanid	Alola	Water	Bug	<None>	<None>
+143	753	Fomantis	Alola	Grass	<None>	<None>
+144	754	Lurantis	Alola	Grass	<None>	<None>
+145	755	Morelull	Alola	Grass	Fairy	<None>	<None>
+146	756	Shiinotic	Alola	Grass	Fairy	<None>	<None>
+161	757	Salandit	Alola	Poison	Fire	<None>	<None>
+162	758	Salazzle	Alola	Poison	Fire	<None>	<None>
+169	759	Stufful	Alola	Normal	Fighting	<None>	<None>
+170	760	Bewear	Alola	Normal	Fighting	<None>	<None>
+171	761	Bounsweet	Alola	Grass	<None>	<None>
+172	762	Steenee	Alola	Grass	<None>	<None>
+173	763	Tsareena	Alola	Grass	<None>	<None>
+174	764	Comfey	Alola	Fairy	<None>	<None>
+176	765	Oranguru	Alola	Normal	Psychic	<None>	<None>
+177	766	Passimian	Alola	Fighting	<None>	<None>
+182	767	Wimpod	Alola	Bug	Water	<None>	<None>
+183	768	Golisopod	Alola	Bug	Water	<None>	<None>
+186	769	Sandygast	Alola	Ghost	Ground	<None>	<None>
+187	770	Palossand	Alola	Ghost	Ground	<None>	<None>
+200	771	Pyukumuku	Alola	Water	<None>	<None>
+203	772	Type: Null	Alola	Normal	<None>	<None>
+204	773	Silvally	Alola	Normal	<None>	<None>
+213	774	Minior	Alola	Rock	Flying	<None>	<None>
+222	775	Komala	Alola	Normal	<None>	<None>
+224	776	Turtonator	Alola	Fire	Dragon	<None>	<None>
+225	777	Togedemaru	Alola	Electric	Steel	<None>	<None>
+242	778	Mimikyu	Alola	Ghost	Fairy	<None>	<None>
+243	779	Bruxish	Alola	Water	Psychic	<None>	<None>
+244	780	Drampa	Alola	Normal	Dragon	<None>	<None>
+263	781	Dhelmise	Alola	Ghost	Grass	<None>	<None>
+271	782	Jangmo-o	Alola	Dragon	<None>	<None>
+272	783	Hakamo-o	Alola	Dragon	Fighting	<None>	<None>
+273	784	Kommo-o	Alola	Dragon	Fighting	<None>	<None>
+285	785	Tapu Koko	Alola	Electric	Fairy	<None>	<None>
+286	786	Tapu Lele	Alola	Psychic	Fairy	<None>	<None>
+287	787	Tapu Bulu	Alola	Grass	Fairy	<None>	<None>
+288	788	Tapu Fini	Alola	Water	Fairy	<None>	<None>
+289	789	Cosmog	Alola	Psychic	<None>	<None>
+290	790	Cosmoem	Alola	Psychic	<None>	<None>
+291	791	Solgaleo	Alola	Psychic	Steel	<None>	<None>
+292	792	Lunala	Alola	Psychic	Ghost	<None>	<None>
+293	793	Nihilego	Alola	Rock	Poison	<None>	<None>
+294	794	Buzzwole	Alola	Bug	Fighting	<None>	<None>
+295	795	Pheromosa	Alola	Bug	Fighting	<None>	<None>
+296	796	Xurkitree	Alola	Electric	<None>	<None>
+297	797	Celesteela	Alola	Steel	Flying	<None>	<None>
+298	798	Kartana	Alola	Grass	Steel	<None>	<None>
+299	799	Guzzlord	Alola	Dark	Dragon	<None>	<None>
+300	800	Necrozma	Alola	Psychic	<None>	<None>
+301	801	Magearna	Alola	Steel	Fairy	<None>	<None>
+302	802	Marshadow	Alola	Fighting	Ghost	<None>	<None>
+261	803	Poipole	Alola	Poison	<None>	<None>
+262	804	Naganadel	Alola	Poison	Dragon	<None>	<None>
+392	805	Stakataka	Alola	Rock	Steel	<None>	<None>
+393	806	Blacephalon	Alola	Fire	Ghost	<None>	<None>
+403	807	Zeraora	Alola	Electric	<None>	<None>
+---	808	Meltan	Alola	Steel	<None>	<None>
+---	809	Melmetal	Alola	Steel	<None>	<None>
+001	810	Grookey	Galar	Grass	<None>	<None>
+002	811	Thwackey	Galar	Grass	<None>	<None>
+003	812	Rillaboom	Galar	Grass	<None>	<None>
+004	813	Scorbunny	Galar	Fire	<None>	<None>
+005	814	Raboot	Galar	Fire	<None>	<None>
+006	815	Cinderace	Galar	Fire	<None>	<None>
+007	816	Sobble	Galar	Water	<None>	<None>
+008	817	Drizzile	Galar	Water	<None>	<None>
+009	818	Inteleon	Galar	Water	<None>	<None>
+024	819	Skwovet	Galar	Normal	<None>	<None>
+025	820	Greedent	Galar	Normal	<None>	<None>
+021	821	Rookidee	Galar	Flying	<None>	<None>
+022	822	Corvisquire	Galar	Flying	<None>	<None>
+023	823	Corviknight	Galar	Flying	Steel	<None>	<None>
+010	824	Blipbug	Galar	Bug	<None>	<None>
+011	825	Dottler	Galar	Bug	Psychic	<None>	<None>
+012	826	Orbeetle	Galar	Bug	Psychic	<None>	<None>
+029	827	Nickit	Galar	Dark	<None>	<None>
+030	828	Thievul	Galar	Dark	<None>	<None>
+126	829	Gossifleur	Galar	Grass	<None>	<None>
+127	830	Eldegoss	Galar	Grass	<None>	<None>
+034	831	Wooloo	Galar	Normal	<None>	<None>
+035	832	Dubwool	Galar	Normal	<None>	<None>
+042	833	Chewtle	Galar	Water	<None>	<None>
+043	834	Drednaw	Galar	Water	Rock	<None>	<None>
+046	835	Yamper	Galar	Electric	<None>	<None>
+047	836	Boltund	Galar	Electric	<None>	<None>
+161	837	Rolycoly	Galar	Rock	<None>	<None>
+162	838	Carkol	Galar	Rock	Fire	<None>	<None>
+163	839	Coalossal	Galar	Rock	Fire	<None>	<None>
+205	840	Applin	Galar	Grass	Dragon	<None>	<None>
+206	841	Flapple	Galar	Grass	Dragon	<None>	<None>
+207	842	Appletun	Galar	Grass	Dragon	<None>	<None>
+312	843	Silicobra	Galar	Ground	<None>	<None>
+313	844	Sandaconda	Galar	Ground	<None>	<None>
+309	845	Cramorant	Galar	Flying	Water	<None>	<None>
+180	846	Arrokuda	Galar	Water	<None>	<None>
+181	847	Barraskewda	Galar	Water	<None>	<None>
+310	848	Toxel	Galar	Electric	Poison	<None>	<None>
+311	849	Toxtricity	Galar	Electric	Poison	<None>	<None>
+159	850	Sizzlipede	Galar	Fire	Bug	<None>	<None>
+160	851	Centiskorch	Galar	Fire	Bug	<None>	<None>
+351	852	Clobbopus	Galar	Fighting	<None>	<None>
+352	853	Grapploct	Galar	Fighting	<None>	<None>
+335	854	Sinistea	Galar	Ghost	<None>	<None>
+336	855	Polteageist	Galar	Ghost	<None>	<None>
+241	856	Hatenna	Galar	Psychic	<None>	<None>
+242	857	Hattrem	Galar	Psychic	<None>	<None>
+243	858	Hatterene	Galar	Psychic	Fairy	<None>	<None>
+238	859	Impidimp	Galar	Dark	Fairy	<None>	<None>
+239	860	Morgrem	Galar	Dark	Fairy	<None>	<None>
+240	861	Grimmsnarl	Galar	Dark	Fairy	<None>	<None>
+033	862	Obstagoon	Galar	Dark	Normal	<None>	<None>
+183	863	Perrserker	Galar	Steel	<None>	<None>
+237	864	Cursola	Galar	Ghost	<None>	<None>
+219	865	Sirfetch'd	Galar	Fighting	<None>	<None>
+366	866	Mr. Rime	Galar	Ice	Psychic	<None>	<None>
+328	867	Runerigus	Galar	Ground	Ghost	<None>	<None>
+185	868	Milcery	Galar	Fairy	<None>	<None>
+186	869	Alcremie	Galar	Fairy	<None>	<None>
+345	870	Falinks	Galar	Fighting	<None>	<None>
+353	871	Pincurchin	Galar	Electric	<None>	<None>
+349	872	Snom	Galar	Ice	Bug	<None>	<None>
+350	873	Frosmoth	Galar	Ice	Bug	<None>	<None>
+369	874	Stonjourner	Galar	Rock	<None>	<None>
+370	875	Eiscue	Galar	Ice	<None>	<None>
+337	876	Indeedee	Galar	Psychic	Normal	<None>	<None>
+344	877	Morpeko	Galar	Electric	Dark	<None>	<None>
+302	878	Cufant	Galar	Steel	<None>	<None>
+303	879	Copperajah	Galar	Steel	<None>	<None>
+374	880	Dracozolt	Galar	Electric	Dragon	<None>	<None>
+375	881	Arctozolt	Galar	Electric	Ice	<None>	<None>
+376	882	Dracovish	Galar	Water	Dragon	<None>	<None>
+377	883	Arctovish	Galar	Water	Ice	<None>	<None>
+371	884	Duraludon	Galar	Steel	Dragon	<None>	<None>
+395	885	Dreepy	Galar	Dragon	Ghost	<None>	<None>
+396	886	Drakloak	Galar	Dragon	Ghost	<None>	<None>
+397	887	Dragapult	Galar	Dragon	Ghost	<None>	<None>
+398	888	Zacian	Galar	Fairy	Steel	<None>	<None>
+399	889	Zamazenta	Galar	Fighting	Steel	<None>	<None>
+400	890	Eternatus	Galar	Poison	Dragon	<None>	<None>
+---	891	Kubfu	Galar	Fighting	<None>	<None>
+---	892	Urshifu	Galar	Fighting	Water	<None>	<None>
+---	893	Zarude	Galar	Dark	Grass	<None>	<None>
+---	894	Regieleki	Galar	Electric	<None>	<None>
+---	895	Regidrago	Galar	Dragon	<None>	<None>
+---	896	Glastrier	Galar	Ice	<None>	<None>
+---	897	Spectrier	Galar	Ghost	<None>	<None>
+---	898	Calyrex	Galar	Psychic	Ghost	<None>	<None>
