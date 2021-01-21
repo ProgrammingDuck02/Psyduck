@@ -1,5 +1,5 @@
 class pokemon:
-    def __init__(self, regional = None, national = None, name = None, type1 = None, type2 = None, region = None, emote = None):
+    def __init__(self, regional = None, national = None, name = None, type1 = None, type2 = None, region = None, emote = None, shiny_emote = None):
         self.regional_number = regional
         self.national_number = national
         self.name = name
@@ -7,6 +7,7 @@ class pokemon:
         self.type2 = type2
         self.region = region
         self.emote = emote
+        self.shiny_emote = shiny_emote
 
     def get_from_string(self, pokestring):
         if len(pokestring) == 0:
@@ -17,12 +18,14 @@ class pokemon:
         self.name = temp_array[2]
         self.region = temp_array[3]
         self.type1 = temp_array[4]
-        if len(temp_array) > 6:
+        if len(temp_array) > 7:
             self.type2 = temp_array[5]
             self.emote = temp_array[6]
+            self.shiny_emote = temp_array[7]
         else:
             self.type2 = None
             self.emote = temp_array[5]
+            self.shiny_emote = temp_array[6]
         return True
 
     def set_region(self):
@@ -69,4 +72,5 @@ class pokemon:
         if self.dual_type():
             string = string + "\t" + self.type2
         string = string + "\t" + self.emote
+        string = string + "\t" + self.shiny_emote
         return string

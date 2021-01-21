@@ -106,18 +106,19 @@ def update(table, fields, values, conditions):
     cursor.execute(sql)
     DB.commit()
     return True
+#########################
+
+def get_pokemon_by_nat(nat_number):
+    poke_data = select_one("pokemon",("national_number", "regional_number", "name", "type1", "type2", "region", "emote", "shiny_emote"), "national_number = \""+nat_number+"\"")
+    if not poke_data:
+        return False
+    if poke_data[4] == "NULL":
+        poke_data[4] = None
+    poke = pokemon(poke_data[1], poke_data[0], poke_data[2], poke_data[3], poke_data[4], poke_data[5], poke_data[6], poke_data[7])
+    return poke
 
 #sys.stdout = open("psyduck.log","a")
 #sys.stderr = open("psyduck.error.log","a")
-emote_file = open("Additional_files/emotes.txt")
-lines = emote_file.read().split("\n")
-emote_file.close()
-for line in lines:
-    arr = line.split(" ")
-    update("pokemon", ("emote",), (arr[1],), "national_number = \""+arr[0]+"\"")
-emote_file = open("Additional_files/shiny_emotes.txt")
-lines = emote_file.read().split("\n")
-emote_file.close()
-for line in lines:
-    arr = line.split(" ")
-    update("pokemon", ("shiny_emote",), (arr[1],), "national_number = \""+arr[0]+"\"")
+
+temp = select_one("pokemon", ("type2",), "national_number = \"004\"")
+print(temp[0])
