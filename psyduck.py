@@ -153,9 +153,9 @@ async def on_message(message):
             else:
                 pokemon_emotes[poke[3]-1] = spieces[2]
         party_size = len(temp_list)
-        party = pokemon_names[0] + pokemon_emotes[0] + " lvl." + pokemon_levels[0]
+        party = pokemon_emotes[0] + pokemon_names[0] + " lvl." + pokemon_levels[0]
         for i in range(1, party_size):
-            party += "\n" + pokemon_names[i] + pokemon_emotes[i] + " lvl." + pokemon_levels[i]
+            party += "\n" + pokemon_emotes[i] + pokemon_names[i] + " lvl." + pokemon_levels[i]
         embed.add_field(name = message.author.name + "'s party", value = party)
         await message.channel.send(embed = embed)
         return
@@ -173,4 +173,15 @@ async def on_ready():
 secretfile = open("TOKEN","r")
 TOKEN = secretfile.read()
 secretfile.close()
-client.run(TOKEN)
+#client.run(TOKEN)
+
+s_emote_file = "Additional_files/shiny_emotes.txt"
+file = open(s_emote_file)
+text = file.read()
+file.close()
+emotes = text.split("\n")
+for emote in emotes:
+    temp_arr = emote.split(" ")
+    id = temp_arr[0]
+    emo = temp_arr[1]
+    update("pokemon", ("shiny_emote",), (emo,), "national_number = \""+id+"\"")
