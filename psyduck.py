@@ -138,7 +138,9 @@ for i in range(start, end+1):
     poke = get_pokemon_by_nat(number)
     if poke:
         file.write(poke.to_string()+"\n")
-    number[3] = "G"
+    number = number[:3]
+    number = number + "G"
     poke = get_pokemon_by_nat(number)
     if poke:
         file.write(poke.to_string()+"\n")
+file.close()
