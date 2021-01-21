@@ -133,9 +133,8 @@ async def on_message(message):
     mes = message.content[len(prefix):]
     if mes.lower() == "party":
         embed = discord.Embed(title = message.author.name + "'s party", color = discord.Color.green())
-        embed.set_author(message.author)
-        embed.set_thumbnail(url = message.author.avatar_url)
-        embed.add_field("First_pokemon_name", "Pokemon_emoji")
+        embed.set_author(name = message.author.name, icon_url = message.author.avatar_url)
+        embed.add_field(name = "First_pokemon_name", value = "Pokemon_emoji")
         await message.channel.send(embed = embed)
         return
     if mes.lower() == "off":
