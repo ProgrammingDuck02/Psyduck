@@ -303,6 +303,52 @@ async def on_message(message):
         await message.channel.send("Pokemon switched places!")
         return
 
+    if mes.lower().startswith("deposit"):
+        words = mes.split(" ")
+        if len(words) < 3:
+            await message.channel.send("Wrong number of parameters!\nCorrect use: "+prefix+"deposit [pokemon] [box/box number]\nCheck "+prefix+"help for more informations")
+            return
+        poke = words[1]
+        box = words[2].upper()
+        if not box.lower().startswih("box"):
+            box = "BOX" + box
+        if not is_number(poke):
+            await message.channel.send(words[1] + " is not a valid party number")
+            return
+        if int(poke) < 1 or int(poke) > 6:
+            await message.channel.send(words[1] + " is not a valid party number")
+            return
+        if not is_number(box[3:]):
+            await message.channel.send(words[2] + " is not a valid box name or box number")
+            return
+        if int(box[3:]) < 1 or int(box[3:]) > 50:
+            await message.channel.send(words[2] + " is not a valid box name or box number")
+            return
+        check = select_one("owned_pokemon", ("id",), "trainer = \""+str(message.author.id) + "\" AND location = \"party\" AND position = " + str(poke))
+        if not check:
+            await message.channel.send("Oops, looks like you don't have any pokemon in your party in position "+str(poke))
+            return
+        pokemon_in_box = 0
+        temp = select("owned_pokemon", ("position",), "trainer = \""+str(message.author.id) + "\" AND location = \""+ box + "\"")
+        if temp:
+            pokemon_in_box = len(temp)
+        if pokemon_in_box >= 10:
+            await message.channel.send("Oops, looks like your " + box + " is full. Consider changing boxes")
+            return
+        new_position = 0
+        for i in range(1,11):
+            ok = True
+            for each in temp:
+                if each[0] == i:
+                    ok = False
+                    break
+            if ok:
+                new_position = i
+                break
+        update("owned_pokemon", ("location", "position"), (box, str(new_position)), "trainer = \""+str(message.author.id) + "\" AND location = \"party\" AND position = " + str(poke))
+        await message.channel.send("Done! Your pokemon has been boxed into "+box)
+        return
+
     #Delete before final distribution duh
     if mes.lower() == "off":
         await message.channel.send("Logging out...")
