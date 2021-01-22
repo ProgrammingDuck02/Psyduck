@@ -11,6 +11,8 @@ DB = None
 prefix = "?"
 
 def is_number(string):
+    if len(string) == 0:
+        return False
     for letter in string:
         if ord(letter) < ord("0"):
             return False
