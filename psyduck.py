@@ -428,7 +428,7 @@ async def on_message(message):
             return
         if check[1] == None:
             check[1] = select_one("pokemon", ("name",), "national_number = \""+check[2]+"\"")[0]
-        delete("owned_pokemon", "id = "+check[0])
+        delete("owned_pokemon", "id = "+str(check[0]))
         await message.channel.send(check[1]+" was released. Bye bye "+check[1]+"!")
         return
 
