@@ -128,6 +128,13 @@ def update(table, fields, values, conditions):
     cursor.execute(sql)
     DB.commit()
     return True
+
+def shift_down(location, position):
+    connect_db()
+    global cursor, DB
+    sql = "UPDATE owned_pokemon SET position = position - 1 WHERE location = \""+location+"\" AND position > "+position
+    cursor.execute(sql)
+    DB.commit()
 #########################
 
 def get_pokemon_by_nat(nat_number):
@@ -346,6 +353,7 @@ async def on_message(message):
                 new_position = i
                 break
         update("owned_pokemon", ("location", "position"), (box, str(new_position)), "trainer_id = \""+str(message.author.id) + "\" AND location = \"party\" AND position = " + str(poke))
+        shift_down("party", str(poke))
         await message.channel.send("Done! Your pokemon has been boxed into "+box)
         return
     
@@ -387,8 +395,10 @@ async def on_message(message):
             await message.channel.send("Oops, looks like you don't have any pokemon on position "+poke+" in "+box)
             return
         update("owned_pokemon", ("location", "position"), ("party", str(position)), "id = "+str(check[0]))
+        shift_down(box, poke)
         await message.channel.send("Done! pokemon added to your team!")
         return
+        
         
 
     #Delete before final distribution duh
