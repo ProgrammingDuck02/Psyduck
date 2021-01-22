@@ -324,12 +324,12 @@ async def on_message(message):
         if int(box[3:]) < 1 or int(box[3:]) > 50:
             await message.channel.send(words[2] + " is not a valid box name or box number")
             return
-        check = select_one("owned_pokemon", ("id",), "trainer = \""+str(message.author.id) + "\" AND location = \"party\" AND position = " + str(poke))
+        check = select_one("owned_pokemon", ("id",), "trainer_id = \""+str(message.author.id) + "\" AND location = \"party\" AND position = " + str(poke))
         if not check:
             await message.channel.send("Oops, looks like you don't have any pokemon in your party in position "+str(poke))
             return
         pokemon_in_box = 0
-        temp = select("owned_pokemon", ("position",), "trainer = \""+str(message.author.id) + "\" AND location = \""+ box + "\"")
+        temp = select("owned_pokemon", ("position",), "trainer_id = \""+str(message.author.id) + "\" AND location = \""+ box + "\"")
         if temp:
             pokemon_in_box = len(temp)
         if pokemon_in_box >= 10:
@@ -345,7 +345,7 @@ async def on_message(message):
             if ok:
                 new_position = i
                 break
-        update("owned_pokemon", ("location", "position"), (box, str(new_position)), "trainer = \""+str(message.author.id) + "\" AND location = \"party\" AND position = " + str(poke))
+        update("owned_pokemon", ("location", "position"), (box, str(new_position)), "trainer_id = \""+str(message.author.id) + "\" AND location = \"party\" AND position = " + str(poke))
         await message.channel.send("Done! Your pokemon has been boxed into "+box)
         return
 
