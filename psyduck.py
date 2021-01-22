@@ -426,10 +426,11 @@ async def on_message(message):
         if not check:
             await message.channel.send("Oops, looks like you don't have any pokemon on position "+words[2]+" in your "+words[4])
             return
+        name = check[1]
         if check[1] == None:
-            check[1] = select_one("pokemon", ("name",), "national_number = \""+check[2]+"\"")[0]
+            name = select_one("pokemon", ("name",), "national_number = \""+check[2]+"\"")[0]
         delete("owned_pokemon", "id = "+str(check[0]))
-        await message.channel.send(check[1]+" was released. Bye bye "+check[1]+"!")
+        await message.channel.send(name+" was released. Bye bye "+name+"!")
         return
 
 
