@@ -329,7 +329,7 @@ async def on_message(message):
             await message.channel.send("Oops, looks like you don't have any pokemon in your party in position "+str(poke))
             return
         pokemon_in_box = 0
-        temp = select("owned_pokemon", ("position",), "trainer_id = \""+str(message.author.id) + "\" AND location = \""+ box + "\"")
+        temp = select("owned_pokemon", ("position",), "trainer_id = \""+str(message.author.id) + "\" AND location = \""+ box + "\" AND position >= 1 AND position <= 10")
         if temp:
             pokemon_in_box = len(temp)
         if pokemon_in_box >= 10:
@@ -348,6 +348,48 @@ async def on_message(message):
         update("owned_pokemon", ("location", "position"), (box, str(new_position)), "trainer_id = \""+str(message.author.id) + "\" AND location = \"party\" AND position = " + str(poke))
         await message.channel.send("Done! Your pokemon has been boxed into "+box)
         return
+    
+    if mes.lower().startswith("withdraw"):
+        words = mes.split(" ")
+        if len(words) < 3:
+            await message.channel.send("Wrong number of parameters!\nCorrect use: "+prefix+"withdraw [box/box number] [pokemon number in box]\nCheck "+prefix+"help for more informations")
+            return
+        box = words[1].upper()
+        if not box.startswith("BOX"):
+            box = "BOX" + box
+        if not is_number(box[3:]):
+            await message.channel.send(words[2] + " is not a valid box name or box number")
+            return
+        if int(box[3:]) < 1 or int(box[3:]) > 50:
+            await message.channel.send(words[2] + " is not a valid box name or box number")
+            return
+        poke = words[2]
+        if not is_number(poke):
+            await message.channel.send(words[2] + " is not a valid box number")
+            return
+        if int(poke) < 1 or int(poke) > 10:
+            await message.channel.send(words[2] + " is not a valid box number")
+            return
+        pokemon_in_team = 0
+        temp = select("owned_pokemon", ("position",), "trainer_id = \""+str(message.author.id) + "\" AND location = \"party\" AND position >= 1 AND position <= 6")
+        if temp:
+            pokemon_in_team = len(temp)
+        if pokemon_in_team >= 6:
+            await message.channel.send("Oops, looks like you don't have any more space in your party.\nTry using "+prefix+"switch or "+prefix+"deposit")
+            return
+        position = 1
+        if temp:
+            for each in temp:
+                if each[0] > position-1:
+                    position = each[0]+1
+        check = select_one("owned_pokemon", ("id",), "trainer_id = \""+str(message.author.id) + "\" AND location = \""+box+"\" AND position = "+poke)
+        if not check:
+            await message.channel.send("Oops, looks like you don't have any pokemon on position "+poke+" in "+box)
+            return
+        update("owned_pokemon", ("location", "position"), ("party", str(position)), "id = "+str(check[0]))
+        await message.channel.send("Done! pokemon added to your team!")
+        return
+        
 
     #Delete before final distribution duh
     if mes.lower() == "off":
