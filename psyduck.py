@@ -174,9 +174,21 @@ async def on_message(message):
         await message.channel.send(embed = embed)
         return
 
-    if mes.lower() == "box":
+    if mes.lower().startswith("box"):
         embed = discord.Embed(color = discord.Color.gold())
-        selected_box = "BOX1"
+        if len(mes) == 3:
+            box_number = "1"
+        else:
+            box_number = mes[3:]
+        while box_number[0] == " ":
+            box_number = box_number[1:]
+        if not is_number(box_number):
+            await message.channel.send(box_number + " is not a valid box number")
+            return
+        if int(box_number) < 1 or int(box_number) > 50:
+            await message.channel.send(box_number + " is not a valid box number")
+            return
+        selected_box = "BOX"+box_number
         temp_list = select("owned_pokemon", ("name", "pokemon", "shiny", "position", "level"), "trainer_id = \"" + str(message.author.id) + "\" AND location = \""+selected_box+"\"")
         if not temp_list:
             temp_list = []
@@ -291,7 +303,7 @@ async def on_message(message):
         await message.channel.send("Pokemon switched places!")
         return
 
-
+    #Delete before final distribution duh
     if mes.lower() == "off":
         await message.channel.send("Logging out...")
         await client.logout()
