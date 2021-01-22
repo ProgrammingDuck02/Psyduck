@@ -399,6 +399,40 @@ async def on_message(message):
         await message.channel.send("Done! pokemon added to your team!")
         return
         
+    if mes.lower().startswith("release pokemon"):
+        words = mes.split(" ")
+        if len(words) < 5:
+            await message.channel.send("Wrong number of parameters!\nCorrect use: "+prefix+"release pokemon [pokemon_number] in [boxname/\"party\"]\nCheck "+prefix+"help for more informations")
+            return
+        if words[3].lower() != "in":
+            await message.channel.send("Wrong format!\nCorrect use: "+prefix+"release pokemon [pokemon_number] in [boxname/\"party\"]\nCheck "+prefix+"help for more informations")
+            return
+        if words[4].lower() != "party" and not words[4].upper().startswith("BOX"):
+            await message.channel.send(words[4] + " is not a correct box name. Box names start with \"BOX\"(not case sensitive)")
+            return
+        if not is_number(words[2]):
+            await message.channel.send(words[2] + " is not a correct pokemon number")
+            return
+        if int(words[2]) < 1 or (words[4].lower() == "party" and int(words[2]) > 6) or int(words[2]) > 10:
+            await message.channel.send(words[2] + " is not a correct pokemon number")
+            return
+        if not is_number(words[4][3:]) and words[4].lower() != "party":
+            await message.channel.send(words[4] + " is not a correct box name")
+            return
+        if words[4] != "party" and (int(words[4][3:]) < 1 or int(words[4][3:]) > 50):
+            await message.channel.send(words[4] + " is not a correct box name")
+            return
+        check = select_one("owned_pokemon", ("id","name","pokemon"), "trainer_id = \""+str(message.author.id) + "\" AND location = \""+words[4]+"\" AND position = "+words[2])
+        if not check:
+            await message.channel.send("Oops, looks like you don't have any pokemon on position "+words[2]+" in your "+words[4])
+            return
+        if check[1] == None:
+            check[1] = select_one("pokemon", ("name",), "national_number = \""+check[2]+"\"")[0]
+        delete("owned_pokemon", "id = "+check[0])
+        await message.channel.send(check[1]+" was released. Bye bye "+check[1]+"!")
+        return
+
+
     #Delete before final distribution duh
     if mes.lower() == "off":
         await message.channel.send("Logging out...")
