@@ -366,17 +366,17 @@ async def on_message(message):
         if not box.startswith("BOX"):
             box = "BOX" + box
         if not is_number(box[3:]):
-            await message.channel.send(words[2] + " is not a valid box name or box number")
+            await message.channel.send(words[1] + " is not a valid box name or box number")
             return
         if int(box[3:]) < 1 or int(box[3:]) > 50:
-            await message.channel.send(words[2] + " is not a valid box name or box number")
+            await message.channel.send(words[1] + " is not a valid box name or box number")
             return
         poke = words[2]
         if not is_number(poke):
-            await message.channel.send(words[2] + " is not a valid box number")
+            await message.channel.send(words[2] + " is not a valid pokemon number")
             return
         if int(poke) < 1 or int(poke) > 10:
-            await message.channel.send(words[2] + " is not a valid box number")
+            await message.channel.send(words[2] + " is not a valid pokemon number")
             return
         pokemon_in_team = 0
         temp = select("owned_pokemon", ("position",), "trainer_id = \""+str(message.author.id) + "\" AND location = \"party\" AND position >= 1 AND position <= 6")
@@ -399,8 +399,6 @@ async def on_message(message):
         await message.channel.send("Done! pokemon added to your team!")
         return
         
-        
-
     #Delete before final distribution duh
     if mes.lower() == "off":
         await message.channel.send("Logging out...")
