@@ -310,7 +310,7 @@ async def on_message(message):
             return
         poke = words[1]
         box = words[2].upper()
-        if not box.lower().startswih("box"):
+        if not box.lower().startswith("box"):
             box = "BOX" + box
         if not is_number(poke):
             await message.channel.send(words[1] + " is not a valid party number")
