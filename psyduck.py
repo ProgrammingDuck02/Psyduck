@@ -474,6 +474,10 @@ async def on_message(message):
         if words[4] != "party" and (int(words[4][3:]) < 1 or int(words[4][3:]) > 50):
             await message.channel.send(words[4] + " is not a correct box name")
             return
+        count = select_one("owned_pokemon", ("count(*)",), "trainer_id = \""+str(message.author.id)+"\"")[0]
+        if count == 1:
+            await message.channel.send("You only have one pokemon left! Don't release it!")
+            return
         check = select_one("owned_pokemon", ("id","name","pokemon"), "trainer_id = \""+str(message.author.id) + "\" AND location = \""+words[4]+"\" AND position = "+words[2])
         if not check:
             await message.channel.send("Oops, looks like you don't have any pokemon on position "+words[2]+" in your "+words[4])
