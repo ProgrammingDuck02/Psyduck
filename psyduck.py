@@ -2,7 +2,6 @@ import sys
 import discord
 import mysql.connector
 from datetime import datetime
-sys.path.append("python_scripts")
 from python_scripts.pokemon import pokemon
 from python_scripts.owned_pokemon import owned_pokemon
 
