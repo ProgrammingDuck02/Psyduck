@@ -1,6 +1,6 @@
 import sys
 sys.path.append(".")
-from pokemon import pokemon
+from python_scripts.pokemon import pokemon
 
 def get_pokemon_from_file(filename):
     pokemon_list = []

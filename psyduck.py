@@ -1,15 +1,22 @@
 import sys
 import discord
 import mysql.connector
+import random
 from datetime import datetime
 sys.path.append("python_scripts")
 from python_scripts.pokemon import pokemon
 from python_scripts.owned_pokemon import owned_pokemon
 
+random.seed()
 client = discord.Client()
 cursor = None
 DB = None
 prefix = "?"
+
+starters = []
+starters.append(owned_pokemon(spieces = "001", level = 5))
+starters.append(owned_pokemon(spieces = "004", level = 5))
+starters.append(owned_pokemon(spieces = "007", level = 5))
 
 def is_number(string):
     if len(string) == 0:
@@ -139,6 +146,47 @@ def shift_down(location, position):
     cursor.execute(sql)
     DB.commit()
 #########################
+
+def give_pokemon_to(poke, trainer_id, shiny_rates = 1024):
+    check = select("owned_pokemon", ("position",), "trainer_id = \""+trainer_id+"\" AND location = \"party\" AND position >= 1 AND position <= 6")
+    if check:
+        if len(check) >= 6:
+            return False
+    position = 1
+    for each in check:
+        if each[0] >= position:
+            position = each[0]+1
+    if shiny_rates > 0:
+        if random.randrange(shiny_rates) == 0:
+            poke.shiny = True
+        else:
+            poke.shiny = False
+    else:
+        poke.shiny = False
+    params = [
+        "trainer_id",
+        "OT",
+        "location",
+        "position",
+        "pokemon",
+        "level"
+    ]
+    values = [
+        trainer_id,
+        trainer_id,
+        "party",
+        str(position),
+        poke.pokemon.national_number,
+        str(poke.level)
+    ]
+    if poke.shiny:
+        params.append("shiny")
+        values.append("1")
+    if not poke.name == None:
+        params.append("name")
+        values.append(poke.name)
+    insert("owned_pokemon",params,values)
+    return True
 
 def get_pokemon_by_nat(nat_number):
     poke_data = select_one("pokemon",("national_number", "regional_number", "name", "type1", "type2", "region", "emote", "shiny_emote"), "national_number = \""+nat_number+"\"")
@@ -435,6 +483,21 @@ async def on_message(message):
         delete("owned_pokemon", "id = "+str(check[0]))
         shift_down(words[4], words[2])
         await message.channel.send(name+" was released. Bye bye "+name+"!")
+        return
+    
+    if mes.lower() == "starters":
+        global starters
+        if len(starters) == 0:
+            await message.channel.send("Oops, looks like there are no starters ready to pick :cry:")
+            return
+        embed = discord.Embed()
+        starter_list = ""
+        for i in range(len(starters)):
+            temp = select_one("pokemon", ("name", "emote"), "national_number = \""+starters[i].pokemon.national_number+"\"")
+            starter_list += str(i+1) + ". " + temp[1] + temp[0] + "\n"
+        embed.add_field(name = "Currently avalible starters to pick:", value = starter_list)
+        embed.add_field(name = "To pick your starter use "+prefix+"pick [number] command!", value = "You can only pick your starter if you don't have trainer account already")
+        await message.channel.send(embed = embed)
         return
 
 
