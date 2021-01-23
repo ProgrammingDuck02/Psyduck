@@ -521,6 +521,7 @@ async def on_message(message):
         temp = select_one("pokemon", ("name", "emote", "shiny_emote"), "national_number = \""+starters[pick].pokemon.national_number+"\"")
         temp_poke = starters[pick]
         give_pokemon_to(temp_poke, str(message.author.id))
+        insert("trainers", ("id",), (str(message.author.id), ))
         emote_to_use = temp[1]
         if temp_poke.shiny:
             emote_to_use = temp[2]
