@@ -495,8 +495,8 @@ async def on_message(message):
         for i in range(len(starters)):
             temp = select_one("pokemon", ("name", "emote"), "national_number = \""+starters[i].pokemon.national_number+"\"")
             starter_list += str(i+1) + ". " + temp[1] + temp[0] + "\n"
-        embed.add_field(name = "Currently avalible starters to pick:", value = starter_list)
-        embed.add_field(name = "To pick your starter use "+prefix+"pick [number] command!", value = "You can only pick your starter if you don't have trainer account already")
+        embed.add_field(name = "Currently avalible starters to pick:", value = starter_list, inline = False)
+        embed.add_field(name = "To pick your starter use "+prefix+"pick [number] command!", value = "You can only pick your starter if you don't have trainer account already", inline = False)
         await message.channel.send(embed = embed)
         return
 
