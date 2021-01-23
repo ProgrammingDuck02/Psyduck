@@ -500,6 +500,33 @@ async def on_message(message):
         await message.channel.send(embed = embed)
         return
 
+    if mes.lower().startswith("pick"):
+        global starters
+        temp = mes.split(" ")
+        check = select("trainers", ("id",), "id = \""+str(message.author.id)+"\"")
+        if check:
+            await message.channel.send("Oops, looks like you already got your starter. Don't be greedy, let other trainers have some fun too :wink:")
+            return
+        if len(temp) < 2:
+            await message.channel.send("Wrong number of parameters!\nCorrect use: "+prefix+"pick [number]\nCheck "+prefix+"help for more informations")
+            return
+        pick = temp[1]
+        if not is_number(pick):
+            await message.channel.send(pick + " is not a correct starter number")
+            return
+        pick = int(pick) - 1
+        if pick < 0 or pick >= len(starters):
+            await message.channel.send(pick + " is not a correct starter number")
+            return
+        temp = select_one("pokemon", ("name", "emote", "shiny_emote"), "national_number = \""+starters[pick].pokemon.national_number+"\"")
+        temp_poke = starters[pick]
+        give_pokemon_to(temp_poke, str(message.author.id))
+        emote_to_use = temp[1]
+        if temp_poke.shiny:
+            emote_to_use = temp[2]
+        await message.channel.send("You picked "+emote_to_use+temp[0]+" as your starter! Hope you and "+temp[0]+" have a lot of fun together!")
+        return
+
 
     #Delete before final distribution duh
     if mes.lower() == "off":
