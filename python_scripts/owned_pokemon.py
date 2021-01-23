@@ -1,6 +1,6 @@
 import sys
 sys.path.append('.')
-from .pokemon import pokemon
+from python_scripts.pokemon import pokemon
 
 class owned_pokemon:
     def __init__(self):
