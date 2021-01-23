@@ -490,7 +490,7 @@ async def on_message(message):
         if len(starters) == 0:
             await message.channel.send("Oops, looks like there are no starters ready to pick :cry:")
             return
-        embed = discord.Embed()
+        embed = discord.Embed(color = discord.Color.red())
         starter_list = ""
         for i in range(len(starters)):
             temp = select_one("pokemon", ("name", "emote"), "national_number = \""+starters[i].pokemon.national_number+"\"")
@@ -519,7 +519,7 @@ async def on_message(message):
             return
         temp = select_one("pokemon", ("name", "emote", "shiny_emote"), "national_number = \""+starters[pick].pokemon.national_number+"\"")
         temp_poke = starters[pick]
-        give_pokemon_to(temp_poke, str(message.author.id))
+        give_pokemon_to(temp_poke, str(message.author.id), 1)
         insert("trainers", ("id",), (str(message.author.id), ))
         emote_to_use = temp[1]
         if temp_poke.shiny:
