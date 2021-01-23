@@ -198,6 +198,7 @@ def get_pokemon_by_nat(nat_number):
 @client.event
 async def on_message(message):
     global prefix
+    global starters
     if message.author == client.user:
         return
     if not message.content.startswith(prefix):
@@ -486,7 +487,6 @@ async def on_message(message):
         return
     
     if mes.lower() == "starters":
-        global starters
         if len(starters) == 0:
             await message.channel.send("Oops, looks like there are no starters ready to pick :cry:")
             return
@@ -501,7 +501,6 @@ async def on_message(message):
         return
 
     if mes.lower().startswith("pick"):
-        global starters
         temp = mes.split(" ")
         check = select("trainers", ("id",), "id = \""+str(message.author.id)+"\"")
         if check:
