@@ -189,7 +189,7 @@ def give_pokemon_to(poke, trainer_id, shiny_rates = 1024):
         str(position),
         poke.pokemon.national_number,
         str(poke.level),
-        str(3*pokemon.level)
+        str(3*poke.level)
     ]
     if poke.shiny:
         params.append("shiny")
