@@ -53,8 +53,8 @@ def run():
     file.close()
     for line in lines:
         evo = line.split("\t")
-        pre = select("pokemon", ("id",), "name = \""+evo[0]+"\"")
-        post = select("pokemon", ("id",), "name = \""+evo[2]+"\"")
+        pre = select("pokemon", ("national_number",), "name = \""+evo[0]+"\"")
+        post = select("pokemon", ("national_number",), "name = \""+evo[2]+"\"")
         pre_id = None
         post_id = None
         for poke in pre:
