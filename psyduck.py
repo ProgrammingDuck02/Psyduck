@@ -13,6 +13,8 @@ cursor = None
 DB = None
 prefix = "?"
 
+pokemon_limit = 151
+
 starters = []
 starters.append(owned_pokemon(spieces = "001", level = 5))
 starters.append(owned_pokemon(spieces = "004", level = 5))
@@ -211,6 +213,8 @@ def get_pokemon_by_nat(nat_number):
 async def on_message(message):
     global prefix
     global starters
+    global pokemon_limit
+    global cursor
     if message.author == client.user:
         return
     level_up_party(str(message.author.id))
@@ -542,6 +546,33 @@ async def on_message(message):
         if temp_poke.shiny:
             emote_to_use = temp[2]
         await message.channel.send("You picked "+emote_to_use+temp[0]+" as your starter! Hope you and "+temp[0]+" have a lot of fun together!")
+        return
+
+    if mes.lower().startswith("evolution"):
+        temp = mes.split(" ", 1)
+        if len(temp) < 2:
+            await message.channel.send("Wrong number of parameters!\nCorrect use: "+prefix+"evolution [pokemon name]\nCheck "+prefix+"help for more informations")
+            return
+        pokelist = select("pokemon", ("id", "emote", "name"), "LOWER(name) = \""+temp[1].lower()+"\"")
+        if not pokelist:
+            await message.channel.send("Oops, looks like you made a typo in pokemon's name. I can't find "+temp[1]+" in our pokemon database")
+            return
+        if int(pokelist[0][0][:3]) > pokemon_limit:
+            await message.channel.send("We don't support this pokemon right now. Next generations will be added soon")
+            return
+        embed = discord.Embed(color = discord.Color.teal())
+        for poke in pokelist:
+            text = "Looks like this pokemon doesn't have any evolutions or its evolutions are yet to be added"
+            sql = "SELECT e.level, p.name, p.emote FROM evolutions AS e INNER JOIN pokemon AS p ON p.national_number = e.evolution where e.pokemon = \""+poke[0]+"\" and e.avalible = 1"
+            connect_db()
+            cursor.execute(sql)
+            evolutions = cursor.fetchall()
+            if evolutions:
+                text = ""
+                for evo in evolutions:
+                    text += evo[2] + evo[1] + " on level "+str(evo[0]) + "\n"
+            embed.add_field(name = poke[1] + poke[2] + "'s evolutions:", value = text)
+        await message.channel.send(embed = embed)
         return
 
 
