@@ -11,3 +11,5 @@ to do:
 	?release pokemon [pokemon_number] in [box/"party"] - wypuszcza pokemona o podanym numerze z podanego miejsca. Specjalnie taka dziwna/długa formułka której by się nie używało gdyby
 	?starters - wyświetla dostępne startery
 	?pick [number] - wybiera pokemona o podanym numerze jako startera
+
+- ewolucje (poproszę o formę w jakiej ma być lista)
