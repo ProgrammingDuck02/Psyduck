@@ -139,6 +139,16 @@ def update(table, fields, values, conditions):
     DB.commit()
     return True
 
+def level_up_party(trainer_id):
+    connect_db()
+    global cursor, DB
+    sql = "UPDATE owned_pokemon SET exp = exp + 1 WHERE trainer_id = \""+trainer_id+"\" AND location = \"party\""
+    cursor.execute(sql)
+    DB.commit()
+    sql = "UPDATE owned_pokemon SET level = level + 1, max_exp = 3 * (level + 1), exp = 0 WHERE trainer_id = \""+trainer_id+"\" AND location = \"party\" AND exp >= max_exp"
+    cursor.execute(sql)
+    DB.commit()
+
 def shift_down(location, position):
     connect_db()
     global cursor, DB
@@ -169,7 +179,8 @@ def give_pokemon_to(poke, trainer_id, shiny_rates = 1024):
         "location",
         "position",
         "pokemon",
-        "level"
+        "level",
+        "max_exp"
     ]
     values = [
         trainer_id,
@@ -177,7 +188,8 @@ def give_pokemon_to(poke, trainer_id, shiny_rates = 1024):
         "party",
         str(position),
         poke.pokemon.national_number,
-        str(poke.level)
+        str(poke.level),
+        str(3*pokemon.level)
     ]
     if poke.shiny:
         params.append("shiny")
@@ -201,6 +213,7 @@ async def on_message(message):
     global starters
     if message.author == client.user:
         return
+    level_up_party(str(message.author.id))
     if not message.content.startswith(prefix):
         return
     mes = message.content[len(prefix):]
@@ -523,7 +536,7 @@ async def on_message(message):
             return
         temp = select_one("pokemon", ("name", "emote", "shiny_emote"), "national_number = \""+starters[pick].pokemon.national_number+"\"")
         temp_poke = starters[pick]
-        give_pokemon_to(temp_poke, str(message.author.id), 1)
+        give_pokemon_to(temp_poke, str(message.author.id))
         insert("trainers", ("id",), (str(message.author.id), ))
         emote_to_use = temp[1]
         if temp_poke.shiny:
