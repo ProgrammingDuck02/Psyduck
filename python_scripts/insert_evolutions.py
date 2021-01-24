@@ -91,7 +91,7 @@ def disable_evolutions(limit):
     pokes = select("evolutions", ("id", "evolution"), "")
     ok = {}
     for poke in pokes:
-        number = int(poke[0][:3])
+        number = int(poke[1][:3])
         if number <= limit:
             ok[poke[0]] = "1"
         else:
