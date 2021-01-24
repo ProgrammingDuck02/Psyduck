@@ -69,7 +69,7 @@ def run():
                 break
         if post_id == None:
             post_id = post[0][0]
-        insert("evolutions", ("pokemon", "int", "evolution"), (pre_id, evo[1], post_id))
+        insert("evolutions", ("pokemon", "level", "evolution"), (pre_id, evo[1], post_id))
 
 run()
         
