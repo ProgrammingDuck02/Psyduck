@@ -16,7 +16,7 @@ Spearow	20	Fearow
 Ekans	22	Arbok	
 Pichu	28	Pikachu	
 Pikachu	32	Raichu	
-Pikachu	32	Raichu	
+Pikachu	32	Raichu	A
 Sandshrew	22	Sandslash	
 Sandshrew	31	Sandslash	A
 Nidoran♀	16	Nidorina	
@@ -79,9 +79,9 @@ Drowzee	26	Hypno
 Krabby	28	Kingler	
 Voltorb	30	Electrode	
 Exeggcute	36	Exeggutor	
-Exeggcute	36	Exeggutor	
+Exeggcute	36	Exeggutor	A
 Cubone	28	Marowak	
-Cubone	28	Marowak	
+Cubone	28	Marowak	A
 Tyrogue	20	Hitmonlee	
 Tyrogue	20	Hitmonchan	
 Tyrogue	20	Hitmontop	
