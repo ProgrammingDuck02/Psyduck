@@ -1,0 +1,741 @@
+<tr>
+Bulbasaur family
+<tr>
+Bulbasaur
+Level 16 →
+Ivysaur
+Level 32 →
+Venusaur
+</tr>
+<tr>
+Charmander family
+<tr>
+Charmander
+Level 16 →
+Charmeleon
+Level 36 →
+Charizard
+</tr>
+<tr>
+Squirtle family
+<tr>
+Squirtle
+Level 16 →
+Wartortle
+Level 36 →
+Blastoise
+</tr>
+<tr>
+Caterpie family
+<tr>
+Caterpie
+Level 7 →
+Metapod
+Level 10 →
+Butterfree
+</tr>
+<tr>
+Weedle family
+<tr>
+Weedle
+Level 7 →
+Kakuna
+Level 10 →
+Beedrill
+</tr>
+<tr>
+Pidgey family
+<tr>
+Pidgey
+Level 18 →
+Pidgeotto
+Level 36 →
+Pidgeot
+</tr>
+<tr>
+Rattata family
+<tr>
+Rattata
+Level 20 →
+Raticate
+</tr>
+<tr>
+Alolan Rattata family
+<tr>
+Rattata
+Level 20 →
+Raticate
+</tr>
+<tr>
+Spearow family
+<tr>
+Spearow
+Level 20 →
+Fearow
+</tr>
+<tr>
+Ekans family
+<tr>
+Ekans
+Level 22 →
+Arbok
+</tr>
+<tr>
+Pikachu family
+<tr>
+Pichu
+Level 28 →
+Pikachu
+Level 32 →
+Raichu
+</tr>
+<tr>
+Level 32 →
+Raichu
+</tr>
+<tr>
+Sandshrew family
+<tr>
+Sandshrew
+Level 22 →
+Sandslash
+</tr>
+<tr>
+Alolan Sandshrew family
+<tr>
+Sandshrew
+Level 31 →
+Sandslash
+</tr>
+<tr>
+Nidoran family*
+<tr>
+Nidoran♀
+Level 16 →
+Nidorina
+Level 36 →
+Nidoqueen
+</tr>
+<tr>
+Nidoran♂
+Level 16 →
+Nidorino
+Level 36 →
+Nidoking
+</tr>
+<tr>
+Clefairy family
+<tr>
+Cleffa
+Level 28 →
+Clefairy
+Level 36 →
+Clefable
+</tr>
+<tr>
+Vulpix family
+<tr>
+Vulpix
+Level 26 →
+Ninetales
+</tr>
+<tr>
+Alolan Vulpix family
+<tr>
+Vulpix
+Level 31 →
+Ninetales
+</tr>
+<tr>
+Jigglypuff family
+<tr>
+Igglybuff
+Level 28 →
+Jigglypuff
+Level 36 →
+Wigglytuff
+</tr>
+<tr>
+Zubat family
+<tr>
+Zubat
+Level 22 →
+Golbat
+Level 38 →
+Crobat
+</tr>
+<tr>
+Oddish family
+<tr>
+Oddish
+Level 21 →
+Gloom
+Level 36 →
+Vileplume
+</tr>
+<tr>
+Level 36 →
+Bellossom
+</tr>
+<tr>
+Paras family
+<tr>
+Paras
+Level 24 →
+Parasect
+</tr>
+<tr>
+Venonat family
+<tr>
+Venonat
+Level 31 →
+Venomoth
+</tr>
+<tr>
+Diglett family
+<tr>
+Diglett
+Level 26 →
+Dugtrio
+</tr>
+<tr>
+Alolan Diglett family
+<tr>
+Diglett
+Level 26 →
+Dugtrio
+</tr>
+<tr>
+Meowth family
+<tr>
+Meowth
+Level 28 →
+Persian
+</tr>
+<tr>
+Alolan Meowth family
+<tr>
+Meowth
+Level 28 →
+Persian
+</tr>
+<tr>
+Galarian Meowth family
+<tr>
+Meowth
+Level 28 →
+Perrserker
+</tr>
+<tr>
+Psyduck family
+<tr>
+Psyduck
+Level 33 →
+Golduck
+</tr>
+<tr>
+Mankey family
+<tr>
+Mankey
+Level 28 →
+Primeape
+</tr>
+<tr>
+Growlithe family
+<tr>
+Growlithe
+Level 26 →
+Arcanine
+</tr>
+<tr>
+Poliwag family
+<tr>
+Poliwag
+Level 25 →
+Poliwhirl
+Level 36 →
+Poliwrath
+</tr>
+<tr>
+Level 40 →
+Politoed
+</tr>
+<tr>
+Abra family
+<tr>
+Abra
+Level 16 →
+Kadabra
+Level 38 →
+Alakazam
+</tr>
+<tr>
+Machop family
+<tr>
+Machop
+Level 28 →
+Machoke
+Level 38 →
+Machamp
+</tr>
+<tr>
+Bellsprout family
+<tr>
+Bellsprout
+Level 21 →
+Weepinbell
+Level 36 →
+Victreebel
+</tr>
+<tr>
+Tentacool family
+<tr>
+Tentacool
+Level 30 →
+Tentacruel
+</tr>
+<tr>
+Geodude family
+<tr>
+Geodude
+Level 25 →
+Graveler
+Level 38 →
+Golem
+</tr>
+<tr>
+Alolan Geodude family
+<tr>
+Geodude
+Level 25 →
+Graveler
+Level 38 →
+Golem
+</tr>
+<tr>
+Ponyta family
+<tr>
+Ponyta
+Level 40 →
+Rapidash
+</tr>
+<tr>
+Galarian Ponyta family
+<tr>
+Ponyta
+Level 40 →
+Rapidash
+</tr>
+<tr>
+Slowpoke family
+<tr>
+Slowpoke
+Level 37 →
+Slowbro
+</tr>
+<tr>
+Level 40 →
+Slowking
+</tr>
+<tr>
+Galarian Slowpoke family
+<tr>
+Slowpoke
+Level 29 →
+Slowbro
+</tr>
+<tr>
+Level 35 →
+Slowking
+</tr>
+<tr>
+Magnemite family
+<tr>
+Magnemite
+Level 30 →
+Magneton
+Level 36 →
+Magnezone
+</tr>
+<tr>
+Farfetch'd family
+<tr>
+Farfetch'd
+</tr>
+<tr>
+Galarian Farfetch'd family
+<tr>
+Farfetch'd
+Level 32 →
+Sirfetch'd
+</tr>
+<tr>
+Doduo family
+<tr>
+Doduo
+Level 31 →
+Dodrio
+</tr>
+<tr>
+Seel family
+<tr>
+Seel
+Level 34 →
+Dewgong
+</tr>
+<tr>
+Grimer family
+<tr>
+Grimer
+Level 38 →
+Muk
+</tr>
+<tr>
+Alolan Grimer family
+<tr>
+Grimer
+Level 38 →
+Muk
+</tr>
+<tr>
+Shellder family
+<tr>
+Shellder
+Level 20 →
+Cloyster
+</tr>
+<tr>
+Gastly family
+<tr>
+Gastly
+Level 25 →
+Haunter
+Level 38 →
+Gengar
+</tr>
+<tr>
+Onix family
+<tr>
+Onix
+Level 37 →
+Steelix
+</tr>
+<tr>
+Drowzee family
+<tr>
+Drowzee
+Level 26 →
+Hypno
+</tr>
+<tr>
+Krabby family
+<tr>
+Krabby
+Level 28 →
+Kingler
+</tr>
+<tr>
+Voltorb family
+<tr>
+Voltorb
+Level 30 →
+Electrode
+</tr>
+<tr>
+Exeggcute family
+<tr>
+Exeggcute
+Level 36 →
+Exeggutor
+</tr>
+<tr>
+Level 36 →
+Exeggutor
+</tr>
+<tr>
+Cubone family
+<tr>
+Cubone
+Level 28 →
+Marowak
+</tr>
+<tr>
+Level 28 →
+Marowak
+</tr>
+<tr>
+Hitmon family
+<tr>
+Tyrogue
+Level 20 →
+Hitmonlee
+</tr>
+<tr>
+Level 20 →
+Hitmonchan
+</tr>
+<tr>
+Level 20 →
+Hitmontop
+</tr>
+<tr>
+Lickitung family
+<tr>
+Lickitung
+Level 24 →
+Lickilicky
+</tr>
+<tr>
+Koffing family
+<tr>
+Koffing
+Level 35 →
+Weezing
+</tr>
+<tr>
+Level 35 →
+Weezing
+</tr>
+<tr>
+Rhyhorn family
+<tr>
+Rhyhorn
+Level 42 →
+Rhydon
+Level 36 →
+Rhyperior
+</tr>
+<tr>
+Chansey family
+<tr>
+Happiny
+Level 11 →
+Chansey
+Level 38 →
+Blissey
+</tr>
+<tr>
+Tangela family
+<tr>
+Tangela
+Level 28 →
+Tangrowth
+</tr>
+<tr>
+Kangaskhan family
+<tr>
+Kangaskhan
+</tr>
+<tr>
+Horsea family
+<tr>
+Horsea
+Level 32 →
+Seadra
+Level 47 →
+Kingdra
+</tr>
+<tr>
+Goldeen family
+<tr>
+Goldeen
+Level 33 →
+Seaking
+</tr>
+<tr>
+Staryu family
+<tr>
+Staryu
+Level 20 →
+Starmie
+</tr>
+<tr>
+Mr. Mime family
+<tr>
+Mime Jr.
+Level 15 →
+Mr. Mime
+</tr>
+<tr>
+Level 15 →
+Mr. Mime
+Level 42 →
+Mr. Rime
+</tr>
+<tr>
+Scyther family
+<tr>
+Scyther
+Level 37 →
+Scizor
+</tr>
+<tr>
+Jynx family
+<tr>
+Smoochum
+Level 30 →
+Jynx
+</tr>
+<tr>
+Electabuzz family
+<tr>
+Elekid
+Level 30 →
+Electabuzz
+Level 38 →
+Electivire
+</tr>
+<tr>
+Magmar family
+<tr>
+Magby
+Level 30 →
+Magmar
+Level 38 →
+Magmortar
+</tr>
+<tr>
+Pinsir family
+<tr>
+Pinsir
+</tr>
+<tr>
+Tauros family
+<tr>
+Tauros
+</tr>
+<tr>
+Magikarp family
+<tr>
+Magikarp
+Level 20 →
+Gyarados
+</tr>
+<tr>
+Lapras family
+<tr>
+Lapras
+</tr>
+<tr>
+Ditto family
+<tr>
+Ditto
+</tr>
+<tr>
+Eeveelution family
+<tr>
+Eevee
+Level 28 →
+Vaporeon
+</tr>
+<tr>
+Level 28 →
+Jolteon
+</tr>
+<tr>
+Level 28 →
+Flareon
+</tr>
+<tr>
+Level 31 →
+Espeon
+</tr>
+<tr>
+Level 31 →
+Umbreon
+</tr>
+<tr>
+Level 31 →
+Leafeon
+</tr>
+<tr>
+Level 31 →
+Glaceon
+</tr>
+<tr>
+Level 32 →
+Sylveon
+</tr>
+<tr>
+Porygon family
+<tr>
+Porygon
+Level 18 →
+Porygon2
+Level 34 →
+Porygon-Z
+</tr>
+<tr>
+Omanyte family
+<tr>
+Omanyte
+Level 40 →
+Omastar
+</tr>
+<tr>
+Kabuto family
+<tr>
+Kabuto
+Level 40 →
+Kabutops
+</tr>
+<tr>
+Aerodactyl family
+<tr>
+Aerodactyl
+</tr>
+<tr>
+Snorlax family
+<tr>
+Munchlax
+Level 28 →
+Snorlax
+</tr>
+<tr>
+Articuno family
+<tr>
+Articuno
+</tr>
+<tr>
+Galarian Articuno family
+<tr>
+Articuno
+</tr>
+<tr>
+Zapdos family
+<tr>
+Zapdos
+</tr>
+<tr>
+Galarian Zapdos family
+<tr>
+Zapdos
+</tr>
+<tr>
+Moltres family
+<tr>
+Moltres
+</tr>
+<tr>
+Galarian Moltres family
+<tr>
+Moltres
+</tr>
+<tr>
+Dratini family
+<tr>
+Dratini
+Level 30 →
+Dragonair
+Level 55 →
+Dragonite
+</tr>
+<tr>
+Mewtwo family
+<tr>
+Mewtwo
+</tr>
+<tr>
+Mew family
+<tr>
+Mew

@@ -1,0 +1,1653 @@
+<tr>
+<th colspan="8" style="background:#F08030; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Bulbasaur family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Bulbasaur_(Pok%C3%A9mon)" title="Bulbasaur"><img alt="Bulbasaur" src="//cdn.bulbagarden.net/upload/2/21/001MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Bulbasaur_(Pok%C3%A9mon)" title="Bulbasaur (Pokémon)"><span style="color:#000;">Bulbasaur</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 16 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Ivysaur_(Pok%C3%A9mon)" title="Ivysaur"><img alt="Ivysaur" src="//cdn.bulbagarden.net/upload/3/38/002MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Ivysaur_(Pok%C3%A9mon)" title="Ivysaur (Pokémon)"><span style="color:#000;">Ivysaur</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 32 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Venusaur_(Pok%C3%A9mon)" title="Venusaur"><img alt="Venusaur" src="//cdn.bulbagarden.net/upload/b/ba/003MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> <a href="/wiki/Venusaur_(Pok%C3%A9mon)" title="Venusaur (Pokémon)"><span style="color:#000;">Venusaur</span></a>
+</td></tr>
+<tr>
+<th colspan="8" style="background:#F08030; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Charmander family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Charmander_(Pok%C3%A9mon)" title="Charmander"><img alt="Charmander" src="//cdn.bulbagarden.net/upload/d/dc/004MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Charmander_(Pok%C3%A9mon)" title="Charmander (Pokémon)"><span style="color:#000;">Charmander</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 16 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Charmeleon_(Pok%C3%A9mon)" title="Charmeleon"><img alt="Charmeleon" src="//cdn.bulbagarden.net/upload/b/b8/005MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Charmeleon_(Pok%C3%A9mon)" title="Charmeleon (Pokémon)"><span style="color:#000;">Charmeleon</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 36 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Charizard_(Pok%C3%A9mon)" title="Charizard"><img alt="Charizard" src="//cdn.bulbagarden.net/upload/a/a4/006MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> <a href="/wiki/Charizard_(Pok%C3%A9mon)" title="Charizard (Pokémon)"><span style="color:#000;">Charizard</span></a>
+</td></tr>
+<tr>
+<th colspan="8" style="background:#6890F0; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Squirtle family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Squirtle_(Pok%C3%A9mon)" title="Squirtle"><img alt="Squirtle" src="//cdn.bulbagarden.net/upload/d/dc/007MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Squirtle_(Pok%C3%A9mon)" title="Squirtle (Pokémon)"><span style="color:#000;">Squirtle</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 16 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Wartortle_(Pok%C3%A9mon)" title="Wartortle"><img alt="Wartortle" src="//cdn.bulbagarden.net/upload/a/af/008MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Wartortle_(Pok%C3%A9mon)" title="Wartortle (Pokémon)"><span style="color:#000;">Wartortle</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 36 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Blastoise_(Pok%C3%A9mon)" title="Blastoise"><img alt="Blastoise" src="//cdn.bulbagarden.net/upload/f/f0/009MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> <a href="/wiki/Blastoise_(Pok%C3%A9mon)" title="Blastoise (Pokémon)"><span style="color:#000;">Blastoise</span></a>
+</td></tr>
+<tr>
+<th colspan="8" style="background:#A8B820; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Caterpie family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Caterpie_(Pok%C3%A9mon)" title="Caterpie"><img alt="Caterpie" src="//cdn.bulbagarden.net/upload/6/61/010MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Caterpie_(Pok%C3%A9mon)" title="Caterpie (Pokémon)"><span style="color:#000;">Caterpie</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 7 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Metapod_(Pok%C3%A9mon)" title="Metapod"><img alt="Metapod" src="//cdn.bulbagarden.net/upload/f/f9/011MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Metapod_(Pok%C3%A9mon)" title="Metapod (Pokémon)"><span style="color:#000;">Metapod</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 10 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Butterfree_(Pok%C3%A9mon)" title="Butterfree"><img alt="Butterfree" src="//cdn.bulbagarden.net/upload/f/fe/012MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> <a href="/wiki/Butterfree_(Pok%C3%A9mon)" title="Butterfree (Pokémon)"><span style="color:#000;">Butterfree</span></a>
+</td></tr>
+<tr>
+<th colspan="8" style="background:#A8B820; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Weedle family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Weedle_(Pok%C3%A9mon)" title="Weedle"><img alt="Weedle" src="//cdn.bulbagarden.net/upload/b/bc/013MSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Weedle_(Pok%C3%A9mon)" title="Weedle (Pokémon)"><span style="color:#000;">Weedle</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 7 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Kakuna_(Pok%C3%A9mon)" title="Kakuna"><img alt="Kakuna" src="//cdn.bulbagarden.net/upload/7/70/014MSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Kakuna_(Pok%C3%A9mon)" title="Kakuna (Pokémon)"><span style="color:#000;">Kakuna</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 10 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Beedrill_(Pok%C3%A9mon)" title="Beedrill"><img alt="Beedrill" src="//cdn.bulbagarden.net/upload/a/a2/015MSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> <a href="/wiki/Beedrill_(Pok%C3%A9mon)" title="Beedrill (Pokémon)"><span style="color:#000;">Beedrill</span></a>
+</td></tr>
+<tr>
+<th colspan="8" style="background:#A8A878; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Pidgey family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Pidgey_(Pok%C3%A9mon)" title="Pidgey"><img alt="Pidgey" src="//cdn.bulbagarden.net/upload/5/56/016MSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Pidgey_(Pok%C3%A9mon)" title="Pidgey (Pokémon)"><span style="color:#000;">Pidgey</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 18 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Pidgeotto_(Pok%C3%A9mon)" title="Pidgeotto"><img alt="Pidgeotto" src="//cdn.bulbagarden.net/upload/c/cc/017MSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Pidgeotto_(Pok%C3%A9mon)" title="Pidgeotto (Pokémon)"><span style="color:#000;">Pidgeotto</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 36 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Pidgeot_(Pok%C3%A9mon)" title="Pidgeot"><img alt="Pidgeot" src="//cdn.bulbagarden.net/upload/9/93/018MSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> <a href="/wiki/Pidgeot_(Pok%C3%A9mon)" title="Pidgeot (Pokémon)"><span style="color:#000;">Pidgeot</span></a>
+</td></tr>
+<tr>
+<th colspan="8" style="background:#A8A878; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Rattata family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Rattata_(Pok%C3%A9mon)" title="Rattata"><img alt="Rattata" src="//cdn.bulbagarden.net/upload/7/7a/019MSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Rattata_(Pok%C3%A9mon)" title="Rattata (Pokémon)"><span style="color:#000;">Rattata</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 20 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Raticate_(Pok%C3%A9mon)" title="Raticate"><img alt="Raticate" src="//cdn.bulbagarden.net/upload/7/77/020MSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Raticate_(Pok%C3%A9mon)" title="Raticate (Pokémon)"><span style="color:#000;">Raticate</span></a>
+</td>
+<td colspan="3" style="background:#A8A878; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#705848; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Alolan Rattata family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Rattata_(Pok%C3%A9mon)" title="Rattata"><img alt="Rattata" src="//cdn.bulbagarden.net/upload/4/45/019AMSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Rattata_(Pok%C3%A9mon)" title="Rattata (Pokémon)"><span style="color:#000;">Rattata</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 20 (night) →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Raticate_(Pok%C3%A9mon)" title="Raticate"><img alt="Raticate" src="//cdn.bulbagarden.net/upload/6/61/020AMSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Raticate_(Pok%C3%A9mon)" title="Raticate (Pokémon)"><span style="color:#000;">Raticate</span></a>
+</td>
+<td colspan="3" style="background:#705848; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#A8A878; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Spearow family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Spearow_(Pok%C3%A9mon)" title="Spearow"><img alt="Spearow" src="//cdn.bulbagarden.net/upload/a/af/021MSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Spearow_(Pok%C3%A9mon)" title="Spearow (Pokémon)"><span style="color:#000;">Spearow</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 20 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Fearow_(Pok%C3%A9mon)" title="Fearow"><img alt="Fearow" src="//cdn.bulbagarden.net/upload/7/76/022MSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Fearow_(Pok%C3%A9mon)" title="Fearow (Pokémon)"><span style="color:#000;">Fearow</span></a>
+</td>
+<td colspan="3" style="background:#A8A878; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#A040A0; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Ekans family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Ekans_(Pok%C3%A9mon)" title="Ekans"><img alt="Ekans" src="//cdn.bulbagarden.net/upload/a/a7/023MSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Ekans_(Pok%C3%A9mon)" title="Ekans (Pokémon)"><span style="color:#000;">Ekans</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 22 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Arbok_(Pok%C3%A9mon)" title="Arbok"><img alt="Arbok" src="//cdn.bulbagarden.net/upload/2/2c/024MSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Arbok_(Pok%C3%A9mon)" title="Arbok (Pokémon)"><span style="color:#000;">Arbok</span></a>
+</td>
+<td colspan="3" style="background:#A040A0; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#F8D030; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Pikachu family
+</th></tr>
+<tr>
+<td style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;" rowspan="2"> <a href="/wiki/Pichu_(Pok%C3%A9mon)" title="Pichu"><img alt="Pichu" src="//cdn.bulbagarden.net/upload/b/be/172MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;" rowspan="2"> <a href="/wiki/Pichu_(Pok%C3%A9mon)" title="Pichu (Pokémon)"><span style="color:#000;">Pichu</span></a>
+</td>
+<td style="background:#FFFFFF;" rowspan="2"> Friendship →
+</td>
+<td style="background:#FFFFFF;" rowspan="2"> <a href="/wiki/Pikachu_(Pok%C3%A9mon)" title="Pikachu"><img alt="Pikachu" src="//cdn.bulbagarden.net/upload/6/66/025MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;" rowspan="2"> <a href="/wiki/Pikachu_(Pok%C3%A9mon)" title="Pikachu (Pokémon)"><span style="color:#000;">Pikachu</span></a>
+</td>
+<td style="background:#FFFFFF;"> Thunder Stone →
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Raichu_(Pok%C3%A9mon)" title="Raichu"><img alt="Raichu" src="//cdn.bulbagarden.net/upload/b/b5/026MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Raichu_(Pok%C3%A9mon)" title="Raichu (Pokémon)"><span style="color:#000;">Raichu</span></a>
+</td></tr>
+<tr>
+<td style="background:#FFFFFF;"> Thunder Stone (Alola) →
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Raichu_(Pok%C3%A9mon)" title="Raichu"><img alt="Raichu" src="//cdn.bulbagarden.net/upload/9/9f/026AMS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> <a href="/wiki/Raichu_(Pok%C3%A9mon)" title="Raichu (Pokémon)"><span style="color:#000;">Raichu</span></a>
+</td></tr>
+<tr>
+<th colspan="8" style="background:#E0C068; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Sandshrew family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Sandshrew_(Pok%C3%A9mon)" title="Sandshrew"><img alt="Sandshrew" src="//cdn.bulbagarden.net/upload/a/ac/027MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Sandshrew_(Pok%C3%A9mon)" title="Sandshrew (Pokémon)"><span style="color:#000;">Sandshrew</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 22 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Sandslash_(Pok%C3%A9mon)" title="Sandslash"><img alt="Sandslash" src="//cdn.bulbagarden.net/upload/b/b6/028MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Sandslash_(Pok%C3%A9mon)" title="Sandslash (Pokémon)"><span style="color:#000;">Sandslash</span></a>
+</td>
+<td colspan="3" style="background:#E0C068; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#98D8D8; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Alolan Sandshrew family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Sandshrew_(Pok%C3%A9mon)" title="Sandshrew"><img alt="Sandshrew" src="//cdn.bulbagarden.net/upload/4/4c/027AMS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Sandshrew_(Pok%C3%A9mon)" title="Sandshrew (Pokémon)"><span style="color:#000;">Sandshrew</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Ice Stone →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Sandslash_(Pok%C3%A9mon)" title="Sandslash"><img alt="Sandslash" src="//cdn.bulbagarden.net/upload/8/81/028AMS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Sandslash_(Pok%C3%A9mon)" title="Sandslash (Pokémon)"><span style="color:#000;">Sandslash</span></a>
+</td>
+<td colspan="3" style="background:#98D8D8; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#A040A0; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Nidoran family<span class="explain" title="The Nidoran ♀ and Nidoran ♂ lines are not related to each other by evolution, but may breed each other">*</span>
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Nidoran%E2%99%80_(Pok%C3%A9mon)" title="Nidoran♀"><img alt="Nidoran♀" src="//cdn.bulbagarden.net/upload/8/89/029MS8.png" width="68" height="68"></a>
+</td>
+<td width="17%" style="background:#FFFFFF;"> <a href="/wiki/Nidoran%E2%99%80_(Pok%C3%A9mon)" title="Nidoran♀ (Pokémon)"><span style="color:#000;">Nidoran♀</span></a>
+</td>
+<td width="17%" style="background:#FFFFFF;"> Level 16 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Nidorina_(Pok%C3%A9mon)" title="Nidorina"><img alt="Nidorina" src="//cdn.bulbagarden.net/upload/9/9e/030MS8.png" width="68" height="68"></a>
+</td>
+<td width="17%" style="background:#FFFFFF;"> <a href="/wiki/Nidorina_(Pok%C3%A9mon)" title="Nidorina (Pokémon)"><span style="color:#000;">Nidorina</span></a>
+</td>
+<td width="17%" style="background:#FFFFFF;"> Moon Stone →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Nidoqueen_(Pok%C3%A9mon)" title="Nidoqueen"><img alt="Nidoqueen" src="//cdn.bulbagarden.net/upload/8/8d/031MS8.png" width="68" height="68"></a>
+</td>
+<td width="17%" style="background:#FFFFFF;"> <a href="/wiki/Nidoqueen_(Pok%C3%A9mon)" title="Nidoqueen (Pokémon)"><span style="color:#000;">Nidoqueen</span></a>
+</td></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Nidoran%E2%99%82_(Pok%C3%A9mon)" title="Nidoran♂"><img alt="Nidoran♂" src="//cdn.bulbagarden.net/upload/4/4a/032MS8.png" width="68" height="68"></a>
+</td>
+<td width="17%" style="background:#FFFFFF;"> <a href="/wiki/Nidoran%E2%99%82_(Pok%C3%A9mon)" title="Nidoran♂ (Pokémon)"><span style="color:#000;">Nidoran♂</span></a>
+</td>
+<td width="17%" style="background:#FFFFFF;"> Level 16 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Nidorino_(Pok%C3%A9mon)" title="Nidorino"><img alt="Nidorino" src="//cdn.bulbagarden.net/upload/7/75/033MS8.png" width="68" height="68"></a>
+</td>
+<td width="17%" style="background:#FFFFFF;"> <a href="/wiki/Nidorino_(Pok%C3%A9mon)" title="Nidorino (Pokémon)"><span style="color:#000;">Nidorino</span></a>
+</td>
+<td width="17%" style="background:#FFFFFF;"> Moon Stone →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Nidoking_(Pok%C3%A9mon)" title="Nidoking"><img alt="Nidoking" src="//cdn.bulbagarden.net/upload/8/8a/034MS8.png" width="68" height="68"></a>
+</td>
+<td width="17%" style="background:#FFFFFF; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> <a href="/wiki/Nidoking_(Pok%C3%A9mon)" title="Nidoking (Pokémon)"><span style="color:#000;">Nidoking</span></a>
+</td></tr>
+<tr>
+<th colspan="8" style="background:#EE99AC; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Clefairy family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Cleffa_(Pok%C3%A9mon)" title="Cleffa"><img alt="Cleffa" src="//cdn.bulbagarden.net/upload/e/e0/173MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Cleffa_(Pok%C3%A9mon)" title="Cleffa (Pokémon)"><span style="color:#000;">Cleffa</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Friendship →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Clefairy_(Pok%C3%A9mon)" title="Clefairy"><img alt="Clefairy" src="//cdn.bulbagarden.net/upload/c/cf/035MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Clefairy_(Pok%C3%A9mon)" title="Clefairy (Pokémon)"><span style="color:#000;">Clefairy</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Moon Stone →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Clefable_(Pok%C3%A9mon)" title="Clefable"><img alt="Clefable" src="//cdn.bulbagarden.net/upload/9/97/036MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> <a href="/wiki/Clefable_(Pok%C3%A9mon)" title="Clefable (Pokémon)"><span style="color:#000;">Clefable</span></a>
+</td></tr>
+<tr>
+<th colspan="8" style="background:#F08030; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Vulpix family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Vulpix_(Pok%C3%A9mon)" title="Vulpix"><img alt="Vulpix" src="//cdn.bulbagarden.net/upload/6/6d/037MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Vulpix_(Pok%C3%A9mon)" title="Vulpix (Pokémon)"><span style="color:#000;">Vulpix</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Fire Stone →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Ninetales_(Pok%C3%A9mon)" title="Ninetales"><img alt="Ninetales" src="//cdn.bulbagarden.net/upload/6/61/038MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Ninetales_(Pok%C3%A9mon)" title="Ninetales (Pokémon)"><span style="color:#000;">Ninetales</span></a>
+</td>
+<td colspan="3" style="background:#F08030; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#98D8D8; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Alolan Vulpix family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Vulpix_(Pok%C3%A9mon)" title="Vulpix"><img alt="Vulpix" src="//cdn.bulbagarden.net/upload/2/2f/037AMS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Vulpix_(Pok%C3%A9mon)" title="Vulpix (Pokémon)"><span style="color:#000;">Vulpix</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Ice Stone →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Ninetales_(Pok%C3%A9mon)" title="Ninetales"><img alt="Ninetales" src="//cdn.bulbagarden.net/upload/9/95/038AMS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Ninetales_(Pok%C3%A9mon)" title="Ninetales (Pokémon)"><span style="color:#000;">Ninetales</span></a>
+</td>
+<td colspan="3" style="background:#98D8D8; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#A8A878; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Jigglypuff family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Igglybuff_(Pok%C3%A9mon)" title="Igglybuff"><img alt="Igglybuff" src="//cdn.bulbagarden.net/upload/9/95/174MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Igglybuff_(Pok%C3%A9mon)" title="Igglybuff (Pokémon)"><span style="color:#000;">Igglybuff</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Friendship →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Jigglypuff_(Pok%C3%A9mon)" title="Jigglypuff"><img alt="Jigglypuff" src="//cdn.bulbagarden.net/upload/f/f3/039MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Jigglypuff_(Pok%C3%A9mon)" title="Jigglypuff (Pokémon)"><span style="color:#000;">Jigglypuff</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Moon Stone →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Wigglytuff_(Pok%C3%A9mon)" title="Wigglytuff"><img alt="Wigglytuff" src="//cdn.bulbagarden.net/upload/c/c6/040MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> <a href="/wiki/Wigglytuff_(Pok%C3%A9mon)" title="Wigglytuff (Pokémon)"><span style="color:#000;">Wigglytuff</span></a>
+</td></tr>
+<tr>
+<th colspan="8" style="background:#A040A0; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Zubat family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Zubat_(Pok%C3%A9mon)" title="Zubat"><img alt="Zubat" src="//cdn.bulbagarden.net/upload/0/0c/041MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Zubat_(Pok%C3%A9mon)" title="Zubat (Pokémon)"><span style="color:#000;">Zubat</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 22 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Golbat_(Pok%C3%A9mon)" title="Golbat"><img alt="Golbat" src="//cdn.bulbagarden.net/upload/c/ce/042MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Golbat_(Pok%C3%A9mon)" title="Golbat (Pokémon)"><span style="color:#000;">Golbat</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 38 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Crobat_(Pok%C3%A9mon)" title="Crobat"><img alt="Crobat" src="//cdn.bulbagarden.net/upload/f/fa/169MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> <a href="/wiki/Crobat_(Pok%C3%A9mon)" title="Crobat (Pokémon)"><span style="color:#000;">Crobat</span></a>
+</td></tr>
+<tr>
+<th colspan="8" style="background:#78C850; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Oddish family
+</th></tr>
+<tr>
+<td style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;" rowspan="2"> <a href="/wiki/Oddish_(Pok%C3%A9mon)" title="Oddish"><img alt="Oddish" src="//cdn.bulbagarden.net/upload/6/68/043MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;" rowspan="2"> <a href="/wiki/Oddish_(Pok%C3%A9mon)" title="Oddish (Pokémon)"><span style="color:#000;">Oddish</span></a>
+</td>
+<td style="background:#FFFFFF;" rowspan="2"> Level 21 →
+</td>
+<td style="background:#FFFFFF;" rowspan="2"> <a href="/wiki/Gloom_(Pok%C3%A9mon)" title="Gloom"><img alt="Gloom" src="//cdn.bulbagarden.net/upload/f/f5/044MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;" rowspan="2"> <a href="/wiki/Gloom_(Pok%C3%A9mon)" title="Gloom (Pokémon)"><span style="color:#000;">Gloom</span></a>
+</td>
+<td style="background:#FFFFFF;"> Leaf Stone →
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Vileplume_(Pok%C3%A9mon)" title="Vileplume"><img alt="Vileplume" src="//cdn.bulbagarden.net/upload/a/a5/045MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Vileplume_(Pok%C3%A9mon)" title="Vileplume (Pokémon)"><span style="color:#000;">Vileplume</span></a>
+</td></tr>
+<tr>
+<td style="background:#FFFFFF;"> Sun Stone →
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Bellossom_(Pok%C3%A9mon)" title="Bellossom"><img alt="Bellossom" src="//cdn.bulbagarden.net/upload/c/c9/182MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> <a href="/wiki/Bellossom_(Pok%C3%A9mon)" title="Bellossom (Pokémon)"><span style="color:#000;">Bellossom</span></a>
+</td></tr>
+<tr>
+<th colspan="8" style="background:#A8B820; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Paras family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Paras_(Pok%C3%A9mon)" title="Paras"><img alt="Paras" src="//cdn.bulbagarden.net/upload/6/6a/046MSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Paras_(Pok%C3%A9mon)" title="Paras (Pokémon)"><span style="color:#000;">Paras</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 24 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Parasect_(Pok%C3%A9mon)" title="Parasect"><img alt="Parasect" src="//cdn.bulbagarden.net/upload/4/40/047MSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Parasect_(Pok%C3%A9mon)" title="Parasect (Pokémon)"><span style="color:#000;">Parasect</span></a>
+</td>
+<td colspan="3" style="background:#A8B820; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#A8B820; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Venonat family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Venonat_(Pok%C3%A9mon)" title="Venonat"><img alt="Venonat" src="//cdn.bulbagarden.net/upload/3/30/048MSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Venonat_(Pok%C3%A9mon)" title="Venonat (Pokémon)"><span style="color:#000;">Venonat</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 31 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Venomoth_(Pok%C3%A9mon)" title="Venomoth"><img alt="Venomoth" src="//cdn.bulbagarden.net/upload/a/a7/049MSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Venomoth_(Pok%C3%A9mon)" title="Venomoth (Pokémon)"><span style="color:#000;">Venomoth</span></a>
+</td>
+<td colspan="3" style="background:#A8B820; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#E0C068; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Diglett family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Diglett_(Pok%C3%A9mon)" title="Diglett"><img alt="Diglett" src="//cdn.bulbagarden.net/upload/f/f1/050MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Diglett_(Pok%C3%A9mon)" title="Diglett (Pokémon)"><span style="color:#000;">Diglett</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 26 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Dugtrio_(Pok%C3%A9mon)" title="Dugtrio"><img alt="Dugtrio" src="//cdn.bulbagarden.net/upload/2/2a/051MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Dugtrio_(Pok%C3%A9mon)" title="Dugtrio (Pokémon)"><span style="color:#000;">Dugtrio</span></a>
+</td>
+<td colspan="3" style="background:#E0C068; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#E0C068; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Alolan Diglett family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Diglett_(Pok%C3%A9mon)" title="Diglett"><img alt="Diglett" src="//cdn.bulbagarden.net/upload/3/31/050AMS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Diglett_(Pok%C3%A9mon)" title="Diglett (Pokémon)"><span style="color:#000;">Diglett</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 26 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Dugtrio_(Pok%C3%A9mon)" title="Dugtrio"><img alt="Dugtrio" src="//cdn.bulbagarden.net/upload/7/73/051AMS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Dugtrio_(Pok%C3%A9mon)" title="Dugtrio (Pokémon)"><span style="color:#000;">Dugtrio</span></a>
+</td>
+<td colspan="3" style="background:#E0C068; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#A8A878; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Meowth family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Meowth_(Pok%C3%A9mon)" title="Meowth"><img alt="Meowth" src="//cdn.bulbagarden.net/upload/e/e4/052MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Meowth_(Pok%C3%A9mon)" title="Meowth (Pokémon)"><span style="color:#000;">Meowth</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 28 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Persian_(Pok%C3%A9mon)" title="Persian"><img alt="Persian" src="//cdn.bulbagarden.net/upload/f/f7/053MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Persian_(Pok%C3%A9mon)" title="Persian (Pokémon)"><span style="color:#000;">Persian</span></a>
+</td>
+<td colspan="3" style="background:#A8A878; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#705848; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Alolan Meowth family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Meowth_(Pok%C3%A9mon)" title="Meowth"><img alt="Meowth" src="//cdn.bulbagarden.net/upload/b/b1/052AMS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Meowth_(Pok%C3%A9mon)" title="Meowth (Pokémon)"><span style="color:#000;">Meowth</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Friendship/Level 28 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Persian_(Pok%C3%A9mon)" title="Persian"><img alt="Persian" src="//cdn.bulbagarden.net/upload/f/ff/053AMS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Persian_(Pok%C3%A9mon)" title="Persian (Pokémon)"><span style="color:#000;">Persian</span></a>
+</td>
+<td colspan="3" style="background:#705848; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#B8B8D0; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Galarian Meowth family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Meowth_(Pok%C3%A9mon)" title="Meowth"><img alt="Meowth" src="//cdn.bulbagarden.net/upload/a/a9/052GMS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Meowth_(Pok%C3%A9mon)" title="Meowth (Pokémon)"><span style="color:#000;">Meowth</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 28 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Perrserker_(Pok%C3%A9mon)" title="Perrserker"><img alt="Perrserker" src="//cdn.bulbagarden.net/upload/e/e5/863MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Perrserker_(Pok%C3%A9mon)" title="Perrserker (Pokémon)"><span style="color:#000;">Perrserker</span></a>
+</td>
+<td colspan="3" style="background:#B8B8D0; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#6890F0; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Psyduck family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Psyduck_(Pok%C3%A9mon)" title="Psyduck"><img alt="Psyduck" src="//cdn.bulbagarden.net/upload/a/a0/054MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Psyduck_(Pok%C3%A9mon)" title="Psyduck (Pokémon)"><span style="color:#000;">Psyduck</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 33 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Golduck_(Pok%C3%A9mon)" title="Golduck"><img alt="Golduck" src="//cdn.bulbagarden.net/upload/7/7f/055MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Golduck_(Pok%C3%A9mon)" title="Golduck (Pokémon)"><span style="color:#000;">Golduck</span></a>
+</td>
+<td colspan="3" style="background:#6890F0; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#C03028; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Mankey family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Mankey_(Pok%C3%A9mon)" title="Mankey"><img alt="Mankey" src="//cdn.bulbagarden.net/upload/a/af/056MSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Mankey_(Pok%C3%A9mon)" title="Mankey (Pokémon)"><span style="color:#000;">Mankey</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 28 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Primeape_(Pok%C3%A9mon)" title="Primeape"><img alt="Primeape" src="//cdn.bulbagarden.net/upload/a/aa/057MSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Primeape_(Pok%C3%A9mon)" title="Primeape (Pokémon)"><span style="color:#000;">Primeape</span></a>
+</td>
+<td colspan="3" style="background:#C03028; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#F08030; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Growlithe family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Growlithe_(Pok%C3%A9mon)" title="Growlithe"><img alt="Growlithe" src="//cdn.bulbagarden.net/upload/4/45/058MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Growlithe_(Pok%C3%A9mon)" title="Growlithe (Pokémon)"><span style="color:#000;">Growlithe</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Fire Stone →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Arcanine_(Pok%C3%A9mon)" title="Arcanine"><img alt="Arcanine" src="//cdn.bulbagarden.net/upload/c/cc/059MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Arcanine_(Pok%C3%A9mon)" title="Arcanine (Pokémon)"><span style="color:#000;">Arcanine</span></a>
+</td>
+<td colspan="3" style="background:#F08030; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#6890F0; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Poliwag family
+</th></tr>
+<tr>
+<td style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;" rowspan="2"> <a href="/wiki/Poliwag_(Pok%C3%A9mon)" title="Poliwag"><img alt="Poliwag" src="//cdn.bulbagarden.net/upload/c/c7/060MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;" rowspan="2"> <a href="/wiki/Poliwag_(Pok%C3%A9mon)" title="Poliwag (Pokémon)"><span style="color:#000;">Poliwag</span></a>
+</td>
+<td style="background:#FFFFFF;" rowspan="2"> Level 25 →
+</td>
+<td style="background:#FFFFFF;" rowspan="2"> <a href="/wiki/Poliwhirl_(Pok%C3%A9mon)" title="Poliwhirl"><img alt="Poliwhirl" src="//cdn.bulbagarden.net/upload/b/b1/061MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;" rowspan="2"> <a href="/wiki/Poliwhirl_(Pok%C3%A9mon)" title="Poliwhirl (Pokémon)"><span style="color:#000;">Poliwhirl</span></a>
+</td>
+<td style="background:#FFFFFF;"> Level 36 →
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Poliwrath_(Pok%C3%A9mon)" title="Poliwrath"><img alt="Poliwrath" src="//cdn.bulbagarden.net/upload/e/e4/062MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Poliwrath_(Pok%C3%A9mon)" title="Poliwrath (Pokémon)"><span style="color:#000;">Poliwrath</span></a>
+</td></tr>
+<tr>
+<td style="background:#FFFFFF;"> Trade holding King's Rock →
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Politoed_(Pok%C3%A9mon)" title="Politoed"><img alt="Politoed" src="//cdn.bulbagarden.net/upload/f/ff/186MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> <a href="/wiki/Politoed_(Pok%C3%A9mon)" title="Politoed (Pokémon)"><span style="color:#000;">Politoed</span></a>
+</td></tr>
+<tr>
+<th colspan="8" style="background:#F85888; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Abra family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Abra_(Pok%C3%A9mon)" title="Abra"><img alt="Abra" src="//cdn.bulbagarden.net/upload/4/4e/063MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Abra_(Pok%C3%A9mon)" title="Abra (Pokémon)"><span style="color:#000;">Abra</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 16 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Kadabra_(Pok%C3%A9mon)" title="Kadabra"><img alt="Kadabra" src="//cdn.bulbagarden.net/upload/d/dc/064MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Kadabra_(Pok%C3%A9mon)" title="Kadabra (Pokémon)"><span style="color:#000;">Kadabra</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Trade →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Alakazam_(Pok%C3%A9mon)" title="Alakazam"><img alt="Alakazam" src="//cdn.bulbagarden.net/upload/4/41/065MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> <a href="/wiki/Alakazam_(Pok%C3%A9mon)" title="Alakazam (Pokémon)"><span style="color:#000;">Alakazam</span></a>
+</td></tr>
+<tr>
+<th colspan="8" style="background:#C03028; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Machop family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Machop_(Pok%C3%A9mon)" title="Machop"><img alt="Machop" src="//cdn.bulbagarden.net/upload/4/4c/066MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Machop_(Pok%C3%A9mon)" title="Machop (Pokémon)"><span style="color:#000;">Machop</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 28 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Machoke_(Pok%C3%A9mon)" title="Machoke"><img alt="Machoke" src="//cdn.bulbagarden.net/upload/1/13/067MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Machoke_(Pok%C3%A9mon)" title="Machoke (Pokémon)"><span style="color:#000;">Machoke</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Trade →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Machamp_(Pok%C3%A9mon)" title="Machamp"><img alt="Machamp" src="//cdn.bulbagarden.net/upload/8/87/068MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> <a href="/wiki/Machamp_(Pok%C3%A9mon)" title="Machamp (Pokémon)"><span style="color:#000;">Machamp</span></a>
+</td></tr>
+<tr>
+<th colspan="8" style="background:#78C850; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Bellsprout family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Bellsprout_(Pok%C3%A9mon)" title="Bellsprout"><img alt="Bellsprout" src="//cdn.bulbagarden.net/upload/4/41/069MSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Bellsprout_(Pok%C3%A9mon)" title="Bellsprout (Pokémon)"><span style="color:#000;">Bellsprout</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 21 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Weepinbell_(Pok%C3%A9mon)" title="Weepinbell"><img alt="Weepinbell" src="//cdn.bulbagarden.net/upload/2/2e/070MSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Weepinbell_(Pok%C3%A9mon)" title="Weepinbell (Pokémon)"><span style="color:#000;">Weepinbell</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Leaf Stone →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Victreebel_(Pok%C3%A9mon)" title="Victreebel"><img alt="Victreebel" src="//cdn.bulbagarden.net/upload/4/4b/071MSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> <a href="/wiki/Victreebel_(Pok%C3%A9mon)" title="Victreebel (Pokémon)"><span style="color:#000;">Victreebel</span></a>
+</td></tr>
+<tr>
+<th colspan="8" style="background:#6890F0; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Tentacool family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Tentacool_(Pok%C3%A9mon)" title="Tentacool"><img alt="Tentacool" src="//cdn.bulbagarden.net/upload/6/6f/072MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Tentacool_(Pok%C3%A9mon)" title="Tentacool (Pokémon)"><span style="color:#000;">Tentacool</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 30 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Tentacruel_(Pok%C3%A9mon)" title="Tentacruel"><img alt="Tentacruel" src="//cdn.bulbagarden.net/upload/6/6c/073MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Tentacruel_(Pok%C3%A9mon)" title="Tentacruel (Pokémon)"><span style="color:#000;">Tentacruel</span></a>
+</td>
+<td colspan="3" style="background:#6890F0; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#B8A038; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Geodude family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Geodude_(Pok%C3%A9mon)" title="Geodude"><img alt="Geodude" src="//cdn.bulbagarden.net/upload/0/04/074MSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Geodude_(Pok%C3%A9mon)" title="Geodude (Pokémon)"><span style="color:#000;">Geodude</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 25 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Graveler_(Pok%C3%A9mon)" title="Graveler"><img alt="Graveler" src="//cdn.bulbagarden.net/upload/0/00/075MSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Graveler_(Pok%C3%A9mon)" title="Graveler (Pokémon)"><span style="color:#000;">Graveler</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Trade →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Golem_(Pok%C3%A9mon)" title="Golem"><img alt="Golem" src="//cdn.bulbagarden.net/upload/a/a9/076MSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> <a href="/wiki/Golem_(Pok%C3%A9mon)" title="Golem (Pokémon)"><span style="color:#000;">Golem</span></a>
+</td></tr>
+<tr>
+<th colspan="8" style="background:#B8A038; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Alolan Geodude family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Geodude_(Pok%C3%A9mon)" title="Geodude"><img alt="Geodude" src="//cdn.bulbagarden.net/upload/6/66/074AMSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Geodude_(Pok%C3%A9mon)" title="Geodude (Pokémon)"><span style="color:#000;">Geodude</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 25 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Graveler_(Pok%C3%A9mon)" title="Graveler"><img alt="Graveler" src="//cdn.bulbagarden.net/upload/0/05/075AMSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Graveler_(Pok%C3%A9mon)" title="Graveler (Pokémon)"><span style="color:#000;">Graveler</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Trade →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Golem_(Pok%C3%A9mon)" title="Golem"><img alt="Golem" src="//cdn.bulbagarden.net/upload/6/65/076AMSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> <a href="/wiki/Golem_(Pok%C3%A9mon)" title="Golem (Pokémon)"><span style="color:#000;">Golem</span></a>
+</td></tr>
+<tr>
+<th colspan="8" style="background:#F08030; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Ponyta family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Ponyta_(Pok%C3%A9mon)" title="Ponyta"><img alt="Ponyta" src="//cdn.bulbagarden.net/upload/3/30/077MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Ponyta_(Pok%C3%A9mon)" title="Ponyta (Pokémon)"><span style="color:#000;">Ponyta</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 40 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Rapidash_(Pok%C3%A9mon)" title="Rapidash"><img alt="Rapidash" src="//cdn.bulbagarden.net/upload/2/2b/078MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Rapidash_(Pok%C3%A9mon)" title="Rapidash (Pokémon)"><span style="color:#000;">Rapidash</span></a>
+</td>
+<td colspan="3" style="background:#F08030; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#F85888; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Galarian Ponyta family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Ponyta_(Pok%C3%A9mon)" title="Ponyta"><img alt="Ponyta" src="//cdn.bulbagarden.net/upload/6/6c/077GMS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Ponyta_(Pok%C3%A9mon)" title="Ponyta (Pokémon)"><span style="color:#000;">Ponyta</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 40 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Rapidash_(Pok%C3%A9mon)" title="Rapidash"><img alt="Rapidash" src="//cdn.bulbagarden.net/upload/c/cb/078GMS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Rapidash_(Pok%C3%A9mon)" title="Rapidash (Pokémon)"><span style="color:#000;">Rapidash</span></a>
+</td>
+<td colspan="3" style="background:#F85888; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#6890F0; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Slowpoke family
+</th></tr>
+<tr>
+<td style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;" rowspan="2"> <a href="/wiki/Slowpoke_(Pok%C3%A9mon)" title="Slowpoke"><img alt="Slowpoke" src="//cdn.bulbagarden.net/upload/3/31/079MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;" rowspan="2"> <a href="/wiki/Slowpoke_(Pok%C3%A9mon)" title="Slowpoke (Pokémon)"><span style="color:#000;">Slowpoke</span></a>
+</td>
+<td style="background:#FFFFFF;"> Level 37 →
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Slowbro_(Pok%C3%A9mon)" title="Slowbro"><img alt="Slowbro" src="//cdn.bulbagarden.net/upload/c/cb/080MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Slowbro_(Pok%C3%A9mon)" title="Slowbro (Pokémon)"><span style="color:#000;">Slowbro</span></a>
+</td>
+<td colspan="3" style="background:#6890F0;"> &nbsp;
+</td></tr>
+<tr>
+<td style="background:#FFFFFF;"> Trade holding King's Rock →
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Slowking_(Pok%C3%A9mon)" title="Slowking"><img alt="Slowking" src="//cdn.bulbagarden.net/upload/f/f0/199MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Slowking_(Pok%C3%A9mon)" title="Slowking (Pokémon)"><span style="color:#000;">Slowking</span></a>
+</td>
+<td colspan="3" style="background:#6890F0; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#F85888; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Galarian Slowpoke family
+</th></tr>
+<tr>
+<td style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;" rowspan="2"> <a href="/wiki/Slowpoke_(Pok%C3%A9mon)" title="Slowpoke"><img alt="Slowpoke" src="//cdn.bulbagarden.net/upload/0/0b/079GMS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;" rowspan="2"> <a href="/wiki/Slowpoke_(Pok%C3%A9mon)" title="Slowpoke (Pokémon)"><span style="color:#000;">Slowpoke</span></a>
+</td>
+<td style="background:#FFFFFF;"> Galarica Cuff →
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Slowbro_(Pok%C3%A9mon)" title="Slowbro"><img alt="Slowbro" src="//cdn.bulbagarden.net/upload/8/8c/080GMS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Slowbro_(Pok%C3%A9mon)" title="Slowbro (Pokémon)"><span style="color:#000;">Slowbro</span></a>
+</td>
+<td colspan="3" style="background:#F85888;"> &nbsp;
+</td></tr>
+<tr>
+<td style="background:#FFFFFF;"> Galarica Wreath →
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Slowking_(Pok%C3%A9mon)" title="Slowking"><img alt="Slowking" src="//cdn.bulbagarden.net/upload/a/ad/199GMS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Slowking_(Pok%C3%A9mon)" title="Slowking (Pokémon)"><span style="color:#000;">Slowking</span></a>
+</td>
+<td colspan="3" style="background:#F85888; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#F8D030; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Magnemite family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Magnemite_(Pok%C3%A9mon)" title="Magnemite"><img alt="Magnemite" src="//cdn.bulbagarden.net/upload/e/ea/081MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Magnemite_(Pok%C3%A9mon)" title="Magnemite (Pokémon)"><span style="color:#000;">Magnemite</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 30 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Magneton_(Pok%C3%A9mon)" title="Magneton"><img alt="Magneton" src="//cdn.bulbagarden.net/upload/d/da/082MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Magneton_(Pok%C3%A9mon)" title="Magneton (Pokémon)"><span style="color:#000;">Magneton</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level up in a special magnetic field<br>Thunder Stone<b><sup><a href="/wiki/Pok%C3%A9mon_Sword_and_Shield" title="Pokémon Sword and Shield"><span style="color:#00A1E9">Sw</span><span style="color:#BF004F">Sh</span></a></sup></b> →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Magnezone_(Pok%C3%A9mon)" title="Magnezone"><img alt="Magnezone" src="//cdn.bulbagarden.net/upload/8/8f/462MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> <a href="/wiki/Magnezone_(Pok%C3%A9mon)" title="Magnezone (Pokémon)"><span style="color:#000;">Magnezone</span></a>
+</td></tr>
+<tr>
+<th colspan="8" style="background:#A8A878; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Farfetch'd family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Farfetch%27d_(Pok%C3%A9mon)" title="Farfetch'd"><img alt="Farfetch'd" src="//cdn.bulbagarden.net/upload/2/23/083MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Farfetch%27d_(Pok%C3%A9mon)" title="Farfetch'd (Pokémon)"><span style="color:#000;">Farfetch'd</span></a>
+</td>
+<td colspan="6" style="background:#A8A878; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#C03028; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Galarian Farfetch'd family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Farfetch%27d_(Pok%C3%A9mon)" title="Farfetch'd"><img alt="Farfetch'd" src="//cdn.bulbagarden.net/upload/1/10/083GMS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Farfetch%27d_(Pok%C3%A9mon)" title="Farfetch'd (Pokémon)"><span style="color:#000;">Farfetch'd</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Land 3 critical hits in a single battle →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Sirfetch%27d_(Pok%C3%A9mon)" title="Sirfetch'd"><img alt="Sirfetch'd" src="//cdn.bulbagarden.net/upload/4/46/865MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Sirfetch%27d_(Pok%C3%A9mon)" title="Sirfetch'd (Pokémon)"><span style="color:#000;">Sirfetch'd</span></a>
+</td>
+<td colspan="3" style="background:#C03028; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#A8A878; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Doduo family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Doduo_(Pok%C3%A9mon)" title="Doduo"><img alt="Doduo" src="//cdn.bulbagarden.net/upload/5/58/084MSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Doduo_(Pok%C3%A9mon)" title="Doduo (Pokémon)"><span style="color:#000;">Doduo</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 31 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Dodrio_(Pok%C3%A9mon)" title="Dodrio"><img alt="Dodrio" src="//cdn.bulbagarden.net/upload/3/3b/085MSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Dodrio_(Pok%C3%A9mon)" title="Dodrio (Pokémon)"><span style="color:#000;">Dodrio</span></a>
+</td>
+<td colspan="3" style="background:#A8A878; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#6890F0; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Seel family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Seel_(Pok%C3%A9mon)" title="Seel"><img alt="Seel" src="//cdn.bulbagarden.net/upload/3/37/086MSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Seel_(Pok%C3%A9mon)" title="Seel (Pokémon)"><span style="color:#000;">Seel</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 34 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Dewgong_(Pok%C3%A9mon)" title="Dewgong"><img alt="Dewgong" src="//cdn.bulbagarden.net/upload/a/a7/087MSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Dewgong_(Pok%C3%A9mon)" title="Dewgong (Pokémon)"><span style="color:#000;">Dewgong</span></a>
+</td>
+<td colspan="3" style="background:#6890F0; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#A040A0; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Grimer family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Grimer_(Pok%C3%A9mon)" title="Grimer"><img alt="Grimer" src="//cdn.bulbagarden.net/upload/6/63/088MSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Grimer_(Pok%C3%A9mon)" title="Grimer (Pokémon)"><span style="color:#000;">Grimer</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 38 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Muk_(Pok%C3%A9mon)" title="Muk"><img alt="Muk" src="//cdn.bulbagarden.net/upload/d/d1/089MSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Muk_(Pok%C3%A9mon)" title="Muk (Pokémon)"><span style="color:#000;">Muk</span></a>
+</td>
+<td colspan="3" style="background:#A040A0; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#A040A0; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Alolan Grimer family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Grimer_(Pok%C3%A9mon)" title="Grimer"><img alt="Grimer" src="//cdn.bulbagarden.net/upload/e/ec/088AMSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Grimer_(Pok%C3%A9mon)" title="Grimer (Pokémon)"><span style="color:#000;">Grimer</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 38 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Muk_(Pok%C3%A9mon)" title="Muk"><img alt="Muk" src="//cdn.bulbagarden.net/upload/0/01/089AMSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Muk_(Pok%C3%A9mon)" title="Muk (Pokémon)"><span style="color:#000;">Muk</span></a>
+</td>
+<td colspan="3" style="background:#A040A0; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#6890F0; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Shellder family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Shellder_(Pok%C3%A9mon)" title="Shellder"><img alt="Shellder" src="//cdn.bulbagarden.net/upload/8/8f/090MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Shellder_(Pok%C3%A9mon)" title="Shellder (Pokémon)"><span style="color:#000;">Shellder</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Water Stone →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Cloyster_(Pok%C3%A9mon)" title="Cloyster"><img alt="Cloyster" src="//cdn.bulbagarden.net/upload/c/ce/091MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Cloyster_(Pok%C3%A9mon)" title="Cloyster (Pokémon)"><span style="color:#000;">Cloyster</span></a>
+</td>
+<td colspan="3" style="background:#6890F0; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#705898; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Gastly family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Gastly_(Pok%C3%A9mon)" title="Gastly"><img alt="Gastly" src="//cdn.bulbagarden.net/upload/8/8e/092MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Gastly_(Pok%C3%A9mon)" title="Gastly (Pokémon)"><span style="color:#000;">Gastly</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 25 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Haunter_(Pok%C3%A9mon)" title="Haunter"><img alt="Haunter" src="//cdn.bulbagarden.net/upload/e/e8/093MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Haunter_(Pok%C3%A9mon)" title="Haunter (Pokémon)"><span style="color:#000;">Haunter</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Trade →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Gengar_(Pok%C3%A9mon)" title="Gengar"><img alt="Gengar" src="//cdn.bulbagarden.net/upload/5/58/094MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> <a href="/wiki/Gengar_(Pok%C3%A9mon)" title="Gengar (Pokémon)"><span style="color:#000;">Gengar</span></a>
+</td></tr>
+<tr>
+<th colspan="8" style="background:#B8A038; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Onix family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Onix_(Pok%C3%A9mon)" title="Onix"><img alt="Onix" src="//cdn.bulbagarden.net/upload/5/5e/095MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Onix_(Pok%C3%A9mon)" title="Onix (Pokémon)"><span style="color:#000;">Onix</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Trade holding Metal Coat →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Steelix_(Pok%C3%A9mon)" title="Steelix"><img alt="Steelix" src="//cdn.bulbagarden.net/upload/e/ee/208MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Steelix_(Pok%C3%A9mon)" title="Steelix (Pokémon)"><span style="color:#000;">Steelix</span></a>
+</td>
+<td colspan="3" style="background:#B8A038; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#F85888; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Drowzee family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Drowzee_(Pok%C3%A9mon)" title="Drowzee"><img alt="Drowzee" src="//cdn.bulbagarden.net/upload/1/12/096MSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Drowzee_(Pok%C3%A9mon)" title="Drowzee (Pokémon)"><span style="color:#000;">Drowzee</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 26 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Hypno_(Pok%C3%A9mon)" title="Hypno"><img alt="Hypno" src="//cdn.bulbagarden.net/upload/6/64/097MSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Hypno_(Pok%C3%A9mon)" title="Hypno (Pokémon)"><span style="color:#000;">Hypno</span></a>
+</td>
+<td colspan="3" style="background:#F85888; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#6890F0; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Krabby family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Krabby_(Pok%C3%A9mon)" title="Krabby"><img alt="Krabby" src="//cdn.bulbagarden.net/upload/b/be/098MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Krabby_(Pok%C3%A9mon)" title="Krabby (Pokémon)"><span style="color:#000;">Krabby</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 28 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Kingler_(Pok%C3%A9mon)" title="Kingler"><img alt="Kingler" src="//cdn.bulbagarden.net/upload/f/fd/099MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Kingler_(Pok%C3%A9mon)" title="Kingler (Pokémon)"><span style="color:#000;">Kingler</span></a>
+</td>
+<td colspan="3" style="background:#6890F0; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#F8D030; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Voltorb family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Voltorb_(Pok%C3%A9mon)" title="Voltorb"><img alt="Voltorb" src="//cdn.bulbagarden.net/upload/3/31/100MSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Voltorb_(Pok%C3%A9mon)" title="Voltorb (Pokémon)"><span style="color:#000;">Voltorb</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 30 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Electrode_(Pok%C3%A9mon)" title="Electrode"><img alt="Electrode" src="//cdn.bulbagarden.net/upload/3/31/101MSPE.png" width="52" height="52"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Electrode_(Pok%C3%A9mon)" title="Electrode (Pokémon)"><span style="color:#000;">Electrode</span></a>
+</td>
+<td colspan="3" style="background:#F8D030; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#78C850; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Exeggcute family
+</th></tr>
+<tr>
+<td style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;" rowspan="2"> <a href="/wiki/Exeggcute_(Pok%C3%A9mon)" title="Exeggcute"><img alt="Exeggcute" src="//cdn.bulbagarden.net/upload/0/07/102MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;" rowspan="2"> <a href="/wiki/Exeggcute_(Pok%C3%A9mon)" title="Exeggcute (Pokémon)"><span style="color:#000;">Exeggcute</span></a>
+</td>
+<td style="background:#FFFFFF;"> Leaf Stone →
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Exeggutor_(Pok%C3%A9mon)" title="Exeggutor"><img alt="Exeggutor" src="//cdn.bulbagarden.net/upload/f/fb/103MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Exeggutor_(Pok%C3%A9mon)" title="Exeggutor (Pokémon)"><span style="color:#000;">Exeggutor</span></a>
+</td>
+<td colspan="3" style="background:#78C850;"> &nbsp;
+</td></tr>
+<tr>
+<td style="background:#FFFFFF;"> Leaf Stone (Alola) →
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Exeggutor_(Pok%C3%A9mon)" title="Exeggutor"><img alt="Exeggutor" src="//cdn.bulbagarden.net/upload/d/d3/103AMS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Exeggutor_(Pok%C3%A9mon)" title="Exeggutor (Pokémon)"><span style="color:#000;">Exeggutor</span></a>
+</td>
+<td colspan="3" style="background:#78C850; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#E0C068; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Cubone family
+</th></tr>
+<tr>
+<td style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;" rowspan="2"> <a href="/wiki/Cubone_(Pok%C3%A9mon)" title="Cubone"><img alt="Cubone" src="//cdn.bulbagarden.net/upload/8/88/104MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;" rowspan="2"> <a href="/wiki/Cubone_(Pok%C3%A9mon)" title="Cubone (Pokémon)"><span style="color:#000;">Cubone</span></a>
+</td>
+<td style="background:#FFFFFF;"> Level 28 →
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Marowak_(Pok%C3%A9mon)" title="Marowak"><img alt="Marowak" src="//cdn.bulbagarden.net/upload/7/72/105MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Marowak_(Pok%C3%A9mon)" title="Marowak (Pokémon)"><span style="color:#000;">Marowak</span></a>
+</td>
+<td colspan="3" style="background:#E0C068;"> &nbsp;
+</td></tr>
+<tr>
+<td style="background:#FFFFFF;"> Level 28 (night) →
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Marowak_(Pok%C3%A9mon)" title="Marowak"><img alt="Marowak" src="//cdn.bulbagarden.net/upload/1/1d/105AMS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Marowak_(Pok%C3%A9mon)" title="Marowak (Pokémon)"><span style="color:#000;">Marowak</span></a>
+</td>
+<td colspan="3" style="background:#E0C068; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#C03028; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> <a href="/wiki/Hitmons" title="Hitmons"><span style="color:#000;">Hitmon</span></a> family
+</th></tr>
+<tr>
+<td style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;" rowspan="3"> <a href="/wiki/Tyrogue_(Pok%C3%A9mon)" title="Tyrogue"><img alt="Tyrogue" src="//cdn.bulbagarden.net/upload/d/dc/236MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;" rowspan="3"> <a href="/wiki/Tyrogue_(Pok%C3%A9mon)" title="Tyrogue (Pokémon)"><span style="color:#000;">Tyrogue</span></a>
+</td>
+<td style="background:#FFFFFF;"> Level 20 (Attack &gt; Defense) →
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Hitmonlee_(Pok%C3%A9mon)" title="Hitmonlee"><img alt="Hitmonlee" src="//cdn.bulbagarden.net/upload/5/5d/106MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Hitmonlee_(Pok%C3%A9mon)" title="Hitmonlee (Pokémon)"><span style="color:#000;">Hitmonlee</span></a>
+</td>
+<td style="background:#C03028;" colspan="3"> &nbsp;
+</td></tr>
+<tr>
+<td style="background:#FFFFFF;"> Level 20 (Attack &lt; Defense) →
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Hitmonchan_(Pok%C3%A9mon)" title="Hitmonchan"><img alt="Hitmonchan" src="//cdn.bulbagarden.net/upload/8/81/107MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Hitmonchan_(Pok%C3%A9mon)" title="Hitmonchan (Pokémon)"><span style="color:#000;">Hitmonchan</span></a>
+</td>
+<td style="background:#C03028;" colspan="3"> &nbsp;
+</td></tr>
+<tr>
+<td style="background:#FFFFFF;"> Level 20 (Attack = Defense) →
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Hitmontop_(Pok%C3%A9mon)" title="Hitmontop"><img alt="Hitmontop" src="//cdn.bulbagarden.net/upload/9/93/237MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Hitmontop_(Pok%C3%A9mon)" title="Hitmontop (Pokémon)"><span style="color:#000;">Hitmontop</span></a>
+</td>
+<td style="background:#C03028; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;" colspan="3"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#A8A878; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Lickitung family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Lickitung_(Pok%C3%A9mon)" title="Lickitung"><img alt="Lickitung" src="//cdn.bulbagarden.net/upload/3/32/108MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Lickitung_(Pok%C3%A9mon)" title="Lickitung (Pokémon)"><span style="color:#000;">Lickitung</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level up knowing Rollout →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Lickilicky_(Pok%C3%A9mon)" title="Lickilicky"><img alt="Lickilicky" src="//cdn.bulbagarden.net/upload/d/dc/463MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Lickilicky_(Pok%C3%A9mon)" title="Lickilicky (Pokémon)"><span style="color:#000;">Lickilicky</span></a>
+</td>
+<td colspan="3" style="background:#A8A878; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#A040A0; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Koffing family
+</th></tr>
+<tr>
+<td style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;" rowspan="2"> <a href="/wiki/Koffing_(Pok%C3%A9mon)" title="Koffing"><img alt="Koffing" src="//cdn.bulbagarden.net/upload/c/c7/109MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;" rowspan="2"> <a href="/wiki/Koffing_(Pok%C3%A9mon)" title="Koffing (Pokémon)"><span style="color:#000;">Koffing</span></a>
+</td>
+<td style="background:#FFFFFF;"> Level 35 →
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Weezing_(Pok%C3%A9mon)" title="Weezing"><img alt="Weezing" src="//cdn.bulbagarden.net/upload/5/58/110MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Weezing_(Pok%C3%A9mon)" title="Weezing (Pokémon)"><span style="color:#000;">Weezing</span></a>
+</td>
+<td colspan="3" style="background:#A040A0;"> &nbsp;
+</td></tr>
+<tr>
+<td style="background:#FFFFFF;"> Level 35 (Galar) →
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Weezing_(Pok%C3%A9mon)" title="Weezing"><img alt="Weezing" src="//cdn.bulbagarden.net/upload/f/f4/110GMS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Weezing_(Pok%C3%A9mon)" title="Weezing (Pokémon)"><span style="color:#000;">Weezing</span></a>
+</td>
+<td colspan="3" style="background:#A040A0; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#E0C068; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Rhyhorn family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Rhyhorn_(Pok%C3%A9mon)" title="Rhyhorn"><img alt="Rhyhorn" src="//cdn.bulbagarden.net/upload/e/e1/111MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Rhyhorn_(Pok%C3%A9mon)" title="Rhyhorn (Pokémon)"><span style="color:#000;">Rhyhorn</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 42 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Rhydon_(Pok%C3%A9mon)" title="Rhydon"><img alt="Rhydon" src="//cdn.bulbagarden.net/upload/0/04/112MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Rhydon_(Pok%C3%A9mon)" title="Rhydon (Pokémon)"><span style="color:#000;">Rhydon</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Trade holding Protector →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Rhyperior_(Pok%C3%A9mon)" title="Rhyperior"><img alt="Rhyperior" src="//cdn.bulbagarden.net/upload/d/d6/464MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> <a href="/wiki/Rhyperior_(Pok%C3%A9mon)" title="Rhyperior (Pokémon)"><span style="color:#000;">Rhyperior</span></a>
+</td></tr>
+<tr>
+<th colspan="8" style="background:#A8A878; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Chansey family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Happiny_(Pok%C3%A9mon)" title="Happiny"><img alt="Happiny" src="//cdn.bulbagarden.net/upload/3/35/440MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Happiny_(Pok%C3%A9mon)" title="Happiny (Pokémon)"><span style="color:#000;">Happiny</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level up holding Oval Stone (day) →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Chansey_(Pok%C3%A9mon)" title="Chansey"><img alt="Chansey" src="//cdn.bulbagarden.net/upload/f/f1/113MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Chansey_(Pok%C3%A9mon)" title="Chansey (Pokémon)"><span style="color:#000;">Chansey</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 38 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Blissey_(Pok%C3%A9mon)" title="Blissey"><img alt="Blissey" src="//cdn.bulbagarden.net/upload/d/d6/242MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> <a href="/wiki/Blissey_(Pok%C3%A9mon)" title="Blissey (Pokémon)"><span style="color:#000;">Blissey</span></a>
+</td></tr>
+<tr>
+<th colspan="8" style="background:#78C850; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Tangela family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Tangela_(Pok%C3%A9mon)" title="Tangela"><img alt="Tangela" src="//cdn.bulbagarden.net/upload/b/b3/114MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Tangela_(Pok%C3%A9mon)" title="Tangela (Pokémon)"><span style="color:#000;">Tangela</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level up knowing Ancient Power →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Tangrowth_(Pok%C3%A9mon)" title="Tangrowth"><img alt="Tangrowth" src="//cdn.bulbagarden.net/upload/6/65/465MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Tangrowth_(Pok%C3%A9mon)" title="Tangrowth (Pokémon)"><span style="color:#000;">Tangrowth</span></a>
+</td>
+<td colspan="3" style="background:#78C850; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#A8A878; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Kangaskhan family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Kangaskhan_(Pok%C3%A9mon)" title="Kangaskhan"><img alt="Kangaskhan" src="//cdn.bulbagarden.net/upload/7/74/115MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Kangaskhan_(Pok%C3%A9mon)" title="Kangaskhan (Pokémon)"><span style="color:#000;">Kangaskhan</span></a>
+</td>
+<td colspan="6" style="background:#A8A878; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#6890F0; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Horsea family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Horsea_(Pok%C3%A9mon)" title="Horsea"><img alt="Horsea" src="//cdn.bulbagarden.net/upload/6/65/116MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Horsea_(Pok%C3%A9mon)" title="Horsea (Pokémon)"><span style="color:#000;">Horsea</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 32 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Seadra_(Pok%C3%A9mon)" title="Seadra"><img alt="Seadra" src="//cdn.bulbagarden.net/upload/a/ae/117MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Seadra_(Pok%C3%A9mon)" title="Seadra (Pokémon)"><span style="color:#000;">Seadra</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Trade holding Dragon Scale →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Kingdra_(Pok%C3%A9mon)" title="Kingdra"><img alt="Kingdra" src="//cdn.bulbagarden.net/upload/7/7f/230MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> <a href="/wiki/Kingdra_(Pok%C3%A9mon)" title="Kingdra (Pokémon)"><span style="color:#000;">Kingdra</span></a>
+</td></tr>
+<tr>
+<th colspan="8" style="background:#6890F0; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Goldeen family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Goldeen_(Pok%C3%A9mon)" title="Goldeen"><img alt="Goldeen" src="//cdn.bulbagarden.net/upload/7/71/118MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Goldeen_(Pok%C3%A9mon)" title="Goldeen (Pokémon)"><span style="color:#000;">Goldeen</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 33 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Seaking_(Pok%C3%A9mon)" title="Seaking"><img alt="Seaking" src="//cdn.bulbagarden.net/upload/5/59/119MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Seaking_(Pok%C3%A9mon)" title="Seaking (Pokémon)"><span style="color:#000;">Seaking</span></a>
+</td>
+<td colspan="3" style="background:#6890F0; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#6890F0; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Staryu family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Staryu_(Pok%C3%A9mon)" title="Staryu"><img alt="Staryu" src="//cdn.bulbagarden.net/upload/0/04/120MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Staryu_(Pok%C3%A9mon)" title="Staryu (Pokémon)"><span style="color:#000;">Staryu</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Water Stone →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Starmie_(Pok%C3%A9mon)" title="Starmie"><img alt="Starmie" src="//cdn.bulbagarden.net/upload/2/2b/121MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Starmie_(Pok%C3%A9mon)" title="Starmie (Pokémon)"><span style="color:#000;">Starmie</span></a>
+</td>
+<td colspan="3" style="background:#6890F0; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#F85888; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Mr. Mime family
+</th></tr>
+<tr>
+<td style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;" rowspan="2"> <a href="/wiki/Mime_Jr._(Pok%C3%A9mon)" title="Mime Jr."><img alt="Mime Jr." src="//cdn.bulbagarden.net/upload/c/c3/439MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;" rowspan="2"> <a href="/wiki/Mime_Jr._(Pok%C3%A9mon)" title="Mime Jr. (Pokémon)"><span style="color:#000;">Mime Jr.</span></a>
+</td>
+<td style="background:#FFFFFF;"> Level up knowing Mimic →
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Mr._Mime_(Pok%C3%A9mon)" title="Mr. Mime"><img alt="Mr. Mime" src="//cdn.bulbagarden.net/upload/e/e6/122MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Mr._Mime_(Pok%C3%A9mon)" title="Mr. Mime (Pokémon)"><span style="color:#000;">Mr. Mime</span></a>
+</td>
+<td colspan="3" style="background:#F85888;"> &nbsp;
+</td></tr>
+<tr>
+<td style="background:#FFFFFF;"> Level up knowing Mimic (Galar) →
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Mr._Mime_(Pok%C3%A9mon)" title="Mr. Mime"><img alt="Mr. Mime" src="//cdn.bulbagarden.net/upload/0/02/122GMS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Mr._Mime_(Pok%C3%A9mon)" title="Mr. Mime (Pokémon)"><span style="color:#000;">Mr. Mime</span></a>
+</td>
+<td style="background:#FFFFFF;"> Level 42 →
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Mr._Rime_(Pok%C3%A9mon)" title="Mr. Rime"><img alt="Mr. Rime" src="//cdn.bulbagarden.net/upload/4/41/866MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> <a href="/wiki/Mr._Rime_(Pok%C3%A9mon)" title="Mr. Rime (Pokémon)"><span style="color:#000;">Mr. Rime</span></a>
+</td></tr>
+<tr>
+<th colspan="8" style="background:#A8B820; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Scyther family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Scyther_(Pok%C3%A9mon)" title="Scyther"><img alt="Scyther" src="//cdn.bulbagarden.net/upload/e/e6/123MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Scyther_(Pok%C3%A9mon)" title="Scyther (Pokémon)"><span style="color:#000;">Scyther</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Trade holding Metal Coat →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Scizor_(Pok%C3%A9mon)" title="Scizor"><img alt="Scizor" src="//cdn.bulbagarden.net/upload/b/bb/212MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Scizor_(Pok%C3%A9mon)" title="Scizor (Pokémon)"><span style="color:#000;">Scizor</span></a>
+</td>
+<td colspan="3" style="background:#A8B820; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#98D8D8; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Jynx family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Smoochum_(Pok%C3%A9mon)" title="Smoochum"><img alt="Smoochum" src="//cdn.bulbagarden.net/upload/0/0e/238MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Smoochum_(Pok%C3%A9mon)" title="Smoochum (Pokémon)"><span style="color:#000;">Smoochum</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 30 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Jynx_(Pok%C3%A9mon)" title="Jynx"><img alt="Jynx" src="//cdn.bulbagarden.net/upload/9/90/124MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Jynx_(Pok%C3%A9mon)" title="Jynx (Pokémon)"><span style="color:#000;">Jynx</span></a>
+</td>
+<td colspan="3" style="background:#98D8D8; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#F8D030; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Electabuzz family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Elekid_(Pok%C3%A9mon)" title="Elekid"><img alt="Elekid" src="//cdn.bulbagarden.net/upload/3/33/239MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Elekid_(Pok%C3%A9mon)" title="Elekid (Pokémon)"><span style="color:#000;">Elekid</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 30 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Electabuzz_(Pok%C3%A9mon)" title="Electabuzz"><img alt="Electabuzz" src="//cdn.bulbagarden.net/upload/f/f0/125MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Electabuzz_(Pok%C3%A9mon)" title="Electabuzz (Pokémon)"><span style="color:#000;">Electabuzz</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Trade holding Electirizer →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Electivire_(Pok%C3%A9mon)" title="Electivire"><img alt="Electivire" src="//cdn.bulbagarden.net/upload/1/15/466MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> <a href="/wiki/Electivire_(Pok%C3%A9mon)" title="Electivire (Pokémon)"><span style="color:#000;">Electivire</span></a>
+</td></tr>
+<tr>
+<th colspan="8" style="background:#F08030; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Magmar family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Magby_(Pok%C3%A9mon)" title="Magby"><img alt="Magby" src="//cdn.bulbagarden.net/upload/0/06/240MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Magby_(Pok%C3%A9mon)" title="Magby (Pokémon)"><span style="color:#000;">Magby</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 30 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Magmar_(Pok%C3%A9mon)" title="Magmar"><img alt="Magmar" src="//cdn.bulbagarden.net/upload/3/3c/126MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Magmar_(Pok%C3%A9mon)" title="Magmar (Pokémon)"><span style="color:#000;">Magmar</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Trade holding Magmarizer →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Magmortar_(Pok%C3%A9mon)" title="Magmortar"><img alt="Magmortar" src="//cdn.bulbagarden.net/upload/d/d1/467MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> <a href="/wiki/Magmortar_(Pok%C3%A9mon)" title="Magmortar (Pokémon)"><span style="color:#000;">Magmortar</span></a>
+</td></tr>
+<tr>
+<th colspan="8" style="background:#A8B820; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Pinsir family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Pinsir_(Pok%C3%A9mon)" title="Pinsir"><img alt="Pinsir" src="//cdn.bulbagarden.net/upload/b/b8/127MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Pinsir_(Pok%C3%A9mon)" title="Pinsir (Pokémon)"><span style="color:#000;">Pinsir</span></a>
+</td>
+<td colspan="6" style="background:#A8B820; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#A8A878; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Tauros family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Tauros_(Pok%C3%A9mon)" title="Tauros"><img alt="Tauros" src="//cdn.bulbagarden.net/upload/b/be/128MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Tauros_(Pok%C3%A9mon)" title="Tauros (Pokémon)"><span style="color:#000;">Tauros</span></a>
+</td>
+<td colspan="6" style="background:#A8A878; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#6890F0; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Magikarp family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Magikarp_(Pok%C3%A9mon)" title="Magikarp"><img alt="Magikarp" src="//cdn.bulbagarden.net/upload/d/d0/129MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Magikarp_(Pok%C3%A9mon)" title="Magikarp (Pokémon)"><span style="color:#000;">Magikarp</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 20 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Gyarados_(Pok%C3%A9mon)" title="Gyarados"><img alt="Gyarados" src="//cdn.bulbagarden.net/upload/8/8e/130MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Gyarados_(Pok%C3%A9mon)" title="Gyarados (Pokémon)"><span style="color:#000;">Gyarados</span></a>
+</td>
+<td colspan="3" style="background:#6890F0; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#6890F0; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Lapras family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Lapras_(Pok%C3%A9mon)" title="Lapras"><img alt="Lapras" src="//cdn.bulbagarden.net/upload/c/c3/131MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Lapras_(Pok%C3%A9mon)" title="Lapras (Pokémon)"><span style="color:#000;">Lapras</span></a>
+</td>
+<td colspan="6" style="background:#6890F0; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#A8A878; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Ditto family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Ditto_(Pok%C3%A9mon)" title="Ditto"><img alt="Ditto" src="//cdn.bulbagarden.net/upload/9/92/132MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Ditto_(Pok%C3%A9mon)" title="Ditto (Pokémon)"><span style="color:#000;">Ditto</span></a>
+</td>
+<td colspan="6" style="background:#A8A878; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#A8A878; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> <a href="/wiki/Eeveelution" title="Eeveelution"><span style="color:#000;">Eeveelution</span></a> family
+</th></tr>
+<tr>
+<td style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;" rowspan="8"> <a href="/wiki/Eevee_(Pok%C3%A9mon)" title="Eevee"><img alt="Eevee" src="//cdn.bulbagarden.net/upload/1/19/133MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;" rowspan="8"> <a href="/wiki/Eevee_(Pok%C3%A9mon)" title="Eevee (Pokémon)"><span style="color:#000;">Eevee</span></a>
+</td>
+<td style="background:#FFFFFF;"> Level 28 →
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Vaporeon_(Pok%C3%A9mon)" title="Vaporeon"><img alt="Vaporeon" src="//cdn.bulbagarden.net/upload/c/ca/134MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Vaporeon_(Pok%C3%A9mon)" title="Vaporeon (Pokémon)"><span style="color:#000;">Vaporeon</span></a>
+</td>
+<td style="background:#A8A878;" colspan="3"> &nbsp;
+</td></tr>
+<tr>
+<td style="background:#FFFFFF;"> Level 28 →
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Jolteon_(Pok%C3%A9mon)" title="Jolteon"><img alt="Jolteon" src="//cdn.bulbagarden.net/upload/8/8c/135MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Jolteon_(Pok%C3%A9mon)" title="Jolteon (Pokémon)"><span style="color:#000;">Jolteon</span></a>
+</td>
+<td style="background:#A8A878;" colspan="3"> &nbsp;
+</td></tr>
+<tr>
+<td style="background:#FFFFFF;"> Level 28 →
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Flareon_(Pok%C3%A9mon)" title="Flareon"><img alt="Flareon" src="//cdn.bulbagarden.net/upload/e/e5/136MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Flareon_(Pok%C3%A9mon)" title="Flareon (Pokémon)"><span style="color:#000;">Flareon</span></a>
+</td>
+<td style="background:#A8A878;" colspan="3"> &nbsp;
+</td></tr>
+<tr>
+<td style="background:#FFFFFF;"> Friendship (day)<br>Level up with Sun Shard<b><sup><a href="/wiki/Pok%C3%A9mon_XD:_Gale_of_Darkness" title="Pokémon XD: Gale of Darkness"><span style="color:#604E82;">XD</span></a></sup></b> →
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Espeon_(Pok%C3%A9mon)" title="Espeon"><img alt="Espeon" src="//cdn.bulbagarden.net/upload/7/78/196MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Espeon_(Pok%C3%A9mon)" title="Espeon (Pokémon)"><span style="color:#000;">Espeon</span></a>
+</td>
+<td style="background:#A8A878;" colspan="3"> &nbsp;
+</td></tr>
+<tr>
+<td style="background:#FFFFFF;"> Friendship (night)<br>Level up with Moon Shard<b><sup><a href="/wiki/Pok%C3%A9mon_XD:_Gale_of_Darkness" title="Pokémon XD: Gale of Darkness"><span style="color:#604E82;">XD</span></a></sup></b> →
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Umbreon_(Pok%C3%A9mon)" title="Umbreon"><img alt="Umbreon" src="//cdn.bulbagarden.net/upload/f/f4/197MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Umbreon_(Pok%C3%A9mon)" title="Umbreon (Pokémon)"><span style="color:#000;">Umbreon</span></a>
+</td>
+<td style="background:#A8A878;" colspan="3"> &nbsp;
+</td></tr>
+<tr>
+<td style="background:#FFFFFF;"> Level up near Moss Rock<br>Leaf Stone<b><sup><a href="/wiki/Pok%C3%A9mon_Sword_and_Shield" title="Pokémon Sword and Shield"><span style="color:#00A1E9">Sw</span><span style="color:#BF004F">Sh</span></a></sup></b> →
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Leafeon_(Pok%C3%A9mon)" title="Leafeon"><img alt="Leafeon" src="//cdn.bulbagarden.net/upload/a/ab/470MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Leafeon_(Pok%C3%A9mon)" title="Leafeon (Pokémon)"><span style="color:#000;">Leafeon</span></a>
+</td>
+<td style="background:#A8A878;" colspan="3"> &nbsp;
+</td></tr>
+<tr>
+<td style="background:#FFFFFF;"> Level up near Ice Rock<br>Ice Stone<b><sup><a href="/wiki/Pok%C3%A9mon_Sword_and_Shield" title="Pokémon Sword and Shield"><span style="color:#00A1E9">Sw</span><span style="color:#BF004F">Sh</span></a></sup></b> →
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Glaceon_(Pok%C3%A9mon)" title="Glaceon"><img alt="Glaceon" src="//cdn.bulbagarden.net/upload/8/87/471MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Glaceon_(Pok%C3%A9mon)" title="Glaceon (Pokémon)"><span style="color:#000;">Glaceon</span></a>
+</td>
+<td style="background:#A8A878;" colspan="3"> &nbsp;
+</td></tr>
+<tr>
+<td style="background:#FFFFFF;"> Level up with two hearts of Affection<br>and know a Fairy-type move →
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Sylveon_(Pok%C3%A9mon)" title="Sylveon"><img alt="Sylveon" src="//cdn.bulbagarden.net/upload/2/21/700MS8.png" width="68" height="68"></a>
+</td>
+<td style="background:#FFFFFF;"> <a href="/wiki/Sylveon_(Pok%C3%A9mon)" title="Sylveon (Pokémon)"><span style="color:#000;">Sylveon</span></a>
+</td>
+<td style="background:#A8A878; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;" colspan="3"> &nbsp;
+<p><br>
+</p>
+</td></tr>
+<tr>
+<th colspan="8" style="background:#A8A878; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Porygon family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Porygon_(Pok%C3%A9mon)" title="Porygon"><img alt="Porygon" src="//cdn.bulbagarden.net/upload/b/bc/137MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Porygon_(Pok%C3%A9mon)" title="Porygon (Pokémon)"><span style="color:#000;">Porygon</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Trade holding Up-Grade →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Porygon2_(Pok%C3%A9mon)" title="Porygon2"><img alt="Porygon2" src="//cdn.bulbagarden.net/upload/a/a0/233MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Porygon2_(Pok%C3%A9mon)" title="Porygon2 (Pokémon)"><span style="color:#000;">Porygon2</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Trade holding Dubious Disc →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Porygon-Z_(Pok%C3%A9mon)" title="Porygon-Z"><img alt="Porygon-Z" src="//cdn.bulbagarden.net/upload/d/df/474MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> <a href="/wiki/Porygon-Z_(Pok%C3%A9mon)" title="Porygon-Z (Pokémon)"><span style="color:#000;">Porygon-Z</span></a>
+</td></tr>
+<tr>
+<th colspan="8" style="background:#B8A038; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Omanyte family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Omanyte_(Pok%C3%A9mon)" title="Omanyte"><img alt="Omanyte" src="//cdn.bulbagarden.net/upload/c/c2/138MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Omanyte_(Pok%C3%A9mon)" title="Omanyte (Pokémon)"><span style="color:#000;">Omanyte</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 40 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Omastar_(Pok%C3%A9mon)" title="Omastar"><img alt="Omastar" src="//cdn.bulbagarden.net/upload/8/80/139MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Omastar_(Pok%C3%A9mon)" title="Omastar (Pokémon)"><span style="color:#000;">Omastar</span></a>
+</td>
+<td colspan="3" style="background:#B8A038; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#B8A038; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Kabuto family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Kabuto_(Pok%C3%A9mon)" title="Kabuto"><img alt="Kabuto" src="//cdn.bulbagarden.net/upload/a/a8/140MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Kabuto_(Pok%C3%A9mon)" title="Kabuto (Pokémon)"><span style="color:#000;">Kabuto</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 40 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Kabutops_(Pok%C3%A9mon)" title="Kabutops"><img alt="Kabutops" src="//cdn.bulbagarden.net/upload/4/4c/141MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Kabutops_(Pok%C3%A9mon)" title="Kabutops (Pokémon)"><span style="color:#000;">Kabutops</span></a>
+</td>
+<td colspan="3" style="background:#B8A038; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#B8A038; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Aerodactyl family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Aerodactyl_(Pok%C3%A9mon)" title="Aerodactyl"><img alt="Aerodactyl" src="//cdn.bulbagarden.net/upload/9/90/142MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Aerodactyl_(Pok%C3%A9mon)" title="Aerodactyl (Pokémon)"><span style="color:#000;">Aerodactyl</span></a>
+</td>
+<td colspan="6" style="background:#B8A038; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#A8A878; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Snorlax family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Munchlax_(Pok%C3%A9mon)" title="Munchlax"><img alt="Munchlax" src="//cdn.bulbagarden.net/upload/7/7e/446MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Munchlax_(Pok%C3%A9mon)" title="Munchlax (Pokémon)"><span style="color:#000;">Munchlax</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Friendship →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Snorlax_(Pok%C3%A9mon)" title="Snorlax"><img alt="Snorlax" src="//cdn.bulbagarden.net/upload/5/5a/143MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Snorlax_(Pok%C3%A9mon)" title="Snorlax (Pokémon)"><span style="color:#000;">Snorlax</span></a>
+</td>
+<td colspan="3" style="background:#A8A878; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#98D8D8; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Articuno family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Articuno_(Pok%C3%A9mon)" title="Articuno"><img alt="Articuno" src="//cdn.bulbagarden.net/upload/a/a0/144MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Articuno_(Pok%C3%A9mon)" title="Articuno (Pokémon)"><span style="color:#000;">Articuno</span></a>
+</td>
+<td colspan="6" style="background:#98D8D8; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#F85888; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Galarian Articuno family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Articuno_(Pok%C3%A9mon)" title="Articuno"><img alt="Articuno" src="//cdn.bulbagarden.net/upload/b/b2/144GMS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Articuno_(Pok%C3%A9mon)" title="Articuno (Pokémon)"><span style="color:#000;">Articuno</span></a>
+</td>
+<td colspan="6" style="background:#F85888; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#F8D030; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Zapdos family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Zapdos_(Pok%C3%A9mon)" title="Zapdos"><img alt="Zapdos" src="//cdn.bulbagarden.net/upload/4/4b/145MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Zapdos_(Pok%C3%A9mon)" title="Zapdos (Pokémon)"><span style="color:#000;">Zapdos</span></a>
+</td>
+<td colspan="6" style="background:#F8D030; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#C03028; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Galarian Zapdos family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Zapdos_(Pok%C3%A9mon)" title="Zapdos"><img alt="Zapdos" src="//cdn.bulbagarden.net/upload/d/d8/145GMS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Zapdos_(Pok%C3%A9mon)" title="Zapdos (Pokémon)"><span style="color:#000;">Zapdos</span></a>
+</td>
+<td colspan="6" style="background:#C03028; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#F08030; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Moltres family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Moltres_(Pok%C3%A9mon)" title="Moltres"><img alt="Moltres" src="//cdn.bulbagarden.net/upload/f/f6/146MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Moltres_(Pok%C3%A9mon)" title="Moltres (Pokémon)"><span style="color:#000;">Moltres</span></a>
+</td>
+<td colspan="6" style="background:#F08030; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#705848; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Galarian Moltres family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Moltres_(Pok%C3%A9mon)" title="Moltres"><img alt="Moltres" src="//cdn.bulbagarden.net/upload/0/06/146GMS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Moltres_(Pok%C3%A9mon)" title="Moltres (Pokémon)"><span style="color:#000;">Moltres</span></a>
+</td>
+<td colspan="6" style="background:#705848; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#7038F8; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Dratini family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Dratini_(Pok%C3%A9mon)" title="Dratini"><img alt="Dratini" src="//cdn.bulbagarden.net/upload/9/9d/147MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Dratini_(Pok%C3%A9mon)" title="Dratini (Pokémon)"><span style="color:#000;">Dratini</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 30 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Dragonair_(Pok%C3%A9mon)" title="Dragonair"><img alt="Dragonair" src="//cdn.bulbagarden.net/upload/b/b7/148MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Dragonair_(Pok%C3%A9mon)" title="Dragonair (Pokémon)"><span style="color:#000;">Dragonair</span></a>
+</td>
+<td width="20%" style="background:#FFFFFF;"> Level 55 →
+</td>
+<td width="32px" style="background:#FFFFFF;"> <a href="/wiki/Dragonite_(Pok%C3%A9mon)" title="Dragonite"><img alt="Dragonite" src="//cdn.bulbagarden.net/upload/5/55/149MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> <a href="/wiki/Dragonite_(Pok%C3%A9mon)" title="Dragonite (Pokémon)"><span style="color:#000;">Dragonite</span></a>
+</td></tr>
+<tr>
+<th colspan="8" style="background:#F85888; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Mewtwo family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Mewtwo_(Pok%C3%A9mon)" title="Mewtwo"><img alt="Mewtwo" src="//cdn.bulbagarden.net/upload/3/3e/150MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Mewtwo_(Pok%C3%A9mon)" title="Mewtwo (Pokémon)"><span style="color:#000;">Mewtwo</span></a>
+</td>
+<td colspan="6" style="background:#F85888; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr>
+<tr>
+<th colspan="8" style="background:#F85888; border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; -icab-border-top-left-radius: 5px; -o-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px;"> Mew family
+</th></tr>
+<tr>
+<td width="32px" style="background:#FFFFFF; border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; -icab-border-bottom-left-radius: 5px; -o-border-bottom-left-radius: 5px;"> <a href="/wiki/Mew_(Pok%C3%A9mon)" title="Mew"><img alt="Mew" src="//cdn.bulbagarden.net/upload/b/b0/151MS8.png" width="68" height="68"></a>
+</td>
+<td width="15%" style="background:#FFFFFF;"> <a href="/wiki/Mew_(Pok%C3%A9mon)" title="Mew (Pokémon)"><span style="color:#000;">Mew</span></a>
+</td>
+<td colspan="6" style="background:#F85888; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; -icab-border-bottom-right-radius: 5px; -o-border-bottom-right-radius: 5px;"> &nbsp;
+</td></tr></tbody>
