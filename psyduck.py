@@ -571,7 +571,7 @@ async def on_message(message):
                 text = ""
                 for evo in evolutions:
                     text += evo[2] + evo[1] + " on level "+str(evo[0]) + "\n"
-            embed.add_field(name = poke[1] + poke[2] + "'s evolutions:", value = text, inline = False)
+            embed.add_field(name = poke[1] + poke[2] + "'s evolutions:", value = text)
         await message.channel.send(embed = embed)
         return
 
