@@ -553,7 +553,7 @@ async def on_message(message):
         if len(temp) < 2:
             await message.channel.send("Wrong number of parameters!\nCorrect use: "+prefix+"evolution [pokemon name]\nCheck "+prefix+"help for more informations")
             return
-        pokelist = select("pokemon", ("id", "emote", "name"), "LOWER(name) = \""+temp[1].lower()+"\"")
+        pokelist = select("pokemon", ("national_number", "emote", "name"), "LOWER(name) = \""+temp[1].lower()+"\"")
         if not pokelist:
             await message.channel.send("Oops, looks like you made a typo in pokemon's name. I can't find "+temp[1]+" in our pokemon database")
             return
