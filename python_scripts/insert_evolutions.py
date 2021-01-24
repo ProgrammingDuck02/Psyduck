@@ -98,7 +98,7 @@ def disable_evolutions(limit):
             ok[poke[0]] = "0"
     keys = ok.keys()
     for key in keys:
-        update("evolutions", ("avalible",), (ok[key],), "id = "+str(poke[0]))
+        update("evolutions", ("avalible",), (ok[key],), "id = "+str(key))
 
 disable_evolutions(151)
         
