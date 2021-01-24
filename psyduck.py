@@ -145,7 +145,7 @@ def level_up_party(trainer_id):
     sql = "UPDATE owned_pokemon SET exp = exp + 1 WHERE trainer_id = \""+trainer_id+"\" AND location = \"party\""
     cursor.execute(sql)
     DB.commit()
-    sql = "UPDATE owned_pokemon SET level = level + 1, max_exp = 3 * (level + 1), exp = 0 WHERE trainer_id = \""+trainer_id+"\" AND location = \"party\" AND exp >= max_exp"
+    sql = "UPDATE owned_pokemon SET level = level + 1, max_exp = 3 * level, exp = 0 WHERE trainer_id = \""+trainer_id+"\" AND location = \"party\" AND exp >= max_exp"
     cursor.execute(sql)
     DB.commit()
 
