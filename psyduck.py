@@ -574,7 +574,75 @@ async def on_message(message):
             embed.add_field(name = poke[1] + poke[2] + "'s evolutions:", value = text)
         await message.channel.send(embed = embed)
         return
-
+    
+    if mes.lower().startswith("evolve"):
+        temp = mes.split(" ",2)
+        if len(temp) < 2:
+            await message.channel.send("Wrong number of parameters!\nCorrect use "+prefix+"evolve [pokemon] <evolution pokemon>\nCheck "+prefix+"help for more informations")
+            return
+        location = "party"
+        position = temp[1]
+        if temp[1].lower().startswith("box"):
+            tmp_lst = temp[1].split(":",1)
+            if len(tmp_lst) < 2:
+                await message.channel.send("To evolve pokemon in a box please use format "+prefix+"evolve [box name]:[pokemon in box] <evolution pokemon>")
+                return
+            location = tmp_lst[0].upper()
+            if len(location) == 3:
+                location += "1"
+            if not location[3:].isdigit():
+                await message.channel.send(location+" is not a valid box number")
+                return
+            if int(location[3:]) < 1 or int(location[3:]) > 10:
+                await message.channel.send(location+" is not a valid box number")
+                return
+            position = tmp_lst[1]
+        if not position.isdigit():
+            await message.channel.send(position+" is not a valid pokemon number")
+            return
+        if int(position) < 1 or int(position) > 6:
+            await message.channel.send(position+" is not a valid pokemon number")
+            return
+        poke = select_one("owned_pokemon", ("pokemon", "level", "shiny"), "trainer_id = \""+str(message.author.id)+"\" AND location = \""+location+"\" AND position = "+position)
+        if not poke:
+            await message.channel.send("Oops, looks like you don't have any pokemon in that position")
+            return
+        shiny = (poke[2] == 1)
+        evolutions = select("evolutions", ("evolution",), "pokemon = \""+poke[0]+"\" AND avalible = 1 AND level <="+str(poke[1]))
+        if len(evolutions) == 0:
+            await message.channel.send("Your pokemon's spieces is not able to evolve right now")
+            return
+        choice = None
+        if len(temp) == 2:
+            choice = evolutions[random.randrange(len(evolutions))][0]
+        else:
+            species = temp[2]
+            form = ""
+            if species.lower().startswith("alolan "):
+                form = "A"
+                species = species.split(" ",1)[1]
+            elif species.lower().startswith("galarian "):
+                form = "G"
+                species = species.split(" ",1)[1]
+            chosen_poke = select_one("pokemon", ("national_number",), "name = \""+species+"\" AND CHAR_LENGTH(national_number) = "+str(3+len(form))+" AND national_number like \"%"+form+"\"")
+            if not chosen_poke:
+                await message.channel.send("Oops, looks like you made a typo in pokemon evolution name. I can't find it in our pokemon database")
+                return
+            for each in evolutions:
+                if each[0] == chosen_poke[0]:
+                    choice = each[0]
+        if choice == None:
+            await message.channel.send("Oops, looks like your pokemon is unable to evolve into "+temp[2])
+            return
+        new_poke = select_one("pokemon", ("name", "emote", "shiny_emote"), "national_number = \""+choice+"\"")
+        emote = None
+        if shiny:
+            emote = new_poke[2]
+        else:
+            emote = new_poke[1]
+        update("owned_pokemon", ("pokemon"), (new_poke[1]), "trainer_id = \""+str(message.author.id)+"\" AND location = \""+location+"\" AND position = "+position)
+        await message.channel.send("Congratulations, your pokemon evolved into "+emote+new_poke[0]+"!")
+        return
 
     #Delete before final distribution duh
     if mes.lower() == "off":
