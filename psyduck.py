@@ -610,7 +610,7 @@ async def on_message(message):
         shiny = (poke[2] == 1)
         evolutions = select("evolutions", ("evolution",), "pokemon = \""+poke[0]+"\" AND avalible = 1 AND level <="+str(poke[1]))
         if len(evolutions) == 0:
-            await message.channel.send("Your pokemon's spieces is not able to evolve right now")
+            await message.channel.send("Your pokemon is not able to evolve right now")
             return
         choice = None
         if len(temp) == 2:
