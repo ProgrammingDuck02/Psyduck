@@ -640,7 +640,7 @@ async def on_message(message):
             emote = new_poke[2]
         else:
             emote = new_poke[1]
-        update("owned_pokemon", ("pokemon"), (new_poke[1]), "trainer_id = \""+str(message.author.id)+"\" AND location = \""+location+"\" AND position = "+position)
+        update("owned_pokemon", ("pokemon",), (new_poke[1,]), "trainer_id = \""+str(message.author.id)+"\" AND location = \""+location+"\" AND position = "+position)
         await message.channel.send("Congratulations, your pokemon evolved into "+emote+new_poke[0]+"!")
         return
 
