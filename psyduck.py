@@ -653,9 +653,10 @@ async def on_message(message):
             return
         now = datetime.now()
         today = now.strftime("%Y-%m-%d")
-        if check[0] == today:
-            await message.channel.send("Oops, looks like you already accepted your daily award today, please try again tomorrow")
-            return
+        if check[0] != None:
+            if str(check[0]) == today:
+                await message.channel.send("Oops, looks like you already accepted your daily award today, please try again tomorrow")
+                return
 
     #Delete before final distribution duh
     if mes.lower() == "off":
