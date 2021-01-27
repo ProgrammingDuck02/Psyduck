@@ -653,7 +653,7 @@ async def on_message(message):
             return
         now = datetime.now()
         today = now.strftime("%Y-%m-%d")
-        if check == today:
+        if check[0] == today:
             await message.channel.send("Oops, looks like you already accepted your daily award today, please try again tomorrow")
             return
 
