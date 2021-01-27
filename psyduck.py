@@ -651,8 +651,11 @@ async def on_message(message):
         if not check:
             await message.channel.send("Oops, looks like you don't have a trainer profile set yet. View avalible starters with "+prefix+"starters and choose one with "+prefix+"pick [starter number]")
             return
-        print(check[0])
-        return
+        now = datetime.now()
+        today = now.strftime("%Y-%m-%d")
+        if check == today:
+            await message.channel.send("Oops, looks like you already accepted your daily award today, please try again tomorrow")
+            return
 
     #Delete before final distribution duh
     if mes.lower() == "off":
