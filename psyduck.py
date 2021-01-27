@@ -664,7 +664,11 @@ async def on_message(message):
         return
 
     if mes.lower() == "balance":
-        await message.channel.send("Kurde balans git majonez")
+        balance = select_one("trainers", ("money",), "id = \""+str(message.author.id)+"\"")
+        if not balance:
+            await message.channel.send("Oops, looks like you don't have a trainer profile set yet. View avalible starters with "+prefix+"starters and choose one with "+prefix+"pick [starter number]")
+            return
+        await message.channel.send("Your current balance is "+str(balance[0])+coin_emoji)
         return
 
     #Delete before final distribution duh
