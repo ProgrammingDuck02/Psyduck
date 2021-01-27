@@ -657,6 +657,11 @@ async def on_message(message):
             if str(check[0]) == today:
                 await message.channel.send("Oops, looks like you already accepted your daily award today, please try again tomorrow")
                 return
+        sql = "UPDATE trainers set money = money + 200, received_daily = \""+today+"\" WHERE id = \""+str(message.author.id)+"\""
+        cursor.execute(sql)
+        DB.commit()
+        await message.channel.send("Yay! You received your daily 200"+coin_emoji+"!")
+        return
 
     #Delete before final distribution duh
     if mes.lower() == "off":
