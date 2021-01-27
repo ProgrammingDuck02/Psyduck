@@ -12,6 +12,7 @@ client = discord.Client()
 cursor = None
 DB = None
 prefix = "?"
+coin_emoji = ":coin:"
 
 pokemon_limit = 151
 
@@ -215,6 +216,7 @@ async def on_message(message):
     global starters
     global pokemon_limit
     global cursor
+    global coin_emoji
     if message.author == client.user:
         return
     level_up_party(str(message.author.id))
@@ -642,6 +644,14 @@ async def on_message(message):
             emote = new_poke[1]
         update("owned_pokemon", ("pokemon",), (choice,), "trainer_id = \""+str(message.author.id)+"\" AND location = \""+location+"\" AND position = "+position)
         await message.channel.send("Congratulations, your pokemon evolved into "+emote+new_poke[0]+"!")
+        return
+
+    if mes.lower() == "daily":
+        check = select_one("trainers", ("received_daily",), "id = \""+str(message.author.id)+"\"")
+        if not check:
+            await message.channel.send("Oops, looks like you don't have a trainer profile set yet. View avalible starters with "+prefix+"starters and choose one with "+prefix+"pick [starter number]")
+            return
+        print(check[0])
         return
 
     #Delete before final distribution duh
