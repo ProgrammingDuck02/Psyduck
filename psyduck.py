@@ -663,6 +663,10 @@ async def on_message(message):
         await message.channel.send("Yay! You received your daily 200"+coin_emoji+"!")
         return
 
+    if mes.lower() == "balance":
+        await message.channel.send("Kurde balans git majonez")
+        return
+
     #Delete before final distribution duh
     if mes.lower() == "off":
         await message.channel.send("Logging out...")
