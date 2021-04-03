@@ -128,7 +128,7 @@ def parse_number(number_s):
 def get_levelupmovelist(source, variant = "standard"):
     global types, attack_types
     ret = []
-    temp = get_standard_levelup(source, variant)
+    temp = get_levelup_html(source, variant)
     cur = []
     cur_str = ""
     skip = False
