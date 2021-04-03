@@ -216,7 +216,7 @@ def main():
             variant = "standard"
         movelist = get_levelupmovelist_by_name(poke[1], variant)
         for move in movelist:
-            move_to_database(poke[1], move)
+            move_to_database(poke[0], move)
 
 if __name__ == "__main__":
     main()
