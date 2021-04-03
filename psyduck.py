@@ -67,7 +67,6 @@ def connect_db():
     )
     cursor = DB.cursor()
 
-
 def select(table, values, conditions):
     connect_db()
     global cursor
