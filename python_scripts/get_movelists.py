@@ -210,9 +210,9 @@ def main():
         time.sleep(1)
         print(poke[1]+"...")
         if len(poke[0]) > 3:
-            if poke[3] == "G":
+            if poke[0][3] == "G":
                 variant = "galarian"
-            elif poke[3] == "A":
+            elif poke[0][3] == "A":
                 variant = "alolan"
             else:
                 variant = "standard"
