@@ -219,4 +219,4 @@ def main():
             move_to_database(poke[0], move)
 
 if __name__ == "__main__":
-    print(get_levelupmovelist_by_name("venusaur"))
+    main()
