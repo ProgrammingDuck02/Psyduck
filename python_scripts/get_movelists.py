@@ -121,7 +121,7 @@ def get_levelup_html(source, variant = "standard"):
     return ret[(len(attacks[0])-3):(len(ret)-len(attacks[1]))].replace("\t", "").replace("\r\n", "")
 
 def parse_number(number_s):
-    if number_s == "--":
+    if not number_s.isdecimal():
         return "0"
     return number_s
 
@@ -219,4 +219,4 @@ def main():
             move_to_database(poke[0], move)
 
 if __name__ == "__main__":
-    main()
+    print(get_levelupmovelist_by_name("venusaur"))
