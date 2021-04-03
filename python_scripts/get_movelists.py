@@ -174,7 +174,7 @@ def get_levelupmovelist(source, variant = "standard"):
     for each in temp:
         temp_dict = {}
         temp_dict["method"] = "level"
-        temp_dict["level"] = each[0]
+        temp_dict["level"] = parse_number(each[0])
         temp_dict["name"] = each[1]
         temp_dict["type"] = each[2].capitalize()
         temp_dict["category"] = each[3].capitalize()
