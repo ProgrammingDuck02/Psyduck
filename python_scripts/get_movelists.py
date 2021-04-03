@@ -2,6 +2,7 @@ import requests, re
 from xml.sax.saxutils import unescape
 import pickle
 import mysql.connector
+import time
 standard_attacks = (
     "<a name=\"attacks\"></a><table class=\"dextable\"><tr ><td colspan=\"10\" class=\"fooevo\"><h3><a name=\"standardlevel\"></a>Standard Level Up</h3></td></tr><tr><th class=\"attheader\">Level</th><th class=\"attheader\">Attack Name</th><th class=\"attheader\">Type</th><th class=\"attheader\">Cat\.</th><th class=\"attheader\">Att\.</th><th class=\"attheader\">Acc\.</th><th class=\"attheader\">PP</th><th class=\"attheader\">Effect %</th></tr>",
     "</table>"
@@ -202,6 +203,7 @@ def move_to_database(pokemon, move):
 def main():
     pokes = select("pokemon", ("national_number", "name"), "convert(substring(national_number, 1, 3), unsigned integer) <= 151")
     for poke in pokes:
+        time.sleep(1)
         print(poke[1]+"...")
         if len(poke[0]) > 3:
             if poke[3] == "G":
