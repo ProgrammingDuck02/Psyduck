@@ -118,6 +118,8 @@ def get_levelup_html(source, variant = "standard"):
         l = len(ret) - 1
         source = ret[:l]
         temp = query.search(source)
+    if not ret:
+        return False
     return ret[(len(attacks[0])-3):(len(ret)-len(attacks[1]))].replace("\t", "").replace("\r\n", "")
 
 def parse_number(number_s):
@@ -129,6 +131,8 @@ def get_levelupmovelist(source, variant = "standard"):
     global types, attack_types
     ret = []
     temp = get_levelup_html(source, variant)
+    if not temp:
+        return []
     cur = []
     cur_str = ""
     skip = False
