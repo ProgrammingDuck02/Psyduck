@@ -148,7 +148,7 @@ def get_levelupmovelist(source, variant = "standard"):
     for i in range(len(temp)):
         akt = temp[i]
         akt_long = ""
-        if len(temp) > i+5:
+        if len(temp) > i+4:
             akt_long = temp[i:i+5]
         if buff > 0:
             buff -= 1
@@ -230,4 +230,7 @@ def main():
             move_to_database(poke[0], move)
 
 if __name__ == "__main__":
-    main()
+    url = "https://www.serebii.net/pokedex-swsh/bulbasaur"
+    rq = requests.get(url)
+    html = rq.text
+    print(get_levelupmovelist(html))
