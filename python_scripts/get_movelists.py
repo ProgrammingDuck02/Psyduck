@@ -230,7 +230,4 @@ def main():
             move_to_database(poke[0], move)
 
 if __name__ == "__main__":
-    url = "https://www.serebii.net/pokedex-swsh/bulbasaur"
-    rq = requests.get(url)
-    html = rq.text
-    print(get_levelupmovelist(html))
+    main()
