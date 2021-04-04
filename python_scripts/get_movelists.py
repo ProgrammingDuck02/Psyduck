@@ -43,6 +43,9 @@ attack_types = {
     "other" : "status"
 }
 
+cursor = None
+DB = None
+
 def connect_db():
     global DB, cursor
     DB = mysql.connector.connect(
@@ -191,7 +194,7 @@ def get_levelupmovelist(source, variant = "standard"):
     return ret
 
 def get_levelupmovelist_by_name(name, variant = "standard"):
-    rq = requests.get("https://www.serebii.net/pokedex-swsh/"+name.lower()+"/")
+    rq = requests.get("https://www.serebii.net/pokedex-swsh/"+name.lower().replace(" ", "")+"/")
     source = rq.text
     return get_levelupmovelist(source, variant)
 
