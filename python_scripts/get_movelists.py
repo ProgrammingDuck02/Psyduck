@@ -194,11 +194,7 @@ def get_levelupmovelist(source, variant = "standard"):
     return ret
 
 def get_levelupmovelist_by_name(name, variant = "standard"):
-    if name == "Nidoran♀":
-        name = "nidoranf"
-    if name == "Nidoran♂":
-        name = "nidoranm"
-    rq = requests.get("https://www.serebii.net/pokedex-swsh/"+name.lower().replace(" ", "")+"/")
+    rq = requests.get("https://www.serebii.net/pokedex-swsh/"+name.lower().replace(" ", "").replace("♀", "f").replace("♂", "m")+"/")
     source = rq.text
     return get_levelupmovelist(source, variant)
 
@@ -212,7 +208,7 @@ def move_to_database(pokemon, move):
     insert("movesets", ("pokemon", "move", "method", "level"), (pokemon, str(move_id), move["method"], move["level"]))
 
 def main():
-    pokes = select("pokemon", ("national_number", "name"), "convert(substring(national_number, 1, 3), unsigned integer) <= 151")
+    pokes = select("pokemon", ("national_number", "name"), "convert(substring(national_number, 1, 3), unsigned integer) <= 151 or national_number in (select evolution from evolutions where convert(substring(pokemon, 1, 3), unsigned integer) <= 151)")
     for poke in pokes:
         time.sleep(1)
         print(poke[1]+"...")
