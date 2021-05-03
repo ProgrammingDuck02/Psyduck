@@ -31,6 +31,11 @@ usum_standard_attacks = (
     "</table>"
 )
 
+usum_altstandard_attacks = (
+    "<table class=\"dextable\"><tr ><td colspan=\"10\" class=\"fooevo\"><h3><a name=\"usmlevel\"></a>Ultra Sun/Ultra Moon Level Up</h3></td></tr><tr><th class=\"attheader\">Level</th><th class=\"attheader\">Attack Name</th><th class=\"attheader\">Type</th><th class=\"attheader\">Cat\.</th><th class=\"attheader\">Att\.</th><th class=\"attheader\">Acc\.</th><th class=\"attheader\">PP</th><th class=\"attheader\">Effect %</th></tr><tr>",
+    "</table>"
+)
+
 types = [
     "normal",
     "fire",
@@ -120,8 +125,8 @@ def insert(table, fields, values):
     DB.commit()
     return True
 
-def get_levelup_html(source, dex, variant = "standard", use_alt = False):
-    global swsh_standard_attacks, swsh_alolan_attacks, swsh_galarian_attacks, usum_alolan_attacks, usum_standardform_attacks, usum_standard_attacks
+def get_levelup_html(source, dex, variant = "standard", use_alt = 0):
+    global swsh_standard_attacks, swsh_alolan_attacks, swsh_galarian_attacks, usum_alolan_attacks, usum_standardform_attacks, usum_standard_attacks, usum_altstandard_attacks
     if dex == "swsh":
         if variant == "alolan":
             attacks = swsh_alolan_attacks
@@ -133,10 +138,12 @@ def get_levelup_html(source, dex, variant = "standard", use_alt = False):
         if variant == "alolan":
             attacks = usum_alolan_attacks
         else:
-            if use_alt:
+            if use_alt == 0:
                 attacks = usum_standardform_attacks
-            else:
+            elif use_alt == 1:
                 attacks = usum_standard_attacks
+            else:
+                attacks = usum_altstandard_attacks
     query = re.compile(attacks[0]+".*"+attacks[1], re.DOTALL)
     temp = query.search(source)
     ret = None
@@ -145,8 +152,8 @@ def get_levelup_html(source, dex, variant = "standard", use_alt = False):
         l = len(ret) - 1
         source = ret[:l]
         temp = query.search(source)
-    if not (ret or use_alt):
-        return get_levelup_html(source, dex, variant, True)
+    if not (ret or use_alt < 2):
+        return get_levelup_html(source, dex, variant, use_alt+1)
     if not ret:
         return False
     return ret[(len(attacks[0])-3):(len(ret)-len(attacks[1]))].replace("\t", "").replace("\r\n", "")
