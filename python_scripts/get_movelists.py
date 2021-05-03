@@ -269,6 +269,4 @@ def main():
             move_to_database(poke[0], move)
 
 if __name__ == "__main__":
-    f = open("tmp.html","w")
-    f.write(requests.get("https://www.serebii.net/pokedex-sm/013.shtml").text)
-    f.close()
+    main()
