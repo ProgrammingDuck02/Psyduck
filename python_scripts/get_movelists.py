@@ -219,6 +219,8 @@ def get_levelupmovelist(source, dex, variant = "standard"):
 
 def get_swsh_levelupmovelist_by_name(name, variant = "standard"):
     rq = requests.get("https://www.serebii.net/pokedex-swsh/"+name.lower().replace(" ", "").replace("♀", "f").replace("♂", "m")+"/")
+    if not rq:
+        return False
     source = rq.text
     return get_levelupmovelist(source, "swsh", variant)
 
@@ -232,6 +234,8 @@ def get_usum_levelupmovelist_by_number(number):
     else:
         variant = "standard"
     rq = requests.get("https://www.serebii.net/pokedex-sm/"+number+".shtml")
+    if not rq:
+        return False
     source = rq.text
     return get_levelupmovelist(source, "usum", variant)
 
