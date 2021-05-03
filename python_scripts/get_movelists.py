@@ -3,16 +3,26 @@ from xml.sax.saxutils import unescape
 import pickle
 import mysql.connector
 import time
-standard_attacks = (
+swsh_standard_attacks = (
     "<a name=\"attacks\"></a><table class=\"dextable\"><tr ><td colspan=\"10\" class=\"fooevo\"><h3><a name=\"standardlevel\"></a>Standard Level Up</h3></td></tr><tr><th class=\"attheader\">Level</th><th class=\"attheader\">Attack Name</th><th class=\"attheader\">Type</th><th class=\"attheader\">Cat\.</th><th class=\"attheader\">Att\.</th><th class=\"attheader\">Acc\.</th><th class=\"attheader\">PP</th><th class=\"attheader\">Effect %</th></tr>",
     "</table>"
 )
-galarian_attacks = (
+swsh_galarian_attacks = (
     "<a name=\"attacks\"></a><table class=\"dextable\"><tr ><td colspan=\"10\" class=\"fooevo\"><h3><a name=\"galarianlevel\"></a>Galarian Form Level Up</h3></td></tr><tr><th class=\"attheader\">Level</th><th class=\"attheader\">Attack Name</th><th class=\"attheader\">Type</th><th class=\"attheader\">Cat\.</th><th class=\"attheader\">Att\.</th><th class=\"attheader\">Acc\.</th><th class=\"attheader\">PP</th><th class=\"attheader\">Effect %</th></tr>",
     "</table>"
 )
-alolan_attacks = (
+swsh_alolan_attacks = (
     "<a name=\"attacks\"></a><table class=\"dextable\"><tr ><td colspan=\"10\" class=\"fooevo\"><h3><a name=\"alolalevel\"></a>Alola Form Level Up</h3></td></tr><tr><th class=\"attheader\">Level</th><th class=\"attheader\">Attack Name</th><th class=\"attheader\">Type</th><th class=\"attheader\">Cat\.</th><th class=\"attheader\">Att\.</th><th class=\"attheader\">Acc\.</th><th class=\"attheader\">PP</th><th class=\"attheader\">Effect %</th></tr>",
+    "</table>"
+)
+
+usum_alolan_attacks = (
+    "<table class=\"dextable\"><tr ><td colspan=\"10\" class=\"fooevo\"><h3><a name=\"alolalevel\"></a><font size=\"2\">Alola Form Level Up</font></h3></td></tr><tr><th class=\"attheader\">Level</th><th class=\"attheader\">Attack Name</th><th class=\"attheader\">Type</th><th class=\"attheader\">Cat\.</th><th class=\"attheader\">Att\.</th><th class=\"attheader\">Acc\.</th><th class=\"attheader\">PP</th><th class=\"attheader\">Effect %</th></tr><tr>",
+    "</table>"
+)
+
+usum_standard_attacks = (
+    "<table class=\"dextable\"><tr ><td colspan=\"10\" class=\"fooevo\"><h3><a name=\"standardlevel\"></a><font size=\"2\">Standard Level Up</font></h3></td></tr><tr><th class=\"attheader\">Level</th><th class=\"attheader\">Attack Name</th><th class=\"attheader\">Type</th><th class=\"attheader\">Cat\.</th><th class=\"attheader\">Att\.</th><th class=\"attheader\">Acc\.</th><th class=\"attheader\">PP</th><th class=\"attheader\">Effect %</th></tr><tr>",
     "</table>"
 )
 
@@ -105,14 +115,20 @@ def insert(table, fields, values):
     DB.commit()
     return True
 
-def get_levelup_html(source, variant = "standard"):
-    global standard_attacks, alolan_attacks, galarian_attacks
-    if variant == "alolan":
-        attacks = alolan_attacks
-    elif variant == "galarian":
-        attacks = galarian_attacks
+def get_levelup_html(source, dex, variant = "standard"):
+    global swsh_standard_attacks, swsh_alolan_attacks, swsh_galarian_attacks
+    if dex == "swsh":
+        if variant == "alolan":
+            attacks = swsh_alolan_attacks
+        elif variant == "galarian":
+            attacks = swsh_galarian_attacks
+        else:
+            attacks = swsh_standard_attacks
     else:
-        attacks = standard_attacks
+        if variant == "alolan":
+            attacks = usum_alolan_attacks
+        else:
+            attacks = usum_standard_attacks
     query = re.compile(attacks[0]+".*"+attacks[1], re.DOTALL)
     temp = query.search(source)
     ret = None
@@ -130,12 +146,10 @@ def parse_number(number_s):
         return "0"
     return number_s
 
-def get_levelupmovelist(source, variant = "standard"):
+def get_levelupmovelist(source, dex, variant = "standard"):
     global types, attack_types
     ret = []
-    temp = get_levelup_html(source, variant)
-    if not temp:
-        return []
+    temp = get_levelup_html(source, dex, variant)
     cur = []
     cur_str = ""
     skip = False
@@ -193,10 +207,22 @@ def get_levelupmovelist(source, variant = "standard"):
         ret.append(temp_dict)
     return ret
 
-def get_levelupmovelist_by_name(name, variant = "standard"):
+def get_swsh_levelupmovelist_by_name(name, variant = "standard"):
     rq = requests.get("https://www.serebii.net/pokedex-swsh/"+name.lower().replace(" ", "").replace("♀", "f").replace("♂", "m")+"/")
     source = rq.text
-    return get_levelupmovelist(source, variant)
+    return get_levelupmovelist(source, "swsh", variant)
+
+def get_usum_levelupmovelist_by_number(number):
+    if len(number) > 3:
+        if number[3] == "A":
+            variant = "alolan"
+        else:
+            raise Exception("Wrong variant")
+    else:
+        variant = "standard"
+    rq = requests.get("https://www.serebii.net/pokedex-sm/"+number[:3]+".shtml")
+    source = rq.text
+    return get_levelupmovelist(source, "usum", variant)
 
 def move_to_database(pokemon, move):
     temp = select_one("moves", ("id",), "name = \""+move["name"]+"\"")
@@ -221,7 +247,13 @@ def main():
                 variant = "standard"
         else:
             variant = "standard"
-        movelist = get_levelupmovelist_by_name(poke[1], variant)
+        movelist = get_swsh_levelupmovelist_by_name(poke[1], variant)
+        if not movelist:
+            movelist = get_usum_levelupmovelist_by_number(poke[0])
+        if movelist:
+            print("OK")
+        else:
+            print("ERROR")
         for move in movelist:
             move_to_database(poke[0], move)
 
