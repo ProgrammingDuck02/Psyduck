@@ -152,7 +152,7 @@ def get_levelup_html(source, dex, variant = "standard", use_alt = 0):
         l = len(ret) - 1
         source = ret[:l]
         temp = query.search(source)
-    if not (ret or use_alt < 2):
+    if not (ret or use_alt > 1):
         return get_levelup_html(source, dex, variant, use_alt+1)
     if not ret:
         return False
