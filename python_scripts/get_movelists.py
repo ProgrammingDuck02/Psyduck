@@ -21,8 +21,13 @@ usum_alolan_attacks = (
     "</table>"
 )
 
-usum_standard_attacks = (
+usum_standardform_attacks = (
     "<table class=\"dextable\"><tr ><td colspan=\"10\" class=\"fooevo\"><h3><a name=\"standardlevel\"></a><font size=\"2\">Standard Level Up</font></h3></td></tr><tr><th class=\"attheader\">Level</th><th class=\"attheader\">Attack Name</th><th class=\"attheader\">Type</th><th class=\"attheader\">Cat\.</th><th class=\"attheader\">Att\.</th><th class=\"attheader\">Acc\.</th><th class=\"attheader\">PP</th><th class=\"attheader\">Effect %</th></tr><tr>",
+    "</table>"
+)
+
+usum_standard_attacks = (
+    "<table class=\"anctab\" align=\"center\"><tr><td class=\"fooblack\" width=\"10%\"><h2>Attacks</h2></td></tr></table><br /><a name=\"attacks\"></a><table class=\"dextable\"><tr ><td colspan=\"10\" class=\"fooevo\"><h3>Generation VII Level Up</h3></td></tr><tr><th class=\"attheader\">Level</th><th class=\"attheader\">Attack Name</th><th class=\"attheader\">Type</th><th class=\"attheader\">Cat\.</th><th class=\"attheader\">Att\.</th><th class=\"attheader\">Acc\.</th><th class=\"attheader\">PP</th><th class=\"attheader\">Effect %</th></tr><tr>",
     "</table>"
 )
 
@@ -115,8 +120,8 @@ def insert(table, fields, values):
     DB.commit()
     return True
 
-def get_levelup_html(source, dex, variant = "standard"):
-    global swsh_standard_attacks, swsh_alolan_attacks, swsh_galarian_attacks
+def get_levelup_html(source, dex, variant = "standard", use_alt = False):
+    global swsh_standard_attacks, swsh_alolan_attacks, swsh_galarian_attacks, usum_alolan_attacks, usum_standardform_attacks, usum_standard_attacks
     if dex == "swsh":
         if variant == "alolan":
             attacks = swsh_alolan_attacks
@@ -128,7 +133,10 @@ def get_levelup_html(source, dex, variant = "standard"):
         if variant == "alolan":
             attacks = usum_alolan_attacks
         else:
-            attacks = usum_standard_attacks
+            if use_alt:
+                attacks = usum_standardform_attacks
+            else:
+                attacks = usum_standard_attacks
     query = re.compile(attacks[0]+".*"+attacks[1], re.DOTALL)
     temp = query.search(source)
     ret = None
@@ -137,6 +145,8 @@ def get_levelup_html(source, dex, variant = "standard"):
         l = len(ret) - 1
         source = ret[:l]
         temp = query.search(source)
+    if not (ret or use_alt):
+        return get_levelup_html(source, dex, variant, True)
     if not ret:
         return False
     return ret[(len(attacks[0])-3):(len(ret)-len(attacks[1]))].replace("\t", "").replace("\r\n", "")
@@ -216,11 +226,12 @@ def get_usum_levelupmovelist_by_number(number):
     if len(number) > 3:
         if number[3] == "A":
             variant = "alolan"
+            number = number[:3]
         else:
             raise Exception("Wrong variant")
     else:
         variant = "standard"
-    rq = requests.get("https://www.serebii.net/pokedex-sm/"+number[:3]+".shtml")
+    rq = requests.get("https://www.serebii.net/pokedex-sm/"+number+".shtml")
     source = rq.text
     return get_levelupmovelist(source, "usum", variant)
 
@@ -258,4 +269,6 @@ def main():
             move_to_database(poke[0], move)
 
 if __name__ == "__main__":
-    main()
+    f = open("tmp.html","w")
+    f.write(requests.get("https://www.serebii.net/pokedex-sm/013.shtml").text)
+    f.close()
