@@ -246,16 +246,22 @@ async def party_cmd(author_name, author_avatar, author_id, sender):
     await sender.send(embed = embed)
     return
 
-async def box_cmd(box_number, author_id, sender):
+def box_cmd(box_number, author_id):
     embed = discord.Embed(color = discord.Color.gold())
     while box_number[0] == " ":
         box_number = box_number[1:]
     if not is_number(box_number):
-        await sender.send(box_number + " is not a valid box number", hidden=True)
-        return
+        return {
+            "status": "error",
+            "hidden": True,
+            "message": box_number + " is not a valid box number"
+        }
     if int(box_number) < 1 or int(box_number) > 50:
-        await sender.send(box_number + " is not a valid box number", hidden=True)
-        return
+        return {
+            "status": "error",
+            "hidden": True,
+            "message": box_number + " is not a valid box number"
+        }
     selected_box = "BOX"+box_number
     temp_list = select("owned_pokemon", ("name", "pokemon", "shiny", "position", "level"), "trainer_id = \"" + str(author_id) + "\" AND location = \""+selected_box+"\"")
     if not temp_list:
@@ -283,8 +289,11 @@ async def box_cmd(box_number, author_id, sender):
             text += "-------"
         text += "\n" 
     embed.add_field(name = selected_box, value = text)
-    await sender.send(embed = embed)
-    return
+    return {
+        "status": "ok",
+        "hidden": False,
+        "message": embed
+    }
 
 #slash commands
 @slash.slash(name="party", description="Displays your party", guild_ids=guild_ids)
@@ -305,11 +314,14 @@ async def _party(ctx):
     )
 ])
 async def _box(ctx, box_number):
-    return await box_cmd(
+    ret = box_cmd(
         box_number=box_number,
-        author_id=ctx.author_id,
-        sender=ctx
+        author_id=ctx.author_id
     )
+    if ret["status"] == "ok":
+        ctx.send(embed = ret["message"], hidden = ret["hidden"])
+    elif ret["status"] == "error":
+        ctx.send(ret["message"], hidden = ret["hidden"])
 
 @client.event
 async def on_message(message):
@@ -333,7 +345,11 @@ async def on_message(message):
             box_number = "1"
         else:
             box_number = words[1]
-        return await box_cmd(box_number=box_number, author_id=message.author.id, sender=message.channel)
+        ret = box_cmd(box_number=box_number, author_id=message.author.id)
+        if ret["status"] == "ok":
+            message.channel.send(embed = ret["message"])
+        elif ret["status"] == "error":
+            message.channel.send(ret["message"])
 
     if mes.lower().startswith("switch"):
         params = mes.split(" ")
