@@ -216,6 +216,20 @@ def get_pokemon_by_nat(nat_number):
 def get_latest_moves(pokemon_number, level):
     select("movesets", ("move",), "pokemon = \""+pokemon_number+"\" and level <= "+str(level)+"ORDER BY level DESC LIMIT 4")
 
+def generate_ok_dict(message):
+    return {
+        "status": "ok",
+        "hidden": False,
+        "message": message
+    }
+
+def generate_error_dict(message):
+    return {
+        "status": "error",
+        "hidden": True,
+        "message": message
+    }
+
 #commands
 def party_cmd(author_name, author_avatar, author_id):
     embed = discord.Embed(color = discord.Color.green())
@@ -257,17 +271,9 @@ def box_cmd(box_number, author_id):
     while box_number[0] == " ":
         box_number = box_number[1:]
     if not is_number(box_number):
-        return {
-            "status": "error",
-            "hidden": True,
-            "message": box_number + " is not a valid box number"
-        }
+        return generate_error_dict(box_number + " is not a valid box number")
     if int(box_number) < 1 or int(box_number) > 50:
-        return {
-            "status": "error",
-            "hidden": True,
-            "message": box_number + " is not a valid box number"
-        }
+        return generate_error_dict(box_number + " is not a valid box number")
     selected_box = "BOX"+box_number
     temp_list = select("owned_pokemon", ("name", "pokemon", "shiny", "position", "level"), "trainer_id = \"" + str(author_id) + "\" AND location = \""+selected_box+"\"")
     if not temp_list:
@@ -295,11 +301,70 @@ def box_cmd(box_number, author_id):
             text += "-------"
         text += "\n" 
     embed.add_field(name = selected_box, value = text)
-    return {
-        "status": "ok",
-        "hidden": False,
-        "message": embed
-    }
+    return generate_ok_dict(embed)
+
+def switch_cmd(from_where, to_where, author_id):
+	location1 = ""
+	pokemon1 = 0
+	location2 = ""
+	pokemon2 = 0
+	if from_where.lower().startswith("box"):
+		tmp = from_where.split(":")
+		if len(tmp) < 2:
+			return generate_error_dict("Wrong use of BOX option in the first parameter\nCorrect use BOX[box number]:[pokemon number in box]")
+		box_number_str = tmp[0][3:]
+		if not is_number(box_number_str):
+			return generate_error_dict(tmp[0]+" is not a valid box name")
+		box_number = int(box_number_str)
+		if box_number < 1 or box_number > 50:
+			return generate_error_dict(tmp[0]+" is not a valid box name")
+		location1 = tmp[0].upper()
+		if not is_number(tmp[1]):
+			return generate_error_dict(tmp[1]+" is not a valid box name")
+		pokemon1 = int(tmp[1])
+		if pokemon1 < 1 or pokemon1 > 10:
+			return generate_error_dict(tmp[1]+" is not a valid box name")
+	else:
+		location1 = "party"
+		if not is_number(from_where):
+			return generate_error_dict(from_where+" is not a valid party number")
+		pokemon1 = int(from_where)
+		if pokemon1 < 1 or pokemon1 > 10:
+			return generate_error_dict(from_where+" is not a valid party number")
+	if to_where.startswith("box"):
+		tmp = to_where.split(":")
+		if len(tmp) < 2:
+			return generate_error_dict("Wrong use of BOX option in the first parameter\nCorrect use BOX[box number]:[pokemon number in box]")
+		box_number_str = tmp[0][3:]
+		if not is_number(box_number_str):
+			return generate_error_dict(tmp[0]+" is not a valid box name")
+		box_number = int(box_number_str)
+		if box_number < 1 or box_number > 50:
+			return generate_error_dict(tmp[0]+" is not a valid box name")
+		location2 = tmp[0].upper()
+		if not is_number(tmp[1]):
+			return generate_error_dict(tmp[1]+" is not a valid box name")
+		pokemon2 = int(tmp[1])
+		if pokemon2 < 1 or pokemon2 > 10:
+			return generate_error_dict(tmp[1]+" is not a valid box name")
+	else:
+		location2 = "party"
+		if not is_number(to_where):
+			return generate_error_dict(to_where+" is not a valid party number")
+		pokemon2 = int(to_where)
+		if pokemon2 < 1 or pokemon2 > 10:
+			return generate_error_dict(to_where+" is not a valid party number")
+	id1 = select_one("owned_pokemon", ("id",), "trainer_id = \""+str(author_id)+"\" AND location = \""+location1+"\" AND position = \""+str(pokemon1)+"\"")
+	id2 = select_one("owned_pokemon", ("id",), "trainer_id = \""+str(author_id)+"\" AND location = \""+location2+"\" AND position = \""+str(pokemon2)+"\"")
+	if not id1:
+		return generate_error_dict("Oops, looks like you don't have any pokemon on position "+str(pokemon1)+" in your "+location1+"\nTry using "+prefix+"deposit or "+prefix+"withdraw")
+	if not id2:
+		return generate_error_dict("Oops, looks like you don't have any pokemon on position "+str(pokemon2)+" in your "+location2+"\nTry using "+prefix+"deposit or "+prefix+"withdraw")
+	id1 = str(id1[0])
+	id2 = str(id2[0])
+	update("owned_pokemon", ("location", "position"), (location2, str(pokemon2)), "id = "+id1)
+	update("owned_pokemon", ("location", "position"), (location1, str(pokemon1)), "id = "+id2)
+	return generate_ok_dict("Pokemon switched places!")
 
 #slash commands
 @slash.slash(name="party", description="Displays your party", guild_ids=guild_ids)
@@ -329,6 +394,27 @@ async def _box(ctx, box_number):
     )
     if ret["status"] == "ok":
         await ctx.send(embed = ret["message"], hidden = ret["hidden"])
+    elif ret["status"] == "error":
+        await ctx.send(ret["message"], hidden = ret["hidden"])
+
+@slash.slash(name="switch", description="Switches pokemons in boxes and/or party", guild_ids=guild_ids, options=[
+    create_option(
+        name="move_from",
+        description="Choose from where should the pokemon be moved. ex. \"BOX1:3\" or \"3\" to move from party",
+        option_type=3,
+        required=True
+    ),
+    create_option(
+        name="move_to",
+        description="Choose where should the pokemon be moved to. ex. \"BOX1:3\" or \"3\" to move to party",
+        option_type=3,
+        required=True
+    )
+])
+async def _switch(ctx, move_from, move_to):
+    ret = switch_cmd(move_from, move_to, ctx.author_id)
+    if ret["status"] == "ok":
+        await ctx.send(ret["message"], hidden = ret["hidden"])
     elif ret["status"] == "error":
         await ctx.send(ret["message"], hidden = ret["hidden"])
 
@@ -370,84 +456,11 @@ async def on_message(message):
         if len(params) < 2:
             await message.channel.send("Wrong number of parameters!\nCorrect use: "+prefix+"switch [pokemon1] [pokemon2]\nCheck "+prefix+"help for more informations")
             return
-        location1 = ""
-        pokemon1 = 0
-        location2 = ""
-        pokemon2 = 0
-        if params[0].lower().startswith("box"):
-            tmp = params[0].split(":")
-            if len(tmp) < 2:
-                await message.channel.send("Wrong use of BOX option in the first parameter\nCorrect use BOX[box number]:[pokemon number in box]")
-                return
-            box_number_str = tmp[0][3:]
-            if not is_number(box_number_str):
-                await message.channel.send(tmp[0]+" is not a valid box name")
-                return
-            box_number = int(box_number_str)
-            if box_number < 1 or box_number > 50:
-                await message.channel.send(tmp[0]+" is not a valid box name")
-                return
-            location1 = tmp[0].upper()
-            if not is_number(tmp[1]):
-                await message.channel.send(tmp[1]+" is not a valid box number")
-                return
-            pokemon1 = int(tmp[1])
-            if pokemon1 < 1 or pokemon1 > 10:
-                await message.channel.send(tmp[1]+" is not a valid box number")
-                return
-        else:
-            location1 = "party"
-            if not is_number(params[0]):
-                await message.channel.send(params[0]+" is not a valid party number")
-                return
-            pokemon1 = int(params[0])
-            if pokemon1 < 1 or pokemon1 > 10:
-                await message.channel.send(params[0]+" is not a valid party number")
-                return
-        if params[1].lower().startswith("box"):
-            tmp = params[1].split(":")
-            if len(tmp) < 2:
-                await message.channel.send("Wrong use of BOX option in the first parameter\nCorrect use BOX[box number]:[pokemon number in box]")
-                return
-            box_number_str = tmp[0][3:]
-            if not is_number(box_number_str):
-                await message.channel.send(tmp[0]+" is not a valid box name")
-                return
-            box_number = int(box_number_str)
-            if box_number < 1 or box_number > 50:
-                await message.channel.send(tmp[0]+" is not a valid box name")
-                return
-            location2 = tmp[0].upper()
-            if not is_number(tmp[1]):
-                await message.channel.send(tmp[1]+" is not a valid box number")
-                return
-            pokemon2 = int(tmp[1])
-            if pokemon2 < 1 or pokemon2 > 10:
-                await message.channel.send(tmp[1]+" is not a valid box number")
-                return
-        else:
-            location2 = "party"
-            if not is_number(params[1]):
-                await message.channel.send(params[1]+" is not a valid party number")
-                return
-            pokemon2 = int(params[1])
-            if pokemon2 < 1 or pokemon2 > 10:
-                await message.channel.send(params[1]+" is not a valid party number")
-                return
-        id1 = select_one("owned_pokemon", ("id",), "trainer_id = \""+str(message.author.id)+"\" AND location = \""+location1+"\" AND position = \""+str(pokemon1)+"\"")
-        id2 = select_one("owned_pokemon", ("id",), "trainer_id = \""+str(message.author.id)+"\" AND location = \""+location2+"\" AND position = \""+str(pokemon2)+"\"")
-        if not id1:
-            await message.channel.send("Oops, looks like you don't have any pokemon on position "+str(pokemon1)+" in your "+location1+"\nTry using "+prefix+"deposit or "+prefix+"withdraw")
-            return
-        if not id2:
-            await message.channel.send("Oops, looks like you don't have any pokemon on position "+str(pokemon2)+" in your "+location2+"\nTry using "+prefix+"deposit or "+prefix+"withdraw")
-            return
-        id1 = str(id1[0])
-        id2 = str(id2[0])
-        update("owned_pokemon", ("location", "position"), (location2, str(pokemon2)), "id = "+id1)
-        update("owned_pokemon", ("location", "position"), (location1, str(pokemon1)), "id = "+id2)
-        await message.channel.send("Pokemon switched places!")
-        return
+        ret = switch_cmd(from_where=params[0], to_where=params[1], author_id=message.author.id)
+        if ret["status"] == "ok":
+            await message.channel.send(ret["message"])
+        elif ret["status"] == "error":
+            await message.channel.send(ret["message"])
 
     if mes.lower().startswith("deposit"):
         words = mes.split(" ")
