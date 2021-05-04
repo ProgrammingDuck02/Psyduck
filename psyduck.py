@@ -251,10 +251,10 @@ async def box_cmd(box_number, author_id, sender):
     while box_number[0] == " ":
         box_number = box_number[1:]
     if not is_number(box_number):
-        await sender.send(box_number + " is not a valid box number")
+        await sender.send(box_number + " is not a valid box number", hidden=True)
         return
     if int(box_number) < 1 or int(box_number) > 50:
-        await sender.send(box_number + " is not a valid box number")
+        await sender.send(box_number + " is not a valid box number", hidden=True)
         return
     selected_box = "BOX"+box_number
     temp_list = select("owned_pokemon", ("name", "pokemon", "shiny", "position", "level"), "trainer_id = \"" + str(author_id) + "\" AND location = \""+selected_box+"\"")
