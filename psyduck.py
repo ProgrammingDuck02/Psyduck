@@ -250,7 +250,7 @@ async def party_cmd(author_name, author_avatar, author_id, agent_to_send):
 async def _party(ctx):
     return await party_cmd(
         author_name=ctx.author.name,
-        author_avatar=ctx.author.avatar_xurl,
+        author_avatar=ctx.author.avatar_url,
         author_id=ctx.author_id,
         agent_to_send=ctx
     )
