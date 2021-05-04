@@ -364,7 +364,11 @@ def switch_cmd(from_where, to_where, author_id):
 	id2 = str(id2[0])
 	update("owned_pokemon", ("location", "position"), (location2, str(pokemon2)), "id = "+id1)
 	update("owned_pokemon", ("location", "position"), (location1, str(pokemon1)), "id = "+id2)
-	return generate_ok_dict("Pokemon switched places!")
+	return {
+        "status": "ok",
+        "hidden": True,
+        "message": "Pokemon switched places!"
+    }
 
 #slash commands
 @slash.slash(name="party", description="Displays your party", guild_ids=guild_ids)
