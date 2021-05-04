@@ -217,7 +217,7 @@ def get_latest_moves(pokemon_number, level):
     select("movesets", ("move",), "pokemon = \""+pokemon_number+"\" and level <= "+str(level)+"ORDER BY level DESC LIMIT 4")
 
 #commands
-async def party_cmd(author_name, author_avatar, author_id):
+def party_cmd(author_name, author_avatar, author_id):
     embed = discord.Embed(color = discord.Color.green())
     embed.set_author(name = author_name, icon_url = author_avatar)
     temp_list = select("owned_pokemon", ("name", "pokemon", "shiny", "position", "level"), "trainer_id = \"" + str(author_id) + "\" AND location = \"party\"")
