@@ -15,6 +15,7 @@ cursor = None
 DB = None
 prefix = "?"
 coin_emoji = ":coin:"
+guild_ids = [518058574157578250]
 
 pokemon_limit = 151
 
@@ -245,7 +246,7 @@ async def party_cmd(author_name, author_avatar, author_id, channel):
     return
 
 #slash commands
-@slash.slash(name="party", description="Displays your party")
+@slash.slash(name="party", description="Displays your party", guild_ids=guild_ids)
 async def _party(ctx):
     return await party_cmd(
         author_name=ctx.author.name,
