@@ -300,7 +300,7 @@ async def _party(ctx):
     create_option(
         name="box_number",
         description="choose which box should be displayed (numbers 1-50)",
-        option_type=4,
+        option_type=3,
         required=True
     )
 ])
