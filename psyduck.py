@@ -3,12 +3,14 @@ import discord
 import mysql.connector
 import random
 from datetime import datetime
+from discord_slash import SlashCommand
 sys.path.append("python_scripts")
 from python_scripts.pokemon import pokemon
 from python_scripts.owned_pokemon import owned_pokemon
 
 random.seed()
 client = discord.Client()
+slash = SlashCommand(client, sync_commands=True)
 cursor = None
 DB = None
 prefix = "?"
@@ -209,6 +211,49 @@ def get_pokemon_by_nat(nat_number):
     poke = pokemon(poke_data[1], poke_data[0], poke_data[2], poke_data[3], poke_data[4], poke_data[5], poke_data[6], poke_data[7])
     return poke
 
+def get_latest_moves(pokemon_number, level):
+    select("movesets", ("move",), "pokemon = \""+pokemon_number+"\" and level <= "+str(level)+"ORDER BY level DESC LIMIT 4")
+
+#commands
+async def party_cmd(author_name, author_avatar, author_id, channel):
+    embed = discord.Embed(color = discord.Color.green())
+    embed.set_author(name = author_name, icon_url = author_avatar)
+    temp_list = select("owned_pokemon", ("name", "pokemon", "shiny", "position", "level"), "trainer_id = \"" + str(author_id) + "\" AND location = \"party\"")
+    if not temp_list:
+        await channel.send("Oops, looks like you don't have any pokemon on your team :cry:")
+        return
+    pokemon_names = {}
+    pokemon_levels = {}
+    pokemon_emotes = {}
+    for poke in temp_list:
+        spieces = select_one("pokemon", ("name", "emote", "shiny_emote"), "national_number = \"" + poke[1] + "\"")
+        if poke[0] == None:
+            pokemon_names[poke[3]-1] = spieces[0]
+        else:
+            pokemon_names[poke[3]-1] = poke[0]
+        pokemon_levels[poke[3]-1] = str(poke[4])
+        if poke[2] == 0:
+            pokemon_emotes[poke[3]-1] = spieces[1]
+        else:
+            pokemon_emotes[poke[3]-1] = spieces[2]
+    party_size = len(temp_list)
+    party = pokemon_emotes[0] + pokemon_names[0] + " lvl." + pokemon_levels[0]
+    for i in range(1, party_size):
+        party += "\n" + pokemon_emotes[i] + pokemon_names[i] + " lvl." + pokemon_levels[i]
+    embed.add_field(name = author_name + "'s party", value = party)
+    await channel.send(embed = embed)
+    return
+
+#slash commands
+@slash.slash(name="party", description="Displays your party")
+async def _party(ctx):
+    return await party_cmd(
+        author_name=ctx.author.name,
+        author_avatar=ctx.author.avatar.url,
+        author_id=ctx.author_id,
+        channel=ctx.channel
+    )
+
 @client.event
 async def on_message(message):
     global prefix
@@ -223,33 +268,7 @@ async def on_message(message):
         return
     mes = message.content[len(prefix):]
     if mes.lower() == "party":
-        embed = discord.Embed(color = discord.Color.green())
-        embed.set_author(name = message.author.name, icon_url = message.author.avatar_url)
-        temp_list = select("owned_pokemon", ("name", "pokemon", "shiny", "position", "level"), "trainer_id = \"" + str(message.author.id) + "\" AND location = \"party\"")
-        if not temp_list:
-            await message.channel.send("Oops, looks like you don't have any pokemon on your team :cry:")
-            return
-        pokemon_names = {}
-        pokemon_levels = {}
-        pokemon_emotes = {}
-        for poke in temp_list:
-            spieces = select_one("pokemon", ("name", "emote", "shiny_emote"), "national_number = \"" + poke[1] + "\"")
-            if poke[0] == None:
-                pokemon_names[poke[3]-1] = spieces[0]
-            else:
-                pokemon_names[poke[3]-1] = poke[0]
-            pokemon_levels[poke[3]-1] = str(poke[4])
-            if poke[2] == 0:
-                pokemon_emotes[poke[3]-1] = spieces[1]
-            else:
-                pokemon_emotes[poke[3]-1] = spieces[2]
-        party_size = len(temp_list)
-        party = pokemon_emotes[0] + pokemon_names[0] + " lvl." + pokemon_levels[0]
-        for i in range(1, party_size):
-            party += "\n" + pokemon_emotes[i] + pokemon_names[i] + " lvl." + pokemon_levels[i]
-        embed.add_field(name = message.author.name + "'s party", value = party)
-        await message.channel.send(embed = embed)
-        return
+        return await party_cmd(author_name=message.author.name, author_avatar=message.author.avatar.url, author_id=message.author.id, channel=message.channel)
 
     if mes.lower().startswith("box"):
         embed = discord.Embed(color = discord.Color.gold())

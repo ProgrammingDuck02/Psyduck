@@ -1,5 +1,5 @@
 class pokemon:
-    def __init__(self, regional = None, national = None, name = None, type1 = None, type2 = None, region = None, emote = None, shiny_emote = None):
+    def __init__(self, regional = None, national = None, name = None, type1 = None, type2 = None, region = None, emote = None, shiny_emote = None, moves = None):
         self.regional_number = regional
         self.national_number = national
         self.name = name
@@ -8,6 +8,10 @@ class pokemon:
         self.region = region
         self.emote = emote
         self.shiny_emote = shiny_emote
+        if moves == None:
+            self.moves = []
+        else:
+            self.moves = moves
 
     def get_from_string(self, pokestring):
         if len(pokestring) == 0:
