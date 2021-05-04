@@ -216,12 +216,12 @@ def get_latest_moves(pokemon_number, level):
     select("movesets", ("move",), "pokemon = \""+pokemon_number+"\" and level <= "+str(level)+"ORDER BY level DESC LIMIT 4")
 
 #commands
-async def party_cmd(author_name, author_avatar, author_id, channel):
+async def party_cmd(author_name, author_avatar, author_id, agent_to_send):
     embed = discord.Embed(color = discord.Color.green())
     embed.set_author(name = author_name, icon_url = author_avatar)
     temp_list = select("owned_pokemon", ("name", "pokemon", "shiny", "position", "level"), "trainer_id = \"" + str(author_id) + "\" AND location = \"party\"")
     if not temp_list:
-        await channel.send("Oops, looks like you don't have any pokemon on your team :cry:")
+        await agent_to_send.send("Oops, looks like you don't have any pokemon on your team :cry:")
         return
     pokemon_names = {}
     pokemon_levels = {}
@@ -242,7 +242,7 @@ async def party_cmd(author_name, author_avatar, author_id, channel):
     for i in range(1, party_size):
         party += "\n" + pokemon_emotes[i] + pokemon_names[i] + " lvl." + pokemon_levels[i]
     embed.add_field(name = author_name + "'s party", value = party)
-    await channel.send(embed = embed)
+    await agent_to_send.send(embed = embed)
     return
 
 #slash commands
@@ -250,9 +250,9 @@ async def party_cmd(author_name, author_avatar, author_id, channel):
 async def _party(ctx):
     return await party_cmd(
         author_name=ctx.author.name,
-        author_avatar=ctx.author.avatar_url,
+        author_avatar=ctx.author.avatar_xurl,
         author_id=ctx.author_id,
-        channel=ctx.channel
+        agent_to_send=ctx
     )
 
 @client.event
@@ -269,7 +269,7 @@ async def on_message(message):
         return
     mes = message.content[len(prefix):]
     if mes.lower() == "party":
-        return await party_cmd(author_name=message.author.name, author_avatar=message.author.avatar.url, author_id=message.author.id, channel=message.channel)
+        return await party_cmd(author_name=message.author.name, author_avatar=message.author.avatar.url, author_id=message.author.id, agent_to_send=message.channel)
 
     if mes.lower().startswith("box"):
         embed = discord.Embed(color = discord.Color.gold())
