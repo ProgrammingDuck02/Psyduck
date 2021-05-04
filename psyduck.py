@@ -4,6 +4,7 @@ import mysql.connector
 import random
 from datetime import datetime
 from discord_slash import SlashCommand
+from discord_slash.utils.manage_commands import create_option
 sys.path.append("python_scripts")
 from python_scripts.pokemon import pokemon
 from python_scripts.owned_pokemon import owned_pokemon
@@ -216,12 +217,12 @@ def get_latest_moves(pokemon_number, level):
     select("movesets", ("move",), "pokemon = \""+pokemon_number+"\" and level <= "+str(level)+"ORDER BY level DESC LIMIT 4")
 
 #commands
-async def party_cmd(author_name, author_avatar, author_id, agent_to_send):
+async def party_cmd(author_name, author_avatar, author_id, sender):
     embed = discord.Embed(color = discord.Color.green())
     embed.set_author(name = author_name, icon_url = author_avatar)
     temp_list = select("owned_pokemon", ("name", "pokemon", "shiny", "position", "level"), "trainer_id = \"" + str(author_id) + "\" AND location = \"party\"")
     if not temp_list:
-        await agent_to_send.send("Oops, looks like you don't have any pokemon on your team :cry:")
+        await sender.send("Oops, looks like you don't have any pokemon on your team :cry:")
         return
     pokemon_names = {}
     pokemon_levels = {}
@@ -242,7 +243,47 @@ async def party_cmd(author_name, author_avatar, author_id, agent_to_send):
     for i in range(1, party_size):
         party += "\n" + pokemon_emotes[i] + pokemon_names[i] + " lvl." + pokemon_levels[i]
     embed.add_field(name = author_name + "'s party", value = party)
-    await agent_to_send.send(embed = embed)
+    await sender.send(embed = embed)
+    return
+
+async def box_cmd(box_number, author_id, sender):
+    embed = discord.Embed(color = discord.Color.gold())
+    while box_number[0] == " ":
+        box_number = box_number[1:]
+    if not is_number(box_number):
+        await sender.send(box_number + " is not a valid box number")
+        return
+    if int(box_number) < 1 or int(box_number) > 50:
+        await sender.send(box_number + " is not a valid box number")
+        return
+    selected_box = "BOX"+box_number
+    temp_list = select("owned_pokemon", ("name", "pokemon", "shiny", "position", "level"), "trainer_id = \"" + str(author_id) + "\" AND location = \""+selected_box+"\"")
+    if not temp_list:
+        temp_list = []
+    emote = {}
+    names = {}
+    levels = {}
+    for each in temp_list:
+        poke = select_one("pokemon", ("name", "emote","shiny_emote"), "national_number = \""+each[1]+"\"")
+        if each[0] == None:
+            names[each[3]-1] = poke[0]
+        else:
+            names[each[3]-1] = each[0]
+        if each[2] == 0:
+            emote[each[3]-1] = poke[1]
+        else:
+            emote[each[3]-1] = poke[2]
+        levels[each[3]-1] = str(each[4])
+    text = ""
+    for i in range(10):
+        text += str(i+1) + ". "
+        if has_key(names, i):
+            text += emote[i] + names[i] + " lvl." + levels[i]
+        else:
+            text += "-------"
+        text += "\n" 
+    embed.add_field(name = selected_box, value = text)
+    await sender.send(embed = embed)
     return
 
 #slash commands
@@ -252,7 +293,22 @@ async def _party(ctx):
         author_name=ctx.author.name,
         author_avatar=ctx.author.avatar_url,
         author_id=ctx.author_id,
-        agent_to_send=ctx
+        sender=ctx
+    )
+
+@slash.slash(name="box", description="Displays given box", guild_ids=guild_ids, options=[
+    create_option(
+        name="box_number",
+        description="choose which box should be displayed (numbers 1-50)",
+        option_type=4,
+        required=True
+    )
+])
+async def _box(ctx, box_number):
+    return await box_cmd(
+        box_number=box_number,
+        author_id=ctx.author_id,
+        sender=ctx
     )
 
 @client.event
@@ -268,52 +324,16 @@ async def on_message(message):
     if not message.content.startswith(prefix):
         return
     mes = message.content[len(prefix):]
+    words = mes.split(" ")
     if mes.lower() == "party":
-        return await party_cmd(author_name=message.author.name, author_avatar=message.author.avatar.url, author_id=message.author.id, agent_to_send=message.channel)
+        return await party_cmd(author_name=message.author.name, author_avatar=message.author.avatar.url, author_id=message.author.id, sender=message.channel)
 
     if mes.lower().startswith("box"):
-        embed = discord.Embed(color = discord.Color.gold())
-        if len(mes) == 3:
+        if len(words) == 1:
             box_number = "1"
         else:
-            box_number = mes[3:]
-        while box_number[0] == " ":
-            box_number = box_number[1:]
-        if not is_number(box_number):
-            await message.channel.send(box_number + " is not a valid box number")
-            return
-        if int(box_number) < 1 or int(box_number) > 50:
-            await message.channel.send(box_number + " is not a valid box number")
-            return
-        selected_box = "BOX"+box_number
-        temp_list = select("owned_pokemon", ("name", "pokemon", "shiny", "position", "level"), "trainer_id = \"" + str(message.author.id) + "\" AND location = \""+selected_box+"\"")
-        if not temp_list:
-            temp_list = []
-        emote = {}
-        names = {}
-        levels = {}
-        for each in temp_list:
-            poke = select_one("pokemon", ("name", "emote","shiny_emote"), "national_number = \""+each[1]+"\"")
-            if each[0] == None:
-                names[each[3]-1] = poke[0]
-            else:
-                names[each[3]-1] = each[0]
-            if each[2] == 0:
-                emote[each[3]-1] = poke[1]
-            else:
-                emote[each[3]-1] = poke[2]
-            levels[each[3]-1] = str(each[4])
-        text = ""
-        for i in range(10):
-            text += str(i+1) + ". "
-            if has_key(names, i):
-                text += emote[i] + names[i] + " lvl." + levels[i]
-            else:
-                text += "-------"
-            text += "\n" 
-        embed.add_field(name = selected_box, value = text)
-        await message.channel.send(embed = embed)
-        return
+            box_number = words[1]
+        return await box_cmd(box_number=box_number, author_id=message.author.id, sender=message.channel)
 
     if mes.lower().startswith("switch"):
         params = mes.split(" ")
