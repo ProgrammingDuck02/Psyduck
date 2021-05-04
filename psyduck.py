@@ -320,20 +320,20 @@ async def on_message(message):
     global coin_emoji
     if message.author == client.user:
         return
-    level_up_party(str(message.author_id))
+    level_up_party(str(message.author.id))
     if not message.content.startswith(prefix):
         return
     mes = message.content[len(prefix):]
     words = mes.split(" ")
     if mes.lower() == "party":
-        return await party_cmd(author_name=message.author.name, author_avatar=message.author.avatar.url, author_id=message.author_id, sender=message.channel)
+        return await party_cmd(author_name=message.author.name, author_avatar=message.author.avatar.url, author_id=message.author.id, sender=message.channel)
 
     if mes.lower().startswith("box"):
         if len(words) == 1:
             box_number = "1"
         else:
             box_number = words[1]
-        return await box_cmd(box_number=box_number, author_id=message.author_id, sender=message.channel)
+        return await box_cmd(box_number=box_number, author_id=message.author.id, sender=message.channel)
 
     if mes.lower().startswith("switch"):
         params = mes.split(" ")
@@ -405,8 +405,8 @@ async def on_message(message):
             if pokemon2 < 1 or pokemon2 > 10:
                 await message.channel.send(params[1]+" is not a valid party number")
                 return
-        id1 = select_one("owned_pokemon", ("id",), "trainer_id = \""+str(message.author_id)+"\" AND location = \""+location1+"\" AND position = \""+str(pokemon1)+"\"")
-        id2 = select_one("owned_pokemon", ("id",), "trainer_id = \""+str(message.author_id)+"\" AND location = \""+location2+"\" AND position = \""+str(pokemon2)+"\"")
+        id1 = select_one("owned_pokemon", ("id",), "trainer_id = \""+str(message.author.id)+"\" AND location = \""+location1+"\" AND position = \""+str(pokemon1)+"\"")
+        id2 = select_one("owned_pokemon", ("id",), "trainer_id = \""+str(message.author.id)+"\" AND location = \""+location2+"\" AND position = \""+str(pokemon2)+"\"")
         if not id1:
             await message.channel.send("Oops, looks like you don't have any pokemon on position "+str(pokemon1)+" in your "+location1+"\nTry using "+prefix+"deposit or "+prefix+"withdraw")
             return
@@ -441,12 +441,12 @@ async def on_message(message):
         if int(box[3:]) < 1 or int(box[3:]) > 50:
             await message.channel.send(words[2] + " is not a valid box name or box number")
             return
-        check = select_one("owned_pokemon", ("id",), "trainer_id = \""+str(message.author_id) + "\" AND location = \"party\" AND position = " + str(poke))
+        check = select_one("owned_pokemon", ("id",), "trainer_id = \""+str(message.author.id) + "\" AND location = \"party\" AND position = " + str(poke))
         if not check:
             await message.channel.send("Oops, looks like you don't have any pokemon in your party in position "+str(poke))
             return
         pokemon_in_box = 0
-        temp = select("owned_pokemon", ("position",), "trainer_id = \""+str(message.author_id) + "\" AND location = \""+ box + "\" AND position >= 1 AND position <= 10")
+        temp = select("owned_pokemon", ("position",), "trainer_id = \""+str(message.author.id) + "\" AND location = \""+ box + "\" AND position >= 1 AND position <= 10")
         if temp:
             pokemon_in_box = len(temp)
         if pokemon_in_box >= 10:
@@ -462,7 +462,7 @@ async def on_message(message):
             if ok:
                 new_position = i
                 break
-        update("owned_pokemon", ("location", "position"), (box, str(new_position)), "trainer_id = \""+str(message.author_id) + "\" AND location = \"party\" AND position = " + str(poke))
+        update("owned_pokemon", ("location", "position"), (box, str(new_position)), "trainer_id = \""+str(message.author.id) + "\" AND location = \"party\" AND position = " + str(poke))
         shift_down("party", str(poke))
         await message.channel.send("Done! Your pokemon has been boxed into "+box)
         return
@@ -489,7 +489,7 @@ async def on_message(message):
             await message.channel.send(words[2] + " is not a valid pokemon number")
             return
         pokemon_in_team = 0
-        temp = select("owned_pokemon", ("position",), "trainer_id = \""+str(message.author_id) + "\" AND location = \"party\" AND position >= 1 AND position <= 6")
+        temp = select("owned_pokemon", ("position",), "trainer_id = \""+str(message.author.id) + "\" AND location = \"party\" AND position >= 1 AND position <= 6")
         if temp:
             pokemon_in_team = len(temp)
         if pokemon_in_team >= 6:
@@ -500,7 +500,7 @@ async def on_message(message):
             for each in temp:
                 if each[0] > position-1:
                     position = each[0]+1
-        check = select_one("owned_pokemon", ("id",), "trainer_id = \""+str(message.author_id) + "\" AND location = \""+box+"\" AND position = "+poke)
+        check = select_one("owned_pokemon", ("id",), "trainer_id = \""+str(message.author.id) + "\" AND location = \""+box+"\" AND position = "+poke)
         if not check:
             await message.channel.send("Oops, looks like you don't have any pokemon on position "+poke+" in "+box)
             return
@@ -532,11 +532,11 @@ async def on_message(message):
         if words[4] != "party" and (int(words[4][3:]) < 1 or int(words[4][3:]) > 50):
             await message.channel.send(words[4] + " is not a correct box name")
             return
-        count = select_one("owned_pokemon", ("count(*)",), "trainer_id = \""+str(message.author_id)+"\"")[0]
+        count = select_one("owned_pokemon", ("count(*)",), "trainer_id = \""+str(message.author.id)+"\"")[0]
         if count == 1:
             await message.channel.send("You only have one pokemon left! Don't release it!")
             return
-        check = select_one("owned_pokemon", ("id","name","pokemon"), "trainer_id = \""+str(message.author_id) + "\" AND location = \""+words[4]+"\" AND position = "+words[2])
+        check = select_one("owned_pokemon", ("id","name","pokemon"), "trainer_id = \""+str(message.author.id) + "\" AND location = \""+words[4]+"\" AND position = "+words[2])
         if not check:
             await message.channel.send("Oops, looks like you don't have any pokemon on position "+words[2]+" in your "+words[4])
             return
@@ -564,7 +564,7 @@ async def on_message(message):
 
     if mes.lower().startswith("pick"):
         temp = mes.split(" ")
-        check = select("trainers", ("id",), "id = \""+str(message.author_id)+"\"")
+        check = select("trainers", ("id",), "id = \""+str(message.author.id)+"\"")
         if check:
             await message.channel.send("Oops, looks like you already got your starter. Don't be greedy, let other trainers have some fun too :wink:")
             return
@@ -581,8 +581,8 @@ async def on_message(message):
             return
         temp = select_one("pokemon", ("name", "emote", "shiny_emote"), "national_number = \""+starters[pick].pokemon.national_number+"\"")
         temp_poke = starters[pick]
-        give_pokemon_to(temp_poke, str(message.author_id))
-        insert("trainers", ("id",), (str(message.author_id), ))
+        give_pokemon_to(temp_poke, str(message.author.id))
+        insert("trainers", ("id",), (str(message.author.id), ))
         emote_to_use = temp[1]
         if temp_poke.shiny:
             emote_to_use = temp[2]
@@ -644,7 +644,7 @@ async def on_message(message):
         if int(position) < 1 or int(position) > 6:
             await message.channel.send(position+" is not a valid pokemon number")
             return
-        poke = select_one("owned_pokemon", ("pokemon", "level", "shiny"), "trainer_id = \""+str(message.author_id)+"\" AND location = \""+location+"\" AND position = "+position)
+        poke = select_one("owned_pokemon", ("pokemon", "level", "shiny"), "trainer_id = \""+str(message.author.id)+"\" AND location = \""+location+"\" AND position = "+position)
         if not poke:
             await message.channel.send("Oops, looks like you don't have any pokemon in that position")
             return
@@ -681,12 +681,12 @@ async def on_message(message):
             emote = new_poke[2]
         else:
             emote = new_poke[1]
-        update("owned_pokemon", ("pokemon",), (choice,), "trainer_id = \""+str(message.author_id)+"\" AND location = \""+location+"\" AND position = "+position)
+        update("owned_pokemon", ("pokemon",), (choice,), "trainer_id = \""+str(message.author.id)+"\" AND location = \""+location+"\" AND position = "+position)
         await message.channel.send("Congratulations, your pokemon evolved into "+emote+new_poke[0]+"!")
         return
 
     if mes.lower() == "daily":
-        check = select_one("trainers", ("received_daily",), "id = \""+str(message.author_id)+"\"")
+        check = select_one("trainers", ("received_daily",), "id = \""+str(message.author.id)+"\"")
         if not check:
             await message.channel.send("Oops, looks like you don't have a trainer profile set yet. View avalible starters with "+prefix+"starters and choose one with "+prefix+"pick [starter number]")
             return
@@ -696,14 +696,14 @@ async def on_message(message):
             if str(check[0]) == today:
                 await message.channel.send("Oops, looks like you already accepted your daily award today, please try again tomorrow")
                 return
-        sql = "UPDATE trainers set money = money + 200, received_daily = \""+today+"\" WHERE id = \""+str(message.author_id)+"\""
+        sql = "UPDATE trainers set money = money + 200, received_daily = \""+today+"\" WHERE id = \""+str(message.author.id)+"\""
         cursor.execute(sql)
         DB.commit()
         await message.channel.send("Yay! You received your daily 200"+coin_emoji+"!")
         return
 
     if mes.lower() == "balance":
-        balance = select_one("trainers", ("money",), "id = \""+str(message.author_id)+"\"")
+        balance = select_one("trainers", ("money",), "id = \""+str(message.author.id)+"\"")
         if not balance:
             await message.channel.send("Oops, looks like you don't have a trainer profile set yet. View avalible starters with "+prefix+"starters and choose one with "+prefix+"pick [starter number]")
             return
