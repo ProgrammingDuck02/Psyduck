@@ -217,13 +217,16 @@ def get_latest_moves(pokemon_number, level):
     select("movesets", ("move",), "pokemon = \""+pokemon_number+"\" and level <= "+str(level)+"ORDER BY level DESC LIMIT 4")
 
 #commands
-async def party_cmd(author_name, author_avatar, author_id, sender):
+async def party_cmd(author_name, author_avatar, author_id):
     embed = discord.Embed(color = discord.Color.green())
     embed.set_author(name = author_name, icon_url = author_avatar)
     temp_list = select("owned_pokemon", ("name", "pokemon", "shiny", "position", "level"), "trainer_id = \"" + str(author_id) + "\" AND location = \"party\"")
     if not temp_list:
-        await sender.send("Oops, looks like you don't have any pokemon on your team :cry:")
-        return
+        return {
+            "status": "error",
+            "hidden": True,
+            "message": "Oops, looks like you don't have any pokemon on your team :cry:"
+        }
     pokemon_names = {}
     pokemon_levels = {}
     pokemon_emotes = {}
@@ -243,8 +246,11 @@ async def party_cmd(author_name, author_avatar, author_id, sender):
     for i in range(1, party_size):
         party += "\n" + pokemon_emotes[i] + pokemon_names[i] + " lvl." + pokemon_levels[i]
     embed.add_field(name = author_name + "'s party", value = party)
-    await sender.send(embed = embed)
-    return
+    return {
+        "status": "ok",
+        "hidden": False,
+        "message": embed
+    }
 
 def box_cmd(box_number, author_id):
     embed = discord.Embed(color = discord.Color.gold())
@@ -298,12 +304,15 @@ def box_cmd(box_number, author_id):
 #slash commands
 @slash.slash(name="party", description="Displays your party", guild_ids=guild_ids)
 async def _party(ctx):
-    return await party_cmd(
+    ret = party_cmd(
         author_name=ctx.author.name,
         author_avatar=ctx.author.avatar_url,
-        author_id=ctx.author_id,
-        sender=ctx
+        author_id=ctx.author_id
     )
+    if ret["status"] == "ok":
+        await ctx.send(embed = ret["message"], hidden = ret["hidden"])
+    elif ret["status"] == "error":
+        await ctx.send(ret["message"], hidden = ret["hidden"])
 
 @slash.slash(name="box", description="Displays given box", guild_ids=guild_ids, options=[
     create_option(
@@ -338,7 +347,11 @@ async def on_message(message):
     mes = message.content[len(prefix):]
     words = mes.split(" ")
     if mes.lower() == "party":
-        return await party_cmd(author_name=message.author.name, author_avatar=message.author.avatar_url, author_id=message.author.id, sender=message.channel)
+        ret = party_cmd(author_name=message.author.name, author_avatar=message.author.avatar_url, author_id=message.author.id)
+        if ret["status"] == "ok":
+            await message.channel.send(embed = ret["message"])
+        elif ret["status"] == "error":
+            await message.channel.send(ret["message"])
 
     if mes.lower().startswith("box"):
         if len(words) == 1:
