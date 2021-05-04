@@ -319,9 +319,9 @@ async def _box(ctx, box_number):
         author_id=ctx.author_id
     )
     if ret["status"] == "ok":
-        ctx.send(embed = ret["message"], hidden = ret["hidden"])
+        await ctx.send(embed = ret["message"], hidden = ret["hidden"])
     elif ret["status"] == "error":
-        ctx.send(ret["message"], hidden = ret["hidden"])
+        await ctx.send(ret["message"], hidden = ret["hidden"])
 
 @client.event
 async def on_message(message):
@@ -347,9 +347,9 @@ async def on_message(message):
             box_number = words[1]
         ret = box_cmd(box_number=box_number, author_id=message.author.id)
         if ret["status"] == "ok":
-            message.channel.send(embed = ret["message"])
+            await message.channel.send(embed = ret["message"])
         elif ret["status"] == "error":
-            message.channel.send(ret["message"])
+            await message.channel.send(ret["message"])
 
     if mes.lower().startswith("switch"):
         params = mes.split(" ")
