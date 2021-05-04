@@ -399,19 +399,19 @@ async def _box(ctx, box_number):
 
 @slash.slash(name="switch", description="Switches pokemons in boxes and/or party", guild_ids=guild_ids, options=[
     create_option(
-        name="move_from",
-        description="Choose from where should the pokemon be moved. ex. \"BOX1:3\" or \"3\" to move from party",
+        name="switch_first",
+        description="Choose the first pokemon that should be switched. ex. \"BOX1:3\" or \"3\" to move from party",
         option_type=3,
         required=True
     ),
     create_option(
-        name="move_to",
-        description="Choose where should the pokemon be moved to. ex. \"BOX1:3\" or \"3\" to move to party",
+        name="switch_second",
+        description="Choose the second pokemon that should be switched. ex. \"BOX1:3\" or \"3\" to move to party",
         option_type=3,
         required=True
     )
 ])
-async def _switch(ctx, move_from, move_to):
+async def _switch(ctx, switch_first, switch_second):
     ret = switch_cmd(move_from, move_to, ctx.author_id)
     if ret["status"] == "ok":
         await ctx.send(ret["message"], hidden = ret["hidden"])
