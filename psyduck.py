@@ -416,7 +416,7 @@ async def _box(ctx, box_number):
     )
 ])
 async def _switch(ctx, switch_first, switch_second):
-    ret = switch_cmd(move_from, move_to, ctx.author_id)
+    ret = switch_cmd(switch_first, switch_second, ctx.author_id)
     if ret["status"] == "ok":
         await ctx.send(ret["message"], hidden = ret["hidden"])
     elif ret["status"] == "error":
