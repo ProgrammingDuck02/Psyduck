@@ -326,7 +326,7 @@ async def on_message(message):
     mes = message.content[len(prefix):]
     words = mes.split(" ")
     if mes.lower() == "party":
-        return await party_cmd(author_name=message.author.name, author_avatar=message.author.avatar.url, author_id=message.author.id, sender=message.channel)
+        return await party_cmd(author_name=message.author.name, author_avatar=message.author.avatar_url, author_id=message.author.id, sender=message.channel)
 
     if mes.lower().startswith("box"):
         if len(words) == 1:
