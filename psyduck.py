@@ -793,7 +793,7 @@ async def on_message(message):
 async def on_ready():
     guild_ids = []
     for guild in client.guilds:
-    guild_ids.append(guild.id)
+        guild_ids.append(guild.id)
     print("Logged in as "+client.user.name)
     print("id: "+str(client.user.id))
 
