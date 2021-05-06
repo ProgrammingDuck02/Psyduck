@@ -16,7 +16,7 @@ cursor = None
 DB = None
 prefix = "?"
 coin_emoji = ":coin:"
-guild_ids = [518058574157578250]
+guild_ids = []
 
 pokemon_limit = 151
 
@@ -155,10 +155,10 @@ def level_up_party(trainer_id):
     cursor.execute(sql)
     DB.commit()
 
-def shift_down(location, position):
+def shift_down(location, position, trainer_id):
     connect_db()
     global cursor, DB
-    sql = "UPDATE owned_pokemon SET position = position - 1 WHERE location = \""+location+"\" AND position > "+position
+    sql = "UPDATE owned_pokemon SET position = position - 1 WHERE location = \""+location+"\" AND position > "+position+" AND trainer_id = \""+str(trainer_id)+"\""
     cursor.execute(sql)
     DB.commit()
 #########################
@@ -370,6 +370,46 @@ def switch_cmd(from_where, to_where, author_id):
         "message": "Pokemon switched places!"
     }
 
+def deposit_cmd(poke, box_input, author_id):
+    if box_input.lower().startswith("box"):
+        box = box_input.upper()
+    else:
+        box = "BOX" + box_input
+    if not is_number(poke):
+        return generate_error_dict(poke + " is not a valid party number")
+    if int(poke) < 1 or int(poke) > 6:
+        return generate_error_dict(poke + " is not a valid party number")
+    if not is_number(box[3:]):
+        return generate_error_dict(box_input + " is not a valid box name or box number")
+    if int(box[3:]) < 1 or int(box[3:]) > 50:
+        return generate_error_dict(box_input + " is not a valid box name or box number")
+    check = select_one("owned_pokemon", ("id",), "trainer_id = \""+str(author_id) + "\" AND location = \"party\" AND position = " + str(poke))
+    if not check:
+        return generate_error_dict("Oops, looks like you don't have any pokemon in your party in position "+str(poke))
+    pokemon_in_box = 0
+    temp = select("owned_pokemon", ("position",), "trainer_id = \""+str(author_id) + "\" AND location = \""+ box + "\" AND position >= 1 AND position <= 10")
+    if temp:
+        pokemon_in_box = len(temp)
+    if pokemon_in_box >= 10:
+        return generate_error_dict("Oops, looks like your " + box + " is full. Consider changing boxes")
+    new_position = 0
+    for i in range(1,11):
+        ok = True
+        for each in temp:
+            if each[0] == i:
+                ok = False
+                break
+        if ok:
+            new_position = i
+            break
+    update("owned_pokemon", ("location", "position"), (box, str(new_position)), "trainer_id = \""+str(author_id) + "\" AND location = \"party\" AND position = " + str(poke))
+    shift_down("party", str(poke), author_id)
+    return {
+        "status": "ok",
+        "hidden": True,
+        "message": "Done! Your pokemon has been boxed into "+box
+    }
+
 #slash commands
 @slash.slash(name="party", description="Displays your party", guild_ids=guild_ids)
 async def _party(ctx):
@@ -422,6 +462,28 @@ async def _switch(ctx, switch_first, switch_second):
     elif ret["status"] == "error":
         await ctx.send(ret["message"], hidden = ret["hidden"])
 
+@slash.slash(name="deposit", description="Deposits your pokemon from party to the specified box", guild_ids=guild_ids, options=[
+    create_option(
+        name="pokemon",
+        description="Choose which pokemon to deposit by specifying its number in your party",
+        option_type=3,
+        required=True
+    ),
+    create_option(
+        name="box",
+        description="Choose to which box should the pokemon be sent to. ex. \"BOX3\" or just \"3\"",
+        option_type=3,
+        required=True
+    )
+])
+async def _deposit(ctx, pokemon, box):
+    ret = deposit_cmd(pokemon, box, ctx.author.id)
+    if ret["status"] == "ok":
+        await ctx.send(ret["message"], hidden = ret["hidden"])
+    elif ret["status"] == "error":
+        await ctx.send(ret["message"], hidden = ret["hidden"])
+    
+
 @client.event
 async def on_message(message):
     global prefix
@@ -471,47 +533,11 @@ async def on_message(message):
         if len(words) < 3:
             await message.channel.send("Wrong number of parameters!\nCorrect use: "+prefix+"deposit [pokemon] [box/box number]\nCheck "+prefix+"help for more informations")
             return
-        poke = words[1]
-        box = words[2].upper()
-        if not box.lower().startswith("box"):
-            box = "BOX" + box
-        if not is_number(poke):
-            await message.channel.send(words[1] + " is not a valid party number")
-            return
-        if int(poke) < 1 or int(poke) > 6:
-            await message.channel.send(words[1] + " is not a valid party number")
-            return
-        if not is_number(box[3:]):
-            await message.channel.send(words[2] + " is not a valid box name or box number")
-            return
-        if int(box[3:]) < 1 or int(box[3:]) > 50:
-            await message.channel.send(words[2] + " is not a valid box name or box number")
-            return
-        check = select_one("owned_pokemon", ("id",), "trainer_id = \""+str(message.author.id) + "\" AND location = \"party\" AND position = " + str(poke))
-        if not check:
-            await message.channel.send("Oops, looks like you don't have any pokemon in your party in position "+str(poke))
-            return
-        pokemon_in_box = 0
-        temp = select("owned_pokemon", ("position",), "trainer_id = \""+str(message.author.id) + "\" AND location = \""+ box + "\" AND position >= 1 AND position <= 10")
-        if temp:
-            pokemon_in_box = len(temp)
-        if pokemon_in_box >= 10:
-            await message.channel.send("Oops, looks like your " + box + " is full. Consider changing boxes")
-            return
-        new_position = 0
-        for i in range(1,11):
-            ok = True
-            for each in temp:
-                if each[0] == i:
-                    ok = False
-                    break
-            if ok:
-                new_position = i
-                break
-        update("owned_pokemon", ("location", "position"), (box, str(new_position)), "trainer_id = \""+str(message.author.id) + "\" AND location = \"party\" AND position = " + str(poke))
-        shift_down("party", str(poke))
-        await message.channel.send("Done! Your pokemon has been boxed into "+box)
-        return
+        ret = deposit_cmd(words[1], words[2], message.author.id)
+        if ret["status"] == "ok":
+            await message.channel.send(ret["message"])
+        elif ret["status"] == "error":
+            await message.channel.send(ret["message"])
     
     if mes.lower().startswith("withdraw"):
         words = mes.split(" ")
@@ -551,7 +577,7 @@ async def on_message(message):
             await message.channel.send("Oops, looks like you don't have any pokemon on position "+poke+" in "+box)
             return
         update("owned_pokemon", ("location", "position"), ("party", str(position)), "id = "+str(check[0]))
-        shift_down(box, poke)
+        shift_down(box, poke, message.author.id)
         await message.channel.send("Done! pokemon added to your team!")
         return
         
@@ -590,7 +616,7 @@ async def on_message(message):
         if check[1] == None:
             name = select_one("pokemon", ("name",), "national_number = \""+check[2]+"\"")[0]
         delete("owned_pokemon", "id = "+str(check[0]))
-        shift_down(words[4], words[2])
+        shift_down(words[4], words[2], message.author.id)
         await message.channel.send(name+" was released. Bye bye "+name+"!")
         return
     
@@ -765,6 +791,9 @@ async def on_message(message):
 
 @client.event
 async def on_ready():
+    guild_ids = []
+    for guild in client.guilds:
+    guild_ids.append(guild.id)
     print("Logged in as "+client.user.name)
     print("id: "+str(client.user.id))
 
