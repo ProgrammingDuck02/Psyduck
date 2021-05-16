@@ -256,9 +256,10 @@ def move_to_database(pokemon, move):
     insert("movesets", ("pokemon", "move", "method", "level"), (pokemon, str(move_id), move["method"], move["level"]))
 
 def main():
-    pokes = select("pokemon", ("national_number", "name"), "convert(substring(national_number, 1, 3), unsigned integer) <= 151 or national_number in (select evolution from evolutions where convert(substring(pokemon, 1, 3), unsigned integer) <= 151)")
+#    pokes = select("pokemon", ("national_number", "name"), "convert(substring(national_number, 1, 3), unsigned integer) <= 151 or national_number in (select evolution from evolutions where convert(substring(pokemon, 1, 3), unsigned integer) <= 151)")
+    pokes = select("pokemon", ("national_number", "name"), "")
     for poke in pokes:
-        time.sleep(0.25)
+        time.sleep(0.10)
         print(poke[1]+"...")
         if len(poke[0]) > 3:
             if poke[0][3] == "G":
