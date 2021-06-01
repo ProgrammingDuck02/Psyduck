@@ -132,10 +132,10 @@ def insert(table, fields, values):
     DB.commit()
     return True
 
-def get_levelup_html(source, dex, pokemon_nnumber, variant = "standard", use_alt = 0):
+def get_levelup_html(source, dex, pokemon_number, variant = "standard", use_alt = 0):
     global swsh_standard_attacks, swsh_alolan_attacks, swsh_galarian_attacks, usum_alolan_attacks, usum_standardform_attacks, usum_standard_attacks, usum_altstandard_attacks, special_attacks
-    if pokemon_nnumber in special_attacks.keys():
-        attacks = special_attacks[pokemon_nnumber]
+    if pokemon_number in special_attacks.keys():
+        attacks = special_attacks[pokemon_number]
     else:
         if dex == "swsh":
             if variant == "alolan":
@@ -163,7 +163,7 @@ def get_levelup_html(source, dex, pokemon_nnumber, variant = "standard", use_alt
         source = ret[:l]
         temp = query.search(source)
     if not (ret or use_alt > 1):
-        return get_levelup_html(source, dex, pokemon_nnumber, variant, use_alt+1)
+        return get_levelup_html(source, dex, pokemon_number, variant, use_alt+1)
     if not ret:
         return False
     return ret[(len(attacks[0])-3):(len(ret)-len(attacks[1]))].replace("\t", "").replace("\r\n", "")
@@ -239,7 +239,7 @@ def get_swsh_levelupmovelist_by_name(name, pokemon_number, variant = "standard")
     if not rq:
         return False
     source = rq.text
-    return get_levelupmovelist(source, "swsh", variant)
+    return get_levelupmovelist(source, "swsh", pokemon_number, variant)
 
 def get_usum_levelupmovelist_by_number(number):
     if len(number) > 3:
@@ -268,7 +268,8 @@ def move_to_database(pokemon, move):
 def main():
 #    pokes = select("pokemon", ("national_number", "name"), "convert(substring(national_number, 1, 3), unsigned integer) <= 151 or national_number in (select evolution from evolutions where convert(substring(pokemon, 1, 3), unsigned integer) <= 151)")
 #    pokes = select("pokemon", ("national_number", "name"), "")
-    pokes = select("pokemon", ("national_number", "name"), "national_number = 678")
+#    pokes = select("pokemon", ("national_number", "name"), "national_number = 678")
+    pokes = [["678", "Meowstic"]]
     for poke in pokes:
         time.sleep(0.10)
         print(poke[1]+"...")
@@ -281,7 +282,7 @@ def main():
                 variant = "standard"
         else:
             variant = "standard"
-        movelist = get_swsh_levelupmovelist_by_name(poke[1], variant)
+        movelist = get_swsh_levelupmovelist_by_name(poke[1], poke[0], variant)
         if not movelist:
             movelist = get_usum_levelupmovelist_by_number(poke[0])
         if movelist:
