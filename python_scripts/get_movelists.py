@@ -40,6 +40,10 @@ special_attacks = {
     '678' : (
         "</table><br /><a name=\"attacks\"></a><table class=\"dextable\"><tr ><td colspan=\"10\" class=\"fooevo\"><h3><a name=\"standardlevel\"></a>Level Up - Male</h3></td></tr><tr><th class=\"attheader\">Level</th><th class=\"attheader\">Attack Name</th><th class=\"attheader\">Type</th><th class=\"attheader\">Cat\.</th><th class=\"attheader\">Att\.</th><th class=\"attheader\">Acc\.</th><th class=\"attheader\">PP</th><th class=\"attheader\">Effect %</th></tr><tr>",
         "</table>"
+    ),
+    '876' : (
+        "</table><br /><a name=\"attacks\"></a><table class=\"dextable\"><tr ><td colspan=\"10\" class=\"fooevo\"><h3><a name=\"standardlevel\"></a>Level Up - Male</h3></td></tr><tr><th class=\"attheader\">Level</th><th class=\"attheader\">Attack Name</th><th class=\"attheader\">Type</th><th class=\"attheader\">Cat\.</th><th class=\"attheader\">Att\.</th><th class=\"attheader\">Acc\.</th><th class=\"attheader\">PP</th><th class=\"attheader\">Effect %</th></tr><tr>",
+        "</table>"
     )
 }
 
@@ -266,8 +270,7 @@ def move_to_database(pokemon, move):
     insert("movesets", ("pokemon", "move", "method", "level"), (pokemon, str(move_id), move["method"], move["level"]))
 
 def main():
-#    pokes = select("pokemon", ("national_number", "name"), "convert(substring(national_number, 1, 3), unsigned integer) <= 151 or national_number in (select evolution from evolutions where convert(substring(pokemon, 1, 3), unsigned integer) <= 151)")
-    pokes = select("pokemon", ("national_number", "name"), "")
+    pokes = select("pokemon", ("national_number", "name"), "national_number = 876")
     for poke in pokes:
         time.sleep(0.10)
         print(poke[1]+"...")
