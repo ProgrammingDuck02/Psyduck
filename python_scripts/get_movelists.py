@@ -270,7 +270,7 @@ def move_to_database(pokemon, move):
     insert("movesets", ("pokemon", "move", "method", "level"), (pokemon, str(move_id), move["method"], move["level"]))
 
 def main():
-    pokes = select("pokemon", ("national_number", "name"), "national_number = 876")
+    pokes = select("pokemon", ("national_number", "name"), "")
     for poke in pokes:
         time.sleep(0.10)
         print(poke[1]+"...")
