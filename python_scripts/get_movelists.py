@@ -268,7 +268,7 @@ def move_to_database(pokemon, move):
 def main():
 #    pokes = select("pokemon", ("national_number", "name"), "convert(substring(national_number, 1, 3), unsigned integer) <= 151 or national_number in (select evolution from evolutions where convert(substring(pokemon, 1, 3), unsigned integer) <= 151)")
 #    pokes = select("pokemon", ("national_number", "name"), "")
-    pokes = select("pokemon", ("national_number", "name"), "")
+    pokes = select("pokemon", ("national_number", "name"), "national_number = 678")
     for poke in pokes:
         time.sleep(0.10)
         print(poke[1]+"...")
