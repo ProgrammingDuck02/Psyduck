@@ -36,6 +36,13 @@ usum_altstandard_attacks = (
     "</table>"
 )
 
+special_attacks = {
+    '678' : (
+        "</table><br /><a name=\"attacks\"></a><table class=\"dextable\"><tr ><td colspan=\"10\" class=\"fooevo\"><h3><a name=\"standardlevel\"></a>Level Up - Male</h3></td></tr><tr><th class=\"attheader\">Level</th><th class=\"attheader\">Attack Name</th><th class=\"attheader\">Type</th><th class=\"attheader\">Cat\.</th><th class=\"attheader\">Att\.</th><th class=\"attheader\">Acc\.</th><th class=\"attheader\">PP</th><th class=\"attheader\">Effect %</th></tr><tr>",
+        "</table>"
+    )
+}
+
 types = [
     "normal",
     "fire",
@@ -125,25 +132,28 @@ def insert(table, fields, values):
     DB.commit()
     return True
 
-def get_levelup_html(source, dex, variant = "standard", use_alt = 0):
-    global swsh_standard_attacks, swsh_alolan_attacks, swsh_galarian_attacks, usum_alolan_attacks, usum_standardform_attacks, usum_standard_attacks, usum_altstandard_attacks
-    if dex == "swsh":
-        if variant == "alolan":
-            attacks = swsh_alolan_attacks
-        elif variant == "galarian":
-            attacks = swsh_galarian_attacks
-        else:
-            attacks = swsh_standard_attacks
+def get_levelup_html(source, dex, pokemon_nnumber, variant = "standard", use_alt = 0):
+    global swsh_standard_attacks, swsh_alolan_attacks, swsh_galarian_attacks, usum_alolan_attacks, usum_standardform_attacks, usum_standard_attacks, usum_altstandard_attacks, special_attacks
+    if pokemon_nnumber in special_attacks.keys():
+        attacks = special_attacks[pokemon_nnumber]
     else:
-        if variant == "alolan":
-            attacks = usum_alolan_attacks
-        else:
-            if use_alt == 0:
-                attacks = usum_standardform_attacks
-            elif use_alt == 1:
-                attacks = usum_standard_attacks
+        if dex == "swsh":
+            if variant == "alolan":
+                attacks = swsh_alolan_attacks
+            elif variant == "galarian":
+                attacks = swsh_galarian_attacks
             else:
-                attacks = usum_altstandard_attacks
+                attacks = swsh_standard_attacks
+        else:
+            if variant == "alolan":
+                attacks = usum_alolan_attacks
+            else:
+                if use_alt == 0:
+                    attacks = usum_standardform_attacks
+                elif use_alt == 1:
+                    attacks = usum_standard_attacks
+                else:
+                    attacks = usum_altstandard_attacks
     query = re.compile(attacks[0]+".*"+attacks[1], re.DOTALL)
     temp = query.search(source)
     ret = None
@@ -153,7 +163,7 @@ def get_levelup_html(source, dex, variant = "standard", use_alt = 0):
         source = ret[:l]
         temp = query.search(source)
     if not (ret or use_alt > 1):
-        return get_levelup_html(source, dex, variant, use_alt+1)
+        return get_levelup_html(source, dex, pokemon_nnumber, variant, use_alt+1)
     if not ret:
         return False
     return ret[(len(attacks[0])-3):(len(ret)-len(attacks[1]))].replace("\t", "").replace("\r\n", "")
@@ -163,10 +173,10 @@ def parse_number(number_s):
         return "0"
     return number_s
 
-def get_levelupmovelist(source, dex, variant = "standard"):
+def get_levelupmovelist(source, dex, pokemon_number, variant = "standard"):
     global types, attack_types
     ret = []
-    temp = get_levelup_html(source, dex, variant)
+    temp = get_levelup_html(source, dex, pokemon_number, variant)
     cur = []
     cur_str = ""
     skip = False
@@ -224,7 +234,7 @@ def get_levelupmovelist(source, dex, variant = "standard"):
         ret.append(temp_dict)
     return ret
 
-def get_swsh_levelupmovelist_by_name(name, variant = "standard"):
+def get_swsh_levelupmovelist_by_name(name, pokemon_number, variant = "standard"):
     rq = requests.get("https://www.serebii.net/pokedex-swsh/"+name.lower().replace(" ", "").replace("♀", "f").replace("♂", "m")+"/")
     if not rq:
         return False
@@ -244,7 +254,7 @@ def get_usum_levelupmovelist_by_number(number):
     if not rq:
         return False
     source = rq.text
-    return get_levelupmovelist(source, "usum", variant)
+    return get_levelupmovelist(source, "usum", number, variant)
 
 def move_to_database(pokemon, move):
     temp = select_one("moves", ("id",), "name = \""+move["name"]+"\"")
