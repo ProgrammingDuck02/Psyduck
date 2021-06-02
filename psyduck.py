@@ -519,7 +519,7 @@ async def _deposit(ctx, pokemon, box):
     elif ret["status"] == "error":
         await ctx.send(ret["message"], hidden = ret["hidden"])
 
-@slash.slash(name="withdraw", description="Withdraws pokemon from your box and adds it to your party", guild_ids=guild_ids, option=[
+@slash.slash(name="withdraw", description="Withdraws pokemon from your box and adds it to your party", guild_ids=guild_ids, options=[
     create_option(
         name="box",
         description="Choose from which box the pokemon should be withdrawn from. ex. \"BOX3\" or just \"3\"",
