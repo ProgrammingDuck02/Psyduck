@@ -446,6 +446,39 @@ def withdraw_cmd(box, poke, author_id):
         "message": "Done! Your pokemon has been added into your party!"
     }
 
+def release_cmd(poke, location, author_id):
+    original_location = location
+    if location.lower() == "party":
+        location = location.lower()
+    else:
+        location = location.upper()
+    if location != "party" and location.startswith("BOX"):
+        return generate_error_dict(original_location + " is not a correct box name. Box names start with \"BOX\"(not case sensitive)")
+    if not is_number(poke):
+        return generate_error_dict(poke + " is not a correct pokemon number")
+    if int(poke) < 1 or (location == "party" and int(poke) > 6) or int(poke) > 10:
+        return generate_error_dict(poke + " is not a correct pokemon number")
+    if not is_number(location[3:]) and location != "party":
+        return generate_error_dict(original_location + " is not a correct box name")
+    if location != "party" and (int(location[3:]) < 1 or int(location[3:]) > 50):
+        return generate_error_dict(original_location + " is not a correct box name")
+    count = select_one("owned_pokemon", ("count(*)",), "trainer_id = \""+str(author_id)+"\"")[0]
+    if count == 1:
+        return generate_error_dict("You only have one pokemon left! Don't release it!")
+    check = select_one("owned_pokemon", ("id","name","pokemon"), "trainer_id = \""+str(author_id) + "\" AND location = \""+location+"\" AND position = "+poke)
+    if not check:
+        return generate_error_dict("Oops, looks like you don't have any pokemon on position "+poke+" in your "+location)
+    name = check[1]
+    if check[1] == None:
+        name = select_one("pokemon", ("name",), "national_number = \""+check[2]+"\"")[0]
+    delete("owned_pokemon", "id = "+str(check[0]))
+    shift_down(location, poke, author_id)
+    return {
+        "status": "ok",
+        "hidden": True,
+        "message": name+" was released. Bye bye "+name+"!"
+    }
+
 #slash commands
 @slash.slash(name="party", description="Displays your party", guild_ids=guild_ids)
 async def _party(ctx):
@@ -614,36 +647,11 @@ async def on_message(message):
         if words[3].lower() != "in":
             await message.channel.send("Wrong format!\nCorrect use: "+prefix+"release pokemon [pokemon_number] in [boxname/\"party\"]\nCheck "+prefix+"help for more informations")
             return
-        if words[4].lower() != "party" and not words[4].upper().startswith("BOX"):
-            await message.channel.send(words[4] + " is not a correct box name. Box names start with \"BOX\"(not case sensitive)")
-            return
-        if not is_number(words[2]):
-            await message.channel.send(words[2] + " is not a correct pokemon number")
-            return
-        if int(words[2]) < 1 or (words[4].lower() == "party" and int(words[2]) > 6) or int(words[2]) > 10:
-            await message.channel.send(words[2] + " is not a correct pokemon number")
-            return
-        if not is_number(words[4][3:]) and words[4].lower() != "party":
-            await message.channel.send(words[4] + " is not a correct box name")
-            return
-        if words[4] != "party" and (int(words[4][3:]) < 1 or int(words[4][3:]) > 50):
-            await message.channel.send(words[4] + " is not a correct box name")
-            return
-        count = select_one("owned_pokemon", ("count(*)",), "trainer_id = \""+str(message.author.id)+"\"")[0]
-        if count == 1:
-            await message.channel.send("You only have one pokemon left! Don't release it!")
-            return
-        check = select_one("owned_pokemon", ("id","name","pokemon"), "trainer_id = \""+str(message.author.id) + "\" AND location = \""+words[4]+"\" AND position = "+words[2])
-        if not check:
-            await message.channel.send("Oops, looks like you don't have any pokemon on position "+words[2]+" in your "+words[4])
-            return
-        name = check[1]
-        if check[1] == None:
-            name = select_one("pokemon", ("name",), "national_number = \""+check[2]+"\"")[0]
-        delete("owned_pokemon", "id = "+str(check[0]))
-        shift_down(words[4], words[2], message.author.id)
-        await message.channel.send(name+" was released. Bye bye "+name+"!")
-        return
+        ret = release_cmd(words[2], words[4], message.author.id)
+        if ret["status"] == "ok":
+            await message.channel.send(ret["message"])
+        elif ret["status"] == "error":
+            await message.channel.send(ret["message"])
     
     if mes.lower() == "starters":
         if len(starters) == 0:
