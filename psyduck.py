@@ -479,6 +479,18 @@ def release_cmd(poke, location, author_id):
         "message": name+" was released. Bye bye "+name+"!"
     }
 
+def starters_cmd():
+    if len(starters) == 0:
+        return generate_error_dict("Oops, looks like there are no starters ready to pick :cry:")
+    embed = discord.Embed(color = discord.Color.red())
+    starter_list = ""
+    for i in range(len(starters)):
+        temp = select_one("pokemon", ("name", "emote"), "national_number = \""+starters[i].pokemon.national_number+"\"")
+        starter_list += str(i+1) + ". " + temp[1] + temp[0] + "\n"
+    embed.add_field(name = "Currently avalible starters to pick:", value = starter_list, inline = False)
+    embed.add_field(name = "To pick your starter use "+prefix+"pick [number] command!", value = "You can only pick your starter if you don't have trainer account already", inline = False)
+    return generate_ok_dict(embed)
+
 #slash commands
 @slash.slash(name="party", description="Displays your party", guild_ids=guild_ids)
 async def _party(ctx):
@@ -575,11 +587,7 @@ async def _withdraw(ctx, box, position):
 
 @client.event
 async def on_message(message):
-    global prefix
-    global starters
-    global pokemon_limit
     global cursor
-    global coin_emoji
     if message.author == client.user:
         return
     level_up_party(str(message.author.id))
@@ -654,18 +662,11 @@ async def on_message(message):
             await message.channel.send(ret["message"])
     
     if mes.lower() == "starters":
-        if len(starters) == 0:
-            await message.channel.send("Oops, looks like there are no starters ready to pick :cry:")
-            return
-        embed = discord.Embed(color = discord.Color.red())
-        starter_list = ""
-        for i in range(len(starters)):
-            temp = select_one("pokemon", ("name", "emote"), "national_number = \""+starters[i].pokemon.national_number+"\"")
-            starter_list += str(i+1) + ". " + temp[1] + temp[0] + "\n"
-        embed.add_field(name = "Currently avalible starters to pick:", value = starter_list, inline = False)
-        embed.add_field(name = "To pick your starter use "+prefix+"pick [number] command!", value = "You can only pick your starter if you don't have trainer account already", inline = False)
-        await message.channel.send(embed = embed)
-        return
+        ret = starters_cmd()
+        if ret["status"] == "ok":
+            await message.channel.send(embed = ret["message"])
+        elif ret["status"] == "error":
+            await message.channel.send(ret["message"])
 
     if mes.lower().startswith("pick"):
         temp = mes.split(" ")
