@@ -848,7 +848,7 @@ async def on_message(message):
         return
 
     #Delete before final distribution duh
-    if mes.lower() == "off":
+    if mes.lower() == "off" and message.author.id != 370602661776588802:
         await message.channel.send("Logging out...")
         await client.logout()
         return
