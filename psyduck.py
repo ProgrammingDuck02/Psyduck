@@ -529,6 +529,64 @@ def show_evolutions_cmd(poke):
         embed.add_field(name = poke[1] + poke[2] + "'s evolutions:", value = text)
     return generate_ok_dict(embed)
 
+def evolve_cmd(position, species, author_id):
+    if position.upper().startswith("box"):
+        tmp_lst = position.split(":",1)
+        if len(tmp_lst) < 2:
+            return generate_error_dict("To evolve pokemon in a box please use format "+prefix+"evolve [box name]:[pokemon in box] <evolution pokemon>")
+        location = tmp_lst[0].upper()
+        if len(location) == 3:
+            location += "1"
+        if not location[3:].isdigit():
+            return generate_error_dict(location+" is not a valid box number")
+        if int(location[3:]) < 1 or int(location[3:]) > 10:
+            return generate_error_dict(location+" is not a valid box number")
+        position = tmp_lst[1]
+    else:
+        location = "party"
+    if not position.isdigit():
+        return generate_error_dict(position+" is not a valid pokemon number")
+    if int(position) < 1 or int(position) > 6:
+        return generate_error_dict(position+" is not a valid pokemon number")
+    poke = select_one("owned_pokemon", ("pokemon", "level", "shiny"), "trainer_id = \""+str(author_id)+"\" AND location = \""+location+"\" AND position = "+position)
+    if not poke:
+        return generate_error_dict("Oops, looks like you don't have any pokemon in that position")
+    shiny = (poke[2] == 1)
+    evolutions = select("evolutions", ("evolution",), "pokemon = \""+poke[0]+"\" AND avalible = 1 AND level <="+str(poke[1]))
+    if len(evolutions) == 0:
+        return generate_error_dict("Your pokemon is not able to evolve right now")
+    choice = None
+    if species == None:
+        choice = evolutions[random.randrange(len(evolutions))][0]
+    else:
+        form = ""
+        if species.lower().startswith("alolan "):
+            form = "A"
+            species = species.split(" ",1)[1]
+        elif species.lower().startswith("galarian "):
+            form = "G"
+            species = species.split(" ",1)[1]
+        chosen_poke = select_one("pokemon", ("national_number",), "name = \""+species+"\" AND CHAR_LENGTH(national_number) = "+str(3+len(form))+" AND national_number like \"%"+form+"\"")
+        if not chosen_poke:
+            return generate_error_dict("Oops, looks like you made a typo in pokemon evolution name. I can't find it in our pokemon database")
+        for each in evolutions:
+            if each[0] == chosen_poke[0]:
+                choice = each[0]
+    if choice == None:
+        return generate_error_dict("Oops, looks like your pokemon is unable to evolve into "+species)
+    new_poke = select_one("pokemon", ("name", "emote", "shiny_emote"), "national_number = \""+choice+"\"")
+    emote = None
+    if shiny:
+        emote = new_poke[2]
+    else:
+        emote = new_poke[1]
+    update("owned_pokemon", ("pokemon",), (choice,), "trainer_id = \""+str(author_id)+"\" AND location = \""+location+"\" AND position = "+position)
+    return {
+        "status": "ok",
+        "hidden": True,
+        "message": "Congratulations, your pokemon evolved into "+emote+new_poke[0]+"!"
+    }
+
 #slash commands
 @slash.slash(name="party", description="Displays your party", guild_ids=guild_ids)
 async def _party(ctx):
@@ -618,6 +676,27 @@ async def _deposit(ctx, pokemon, box):
 ])
 async def _withdraw(ctx, box, position):
     ret = withdraw_cmd(box, position, ctx.author.id)
+    if ret["status"] == "ok":
+        await ctx.send(ret["message"], hidden = ret["hidden"])
+    elif ret["status"] == "error":
+        await ctx.send(ret["message"], hidden = ret["hidden"])
+
+@slash.slash(name="evolve", description="Evolves a pokemon if it meets the requirements", guild_ids=guild_ids, options=[
+    create_option(
+        name="pokemon_position", 
+        description="Choose which pokemon to evolve. If you want to evolve a pokemon from box type in for example \"BOX2:4\"",
+        option_type=3,
+        required=True
+    ),
+    create_option(
+        name="evolution",
+        description="If pokemon has multiple evolutions, you can specify the name of the one you want!",
+        option_type=3,
+        required=False
+    )
+])
+async def _evolve(ctx, pokemon_position, evolution = None):
+    ret = evolve_cmd(pokemon_position, evolution, ctx.author.id)
     if ret["status"] == "ok":
         await ctx.send(ret["message"], hidden = ret["hidden"])
     elif ret["status"] == "error":
@@ -734,69 +813,14 @@ async def on_message(message):
         if len(temp) < 2:
             await message.channel.send("Wrong number of parameters!\nCorrect use "+prefix+"evolve [pokemon] <evolution pokemon>\nCheck "+prefix+"help for more informations")
             return
-        location = "party"
-        position = temp[1]
-        if temp[1].lower().startswith("box"):
-            tmp_lst = temp[1].split(":",1)
-            if len(tmp_lst) < 2:
-                await message.channel.send("To evolve pokemon in a box please use format "+prefix+"evolve [box name]:[pokemon in box] <evolution pokemon>")
-                return
-            location = tmp_lst[0].upper()
-            if len(location) == 3:
-                location += "1"
-            if not location[3:].isdigit():
-                await message.channel.send(location+" is not a valid box number")
-                return
-            if int(location[3:]) < 1 or int(location[3:]) > 10:
-                await message.channel.send(location+" is not a valid box number")
-                return
-            position = tmp_lst[1]
-        if not position.isdigit():
-            await message.channel.send(position+" is not a valid pokemon number")
-            return
-        if int(position) < 1 or int(position) > 6:
-            await message.channel.send(position+" is not a valid pokemon number")
-            return
-        poke = select_one("owned_pokemon", ("pokemon", "level", "shiny"), "trainer_id = \""+str(message.author.id)+"\" AND location = \""+location+"\" AND position = "+position)
-        if not poke:
-            await message.channel.send("Oops, looks like you don't have any pokemon in that position")
-            return
-        shiny = (poke[2] == 1)
-        evolutions = select("evolutions", ("evolution",), "pokemon = \""+poke[0]+"\" AND avalible = 1 AND level <="+str(poke[1]))
-        if len(evolutions) == 0:
-            await message.channel.send("Your pokemon is not able to evolve right now")
-            return
-        choice = None
         if len(temp) == 2:
-            choice = evolutions[random.randrange(len(evolutions))][0]
+            ret = evolve_cmd(temp[1], None, message.author.id)
         else:
-            species = temp[2]
-            form = ""
-            if species.lower().startswith("alolan "):
-                form = "A"
-                species = species.split(" ",1)[1]
-            elif species.lower().startswith("galarian "):
-                form = "G"
-                species = species.split(" ",1)[1]
-            chosen_poke = select_one("pokemon", ("national_number",), "name = \""+species+"\" AND CHAR_LENGTH(national_number) = "+str(3+len(form))+" AND national_number like \"%"+form+"\"")
-            if not chosen_poke:
-                await message.channel.send("Oops, looks like you made a typo in pokemon evolution name. I can't find it in our pokemon database")
-                return
-            for each in evolutions:
-                if each[0] == chosen_poke[0]:
-                    choice = each[0]
-        if choice == None:
-            await message.channel.send("Oops, looks like your pokemon is unable to evolve into "+temp[2])
-            return
-        new_poke = select_one("pokemon", ("name", "emote", "shiny_emote"), "national_number = \""+choice+"\"")
-        emote = None
-        if shiny:
-            emote = new_poke[2]
-        else:
-            emote = new_poke[1]
-        update("owned_pokemon", ("pokemon",), (choice,), "trainer_id = \""+str(message.author.id)+"\" AND location = \""+location+"\" AND position = "+position)
-        await message.channel.send("Congratulations, your pokemon evolved into "+emote+new_poke[0]+"!")
-        return
+            ret = evolve_cmd(temp[1], temp[2], message.author.id)
+        if ret["status"] == "ok":
+            await message.channel.send(ret["message"])
+        elif ret["status"] == "error":
+            await message.channel.send(ret["message"])
 
     if mes.lower() == "daily":
         check = select_one("trainers", ("received_daily",), "id = \""+str(message.author.id)+"\"")
