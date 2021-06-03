@@ -507,7 +507,7 @@ def pick_starter_cmd(pick, author_id):
     emote_to_use = temp[1]
     if temp_poke.shiny:
         emote_to_use = temp[2]
-    generate_ok_dict("You picked "+emote_to_use+temp[0]+" as your starter! Hope you and "+temp[0]+" have a lot of fun together!")
+    return generate_ok_dict("You picked "+emote_to_use+temp[0]+" as your starter! Hope you and "+temp[0]+" have a lot of fun together!")
 
 def show_evolutions_cmd(poke):
     pokelist = select("pokemon", ("national_number", "emote", "name"), "LOWER(name) = \""+poke.lower()+"\"")
