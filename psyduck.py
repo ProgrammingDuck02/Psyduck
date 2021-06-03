@@ -491,6 +491,44 @@ def starters_cmd():
     embed.add_field(name = "To pick your starter use "+prefix+"pick [number] command!", value = "You can only pick your starter if you don't have trainer account already", inline = False)
     return generate_ok_dict(embed)
 
+def pick_starter_cmd(pick, author_id):
+    check = select("trainers", ("id",), "id = \""+str(author_id)+"\"")
+    if check:
+        return generate_error_dict("Oops, looks like you already got your starter. Don't be greedy, let other trainers have some fun too :wink:")
+    if not is_number(pick):
+        return generate_error_dict(pick + " is not a correct starter number")
+    pick = int(pick) - 1
+    if pick < 0 or pick >= len(starters):
+        return generate_error_dict(pick + " is not a correct starter number")
+    temp = select_one("pokemon", ("name", "emote", "shiny_emote"), "national_number = \""+starters[pick].pokemon.national_number+"\"")
+    temp_poke = starters[pick]
+    give_pokemon_to(temp_poke, str(author_id))
+    insert("trainers", ("id",), (str(author_id), ))
+    emote_to_use = temp[1]
+    if temp_poke.shiny:
+        emote_to_use = temp[2]
+    generate_ok_dict("You picked "+emote_to_use+temp[0]+" as your starter! Hope you and "+temp[0]+" have a lot of fun together!")
+
+def show_evolutions_cmd(poke):
+    pokelist = select("pokemon", ("national_number", "emote", "name"), "LOWER(name) = \""+poke.lower()+"\"")
+    if not pokelist:
+        return generate_error_dict("Oops, looks like you made a typo in pokemon's name. I can't find "+poke+" in our pokemon database")
+    if int(pokelist[0][0][:3]) > pokemon_limit:
+        return generate_error_dict("We don't support this pokemon right now. Next generations will be added soon")
+    embed = discord.Embed(color = discord.Color.teal())
+    for poke in pokelist:
+        text = "Looks like this pokemon doesn't have any evolutions or its evolutions are yet to be added"
+        sql = "SELECT e.level, p.name, p.emote FROM evolutions AS e INNER JOIN pokemon AS p ON p.national_number = e.evolution where e.pokemon = \""+poke[0]+"\" and e.avalible = 1"
+        connect_db()
+        cursor.execute(sql)
+        evolutions = cursor.fetchall()
+        if evolutions:
+            text = ""
+            for evo in evolutions:
+                text += evo[2] + evo[1] + " on level "+str(evo[0]) + "\n"
+        embed.add_field(name = poke[1] + poke[2] + "'s evolutions:", value = text)
+    return generate_ok_dict(embed)
+
 #slash commands
 @slash.slash(name="party", description="Displays your party", guild_ids=guild_ids)
 async def _party(ctx):
@@ -670,58 +708,27 @@ async def on_message(message):
 
     if mes.lower().startswith("pick"):
         temp = mes.split(" ")
-        check = select("trainers", ("id",), "id = \""+str(message.author.id)+"\"")
-        if check:
-            await message.channel.send("Oops, looks like you already got your starter. Don't be greedy, let other trainers have some fun too :wink:")
-            return
         if len(temp) < 2:
             await message.channel.send("Wrong number of parameters!\nCorrect use: "+prefix+"pick [number]\nCheck "+prefix+"help for more informations")
             return
         pick = temp[1]
-        if not is_number(pick):
-            await message.channel.send(pick + " is not a correct starter number")
-            return
-        pick = int(pick) - 1
-        if pick < 0 or pick >= len(starters):
-            await message.channel.send(pick + " is not a correct starter number")
-            return
-        temp = select_one("pokemon", ("name", "emote", "shiny_emote"), "national_number = \""+starters[pick].pokemon.national_number+"\"")
-        temp_poke = starters[pick]
-        give_pokemon_to(temp_poke, str(message.author.id))
-        insert("trainers", ("id",), (str(message.author.id), ))
-        emote_to_use = temp[1]
-        if temp_poke.shiny:
-            emote_to_use = temp[2]
-        await message.channel.send("You picked "+emote_to_use+temp[0]+" as your starter! Hope you and "+temp[0]+" have a lot of fun together!")
-        return
+        ret = pick_starter_cmd(pick, message.author.id)
+        if ret["status"] == "ok":
+            await message.channel.send(ret["message"])
+        elif ret["status"] == "error":
+            await message.channel.send(ret["message"])
 
     if mes.lower().startswith("evolution"):
         temp = mes.split(" ", 1)
         if len(temp) < 2:
             await message.channel.send("Wrong number of parameters!\nCorrect use: "+prefix+"evolution [pokemon name]\nCheck "+prefix+"help for more informations")
             return
-        pokelist = select("pokemon", ("national_number", "emote", "name"), "LOWER(name) = \""+temp[1].lower()+"\"")
-        if not pokelist:
-            await message.channel.send("Oops, looks like you made a typo in pokemon's name. I can't find "+temp[1]+" in our pokemon database")
-            return
-        if int(pokelist[0][0][:3]) > pokemon_limit:
-            await message.channel.send("We don't support this pokemon right now. Next generations will be added soon")
-            return
-        embed = discord.Embed(color = discord.Color.teal())
-        for poke in pokelist:
-            text = "Looks like this pokemon doesn't have any evolutions or its evolutions are yet to be added"
-            sql = "SELECT e.level, p.name, p.emote FROM evolutions AS e INNER JOIN pokemon AS p ON p.national_number = e.evolution where e.pokemon = \""+poke[0]+"\" and e.avalible = 1"
-            connect_db()
-            cursor.execute(sql)
-            evolutions = cursor.fetchall()
-            if evolutions:
-                text = ""
-                for evo in evolutions:
-                    text += evo[2] + evo[1] + " on level "+str(evo[0]) + "\n"
-            embed.add_field(name = poke[1] + poke[2] + "'s evolutions:", value = text)
-        await message.channel.send(embed = embed)
-        return
-    
+        ret = show_evolutions_cmd(temp[1])
+        if ret["status"] == "ok":
+            await message.channel.send(embed = ret["message"])
+        elif ret["status"] == "error":
+            await message.channel.send(ret["message"])
+
     if mes.lower().startswith("evolve"):
         temp = mes.split(" ",2)
         if len(temp) < 2:
