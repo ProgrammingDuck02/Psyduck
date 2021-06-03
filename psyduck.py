@@ -587,6 +587,24 @@ def evolve_cmd(position, species, author_id):
         "message": "Congratulations, your pokemon evolved into "+emote+new_poke[0]+"!"
     }
 
+def daily_cmd(author_id):
+    check = select_one("trainers", ("received_daily",), "id = \""+str(author_id)+"\"")
+    if not check:
+        return generate_error_dict("Oops, looks like you don't have a trainer profile set yet. View avalible starters with "+prefix+"starters and choose one with "+prefix+"pick [starter number]")
+    now = datetime.now()
+    today = now.strftime("%Y-%m-%d")
+    if check[0] != None:
+        if str(check[0]) == today:
+            return generate_error_dict("Oops, looks like you already accepted your daily award today, please try again tomorrow")
+    sql = "UPDATE trainers set money = money + 200, received_daily = \""+today+"\" WHERE id = \""+str(author_id)+"\""
+    cursor.execute(sql)
+    DB.commit()
+    return {
+        "status": "ok",
+        "hidden": True,
+        "message": "Yay! You received your daily 200"+coin_emoji+"!"
+    }
+
 #slash commands
 @slash.slash(name="party", description="Displays your party", guild_ids=guild_ids)
 async def _party(ctx):
@@ -697,6 +715,14 @@ async def _withdraw(ctx, box, position):
 ])
 async def _evolve(ctx, pokemon_position, evolution = None):
     ret = evolve_cmd(pokemon_position, evolution, ctx.author.id)
+    if ret["status"] == "ok":
+        await ctx.send(ret["message"], hidden = ret["hidden"])
+    elif ret["status"] == "error":
+        await ctx.send(ret["message"], hidden = ret["hidden"])
+
+@slash.slash(name="daily", description="Collect your daily coins!", guild_ids=guild_ids)
+async def _daily(ctx):
+    ret = daily_cmd(ctx.author.id)
     if ret["status"] == "ok":
         await ctx.send(ret["message"], hidden = ret["hidden"])
     elif ret["status"] == "error":
@@ -823,21 +849,11 @@ async def on_message(message):
             await message.channel.send(ret["message"])
 
     if mes.lower() == "daily":
-        check = select_one("trainers", ("received_daily",), "id = \""+str(message.author.id)+"\"")
-        if not check:
-            await message.channel.send("Oops, looks like you don't have a trainer profile set yet. View avalible starters with "+prefix+"starters and choose one with "+prefix+"pick [starter number]")
-            return
-        now = datetime.now()
-        today = now.strftime("%Y-%m-%d")
-        if check[0] != None:
-            if str(check[0]) == today:
-                await message.channel.send("Oops, looks like you already accepted your daily award today, please try again tomorrow")
-                return
-        sql = "UPDATE trainers set money = money + 200, received_daily = \""+today+"\" WHERE id = \""+str(message.author.id)+"\""
-        cursor.execute(sql)
-        DB.commit()
-        await message.channel.send("Yay! You received your daily 200"+coin_emoji+"!")
-        return
+        ret = daily_cmd(message.author.id)
+        if ret["status"] == "ok":
+            await message.channel.send(ret["message"])
+        elif ret["status"] == "error":
+            await message.channel.send(ret["message"])
 
     if mes.lower() == "balance":
         balance = select_one("trainers", ("money",), "id = \""+str(message.author.id)+"\"")
