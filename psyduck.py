@@ -684,7 +684,7 @@ async def _withdraw(ctx, box, position):
 @slash.slash(name="evolve", description="Evolves a pokemon if it meets the requirements", guild_ids=guild_ids, options=[
     create_option(
         name="pokemon_position", 
-        description="Choose which pokemon to evolve. If you want to evolve a pokemon from box type in for example \"BOX2:4\"",
+        description="Choose which pokemon to evolve. If you want to evolve a pokemon from box type in for ex. \"BOX2:4\"",
         option_type=3,
         required=True
     ),
