@@ -605,6 +605,16 @@ def daily_cmd(author_id):
         "message": "Yay! You received your daily 200"+coin_emoji+"!"
     }
 
+def balance_cmd(author_id):
+    balance = select_one("trainers", ("money",), "id = \""+str(author_id)+"\"")
+    if not balance:
+        return generate_error_dict("Oops, looks like you don't have a trainer profile set yet. View avalible starters with "+prefix+"starters and choose one with "+prefix+"pick [starter number]")
+    return {
+        "status": "ok",
+        "hidden": True,
+        "message": "Your current balance is "+str(balance[0])+coin_emoji
+    }
+
 #slash commands
 @slash.slash(name="party", description="Displays your party", guild_ids=guild_ids)
 async def _party(ctx):
@@ -856,12 +866,11 @@ async def on_message(message):
             await message.channel.send(ret["message"])
 
     if mes.lower() == "balance":
-        balance = select_one("trainers", ("money",), "id = \""+str(message.author.id)+"\"")
-        if not balance:
-            await message.channel.send("Oops, looks like you don't have a trainer profile set yet. View avalible starters with "+prefix+"starters and choose one with "+prefix+"pick [starter number]")
-            return
-        await message.channel.send("Your current balance is "+str(balance[0])+coin_emoji)
-        return
+        ret = balance_cmd(message.author.id)
+        if ret["status"] == "ok":
+            await message.channel.send(ret["message"])
+        elif ret["status"] == "error":
+            await message.channel.send(ret["message"])
 
     #Delete before final distribution duh
     if mes.lower() == "off" and message.author.id != 370602661776588802:
