@@ -643,9 +643,9 @@ def shop_cmd():
             datestamp = lines[5]
             today = datetime.now().strftime("%Y-%m-%d")
             if datestamp == today:
-                pokemons = []
+                pokemon_numbers = []
                 for i in range(5):
-                    pokemons.append(lines[i])
+                    pokemon_numbers.append(lines[i])
             else:
                 pokemon_numbers = get_new_shop_pokemon()
     pokemons = ""
