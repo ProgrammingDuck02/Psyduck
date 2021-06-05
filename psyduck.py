@@ -650,13 +650,13 @@ def shop_cmd():
                 pokemon_numbers = get_new_shop_pokemon()
     pokemons = ""
     first = True
-    for poke in pokemon_numbers:
-        temp = select_one("pokemon", ("name", "emote", "price"), "national_number=\""+poke+"\"")
+    for i in range(len(pokemon_numbers)):
+        temp = select_one("pokemon", ("name", "emote", "price"), "national_number=\""+pokemon_numbers[i]+"\"")
         if first:
             first = False
         else:
             pokemons += "\n"
-        pokemons += temp[1] + temp[0] + " price: " + str(temp[2]) + coin_emoji
+        pokemons += str(i+1) + ". " + temp[1] + temp[0] + " price: " + str(temp[2]) + coin_emoji
     embed = discord.Embed(color = discord.Color.gold())
     embed.set_author(name = "Guzma", icon_url = seller_picture_url)
     embed.add_field(name = "Wassat that you need, punk?", value = pokemons)
