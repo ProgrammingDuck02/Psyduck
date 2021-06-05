@@ -658,7 +658,7 @@ def shop_cmd():
             pokemons += "\n"
         pokemons += temp[1] + temp[0] + " price: " + str(temp[2]) + coin_emoji
     embed = discord.Embed(color = discord.Color.gold())
-    embed.set_author(icon_url = seller_picture_url)
+    embed.set_author(name = "Guzma", icon_url = seller_picture_url)
     embed.add_field(name = "Wassat that you need, punk?", value = pokemons)
     embed.set_footer(text = "Use "+prefix+"buy [pokemon_number] to buy the pokemon")
     return generate_ok_dict(embed)
