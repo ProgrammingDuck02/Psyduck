@@ -2,6 +2,7 @@ import sys
 import discord
 import mysql.connector
 import random
+from os import path
 from datetime import datetime
 from discord_slash import SlashCommand
 from discord_slash.utils.manage_commands import create_option
@@ -17,6 +18,8 @@ DB = None
 prefix = "?"
 coin_emoji = ":coin:"
 guild_ids = []
+#this is temporary
+seller_picture_url = "https://cdn.costumewall.com/wp-content/uploads/2017/10/guzma.jpg"
 
 pokemon_limit = 151
 
@@ -615,6 +618,51 @@ def balance_cmd(author_id):
         "message": "Your current balance is "+str(balance[0])+coin_emoji
     }
 
+def get_new_shop_pokemon():
+    temp = select("pokemon", ("national_number",), "for_sale = 1 order by rand() limit 5")
+    datestamp = datetime.now().strftime("%Y-%m-%d")
+    plik = open("daily_shop", "w")
+    pokemons = []
+    for poke in temp:
+        pokemons.append(poke[0])
+        plik.write(poke[0]+"\n")
+    plik.write(datestamp)
+    plik.close()
+    return pokemons
+
+def shop_cmd():
+    if not path.exists("daily_shop"):
+        pokemon_numbers = get_new_shop_pokemon()
+    else:
+        plik = open("daily_shop", "r")
+        lines = plik.read().split("\n")
+        plik.close()
+        if len(lines[0]) == 0:
+            pokemon_numbers = get_new_shop_pokemon()
+        else:
+            datestamp = lines[5]
+            today = datetime.now().strftime("%Y-%m-%d")
+            if datestamp == today:
+                pokemons = []
+                for i in range(5):
+                    pokemons.append(lines[i])
+            else:
+                pokemon_numbers = get_new_shop_pokemon()
+    pokemons = ""
+    first = True
+    for poke in pokemon_numbers:
+        temp = select_one("pokemon", ("name", "emote", "price"), "national_number=\""+poke+"\"")
+        if first:
+            first = False
+        else:
+            pokemons += "\n"
+        pokemons += temp[1] + temp[0] + " price: " + str(temp[2]) + coin_emoji
+    embed = discord.Embed(color = discord.Color.gold())
+    embed.set_author(icon_url = seller_picture_url)
+    embed.add_field(name = "Wassat that you need, punk?", value = pokemons)
+    embed.set_footer(text = "Use "+prefix+"buy [pokemon_number] to buy the pokemon")
+    return generate_ok_dict(embed)
+
 #slash commands
 @slash.slash(name="party", description="Displays your party", guild_ids=guild_ids)
 async def _party(ctx):
@@ -869,6 +917,13 @@ async def on_message(message):
         ret = balance_cmd(message.author.id)
         if ret["status"] == "ok":
             await message.channel.send(ret["message"])
+        elif ret["status"] == "error":
+            await message.channel.send(ret["message"])
+
+    if mes.lower() == "shop":
+        ret = shop_cmd()
+        if ret["status"] == "ok":
+            await message.channel.send(embed = ret["message"])
         elif ret["status"] == "error":
             await message.channel.send(ret["message"])
 
