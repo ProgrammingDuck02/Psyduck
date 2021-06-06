@@ -993,7 +993,7 @@ async def on_message(message):
             return
         ret = buy_cmd(temp[1], message.author.id)
         if ret["status"] == "ok":
-            await message.channel.send(embed = ret["message"])
+            await message.channel.send(ret["message"])
         elif ret["status"] == "error":
             await message.channel.send(ret["message"])
 
