@@ -714,6 +714,41 @@ def buy_cmd(poke, author_id):
     update("trainers", ("money", "last_bought_on", "last_bought_what"), (str(money), last_bought_on, str(last_bought_what)), "id = \""+str(author_id)+"\"")
     return generate_ok_dict("Congratulations!\nYou bought "+temp[0]+temp[1]+"!\n"+temp[0]+temp[1]+" has been added to your party")
 
+def nickname_cmd(position, name, author_id):
+    if is_number(position):
+        if int(position) < 1 or int(position) > 6:
+            return generate_error_dict(position+" is not a correct party number")
+        location = "party"
+    else:
+        if position.upper().startswith("BOX"):
+            temp = position.upper().split(":", 1)
+            if len(temp) < 2:
+                return generate_error_dict(position+" is not a correct box name")
+            if len(temp[0]) < 4:
+                return generate_error_dict(position+" is not a correct box name")
+            box_number = temp[0][3:]
+            if not is_number(box_number):
+                return generate_error_dict(position+" is not a correct box name")
+            if int(box_number) < 1 or int(box_number) > 50:
+                return generate_error_dict(position+" is not a correct box name")
+            if len(temp[1]) == 0:
+                return generate_error_dict(position+" is not a correct box name")
+            if not is_number(temp[1]):
+                return generate_error_dict(position+" is not a correct box name")
+            if int(temp[1]) < 1 or int(temp[1]) > 10:
+                return generate_error_dict(position+" is not a correct box name")
+            location = temp[0].upper()
+            position = temp[1]
+        else:
+            return generate_error_dict(position+" is not a correct box name")
+    temp = select_one("owned_pokemon", ("id", "OT"), "trainer_id = \""+str(author_id)+"\" and location = \""+location+"\" and position = "+str(position))
+    if not temp:
+        return generate_error_dict("Oops, looks like you don't have any pokemon in a given spot")
+    if not temp[1] == str(author_id):
+        return generate_error_dict("You can't rename pokemon you don't originally own!")
+    update("owned_pokemon", ("name",), (name,), "id = "+str(temp[0]))
+    return generate_ok_dict("Your pokemon has been nicknamed to \""+name+"\".")
+
 #slash commands
 @slash.slash(name="party", description="Displays your party", guild_ids=guild_ids)
 async def _party(ctx):
@@ -992,6 +1027,17 @@ async def on_message(message):
             await message.channel.send("Wrong number of parameters!\nCorrect use "+prefix+"buy [pokemon]\nCheck "+prefix+"help for more informations")
             return
         ret = buy_cmd(temp[1], message.author.id)
+        if ret["status"] == "ok":
+            await message.channel.send(ret["message"])
+        elif ret["status"] == "error":
+            await message.channel.send(ret["message"])
+
+    if mes.lower().startswith("nickname"):
+        temp = mes.split(" ", 2)
+        if len(temp) < 3:
+            await message.channel.send("Wrong number of parameters!\nCorrect use "+prefix+"nickname [pokemon/box_number:pokemon] [nickname]\nCheck "+prefix+"help for more informations")
+            return
+        ret = nickname_cmd(temp[1], temp[2], message.author.id)
         if ret["status"] == "ok":
             await message.channel.send(ret["message"])
         elif ret["status"] == "error":
