@@ -39,10 +39,7 @@ def is_number(string):
     return True
 
 def has_key(dict, key):
-    for k in dict.keys():
-        if k == key:
-            return True
-    return False
+    return key in dict.keys()
 
 def number_to_nat_number(number):
     string = str(number)
@@ -62,6 +59,26 @@ def get_pokemon_from_file(filename):
             new_poke.set_region()
             pokemon_list.append(new_poke)
     return pokemon_list
+
+def pow(base, power):
+    if power == 0:
+        return 1
+    return pow(base, power - 1)*base
+
+def int_to_bool_list(number, size):
+    ret = [False] * size
+    for i in range(size):
+        if number % 2:
+            ret[i] = True
+        number = (int)(number/2)
+    return ret
+
+def bool_list_to_int(bool_list):
+    ret = 0
+    for i in range(len(bool_list)):
+        if bool_list[i]:
+            ret+=pow(2,i)
+    return ret
 
 ###Mysql functions###
 def connect_db():
@@ -630,15 +647,15 @@ def get_new_shop_pokemon():
     plik.close()
     return pokemons
 
-def shop_cmd():
+def get_pokemon_from_shop():
     if not path.exists("daily_shop"):
-        pokemon_numbers = get_new_shop_pokemon()
+        return get_new_shop_pokemon()
     else:
         plik = open("daily_shop", "r")
         lines = plik.read().split("\n")
         plik.close()
         if len(lines[0]) == 0:
-            pokemon_numbers = get_new_shop_pokemon()
+            return get_new_shop_pokemon()
         else:
             datestamp = lines[5]
             today = datetime.now().strftime("%Y-%m-%d")
@@ -646,8 +663,12 @@ def shop_cmd():
                 pokemon_numbers = []
                 for i in range(5):
                     pokemon_numbers.append(lines[i])
+                return pokemon_numbers
             else:
-                pokemon_numbers = get_new_shop_pokemon()
+                return get_new_shop_pokemon()
+
+def shop_cmd():
+    pokemon_numbers = get_pokemon_from_shop()
     pokemons = ""
     first = True
     for i in range(len(pokemon_numbers)):
@@ -659,9 +680,39 @@ def shop_cmd():
         pokemons += str(i+1) + ". " + temp[1] + temp[0] + " price: " + str(temp[2]) + coin_emoji
     embed = discord.Embed(color = discord.Color.gold())
     embed.set_author(name = "Guzma", icon_url = seller_picture_url)
-    embed.add_field(name = "Wassat that you need, punk?", value = pokemons)
+    embed.add_field(name = "Wassat you need, punk?", value = pokemons)
     embed.set_footer(text = "Use "+prefix+"buy [pokemon_number] to buy the pokemon")
     return generate_ok_dict(embed)
+
+def buy_cmd(poke, author_id):
+    if not is_number(poke):
+        return generate_error_dict(poke+" is not a correct pokemon number")
+    if int(poke) < 1 or int(poke) > 5:
+        return generate_error_dict(poke+" is not a correct pokemon number")
+    poke = int(poke)
+    temp = select_one("trainers", ("money", "last_bought_on", "last_bought_what"), "id = "+str(author_id))
+    money = temp[0]
+    last_bought_on = temp[1]
+    last_bought_what = temp[2]
+    today = datetime.now().strftime("%Y-%m-%d")
+    if last_bought_on != today:
+        last_bought_on = today
+        last_bought_what = 0
+    pokemon_bought = int_to_bool_list(last_bought_what, 5)
+    if pokemon_bought[poke]:
+        return generate_error_dict("You've already bought this pokemon today. Wait tomorrow for shop refresh.")
+    pokemons = get_pokemon_from_shop()
+    pokemon_bought[poke] = True
+    last_bought_what = bool_list_to_int(pokemon_bought)
+    temp = select_one("pokemon", ("emote", "name", "price"), "national_number = \""+pokemons[poke] + "\"")
+    if temp[2] > money:
+        return generate_error_dict("You don't have enough money to buy that pokemon!")
+    money -= temp[2]
+    bought_pokemon = owned_pokemon(species = pokemons[poke], level=5)
+    if not give_pokemon_to(bought_pokemon, str(author_id)):
+        return generate_error_dict("You don't have a free space in your party. Free a space in your party and try again")
+    update("trainers", ("money", "last_bough_on", "last_bought_what"), (str(money), last_bought_on, last_bought_what), "trainer_id = \""+str(author_id)+"\"")
+    return generate_ok_dict("Congratulations!\nYou bought "+temp[0]+temp[1]+"!\n"+temp[0]+temp[1]+" has been added to your party")
 
 #slash commands
 @slash.slash(name="party", description="Displays your party", guild_ids=guild_ids)
@@ -781,6 +832,14 @@ async def _evolve(ctx, pokemon_position, evolution = None):
 @slash.slash(name="daily", description="Collect your daily coins!", guild_ids=guild_ids)
 async def _daily(ctx):
     ret = daily_cmd(ctx.author.id)
+    if ret["status"] == "ok":
+        await ctx.send(ret["message"], hidden = ret["hidden"])
+    elif ret["status"] == "error":
+        await ctx.send(ret["message"], hidden = ret["hidden"])
+
+@slash.slash(name="shop", description="Shows shop", guild_ids=guild_ids)
+async def _shop(ctx):
+    ret = shop_cmd()
     if ret["status"] == "ok":
         await ctx.send(ret["message"], hidden = ret["hidden"])
     elif ret["status"] == "error":
@@ -922,6 +981,17 @@ async def on_message(message):
 
     if mes.lower() == "shop":
         ret = shop_cmd()
+        if ret["status"] == "ok":
+            await message.channel.send(embed = ret["message"])
+        elif ret["status"] == "error":
+            await message.channel.send(ret["message"])
+
+    if mes.lower() == "buy":
+        temp = mes.split(" ", 1)
+        if len(temp) < 2:
+            await message.channel.send("Wrong number of parameters!\nCorrect use "+prefix+"buy [pokemon]\nCheck "+prefix+"help for more informations")
+            return
+        ret = buy_cmd(temp[1], message.author.id)
         if ret["status"] == "ok":
             await message.channel.send(embed = ret["message"])
         elif ret["status"] == "error":
