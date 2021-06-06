@@ -986,7 +986,7 @@ async def on_message(message):
         elif ret["status"] == "error":
             await message.channel.send(ret["message"])
 
-    if mes.lower() == "buy":
+    if mes.lower().startswith("buy"):
         temp = mes.split(" ", 1)
         if len(temp) < 2:
             await message.channel.send("Wrong number of parameters!\nCorrect use "+prefix+"buy [pokemon]\nCheck "+prefix+"help for more informations")
