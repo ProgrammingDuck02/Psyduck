@@ -711,7 +711,7 @@ def buy_cmd(poke, author_id):
     bought_pokemon = owned_pokemon(species = pokemons[poke], level=5)
     if not give_pokemon_to(bought_pokemon, str(author_id)):
         return generate_error_dict("You don't have a free space in your party. Free a space in your party and try again")
-    update("trainers", ("money", "last_bough_on", "last_bought_what"), (str(money), last_bought_on, str(last_bought_what)), "id = \""+str(author_id)+"\"")
+    update("trainers", ("money", "last_bought_on", "last_bought_what"), (str(money), last_bought_on, str(last_bought_what)), "id = \""+str(author_id)+"\"")
     return generate_ok_dict("Congratulations!\nYou bought "+temp[0]+temp[1]+"!\n"+temp[0]+temp[1]+" has been added to your party")
 
 #slash commands
