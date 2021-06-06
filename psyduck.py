@@ -715,6 +715,7 @@ def buy_cmd(poke, author_id):
     return generate_ok_dict("Congratulations!\nYou bought "+temp[0]+temp[1]+"!\n"+temp[0]+temp[1]+" has been added to your party")
 
 def nickname_cmd(position, name, author_id):
+    global cursor, DB
     if is_number(position):
         if int(position) < 1 or int(position) > 6:
             return generate_error_dict(position+" is not a correct party number")
@@ -747,8 +748,10 @@ def nickname_cmd(position, name, author_id):
     if not temp[1] == str(author_id):
         return generate_error_dict("You can't rename pokemon you don't originally own!")
     if name == None:
-        name = "NULL"
-    update("owned_pokemon", ("name",), (name,), "id = "+str(temp[0]))
+        cursor.execute("UPDATE owned_pokemon SET name = NULL WHERE id = \""+str(temp[0]+"\""))
+        DB.commit()
+    else:
+        update("owned_pokemon", ("name",), (name,), "id = "+str(temp[0]))
     return generate_ok_dict("Your pokemon has been nicknamed to \""+name+"\".")
 
 #slash commands
