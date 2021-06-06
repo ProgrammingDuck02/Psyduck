@@ -11,4 +11,4 @@ class owned_pokemon:
         self.shiny = False
         self.location = None
         self.position = None
-        self.pokemon = pokemon(national = spieces)
+        self.pokemon = pokemon(national = species)
