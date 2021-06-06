@@ -750,9 +750,10 @@ def nickname_cmd(position, name, author_id):
     if name == None:
         cursor.execute("UPDATE owned_pokemon SET name = NULL WHERE id = \""+str(temp[0])+"\"")
         DB.commit()
+        return generate_ok_dict("Your pokemon's nickname has been reseted")
     else:
         update("owned_pokemon", ("name",), (name,), "id = "+str(temp[0]))
-    return generate_ok_dict("Your pokemon has been nicknamed to \""+name+"\".")
+        return generate_ok_dict("Your pokemon has been nicknamed to \""+name+"\".")
 
 #slash commands
 @slash.slash(name="party", description="Displays your party", guild_ids=guild_ids)
