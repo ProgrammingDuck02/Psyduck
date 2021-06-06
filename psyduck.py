@@ -746,6 +746,8 @@ def nickname_cmd(position, name, author_id):
         return generate_error_dict("Oops, looks like you don't have any pokemon in a given spot")
     if not temp[1] == str(author_id):
         return generate_error_dict("You can't rename pokemon you don't originally own!")
+    if name == None:
+        name = "NULL"
     update("owned_pokemon", ("name",), (name,), "id = "+str(temp[0]))
     return generate_ok_dict("Your pokemon has been nicknamed to \""+name+"\".")
 
@@ -1034,9 +1036,11 @@ async def on_message(message):
 
     if mes.lower().startswith("nickname"):
         temp = mes.split(" ", 2)
-        if len(temp) < 3:
+        if len(temp) < 2:
             await message.channel.send("Wrong number of parameters!\nCorrect use "+prefix+"nickname [pokemon/box_number:pokemon] [nickname]\nCheck "+prefix+"help for more informations")
             return
+        if len(temp) < 3:
+            temp.append(None)
         ret = nickname_cmd(temp[1], temp[2], message.author.id)
         if ret["status"] == "ok":
             await message.channel.send(ret["message"])
