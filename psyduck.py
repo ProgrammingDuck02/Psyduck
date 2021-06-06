@@ -748,7 +748,7 @@ def nickname_cmd(position, name, author_id):
     if not temp[1] == str(author_id):
         return generate_error_dict("You can't rename pokemon you don't originally own!")
     if name == None:
-        cursor.execute("UPDATE owned_pokemon SET name = NULL WHERE id = \""+str(temp[0]+"\""))
+        cursor.execute("UPDATE owned_pokemon SET name = NULL WHERE id = \""+str(temp[0])+"\"")
         DB.commit()
     else:
         update("owned_pokemon", ("name",), (name,), "id = "+str(temp[0]))
