@@ -24,9 +24,9 @@ seller_picture_url = "https://cdn.costumewall.com/wp-content/uploads/2017/10/guz
 pokemon_limit = 151
 
 starters = []
-starters.append(owned_pokemon(spieces = "001", level = 5))
-starters.append(owned_pokemon(spieces = "004", level = 5))
-starters.append(owned_pokemon(spieces = "007", level = 5))
+starters.append(owned_pokemon(species = "001", level = 5))
+starters.append(owned_pokemon(species = "004", level = 5))
+starters.append(owned_pokemon(species = "007", level = 5))
 
 def is_number(string):
     if len(string) == 0:
@@ -265,16 +265,16 @@ def party_cmd(author_name, author_avatar, author_id):
     pokemon_levels = {}
     pokemon_emotes = {}
     for poke in temp_list:
-        spieces = select_one("pokemon", ("name", "emote", "shiny_emote"), "national_number = \"" + poke[1] + "\"")
+        species = select_one("pokemon", ("name", "emote", "shiny_emote"), "national_number = \"" + poke[1] + "\"")
         if poke[0] == None:
-            pokemon_names[poke[3]-1] = spieces[0]
+            pokemon_names[poke[3]-1] = species[0]
         else:
             pokemon_names[poke[3]-1] = poke[0]
         pokemon_levels[poke[3]-1] = str(poke[4])
         if poke[2] == 0:
-            pokemon_emotes[poke[3]-1] = spieces[1]
+            pokemon_emotes[poke[3]-1] = species[1]
         else:
-            pokemon_emotes[poke[3]-1] = spieces[2]
+            pokemon_emotes[poke[3]-1] = species[2]
     party_size = len(temp_list)
     party = pokemon_emotes[0] + pokemon_names[0] + " lvl." + pokemon_levels[0]
     for i in range(1, party_size):

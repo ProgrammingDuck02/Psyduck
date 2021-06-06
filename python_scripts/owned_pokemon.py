@@ -3,7 +3,7 @@ sys.path.append('.')
 from python_scripts.pokemon import pokemon
 
 class owned_pokemon:
-    def __init__(self, spieces = None, level = None):
+    def __init__(self, species = None, level = None):
         self.name = None
         self.level = level
         self.owner = None
