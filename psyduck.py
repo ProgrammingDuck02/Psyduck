@@ -689,7 +689,7 @@ def buy_cmd(poke, author_id):
         return generate_error_dict(poke+" is not a correct pokemon number")
     if int(poke) < 1 or int(poke) > 5:
         return generate_error_dict(poke+" is not a correct pokemon number")
-    poke = int(poke)
+    poke = int(poke) - 1
     temp = select_one("trainers", ("money", "last_bought_on", "last_bought_what"), "id = "+str(author_id))
     money = temp[0]
     last_bought_on = temp[1]
