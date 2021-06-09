@@ -74,6 +74,7 @@ def get_owned_pokemon_by_owner_and_location(owner_id, location, position):
         if not temp:
             continue
         owned_poke.moves.append(move(id=move_id, name=temp[0], type=temp[1], category=temp[2], power=temp[3], accuracy=temp[4], PP=temp[5], effect=temp[6], description=temp[7]))
+    print(owned_poke)
     return owned_poke
 
 def get_pokemon_image_url(pokemon_number, shiny):
