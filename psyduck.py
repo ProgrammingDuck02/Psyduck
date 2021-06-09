@@ -7,6 +7,7 @@ from datetime import datetime
 from discord_slash import SlashCommand
 from discord_slash.utils.manage_commands import create_option
 sys.path.append("python_scripts")
+from python_scripts.constants import seller_picture_url, nature_modifier, prefix, coin_emoji, pokemon_limit
 from python_scripts.pokemon import pokemon
 from python_scripts.owned_pokemon import owned_pokemon
 
@@ -15,18 +16,30 @@ client = discord.Client()
 slash = SlashCommand(client, sync_commands=True)
 cursor = None
 DB = None
-prefix = "?"
-coin_emoji = ":coin:"
 guild_ids = []
-#this is temporary
-seller_picture_url = "https://cdn.costumewall.com/wp-content/uploads/2017/10/guzma.jpg"
-
-pokemon_limit = 151
 
 starters = []
-starters.append(owned_pokemon(species = "001", level = 5))
-starters.append(owned_pokemon(species = "004", level = 5))
-starters.append(owned_pokemon(species = "007", level = 5))
+starters.append("001")
+starters.append("004")
+starters.append("007")
+
+def calculate_hp(level, base, iv):
+    return int(level+10+level*(2*base+iv+21)/100)
+
+def calculate_attack(level, base, iv, nature):
+    return int(nature_modifier[nature]["Attack"] * int(5+level*(2*base+iv+21)/100))
+
+def calculate_defense(level, base, iv, nature):
+    return int(nature_modifier[nature]["Defense"] * int(5+level*(2*base+iv+21)/100))
+
+def calculate_special_attack(level, base, iv, nature):
+    return int(nature_modifier[nature]["Special Attack"] * int(5+level*(2*base+iv+21)/100))
+
+def calculate_special_defense(level, base, iv, nature):
+    return int(nature_modifier[nature]["Special Defense"] * int(5+level*(2*base+iv+21)/100))
+
+def calculate_speed(level, base, iv, nature):
+    return int(nature_modifier[nature]["Speed"] * int(5+level*(2*base+iv+21)/100))
 
 def is_number(string):
     if len(string) == 0:
@@ -183,7 +196,7 @@ def shift_down(location, position, trainer_id):
     DB.commit()
 #########################
 
-def give_pokemon_to(poke, trainer_id, shiny_rates = 1024):
+def give_pokemon_to(poke, level, trainer_id, shiny_rates = 1024):
     check = select("owned_pokemon", ("position",), "trainer_id = \""+trainer_id+"\" AND location = \"party\" AND position >= 1 AND position <= 6")
     if check:
         if len(check) >= 6:
@@ -192,13 +205,7 @@ def give_pokemon_to(poke, trainer_id, shiny_rates = 1024):
     for each in check:
         if each[0] >= position:
             position = each[0]+1
-    if shiny_rates > 0:
-        if random.randrange(shiny_rates) == 0:
-            poke.shiny = True
-        else:
-            poke.shiny = False
-    else:
-        poke.shiny = False
+    poke = owned_pokemon(species = poke, level = level, shiny_odds=shiny_rates)
     params = [
         "trainer_id",
         "OT",
@@ -206,7 +213,14 @@ def give_pokemon_to(poke, trainer_id, shiny_rates = 1024):
         "position",
         "pokemon",
         "level",
-        "max_exp"
+        "max_exp",
+        "hp_iv",
+        "attack_iv",
+        "defense_iv",
+        "special_attack_iv",
+        "special_defense_iv",
+        "speed",
+        "nature"
     ]
     values = [
         trainer_id,
@@ -215,7 +229,14 @@ def give_pokemon_to(poke, trainer_id, shiny_rates = 1024):
         str(position),
         poke.pokemon.national_number,
         str(poke.level),
-        str(3*poke.level)
+        str(3*poke.level),
+        str(poke.hp_iv),
+        str(poke.attack_iv),
+        str(poke.defense_iv),
+        str(poke.special_attack_iv),
+        str(poke.special_defense_iv),
+        str(poke.speed),
+        poke.nature
     ]
     if poke.shiny:
         params.append("shiny")
@@ -505,7 +526,7 @@ def starters_cmd():
     embed = discord.Embed(color = discord.Color.red())
     starter_list = ""
     for i in range(len(starters)):
-        temp = select_one("pokemon", ("name", "emote"), "national_number = \""+starters[i].pokemon.national_number+"\"")
+        temp = select_one("pokemon", ("name", "emote"), "national_number = \""+starters[i]+"\"")
         starter_list += str(i+1) + ". " + temp[1] + temp[0] + "\n"
     embed.add_field(name = "Currently avalible starters to pick:", value = starter_list, inline = False)
     embed.add_field(name = "To pick your starter use "+prefix+"pick [number] command!", value = "You can only pick your starter if you don't have trainer account already", inline = False)
@@ -520,9 +541,9 @@ def pick_starter_cmd(pick, author_id):
     pick = int(pick) - 1
     if pick < 0 or pick >= len(starters):
         return generate_error_dict(pick + " is not a correct starter number")
-    temp = select_one("pokemon", ("name", "emote", "shiny_emote"), "national_number = \""+starters[pick].pokemon.national_number+"\"")
+    temp = select_one("pokemon", ("name", "emote", "shiny_emote"), "national_number = \""+starters[pick]+"\"")
     temp_poke = starters[pick]
-    give_pokemon_to(temp_poke, str(author_id))
+    give_pokemon_to(temp_poke, 5, str(author_id))
     insert("trainers", ("id",), (str(author_id), ))
     emote_to_use = temp[1]
     if temp_poke.shiny:
@@ -708,8 +729,8 @@ def buy_cmd(poke, author_id):
     if temp[2] > money:
         return generate_error_dict("You don't have enough money to buy that pokemon!")
     money -= temp[2]
-    bought_pokemon = owned_pokemon(species = pokemons[poke], level=5)
-    if not give_pokemon_to(bought_pokemon, str(author_id)):
+    bought_pokemon = pokemons[poke]
+    if not give_pokemon_to(bought_pokemon, 5, str(author_id)):
         return generate_error_dict("You don't have a free space in your party. Free a space in your party and try again")
     update("trainers", ("money", "last_bought_on", "last_bought_what"), (str(money), last_bought_on, str(last_bought_what)), "id = \""+str(author_id)+"\"")
     return generate_ok_dict("Congratulations!\nYou bought "+temp[0]+temp[1]+"!\n"+temp[0]+temp[1]+" has been added to your party")
