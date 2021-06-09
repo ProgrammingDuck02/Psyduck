@@ -92,7 +92,7 @@ def main():
         print(poke[0]+"...")
         ret = get_stats_by_pokemon(pokemon_name=poke[0], pokemon_number=poke[1])
         cursor = DB.cursor()
-        cursor.execute("UPDATE pokemon SET hp = "+ret[0]+", attack = "+ret[1]+", defense = "+ret[2]+", special_attack = "+ret[3]+", special_defense = "+ret[4]+", speed = "+ret[5]+" WHERE national_number = "+poke[1])
+        cursor.execute("UPDATE pokemon SET hp = "+ret[0]+", attack = "+ret[1]+", defense = "+ret[2]+", special_attack = "+ret[3]+", special_defense = "+ret[4]+", speed = "+ret[5]+" WHERE national_number = \""+poke[1]+"\"")
         DB.commit()
 
 if __name__ == "__main__":
