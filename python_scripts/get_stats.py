@@ -86,7 +86,7 @@ def main():
         database = 'psyduckDB'
         )
     cursor = DB.cursor()
-    cursor.execute("SELEWCT name, national_number FROM pokemon")
+    cursor.execute("SELECT name, national_number FROM pokemon")
     pokemons = cursor.fetchall()
     for poke in pokemons:
         print(poke[0]+"...")
