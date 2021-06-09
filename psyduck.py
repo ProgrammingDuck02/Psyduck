@@ -235,7 +235,7 @@ def give_pokemon_to(poke, level, trainer_id, shiny_rates = 1024):
         str(poke.defense_iv),
         str(poke.special_attack_iv),
         str(poke.special_defense_iv),
-        str(poke.speed),
+        str(poke.speed_iv),
         poke.nature
     ]
     if poke.shiny:
