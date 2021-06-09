@@ -58,7 +58,10 @@ def get_owned_pokemon_by_owner_and_location(owner_id, location, position):
         "Special Defense": temp[11],
         "Speed": temp[12]
     })
-    owned_poke.name = temp[0]
+    if temp[0]:
+        owned_poke.name = temp[0]
+    else:
+        owned_poke.name = owned_poke.pokemon.name
     owned_poke.OT = temp[1],
     owned_poke.exp = temp[5]
     owned_poke.max_exp = temp[6]
@@ -850,9 +853,10 @@ def summary_cmd(location_org, author):
     poke = get_owned_pokemon_by_owner_and_location(author.id, location, position)
     if not poke:
         return generate_error_dict("Oops, looks like you don't have any pokemon on that position")
+    poke_url = get_pokemon_image_url(poke.pokemon.national_number, poke.shiny)
     embed = discord.Embed(color = discord.Color.from_rgb(102, 0, 102))
-    embed.set_author(name=author.display_name, url = author.avatar_url)
-    embed.set_image(url = get_pokemon_image_url(poke.pokemon.national_number, poke.shiny))
+    embed.set_author(name=poke.name, url = poke_url)
+    embed.set_image(url = poke_url)
     return generate_ok_dict(embed)
 
 #slash commands
