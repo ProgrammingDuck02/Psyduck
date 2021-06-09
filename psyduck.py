@@ -219,7 +219,7 @@ def give_pokemon_to(poke, level, trainer_id, shiny_rates = 1024):
         "defense_iv",
         "special_attack_iv",
         "special_defense_iv",
-        "speed",
+        "speed_iv",
         "nature"
     ]
     values = [
