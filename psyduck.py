@@ -2,14 +2,16 @@ import sys
 import discord
 import mysql.connector
 import random
+import re
 from os import path
 from datetime import datetime
 from discord_slash import SlashCommand
 from discord_slash.utils.manage_commands import create_option
 sys.path.append("python_scripts")
-from python_scripts.constants import seller_picture_url, nature_modifier, prefix, coin_emoji, pokemon_limit
+from python_scripts.constants import seller_picture_url, nature_modifier, prefix, coin_emoji, pokemon_limit, swsh_regular_image, swsh_shiny_image, sm_regular_image, sm_shiny_image
 from python_scripts.pokemon import pokemon
 from python_scripts.owned_pokemon import owned_pokemon
+from python_scripts.move import move
 
 random.seed()
 client = discord.Client()
@@ -40,6 +42,62 @@ def calculate_special_defense(level, base, iv, nature):
 
 def calculate_speed(level, base, iv, nature):
     return int(nature_modifier[nature]["Speed"] * int(5+level*(2*base+iv+21)/100))
+
+def get_owned_pokemon_by_owner_and_location(owner_id, location, position):
+    temp = select_one("owned_pokemon", ("name", "OT", "shiny", "pokemon", "level", "exp", "max_exp", "hp_iv", "attack_iv", "defense_iv", "special_attack_iv", "special_defense_iv", "speed_iv", "nature", "move_1", "move_2", "move_3", "move_4"), "trainer_id = \""+owner_id+"\" AND location = \""+location+"\" AND position = "+position)
+    if not temp:
+        return False
+    shiny_odds = 0
+    if temp[2]:
+        shiny_odds = 1
+    owned_poke = owned_pokemon(species = temp[3], level = temp[4], shiny_odds=shiny_odds, nature=temp[13], ivs={
+        "HP": temp[7],
+        "Attack": temp[8],
+        "Defense": temp[9],
+        "Special Attack": temp[10],
+        "Special Defense": temp[11],
+        "Speed": temp[12]
+    })
+    owned_poke.name = temp[0]
+    owned_poke.OT = temp[1],
+    owned_poke.exp = temp[5]
+    owned_poke.max_exp = temp[6]
+    move_ids = [temp[14], temp[15], temp[16], temp[17]]
+    for move_id in move_ids:
+        if move_id == None:
+            continue
+        temp = select_one("moves", ("name", "type", "category", "power", "accuracy", "PP", "effect", "description"), "id = "+str(move_id))
+        if not temp:
+            continue
+        owned_poke.moves.append(move(id=move_id, name=temp[0], type=temp[1], category=temp[2], power=temp[3], accuracy=temp[4], PP=temp[5], effect=temp[6], description=temp[7]))
+    return owned_poke
+
+def get_pokemon_image_url(pokemon_number, shiny):
+    use_swsh = False
+    if len(pokemon_number) > 3:
+        if pokemon_number[3] == "A":
+            alternate_version = "-a"
+        else:
+            alternate_version = "-g"
+            use_swsh = True
+        pokemon_number = pokemon_number[:3]
+        number = pokemon_number+alternate_version
+    else:
+        number = pokemon_number
+    if int(pokemon_number) > 809:
+        use_swsh = True
+    image_url = ""
+    if shiny:
+        if use_swsh:
+            image_url = swsh_shiny_image
+        else:
+            image_url = sm_shiny_image
+    else:
+        if use_swsh:
+            image_url = swsh_regular_image
+        else:
+            image_url = sm_regular_image
+    return image_url.replace("%POKEMON_NUMBER%", number)
 
 def is_number(string):
     if len(string) == 0:
@@ -776,6 +834,27 @@ def nickname_cmd(position, name, author_id):
         update("owned_pokemon", ("name",), (name,), "id = "+str(temp[0]))
         return generate_ok_dict("Your pokemon has been nicknamed to \""+name+"\".")
 
+def summary_cmd(location_org, author):
+    if is_number(location_org):
+        location = "party"
+        position = location_org
+    else:
+        query = re.compile("^BOX[0-9]+:[0-9]+$")
+        if not query.match(location_org.upper()):
+            return generate_error_dict(location_org+" is not a correct box name")
+        temp = location_org.upper().split(":")
+        location = temp[0]
+        position = temp[1]
+        if int(location[3:]) < 1 or int(location[3:]) > 50 or int(position) < 1 or int(position) > 10:
+            return generate_error_dict(location_org+" is not a correct box name")
+    poke = get_owned_pokemon_by_owner_and_location(author.id, location, position)
+    if not poke:
+        return generate_error_dict("Oops, looks like you don't have any pokemon on that position")
+    embed = discord.Embed(color = discord.Color.from_rgb(102, 0, 102))
+    embed.set_author(name=author.display_name, url = author.avatar_url)
+    embed.set_picture = get_pokemon_image_url(poke.pokemon.national_number, poke.shiny)
+    return embed
+
 #slash commands
 @slash.slash(name="party", description="Displays your party", guild_ids=guild_ids)
 async def _party(ctx):
@@ -1069,6 +1148,17 @@ async def on_message(message):
         ret = nickname_cmd(temp[1], temp[2], message.author.id)
         if ret["status"] == "ok":
             await message.channel.send(ret["message"])
+        elif ret["status"] == "error":
+            await message.channel.send(ret["message"])
+
+    if mes.lower().startswith("summary"):
+        temp = mes.split(" ", 2)
+        if len(temp) < 2:
+            await message.channel.send("Wrong number of parameters!\nCorrect use "+prefix+"nickname [pokemon/box_number:pokemon] [nickname]\nCheck "+prefix+"help for more informations")
+            return
+        ret = summary_cmd(temp[1], message.author)
+        if ret["status"] == "ok":
+            await message.channel.send(embed = ret["message"])
         elif ret["status"] == "error":
             await message.channel.send(ret["message"])
 

@@ -1,11 +1,13 @@
 import sys
+import mysql.connector
 from random import randrange, seed
 sys.path.append('.')
 from python_scripts.pokemon import pokemon
 from python_scripts.constants import nature_modifier
+from python_scripts.move import move
 seed()
 class owned_pokemon:
-    def __init__(self, species = None, level = None, shiny_odds = 0, ivs = None, nature = None):
+    def __init__(self, species = None, level = None, shiny_odds = 0, ivs = None, nature = None, moves = None):
         if ivs == None:
             ivs = {}
         stats = ["HP", "Attack", "Defense", "Special Attack", "Special Defense", "Speed"]
@@ -48,9 +50,24 @@ class owned_pokemon:
             self.speed_iv = ivs["Speed"]
         self.location = None
         self.position = None
+        self.exp = None
+        self.max_exp = None
         self.pokemon = pokemon(national = species)
         if nature == None:
             natures = list(nature_modifier.keys())
             self.nature = natures[randrange(25)]
         else:
             self.nature = nature
+        self.moves = []
+        if moves == None and not level == None and not species == None:
+            DB = mysql.connector.connect(
+                host = 'localhost',
+                user = 'psyduck',
+                password = 'Uqp9MF[jf<!R(%:S',
+                database = 'psyduckDB'
+                )
+            cursor = DB.cursor()
+            temp = cursor.execute("SELECT moves.id, name, type, category, power, accuracy, PP, effect, description FROM moves JOIN movesets ON movesets.move = moves.id WHERE level<="+str(level)+" AND pokemon = \""+self.pokemon.national_number+"\" ORDER BY level DESC LIMIT 4")
+            if temp:
+                for m in temp:
+                    self.moves.append(move(m[0], m[1], m[2], m[3], m[4], m[5], m[6], m[7], m[8]))

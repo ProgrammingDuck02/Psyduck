@@ -178,5 +178,9 @@ nature_modifier = {
 pokemon_limit = 151
 prefix = "?"
 coin_emoji = ":coin:"
+swsh_regular_image = "https://www.serebii.net/swordshield/pokemon/%POKEMON_NUMBER%.png"
+swsh_shiny_image = "https://www.serebii.net/Shiny/SWSH/%POKEMON_NUMBER%.png"
+sm_regular_image = "https://www.serebii.net/sunmoon/pokemon/%POKEMON_NUMBER%.png"
+sm_shiny_image = "https://www.serebii.net/Shiny/SM/%POKEMON_NUMBER%.png"
 #this is temporary
 seller_picture_url = "https://cdn.costumewall.com/wp-content/uploads/2017/10/guzma.jpg"
