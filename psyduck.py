@@ -852,7 +852,7 @@ def summary_cmd(location_org, author):
         return generate_error_dict("Oops, looks like you don't have any pokemon on that position")
     embed = discord.Embed(color = discord.Color.from_rgb(102, 0, 102))
     embed.set_author(name=author.display_name, url = author.avatar_url)
-    embed.set_image = get_pokemon_image_url(poke.pokemon.national_number, poke.shiny)
+    embed.set_image(get_pokemon_image_url(poke.pokemon.national_number, poke.shiny))
     return embed
 
 #slash commands
