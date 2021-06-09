@@ -50,7 +50,7 @@ class owned_pokemon:
         self.position = None
         self.pokemon = pokemon(national = species)
         if nature == None:
-            natures = nature_modifier.keys()
+            natures = list(nature_modifier.keys())
             self.nature = natures[randrange(25)]
         else:
             self.nature = nature
