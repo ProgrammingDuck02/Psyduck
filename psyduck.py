@@ -58,6 +58,7 @@ def get_owned_pokemon_by_owner_and_location(owner_id, location, position):
         "Special Defense": temp[11],
         "Speed": temp[12]
     })
+    owned_poke.pokemon.get_data_from_db()
     if temp[0]:
         owned_poke.name = temp[0]
     else:

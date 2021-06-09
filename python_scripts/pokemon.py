@@ -1,5 +1,12 @@
+import mysql.connector
 class pokemon:
-    def __init__(self, regional = None, national = None, name = None, type1 = None, type2 = None, region = None, emote = None, shiny_emote = None, moves = None):
+    def __init__(self, regional = None, national = None, name = None, type1 = None, type2 = None, region = None, emote = None, shiny_emote = None, moves = None, base = None):
+        if base == None:
+            base = {}
+        stats = ["HP", "Attack", "Defense", "Special Attack", "Special Defense", "Speed"]
+        for stat in stats:
+            if not stat in base.keys():
+                base[stat] = None
         self.regional_number = regional
         self.national_number = national
         self.name = name
@@ -8,10 +15,43 @@ class pokemon:
         self.region = region
         self.emote = emote
         self.shiny_emote = shiny_emote
+        self.hp = base["HP"]
+        self.attack = base["Attack"]
+        self.defense = base["Defense"]
+        self.special_attack = base["Special Attack"]
+        self.special_defense = base["Special Defense"]
+        self.speed = base["Speed"]
         if moves == None:
             self.moves = []
         else:
             self.moves = moves
+
+    def get_data_from_db(self):
+        if self.national_number == None:
+            return
+        DB = mysql.connector.connect(
+            host = 'localhost',
+            user = 'psyduck',
+            password = 'Uqp9MF[jf<!R(%:S',
+            database = 'psyduckDB'
+            )
+        cursor = DB.cursor()
+        temp = cursor.execute("SELECT regional_number, name, type1, type2, region, emote, shiny_emote, hp, attack, defense, special_attack, special_defense, speed FROM pokemon WHERE national_number = \""+self.national_number+"\"")
+        if not temp:
+            return
+        self.regional_number = temp[0]
+        self.name = temp[1]
+        self.type1 = temp[2]
+        self.type2 = temp[3]
+        self.region = temp[4]
+        self.emote = temp[5]
+        self.shiny_emote = temp[6]
+        self.hp = temp[7]
+        self.attack = temp[8]
+        self.defense = temp[9]
+        self.special_attack = temp[10]
+        self.special_defense = temp[11]
+        self.speed = temp[12]
 
     def get_from_string(self, pokestring):
         if len(pokestring) == 0:
