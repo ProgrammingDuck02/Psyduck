@@ -853,7 +853,7 @@ def summary_cmd(location_org, author):
     embed = discord.Embed(color = discord.Color.from_rgb(102, 0, 102))
     embed.set_author(name=author.display_name, url = author.avatar_url)
     embed.set_image(url = get_pokemon_image_url(poke.pokemon.national_number, poke.shiny))
-    return embed
+    return generate_ok_dict(embed)
 
 #slash commands
 @slash.slash(name="party", description="Displays your party", guild_ids=guild_ids)
