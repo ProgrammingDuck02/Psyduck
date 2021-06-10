@@ -63,7 +63,7 @@ def get_owned_pokemon_by_owner_and_location(owner_id, location, position):
         owned_poke.name = temp[0]
     else:
         owned_poke.name = owned_poke.pokemon.name
-    owned_poke.OT = temp[1],
+    owned_poke.OT = temp[1][0],
     owned_poke.exp = temp[5]
     owned_poke.max_exp = temp[6]
     move_ids = [temp[14], temp[15], temp[16], temp[17]]
@@ -852,7 +852,6 @@ async def summary_cmd(location_org, author):
         if int(location[3:]) < 1 or int(location[3:]) > 50 or int(position) < 1 or int(position) > 10:
             return generate_error_dict(location_org+" is not a correct box name")
     poke = get_owned_pokemon_by_owner_and_location(author.id, location, position)
-    print(poke.owner)
     if not poke:
         return generate_error_dict("Oops, looks like you don't have any pokemon on that position")
     poke_url = get_pokemon_image_url(poke.pokemon.national_number, poke.shiny)
