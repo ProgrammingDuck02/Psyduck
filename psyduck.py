@@ -862,8 +862,8 @@ def summary_cmd(location_org, author):
     embed.set_author(name=name)
     embed.set_thumbnail(url = poke_url)
     types = type_emotes[owned_pokemon.pokemon.type1]
-    if owned_pokemon.pokemon.type2:
-        types += type_emotes[owned_pokemon.pokemon.type2]
+    if poke.pokemon.type2:
+        types += type_emotes[poke.pokemon.type2]
     embed.add_field(name = types, value = "\u200b")
     return generate_ok_dict(embed)
 
