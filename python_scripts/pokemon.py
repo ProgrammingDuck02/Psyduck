@@ -28,7 +28,7 @@ class pokemon:
 
     def get_data_from_db(self):
         if self.national_number == None:
-            raise Exception('lol')
+            return
         DB = mysql.connector.connect(
             host = 'localhost',
             user = 'psyduck',
@@ -36,9 +36,10 @@ class pokemon:
             database = 'psyduckDB'
             )
         cursor = DB.cursor()
-        temp = cursor.execute("SELECT regional_number, name, type1, type2, region, emote, shiny_emote, hp, attack, defense, special_attack, special_defense, speed FROM pokemon WHERE national_number = \""+self.national_number+"\"")
+        cursor.execute("SELECT regional_number, name, type1, type2, region, emote, shiny_emote, hp, attack, defense, special_attack, special_defense, speed FROM pokemon WHERE national_number = \""+self.national_number+"\"")
+        temp = cursor.fetchone()
         if not temp:
-            raise Exception('trolol')
+            return
         self.regional_number = temp[0]
         self.name = temp[1]
         self.type1 = temp[2]
