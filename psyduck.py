@@ -45,7 +45,6 @@ def calculate_speed(level, base, iv, nature):
 
 def get_owned_pokemon_by_owner_and_location(owner_id, location, position):
     temp = select_one("owned_pokemon", ("name", "OT", "shiny", "pokemon", "level", "exp", "max_exp", "hp_iv", "attack_iv", "defense_iv", "special_attack_iv", "special_defense_iv", "speed_iv", "nature", "move_1", "move_2", "move_3", "move_4"), "trainer_id = \""+str(owner_id)+"\" AND location = \""+location+"\" AND position = "+position)
-    print(temp)
     if not temp:
         return False
     shiny_odds = 0

@@ -3,3 +3,4 @@ python_scripts/__pycache__/*
 python_scripts/test*.py
 daily_shop
 *.html
+auto_push.sh
