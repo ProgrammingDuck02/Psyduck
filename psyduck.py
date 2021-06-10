@@ -838,7 +838,7 @@ def nickname_cmd(position, name, author_id):
         update("owned_pokemon", ("name",), (name,), "id = "+str(temp[0]))
         return generate_ok_dict("Your pokemon has been nicknamed to \""+name+"\".")
 
-def summary_cmd(location_org, author):
+async def summary_cmd(location_org, author):
     if is_number(location_org):
         location = "party"
         position = location_org
@@ -1194,7 +1194,7 @@ async def on_message(message):
         if len(temp) < 2:
             await message.channel.send("Wrong number of parameters!\nCorrect use "+prefix+"nickname [pokemon/box_number:pokemon] [nickname]\nCheck "+prefix+"help for more informations")
             return
-        ret = summary_cmd(temp[1], message.author)
+        ret = await summary_cmd(temp[1], message.author)
         if ret["status"] == "ok":
             await message.channel.send(embed = ret["message"])
         elif ret["status"] == "error":
@@ -1218,4 +1218,4 @@ async def on_ready():
 secretfile = open("TOKEN","r")
 TOKEN = secretfile.read()
 secretfile.close()
-client.run(TOKEN)
+#client.run(TOKEN)
