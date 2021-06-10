@@ -858,13 +858,13 @@ def summary_cmd(location_org, author):
     embed = discord.Embed(color = discord.Color.from_rgb(102, 0, 102))
     name = poke.name
     if poke.shiny:
-        name += shiny_emote
+        name += " "+shiny_emote
     embed.set_author(name=name)
     embed.set_thumbnail(url = poke_url)
     types = type_emotes[poke.pokemon.type1]
     if poke.pokemon.type2:
         types += type_emotes[poke.pokemon.type2]
-    embed.add_field(name = types, value = "\u200b")
+    embed.add_field(name = types, value = poke.pokemon.name)
     return generate_ok_dict(embed)
 
 #slash commands
