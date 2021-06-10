@@ -63,7 +63,7 @@ def get_owned_pokemon_by_owner_and_location(owner_id, location, position):
         owned_poke.name = temp[0]
     else:
         owned_poke.name = owned_poke.pokemon.name
-    owned_poke.OT = temp[1][0],
+    owned_poke.OT = temp[1]
     owned_poke.exp = temp[5]
     owned_poke.max_exp = temp[6]
     move_ids = [temp[14], temp[15], temp[16], temp[17]]
