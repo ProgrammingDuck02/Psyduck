@@ -74,7 +74,6 @@ def get_owned_pokemon_by_owner_and_location(owner_id, location, position):
         if not temp:
             continue
         owned_poke.moves.append(move(id=move_id, name=temp[0], type=temp[1], category=temp[2], power=temp[3], accuracy=temp[4], PP=temp[5], effect=temp[6], description=temp[7]))
-    print(owned_poke.pokemon.name)
     return owned_poke
 
 def get_pokemon_image_url(pokemon_number, shiny):
@@ -857,7 +856,8 @@ def summary_cmd(location_org, author):
         return generate_error_dict("Oops, looks like you don't have any pokemon on that position")
     poke_url = get_pokemon_image_url(poke.pokemon.national_number, poke.shiny)
     embed = discord.Embed(color = discord.Color.from_rgb(102, 0, 102))
-    embed.set_author(name=poke.name, url = poke_url)
+    embed.set_author(name=poke.name)
+    embed.set_thumbnail(url = poke_url)
     embed.set_image(url = poke_url)
     return generate_ok_dict(embed)
 
