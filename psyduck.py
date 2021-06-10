@@ -858,7 +858,7 @@ def summary_cmd(location_org, author):
     embed = discord.Embed(color = discord.Color.from_rgb(102, 0, 102))
     name = poke.name
     if poke.shiny:
-        name += " "+shiny_emote
+        name += ":sad:"
     embed.set_author(name=name)
     embed.set_thumbnail(url = poke_url)
     types = type_emotes[poke.pokemon.type1]
