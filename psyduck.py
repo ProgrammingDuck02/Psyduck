@@ -864,9 +864,9 @@ async def summary_cmd(location_org, author):
     types = type_emotes[poke.pokemon.type1]
     if poke.pokemon.type2:
         types += type_emotes[poke.pokemon.type2]
-    embed.add_field(name = types, value = poke.pokemon.name, inline = True)
+    embed.add_field(name = types, value = poke.pokemon.name)
     OT = await client.fetch_user(int(poke.OT))
-    embed.add_field(name = "Trainer: "+author.name, value = "OT: "+OT.name)
+    embed.add_field(name = "Trainer: "+author.name, value = "OT: "+OT.name, inline = True)
     stats = {
         "HP": str(calculate_hp(poke.level, poke.pokemon.hp, poke.hp_iv)),
         "Attack": str(calculate_attack(poke.level, poke.pokemon.attack, poke.attack_iv, poke.nature)),
