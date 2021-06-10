@@ -184,3 +184,24 @@ sm_regular_image = "https://www.serebii.net/sunmoon/pokemon/%POKEMON_NUMBER%.png
 sm_shiny_image = "https://www.serebii.net/Shiny/SM/%POKEMON_NUMBER%.png"
 #this is temporary
 seller_picture_url = "https://cdn.costumewall.com/wp-content/uploads/2017/10/guzma.jpg"
+type_emotes = {
+    "Dragon": "<:dragon:852612951282024569>",
+    "Water": "<:water:852612951492132865>",
+    "Fighting": "<:fighting:852612951558717491>",
+    "Poison": "<:poison:852612951580213252>",
+    "Ghost": "<:ghost:852612951621107743>",
+    "Fire": "<:fire:852612951626219610>",
+    "Bug": "<:bug:852612951638147112>",
+    "Dark": "<:dark:852612951651385354>",
+    "Flying": "<:flying:852612951655579688>",
+    "Electric": "<:electric:852612951684022313>",
+    "Grass": "<:grass:852612951684153434>",
+    "Normal": "<:normal:852612951705911326>",
+    "Ice": "<:ice:852612951726620692>",
+    "Psychic": "<:psychic:852612951727013958>",
+    "Fairy": "<:fairy:852612951738155030>",
+    "Steel": "<:steel:852612951805526086>",
+    "Ground": "<:ground:852612951830954014>",
+    "Rock": "<:rock:852612951886266409>",
+}
+shiny_emote = "<:shiny:852622502470877184>"

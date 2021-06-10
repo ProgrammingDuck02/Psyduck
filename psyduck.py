@@ -8,7 +8,7 @@ from datetime import datetime
 from discord_slash import SlashCommand
 from discord_slash.utils.manage_commands import create_option
 sys.path.append("python_scripts")
-from python_scripts.constants import seller_picture_url, nature_modifier, prefix, coin_emoji, pokemon_limit, swsh_regular_image, swsh_shiny_image, sm_regular_image, sm_shiny_image
+from python_scripts.constants import seller_picture_url, nature_modifier, prefix, coin_emoji, pokemon_limit, swsh_regular_image, swsh_shiny_image, sm_regular_image, sm_shiny_image, type_emotes, shiny_emote
 from python_scripts.pokemon import pokemon
 from python_scripts.owned_pokemon import owned_pokemon
 from python_scripts.move import move
@@ -856,9 +856,15 @@ def summary_cmd(location_org, author):
         return generate_error_dict("Oops, looks like you don't have any pokemon on that position")
     poke_url = get_pokemon_image_url(poke.pokemon.national_number, poke.shiny)
     embed = discord.Embed(color = discord.Color.from_rgb(102, 0, 102))
-    embed.set_author(name=poke.name)
+    name = poke.name
+    if poke.shiny:
+        name += shiny_emote
+    embed.set_author(name=name)
     embed.set_thumbnail(url = poke_url)
-    embed.set_image(url = poke_url)
+    types = type_emotes[owned_pokemon.pokemon.type1]
+    if owned_pokemon.pokemon.type2:
+        types += type_emotes[owned_pokemon.pokemon.type2]
+    embed.add_field(name = types, value = "\u200b")
     return generate_ok_dict(embed)
 
 #slash commands
