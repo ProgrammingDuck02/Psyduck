@@ -865,6 +865,32 @@ def summary_cmd(location_org, author):
     if poke.pokemon.type2:
         types += type_emotes[poke.pokemon.type2]
     embed.add_field(name = types, value = poke.pokemon.name)
+    OT = await client.fetch_user(poke.OT)
+    embed.add_field(name = "Trainer: "+message.author.name, value = "OT: "+OT.name)
+    stats = {
+        "HP": str(calculate_hp(poke.level, poke.pokemon.hp, poke.hp_iv)),
+        "Attack": str(calculate_attack(poke.level, poke.pokemon.attack, poke.attack_iv, poke.nature)),
+        "Defense": str(calculate_defense(poke.level, poke.pokemon.defense, poke.defense_iv, poke.nature)),
+        "Special Attack": str(calculate_special_attack(poke.level, poke.pokemon.special_attack, poke.special_attack_iv, poke.nature)),
+        "Special Defense": str(calculate_special_defense(poke.level, poke.pokemon.special_defense, poke.special_defense_iv, poke.nature)),
+        "Speed": str(calculate_speed(poke.level, poke.pokemon.speed, poke.speed_iv, poke.nature))
+    }
+    s = ""
+    first = True
+    for key in stats.keys():
+        if first:
+            first = False
+        else:
+            s += "\n"
+        s += key +": "+stats[key]
+    embed.add_field(name = "Nature: "+poke.nature, value = s)
+    s = "HP: "+str(poke.hp_iv)
+    s += "\nAttack: "+str(poke.attack_iv)
+    s += "\nDefense: "+str(poke.defense_iv)
+    s += "\nSpecial Attack: "+str(poke.special_attack_iv)
+    s += "\nSpecial Defense: "+str(poke.special_defense_iv)
+    s += "\nSpeed: "+str(poke.speed_iv)
+    embed.add_field(name = "IVs", value = s)
     return generate_ok_dict(embed)
 
 #slash commands
