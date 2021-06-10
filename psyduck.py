@@ -1218,4 +1218,4 @@ async def on_ready():
 secretfile = open("TOKEN","r")
 TOKEN = secretfile.read()
 secretfile.close()
-#client.run(TOKEN)
+client.run(TOKEN)
