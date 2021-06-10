@@ -852,6 +852,7 @@ async def summary_cmd(location_org, author):
         if int(location[3:]) < 1 or int(location[3:]) > 50 or int(position) < 1 or int(position) > 10:
             return generate_error_dict(location_org+" is not a correct box name")
     poke = get_owned_pokemon_by_owner_and_location(author.id, location, position)
+    print(poke.OT)
     if not poke:
         return generate_error_dict("Oops, looks like you don't have any pokemon on that position")
     poke_url = get_pokemon_image_url(poke.pokemon.national_number, poke.shiny)
