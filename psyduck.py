@@ -905,6 +905,7 @@ async def summary_cmd(location_org, author):
         else:
             s += "\n"
         s += "- - - - -"
+    embed.add_field(name = "Moves", value = s)
     return generate_ok_dict(embed)
 
 #slash commands
