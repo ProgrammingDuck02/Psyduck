@@ -899,7 +899,7 @@ async def summary_cmd(location_org, author):
         else:
             s += "\n"
         s += type_emotes[m.type] + m.name
-    for i in range(len(poke.moves)):
+    for i in range(4-len(poke.moves)):
         if first:
             first = False
         else:
