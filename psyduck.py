@@ -778,6 +778,8 @@ def buy_cmd(poke, author_id):
     last_bought_on = temp[1]
     last_bought_what = temp[2]
     today = datetime.now().strftime("%Y-%m-%d")
+    print("today:", today)
+    print("last_bought_on", last_bought_on)
     if last_bought_on != today:
         last_bought_on = today
         last_bought_what = 0
