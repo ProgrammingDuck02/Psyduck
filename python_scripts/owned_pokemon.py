@@ -67,8 +67,8 @@ class owned_pokemon:
                 database = 'psyduckDB'
                 )
             cursor = DB.cursor()
-            temp = cursor.execute("SELECT moves.id, name, type, category, power, accuracy, PP, effect, description FROM moves JOIN movesets ON movesets.move = moves.id WHERE level<="+str(level)+" AND pokemon = \""+self.pokemon.national_number+"\" ORDER BY level DESC LIMIT 4")
+            cursor.execute("SELECT moves.id, name, type, category, power, accuracy, PP, effect, description FROM moves JOIN movesets ON movesets.move = moves.id WHERE level<="+str(level)+" AND pokemon = \""+self.pokemon.national_number+"\" ORDER BY level DESC LIMIT 4")
+            temp = cursor.fetchall()
             if temp:
-                print("control")
                 for m in temp:
                     self.moves.append(move(m[0], m[1], m[2], m[3], m[4], m[5], m[6], m[7], m[8]))
