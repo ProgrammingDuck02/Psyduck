@@ -775,9 +775,9 @@ def buy_cmd(poke, author_id):
     poke = int(poke) - 1
     temp = select_one("trainers", ("money", "last_bought_on", "last_bought_what"), "id = "+str(author_id))
     money = temp[0]
-    last_bought_on = temp[1]
+    last_bought_on = str(temp[1])
     last_bought_what = temp[2]
-    today = datetime.now().strftime("%Y-%m-%d")
+    today = str(datetime.now().strftime("%Y-%m-%d"))
     print("today:", today)
     print("last_bought_on", last_bought_on)
     if last_bought_on != today:
