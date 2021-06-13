@@ -60,6 +60,7 @@ class owned_pokemon:
             self.nature = nature
         self.moves = []
         if moves == None and not level == None and not species == None:
+            print("control")
             DB = mysql.connector.connect(
                 host = 'localhost',
                 user = 'psyduck',
