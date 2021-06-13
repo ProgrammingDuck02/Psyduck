@@ -60,7 +60,6 @@ class owned_pokemon:
             self.nature = nature
         self.moves = []
         if moves == None and not level == None and not species == None:
-            print("control")
             DB = mysql.connector.connect(
                 host = 'localhost',
                 user = 'psyduck',
@@ -70,5 +69,6 @@ class owned_pokemon:
             cursor = DB.cursor()
             temp = cursor.execute("SELECT moves.id, name, type, category, power, accuracy, PP, effect, description FROM moves JOIN movesets ON movesets.move = moves.id WHERE level<="+str(level)+" AND pokemon = \""+self.pokemon.national_number+"\" ORDER BY level DESC LIMIT 4")
             if temp:
+                print("control")
                 for m in temp:
                     self.moves.append(move(m[0], m[1], m[2], m[3], m[4], m[5], m[6], m[7], m[8]))
