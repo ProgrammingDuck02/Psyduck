@@ -864,9 +864,26 @@ async def summary_cmd(location_org, author):
     types = type_emotes[poke.pokemon.type1]
     if poke.pokemon.type2:
         types += type_emotes[poke.pokemon.type2]
-    embed.add_field(name = types, value = poke.pokemon.name)
     OT = await client.fetch_user(int(poke.OT))
-    embed.add_field(name = "Trainer: "+author.name, value = "OT: "+OT.name, inline = True)
+    s = poke.pokemon.name + "\n"
+    s += "Trainer: " + author.name + "\n"
+    s += "OT: "+ OT.name
+    embed.add_field(name = types, value = s)
+    s = ""
+    first = True
+    for m in poke.moves:
+        if first:
+            first = False
+        else:
+            s += "\n"
+        s += type_emotes[m.type] + m.name
+    for i in range(4-len(poke.moves)):
+        if first:
+            first = False
+        else:
+            s += "\n"
+        s += "- - - - -"
+    embed.add_field(name = "Moves", value = s)
     stats = {
         "HP": str(calculate_hp(poke.level, poke.pokemon.hp, poke.hp_iv)),
         "Attack": str(calculate_attack(poke.level, poke.pokemon.attack, poke.attack_iv, poke.nature)),
@@ -891,21 +908,6 @@ async def summary_cmd(location_org, author):
     s += "\nSpecial Defense: "+str(poke.special_defense_iv)
     s += "\nSpeed: "+str(poke.speed_iv)
     embed.add_field(name = "IVs", value = s)
-    s = ""
-    first = True
-    for m in poke.moves:
-        if first:
-            first = False
-        else:
-            s += "\n"
-        s += type_emotes[m.type] + m.name
-    for i in range(4-len(poke.moves)):
-        if first:
-            first = False
-        else:
-            s += "\n"
-        s += "- - - - -"
-    embed.add_field(name = "Moves", value = s)
     return generate_ok_dict(embed)
 
 #slash commands
