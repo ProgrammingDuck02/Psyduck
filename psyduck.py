@@ -865,7 +865,10 @@ async def summary_cmd(location_org, author):
     if poke.pokemon.type2:
         types += type_emotes[poke.pokemon.type2]
     OT = await client.fetch_user(int(poke.OT))
-    s = poke.pokemon.name + "\n"
+    number = poke.pokemon.national_number
+    if len(number) > 3:
+        number = number[:3]
+    s = "Species: " + poke.pokemon.name + "(" + number + ")\n"
     s += "Trainer: " + author.name + "\n"
     s += "OT: "+ OT.name
     embed.add_field(name = types, value = s)
