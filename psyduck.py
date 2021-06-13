@@ -306,6 +306,9 @@ def give_pokemon_to(poke, level, trainer_id, shiny_rates = 1024):
     if not poke.name == None:
         params.append("name")
         values.append(poke.name)
+    for i in range(len(poke.moves)):
+        params.append("move_"+str(i+1))
+        values.append(str(poke.moves[i].id))
     insert("owned_pokemon",params,values)
     return True
 
@@ -778,10 +781,7 @@ def buy_cmd(poke, author_id):
     last_bought_on = str(temp[1])
     last_bought_what = temp[2]
     today = str(datetime.now().strftime("%Y-%m-%d"))
-    print("today:", today)
-    print("last_bought_on", last_bought_on)
     if last_bought_on != today:
-        print("not ok")
         last_bought_on = today
         last_bought_what = 0
     pokemon_bought = int_to_bool_list(last_bought_what, 5)
