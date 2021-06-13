@@ -883,7 +883,7 @@ async def summary_cmd(location_org, author):
         else:
             s += "\n"
         s += "- - - - -"
-    embed.add_field(name = "Moves", value = s)
+    embed.add_field(name = "Moves", value = s, inline = False)
     stats = {
         "HP": str(calculate_hp(poke.level, poke.pokemon.hp, poke.hp_iv)),
         "Attack": str(calculate_attack(poke.level, poke.pokemon.attack, poke.attack_iv, poke.nature)),
@@ -900,7 +900,7 @@ async def summary_cmd(location_org, author):
         else:
             s += "\n"
         s += key +": "+stats[key]
-    embed.add_field(name = "Nature: "+poke.nature, value = s, inline = True)
+    embed.add_field(name = "Nature: "+poke.nature, value = s)
     s = "HP: "+str(poke.hp_iv)
     s += "\nAttack: "+str(poke.attack_iv)
     s += "\nDefense: "+str(poke.defense_iv)
