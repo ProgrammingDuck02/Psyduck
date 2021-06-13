@@ -891,6 +891,20 @@ async def summary_cmd(location_org, author):
     s += "\nSpecial Defense: "+str(poke.special_defense_iv)
     s += "\nSpeed: "+str(poke.speed_iv)
     embed.add_field(name = "IVs", value = s)
+    s = ""
+    first = True
+    for m in poke.moves:
+        if first:
+            first = False
+        else:
+            s += "\n"
+        s += type_emotes[m.type] + m.name
+    for i in range(len(poke.moves)):
+        if first:
+            first = False
+        else:
+            s += "\n"
+        s += "- - - - -"
     return generate_ok_dict(embed)
 
 #slash commands
