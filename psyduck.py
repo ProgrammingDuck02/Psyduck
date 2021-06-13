@@ -781,6 +781,7 @@ def buy_cmd(poke, author_id):
     print("today:", today)
     print("last_bought_on", last_bought_on)
     if last_bought_on != today:
+        print("not ok")
         last_bought_on = today
         last_bought_what = 0
     pokemon_bought = int_to_bool_list(last_bought_what, 5)
