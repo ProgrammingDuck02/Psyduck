@@ -268,6 +268,7 @@ def give_pokemon_to(poke, level, trainer_id, shiny_rates = 1024):
         if each[0] >= position:
             position = each[0]+1
     poke = owned_pokemon(species = poke, level = level, shiny_odds=shiny_rates)
+    print("moves: ", poke.moves)
     params = [
         "trainer_id",
         "OT",
