@@ -8,7 +8,7 @@ from datetime import datetime
 from discord_slash import SlashCommand
 from discord_slash.utils.manage_commands import create_option
 sys.path.append("python_scripts")
-from python_scripts.constants import seller_picture_url, nature_modifier, prefix, coin_emoji, pokemon_limit, swsh_regular_image, swsh_shiny_image, sm_regular_image, sm_shiny_image, type_emotes, shiny_emote
+from python_scripts.constants import seller_picture_url, nature_modifier, prefix, coin_emoji, pokemon_limit, swsh_regular_image, swsh_shiny_image, sm_regular_image, sm_shiny_image, type_emotes, shiny_emote, category_emotes
 from python_scripts.pokemon import pokemon
 from python_scripts.owned_pokemon import owned_pokemon
 from python_scripts.move import move
@@ -57,7 +57,12 @@ def get_owned_pokemon_by_owner_and_location(owner_id, location, position):
         "Special Attack": temp[10],
         "Special Defense": temp[11],
         "Speed": temp[12]
-    })
+        }, moves =[
+            temp[14],
+            temp[15],
+            temp[16],
+            temp[17]
+        ])
     owned_poke.pokemon.get_data_from_db()
     if temp[0]:
         owned_poke.name = temp[0]
@@ -66,14 +71,6 @@ def get_owned_pokemon_by_owner_and_location(owner_id, location, position):
     owned_poke.OT = temp[1]
     owned_poke.exp = temp[5]
     owned_poke.max_exp = temp[6]
-    move_ids = [temp[14], temp[15], temp[16], temp[17]]
-    for move_id in move_ids:
-        if move_id == None:
-            continue
-        temp = select_one("moves", ("name", "type", "category", "power", "accuracy", "PP", "effect", "description"), "id = "+str(move_id))
-        if not temp:
-            continue
-        owned_poke.moves.append(move(id=move_id, name=temp[0], type=temp[1], category=temp[2], power=temp[3], accuracy=temp[4], PP=temp[5], effect=temp[6], description=temp[7]))
     return owned_poke
 
 def get_pokemon_image_url(pokemon_number, shiny):
@@ -859,7 +856,7 @@ async def summary_cmd(location_org, author):
         return generate_error_dict("Oops, looks like you don't have any pokemon on that position")
     poke_url = get_pokemon_image_url(poke.pokemon.national_number, poke.shiny)
     embed = discord.Embed(color = discord.Color.from_rgb(102, 0, 102))
-    name = poke.name
+    name = poke.name + " lv." + str(poke.level)
     if poke.shiny:
         name += "\u2728"
     embed.set_author(name=name)
@@ -916,6 +913,39 @@ async def summary_cmd(location_org, author):
     embed.add_field(name = "IVs", value = s)
     return generate_ok_dict(embed)
 
+def moves_cmd(author_id, location_org):
+    global cursor
+    if is_number(location_org):
+        location = "party"
+        position = location_org
+    else:
+        query = re.compile("^BOX[0-9]+:[0-9]+$")
+        if not query.match(location_org.upper()):
+            return generate_error_dict(location_org+" is not a correct box name")
+        temp = location_org.upper().split(":")
+        location = temp[0]
+        position = temp[1]
+        if int(location[3:]) < 1 or int(location[3:]) > 50 or int(position) < 1 or int(position) > 10:
+            return generate_error_dict(location_org+" is not a correct box name")
+    cursor.execute("SELECT moves.name, type, category, power from moves join movesets on movesets.move = moves.id join owned_pokemon on owned_pokemon.pokemon = movesets.pokemon where trainer_id = \""+str(author_id)+"\" and position = "+str(position)+" and location = \""+location+"\" and movesets.level <= owned_pokemon.level order by movesets.level asc")
+    temp = cursor.fetchall()
+    if not temp:
+        return generate_error_dict("Oops, error occured. You probably don't have any pokemon on given location")
+    cont = ""
+    first = True
+    for m in temp:
+        if first:
+            first = False
+        else:
+            cont += "\n"
+        power = str(m[3])
+        if power == "0":
+            power = "-"
+        cont += type_emotes[m[1]]+m[0]+category_emotes[m[2]]+" Power: "+power
+    embed = discord.Embed(color = discord.Color.from_rgb(31, 122, 107))
+    embed.add_field(name="Your pokemon can learn these moces:", value = cont)
+    return generate_ok_dict(embed)
+    
 #slash commands
 @slash.slash(name="party", description="Displays your party", guild_ids=guild_ids)
 async def _party(ctx):
@@ -1213,11 +1243,22 @@ async def on_message(message):
             await message.channel.send(ret["message"])
 
     if mes.lower().startswith("summary"):
-        temp = mes.split(" ", 2)
+        temp = mes.split(" ", 1)
         if len(temp) < 2:
-            await message.channel.send("Wrong number of parameters!\nCorrect use "+prefix+"nickname [pokemon/box_number:pokemon] [nickname]\nCheck "+prefix+"help for more informations")
+            await message.channel.send("Wrong number of parameters!\nCorrect use "+prefix+"summary [pokemon/box_number:pokemon]\nCheck "+prefix+"help for more informations")
             return
         ret = await summary_cmd(temp[1], message.author)
+        if ret["status"] == "ok":
+            await message.channel.send(embed = ret["message"])
+        elif ret["status"] == "error":
+            await message.channel.send(ret["message"])
+
+    if mes.lower().startswith("moves"):
+        temp = mes.split(" ", 1)
+        if len(temp) < 2:
+            await message.channel.send("Wrong number of parameters!\nCorrect use "+prefix+"moves [pokemon/box_number:pokemon]\nCheck "+prefix+"help for more informations")
+            return
+        ret = moves_cmd(message.author.id, temp[1])
         if ret["status"] == "ok":
             await message.channel.send(embed = ret["message"])
         elif ret["status"] == "error":

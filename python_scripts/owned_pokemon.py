@@ -6,6 +6,18 @@ from python_scripts.pokemon import pokemon
 from python_scripts.constants import nature_modifier
 from python_scripts.move import move
 seed()
+
+def join_array(arr, separator, opening = "", ending = ""):
+    first = True
+    ret = ""
+    for a in arr:
+        if first:
+            first = False
+        else:
+            ret += separator
+        ret += opening + str(a) + ending
+    return ret
+
 class owned_pokemon:
     def __init__(self, species = None, level = None, shiny_odds = 0, ivs = None, nature = None, moves = None):
         if ivs == None:
@@ -58,15 +70,22 @@ class owned_pokemon:
             self.nature = natures[randrange(25)]
         else:
             self.nature = nature
-        self.moves = []
-        if moves == None and not level == None and not species == None:
-            DB = mysql.connector.connect(
+
+        DB = mysql.connector.connect(
                 host = 'localhost',
                 user = 'psyduck',
                 password = 'Uqp9MF[jf<!R(%:S',
                 database = 'psyduckDB'
                 )
-            cursor = DB.cursor()
+        cursor = DB.cursor()
+        self.moves = []
+        if moves != None:
+            cursor.execute("SELECT id, name, type, category, power, accuracy, PP, effect, description FROM moves WHERE id IN ("+join_array(moves, ",", "\"", "\"")+")")
+            temp = cursor.fetchall()
+            if temp:
+                for m in temp:
+                    self.moves.append(move(m[0], m[1], m[2], m[3], m[4], m[5], m[6], m[7], m[8]))
+        elif not (level == None or species == None):
             cursor.execute("SELECT moves.id, name, type, category, power, accuracy, PP, effect, description FROM moves JOIN movesets ON movesets.move = moves.id WHERE level<="+str(level)+" AND pokemon = \""+self.pokemon.national_number+"\" ORDER BY level DESC LIMIT 4")
             temp = cursor.fetchall()
             if temp:

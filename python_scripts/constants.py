@@ -205,3 +205,9 @@ type_emotes = {
     "Rock": "<:rock:852612951886266409>",
 }
 shiny_emote = "<:shiny:852622502470877184>"
+
+category_emotes = {
+    "Physical": "<:physical:856546592014073916>",
+    "Special": "<:special:856546614557278258>",
+    "Status": "<:status:856546624725844018>"
+}
